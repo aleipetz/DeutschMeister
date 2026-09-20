@@ -1,0 +1,11 @@
+# Generated — regenerate with python3 Tools/build.py
+Prototype/App/data.js
+Content/generated/
+
+.DS_Store
+
+# Xcode
+xcuserdata/
+DerivedData/
+build/
+*.xcuserstate

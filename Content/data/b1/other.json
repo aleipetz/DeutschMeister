@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "cefr": "B1",
+  "pos": "other",
+  "entries": [
+    { "id": "obwohl_other", "cefr": "B1", "pos": "other", "lemma_de": "obwohl", "translations_en": ["although"], "example_de": "Obwohl es regnet, gehen wir spazieren.", "example_en": "Although it's raining, we're going for a walk.", "cloze_word": "Obwohl", "themes": ["grammar_glue"], "priority": 1 },
+    { "id": "ausserdem_other", "cefr": "B1", "pos": "other", "lemma_de": "außerdem", "translations_en": ["besides", "moreover"], "example_de": "Außerdem habe ich keine Zeit.", "example_en": "Besides, I don't have time.", "cloze_word": "Außerdem", "themes": ["grammar_glue"], "priority": 1 },
+    { "id": "trotzdem_other", "cefr": "B1", "pos": "other", "lemma_de": "trotzdem", "translations_en": ["nevertheless", "anyway"], "example_de": "Es war teuer, aber ich habe es trotzdem gekauft.", "example_en": "It was expensive, but I bought it anyway.", "cloze_word": "trotzdem", "themes": ["grammar_glue"], "priority": 1 }
+  ]
+}

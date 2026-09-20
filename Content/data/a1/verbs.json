@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A1",
+  "pos": "verb",
+  "entries": [
+    {
+      "id": "gehen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "gehen",
+      "translations_en": [
+        "to go",
+        "to walk"
+      ],
+      "example_de": "Ich gehe nach Hause.",
+      "example_en": "I am going home.",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "geht",
+        "perfekt": "ist gegangen",
+        "praeteritum_3sg": "ging",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      },
+      "cloze_word": "gehe"
+    },
+    {
+      "id": "stehen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "stehen",
+      "translations_en": [
+        "to stand"
+      ],
+      "example_de": "Das Auto steht vor dem Haus.",
+      "example_en": "The car is standing in front of the house.",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "steht",
+        "perfekt": "hat gestanden",
+        "praeteritum_3sg": "stand",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      },
+      "cloze_word": "steht"
+    },
+    {
+      "id": "kaufen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "kaufen",
+      "translations_en": [
+        "to buy"
+      ],
+      "example_de": "Ich kaufe ein neues Buch.",
+      "example_en": "I am buying a new book.",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "kauft",
+        "perfekt": "hat gekauft",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      },
+      "cloze_word": "kaufe"
+    },
+    {
+      "id": "sein_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "sein",
+      "translations_en": [
+        "to be"
+      ],
+      "example_de": "Er ist müde.",
+      "example_en": "He is tired.",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "ist",
+        "perfekt": "ist gewesen",
+        "praeteritum_3sg": "war",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      },
+      "cloze_word": "ist"
+    }
+  ]
+}

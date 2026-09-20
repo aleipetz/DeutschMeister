@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A1",
+  "pos": "phrasal_verb",
+  "entries": [
+    {
+      "id": "aufstehen_verb",
+      "cefr": "A1",
+      "pos": "phrasal_verb",
+      "lemma_de": "aufstehen",
+      "translations_en": [
+        "to get up",
+        "to stand up"
+      ],
+      "example_de": "Ich stehe um sieben Uhr auf.",
+      "example_en": "I get up at seven o'clock.",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "steht ... auf",
+        "perfekt": "ist aufgestanden",
+        "praeteritum_3sg": null,
+        "base_verb": "stehen_verb",
+        "particle": "auf",
+        "particle_meaning_hint": "auf = up"
+      },
+      "cloze_word": "auf"
+    },
+    {
+      "id": "einkaufen_verb",
+      "cefr": "A1",
+      "pos": "phrasal_verb",
+      "lemma_de": "einkaufen",
+      "translations_en": [
+        "to shop",
+        "to go shopping"
+      ],
+      "example_de": "Wir kaufen im Supermarkt ein.",
+      "example_en": "We shop at the supermarket.",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "kauft ... ein",
+        "perfekt": "hat eingekauft",
+        "praeteritum_3sg": null,
+        "base_verb": "kaufen_verb",
+        "particle": "ein",
+        "particle_meaning_hint": "ein = in, i.e. buying things in(to your basket)"
+      },
+      "cloze_word": "ein"
+    }
+  ]
+}

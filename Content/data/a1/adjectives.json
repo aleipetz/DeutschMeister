@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A1",
+  "pos": "adjective",
+  "entries": [
+    {
+      "id": "gut_adjective",
+      "cefr": "A1",
+      "pos": "adjective",
+      "lemma_de": "gut",
+      "translations_en": [
+        "good",
+        "well"
+      ],
+      "example_de": "Das Essen ist gut.",
+      "example_en": "The food is good.",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "adjective": {
+        "comparative_irregular": "besser",
+        "superlative_irregular": "am besten"
+      },
+      "cloze_word": "gut"
+    },
+    {
+      "id": "schoen_adjective",
+      "cefr": "A1",
+      "pos": "adjective",
+      "lemma_de": "schön",
+      "translations_en": [
+        "beautiful",
+        "nice"
+      ],
+      "example_de": "Das Wetter ist heute schön.",
+      "example_en": "The weather is nice today.",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "cloze_word": "schön"
+    }
+  ]
+}

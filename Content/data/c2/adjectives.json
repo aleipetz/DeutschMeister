@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "cefr": "C2",
+  "pos": "adjective",
+  "entries": [
+    { "id": "unumgaenglich_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unumgänglich", "translations_en": ["unavoidable", "inevitable"], "example_de": "Eine Reform ist unumgänglich.", "example_en": "A reform is unavoidable.", "cloze_word": "unumgänglich", "themes": ["abstract_ideas"], "priority": 3 },
+    { "id": "fragwuerdig_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "fragwürdig", "translations_en": ["questionable", "dubious"], "example_de": "Seine Methoden sind fragwürdig.", "example_en": "His methods are questionable.", "cloze_word": "fragwürdig", "themes": ["argumentation"], "priority": 2 },
+    { "id": "unerlaesslich_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unerlässlich", "translations_en": ["essential", "indispensable"], "example_de": "Geduld ist unerlässlich in diesem Beruf.", "example_en": "Patience is essential in this profession.", "cloze_word": "unerlässlich", "themes": ["abstract_ideas"], "priority": 2 },
+    { "id": "vielsagend_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "vielsagend", "translations_en": ["telling", "meaningful"], "example_de": "Sie warf ihm einen vielsagenden Blick zu.", "example_en": "She gave him a telling look.", "cloze_word": "vielsagenden", "themes": ["communication"], "priority": 4 },
+    { "id": "schwerwiegend_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "schwerwiegend", "translations_en": ["grave", "weighty", "serious"], "example_de": "Das hat schwerwiegende Folgen.", "example_en": "That has grave consequences.", "cloze_word": "schwerwiegende", "themes": ["abstract_ideas"], "priority": 2 },
+    { "id": "unantastbar_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unantastbar", "translations_en": ["untouchable", "inviolable"], "example_de": "Die Menschenwürde ist unantastbar.", "example_en": "Human dignity is inviolable.", "cloze_word": "unantastbar", "themes": ["society"], "priority": 3 }
+  ]
+}

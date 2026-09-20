@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "vocab-entry.schema.json",
+  "title": "German Vocab Content File",
+  "description": "Reference schema for Content/data/<level>/*.json. See SCHEMA.md for the prose version. Tools/validate_content.py implements these rules directly in Python (no jsonschema dependency).",
+  "type": "object",
+  "required": ["schemaVersion", "cefr", "pos", "entries"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "cefr": { "$ref": "#/definitions/cefr" },
+    "pos": { "$ref": "#/definitions/pos" },
+    "entries": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/entry" }
+    }
+  },
+  "definitions": {
+    "cefr": { "type": "string", "enum": ["A1", "A2", "B1", "B2", "C1", "C2"] },
+    "pos": {
+      "type": "string",
+      "enum": ["noun", "adjective", "verb", "phrasal_verb", "composite_verb", "other"]
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "id", "cefr", "pos", "lemma_de", "translations_en",
+        "example_de", "example_en", "cloze_word", "themes", "priority"
+      ],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "cefr": { "$ref": "#/definitions/cefr" },
+        "pos": { "$ref": "#/definitions/pos" },
+        "lemma_de": { "type": "string", "minLength": 1 },
+        "translations_en": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "minItems": 1
+        },
+        "example_de": { "type": "string", "minLength": 1 },
+        "example_en": { "type": "string", "minLength": 1 },
+        "cloze_word": { "type": "string", "minLength": 1 },
+        "themes": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "priority": { "type": "integer", "minimum": 1, "maximum": 5 },
+        "notes": { "type": "string" },
+        "noun": { "$ref": "#/definitions/noun" },
+        "verb": { "$ref": "#/definitions/verb" },
+        "adjective": { "$ref": "#/definitions/adjective" }
+      }
+    },
+    "noun": {
+      "type": "object",
+      "required": ["gender", "plural_de"],
+      "properties": {
+        "gender": { "type": "string", "enum": ["der", "die", "das"] },
+        "plural_de": { "type": ["string", "null"] }
+      }
+    },
+    "verb": {
+      "type": "object",
+      "required": ["separable", "irregular", "present_3sg", "perfekt"],
+      "properties": {
+        "separable": { "type": "boolean" },
+        "irregular": { "type": "boolean" },
+        "present_3sg": { "type": "string", "minLength": 1 },
+        "perfekt": { "type": "string", "minLength": 1 },
+        "praeteritum_3sg": { "type": ["string", "null"] },
+        "base_verb": { "type": ["string", "null"] },
+        "particle": { "type": ["string", "null"] },
+        "particle_meaning_hint": { "type": ["string", "null"] }
+      }
+    },
+    "adjective": {
+      "type": "object",
+      "properties": {
+        "comparative_irregular": { "type": ["string", "null"] },
+        "superlative_irregular": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

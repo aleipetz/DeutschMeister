@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "cefr": "B2",
+  "pos": "other",
+  "entries": [
+    { "id": "dennoch_other", "cefr": "B2", "pos": "other", "lemma_de": "dennoch", "translations_en": ["nevertheless", "yet"], "example_de": "Es regnete, dennoch gingen wir wandern.", "example_en": "It was raining, yet we went hiking.", "cloze_word": "dennoch", "themes": ["grammar_glue"], "priority": 1 },
+    { "id": "sodass_other", "cefr": "B2", "pos": "other", "lemma_de": "sodass", "translations_en": ["so that"], "example_de": "Er flüsterte, sodass niemand ihn hören konnte.", "example_en": "He whispered so that no one could hear him.", "cloze_word": "sodass", "themes": ["grammar_glue"], "priority": 2 },
+    { "id": "sofern_other", "cefr": "B2", "pos": "other", "lemma_de": "sofern", "translations_en": ["provided that", "as long as"], "example_de": "Wir kommen, sofern das Wetter mitspielt.", "example_en": "We'll come, provided the weather cooperates.", "cloze_word": "sofern", "themes": ["grammar_glue"], "priority": 2 }
+  ]
+}

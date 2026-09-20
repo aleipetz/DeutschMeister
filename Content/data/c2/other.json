@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "cefr": "C2",
+  "pos": "other",
+  "entries": [
+    { "id": "mitnichten_other", "cefr": "C2", "pos": "other", "lemma_de": "mitnichten", "translations_en": ["by no means", "not at all"], "example_de": "Das ist mitnichten der Fall.", "example_en": "That is by no means the case.", "cloze_word": "mitnichten", "themes": ["grammar_glue"], "priority": 4 },
+    { "id": "gleichwohl_other", "cefr": "C2", "pos": "other", "lemma_de": "gleichwohl", "translations_en": ["nevertheless", "all the same"], "example_de": "Er war müde, gleichwohl arbeitete er weiter.", "example_en": "He was tired; nevertheless, he kept working.", "cloze_word": "gleichwohl", "themes": ["grammar_glue"], "priority": 4 },
+    { "id": "infolgedessen_other", "cefr": "C2", "pos": "other", "lemma_de": "infolgedessen", "translations_en": ["consequently", "as a result"], "example_de": "Er hatte keine Zeit, infolgedessen kam er zu spät.", "example_en": "He had no time, consequently he was late.", "cloze_word": "infolgedessen", "themes": ["grammar_glue"], "priority": 3 }
+  ]
+}

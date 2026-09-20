@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch Meister — German Vocabulary Trainer</title>
+<!--BUILD:STYLE_START-->
+<link rel="stylesheet" href="styles.css">
+<!--BUILD:STYLE_END-->
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark">🦉</span>
+      <span class="brand-name">Deutsch Meister</span>
+    </div>
+    <div class="header-stats">
+      <button class="chip chip-streak" id="streak-chip" title="Current streak">
+        <span class="chip-icon">🔥</span><span id="streak-count">0</span>
+      </button>
+      <button class="icon-btn" id="settings-btn" title="Settings" aria-label="Settings">⚙️</button>
+    </div>
+  </header>
+
+  <!-- Screens -->
+  <main class="screens">
+
+    <!-- HOME -->
+    <section class="screen" id="screen-home" data-screen="home">
+      <div class="home-hero">
+        <div class="ring-wrap">
+          <svg viewBox="0 0 120 120" class="progress-ring" id="xp-ring">
+            <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+            <circle class="ring-fill" id="xp-ring-fill" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="ring-center">
+            <div class="ring-value" id="today-xp">0</div>
+            <div class="ring-label">XP today</div>
+          </div>
+        </div>
+        <div class="home-hero-text">
+          <h1 id="home-greeting">Guten Tag!</h1>
+          <p id="home-subtitle" class="muted">Ready to grow your German vocabulary?</p>
+        </div>
+      </div>
+
+      <div class="card-row">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-due">0</div>
+          <div class="stat-label">Due for review</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-mastered">0</div>
+          <div class="stat-label">Words mastered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-level-name">A1</div>
+          <div class="stat-label">Current level</div>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <button class="btn btn-primary btn-large" id="start-review-btn">
+          🎯 Review <span id="review-due-badge" class="badge">0</span>
+        </button>
+        <button class="btn btn-secondary btn-large" id="start-learn-btn">
+          ✨ Learn new words
+        </button>
+      </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="screen" id="screen-learn" data-screen="learn">
+      <div class="session-header">
+        <button class="btn btn-ghost" data-nav="home">← Home</button>
+        <div class="combo-display" id="learn-combo-display" hidden>
+          <span>🔥</span> <span id="learn-combo-count">0</span> combo
+        </div>
+        <div class="session-progress" id="learn-progress">0 / 0</div>
+      </div>
+      <div id="learn-content" class="session-content"></div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="screen" id="screen-review" data-screen="review">
+      <div class="session-header">
+        <button class="btn btn-ghost" data-nav="home">← Home</button>
+        <div class="combo-display" id="combo-display" hidden>
+          <span id="combo-flame">🔥</span> <span id="combo-count">0</span> combo
+        </div>
+        <div class="session-progress" id="review-progress">0 / 0</div>
+      </div>
+      <div id="review-content" class="session-content"></div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="screen" id="screen-dashboard" data-screen="dashboard">
+      <h2 class="screen-title">📊 Your Coverage</h2>
+
+      <div class="filter-row">
+        <select id="filter-level" class="select"></select>
+        <select id="filter-pos" class="select"></select>
+      </div>
+
+      <div id="coverage-bars" class="coverage-bars"></div>
+
+      <h3 class="section-title">🔥 Activity</h3>
+      <div id="streak-heatmap" class="heatmap"></div>
+
+      <h3 class="section-title">🧩 Verb Families</h3>
+      <p class="muted small">Separable &amp; composite verbs grouped by their base verb — see the pattern instead of memorizing each one alone.</p>
+      <div id="verb-families" class="verb-families"></div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="screen" id="screen-quiz" data-screen="quiz">
+      <div class="session-header">
+        <button class="btn btn-ghost" data-nav="home">← Home</button>
+        <div class="combo-display" id="quiz-combo-display" hidden>
+          <span>🔥</span> <span id="quiz-combo-count">0</span> combo
+        </div>
+        <div class="session-progress" id="quiz-progress">0 / 0</div>
+      </div>
+      <div id="quiz-content" class="session-content"></div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="screen" id="screen-achievements" data-screen="achievements">
+      <h2 class="screen-title">🏆 Achievements</h2>
+      <div id="achievements-grid" class="achievements-grid"></div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section class="screen" id="screen-settings" data-screen="settings">
+      <div class="session-header">
+        <button class="btn btn-ghost" data-nav="home">← Home</button>
+      </div>
+      <h2 class="screen-title">⚙️ Settings</h2>
+
+      <div class="settings-group">
+        <label class="settings-label" for="daily-goal-input">Daily XP goal</label>
+        <input type="number" id="daily-goal-input" class="text-input" min="10" step="10">
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label" for="level-override">Learning level</label>
+        <select id="level-override" class="select"></select>
+        <p class="muted small">New words are pulled from this level. Defaults to your current progress level.</p>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label" for="speech-rate">Speech rate</label>
+        <input type="range" id="speech-rate" min="0.5" max="1.3" step="0.05">
+        <button class="btn btn-secondary" id="test-voice-btn">🔊 Test voice</button>
+        <p class="muted small" id="voice-status">Checking for a German voice…</p>
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-label">Backup your progress</div>
+        <div class="btn-row">
+          <button class="btn btn-secondary" id="export-btn">⬇️ Export progress</button>
+          <button class="btn btn-secondary" id="import-btn">⬆️ Import progress</button>
+          <input type="file" id="import-file" accept="application/json" hidden>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-label">Danger zone</div>
+        <button class="btn btn-danger" id="reset-btn">🗑️ Reset all progress</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom nav -->
+  <nav class="tab-bar">
+    <button class="tab-btn is-active" data-nav="home"><span class="tab-icon">🏠</span><span>Home</span></button>
+    <button class="tab-btn" data-nav="learn"><span class="tab-icon">✨</span><span>Learn</span></button>
+    <button class="tab-btn" data-nav="review"><span class="tab-icon">🎯</span><span>Review</span></button>
+    <button class="tab-btn" data-nav="dashboard"><span class="tab-icon">📊</span><span>Progress</span></button>
+    <button class="tab-btn" data-nav="quiz"><span class="tab-icon">🧠</span><span>Quiz</span></button>
+    <button class="tab-btn" data-nav="achievements"><span class="tab-icon">🏆</span><span>Badges</span></button>
+  </nav>
+
+  <!-- Celebration overlay -->
+  <div id="celebration-overlay" class="celebration-overlay" hidden>
+    <div class="celebration-card">
+      <div class="celebration-emoji" id="celebration-emoji">🎉</div>
+      <div class="celebration-title" id="celebration-title">Nice!</div>
+      <div class="celebration-subtitle" id="celebration-subtitle"></div>
+      <button class="btn btn-primary" id="celebration-close">Nice!</button>
+    </div>
+  </div>
+
+  <!-- Onboarding: pick a starting level -->
+  <div id="onboarding-overlay" class="celebration-overlay" hidden>
+    <div class="celebration-card onboarding-card">
+      <div class="celebration-emoji">🦉</div>
+      <div class="celebration-title">What's your German level?</div>
+      <div class="celebration-subtitle">We'll pull new words from here. You can change this anytime in Settings.</div>
+      <div class="level-pick-grid" id="onboarding-level-grid"></div>
+    </div>
+  </div>
+
+</div>
+
+<!--BUILD:SCRIPT_START-->
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="speech.js"></script>
+<script src="quiz.js"></script>
+<script src="app.js"></script>
+<!--BUILD:SCRIPT_END-->
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "themes": [
+    { "id": "food", "label_en": "Food & Drink", "icon": "🍽️" },
+    { "id": "home", "label_en": "Home & Household", "icon": "🏠" },
+    { "id": "daily_routine", "label_en": "Daily Routine", "icon": "⏰" },
+    { "id": "travel", "label_en": "Travel", "icon": "✈️" },
+    { "id": "people", "label_en": "People & Relationships", "icon": "🧑‍🤝‍🧑" },
+    { "id": "work", "label_en": "Work & Business", "icon": "💼" },
+    { "id": "emotions", "label_en": "Emotions", "icon": "😊" },
+    { "id": "nature", "label_en": "Nature & Weather", "icon": "🌳" },
+    { "id": "body_health", "label_en": "Body & Health", "icon": "🩺" },
+    { "id": "shopping", "label_en": "Shopping & Money", "icon": "🛍️" },
+    { "id": "communication", "label_en": "Communication", "icon": "💬" },
+    { "id": "technology", "label_en": "Technology", "icon": "💻" },
+    { "id": "education", "label_en": "Education", "icon": "🎓" },
+    { "id": "time_numbers", "label_en": "Time & Numbers", "icon": "🔢" },
+    { "id": "grammar_glue", "label_en": "Everyday Glue Words", "icon": "🔗" },
+    { "id": "society", "label_en": "Society & Politics", "icon": "🏛️" },
+    { "id": "abstract_ideas", "label_en": "Abstract Ideas", "icon": "💭" },
+    { "id": "argumentation", "label_en": "Argumentation & Debate", "icon": "🗣️" }
+  ]
+}

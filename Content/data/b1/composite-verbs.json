@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "cefr": "B1",
+  "pos": "composite_verb",
+  "entries": [
+    { "id": "spazierengehen_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "spazierengehen", "translations_en": ["to go for a walk"], "example_de": "Wir gehen im Park spazieren.", "example_en": "We go for a walk in the park.", "cloze_word": "spazieren", "themes": ["daily_routine"], "priority": 1, "verb": { "separable": true, "irregular": true, "present_3sg": "geht ... spazieren", "perfekt": "ist spazierengegangen", "praeteritum_3sg": null, "base_verb": "gehen_verb", "particle": "spazieren", "particle_meaning_hint": "spazieren = to stroll — fixed compound with gehen (to go)" } },
+    { "id": "radfahren_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "radfahren", "translations_en": ["to cycle", "to ride a bike"], "example_de": "Sie fährt jeden Tag zur Arbeit Rad.", "example_en": "She cycles to work every day.", "cloze_word": "Rad", "themes": ["daily_routine"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "fährt ... Rad", "perfekt": "ist radgefahren", "praeteritum_3sg": null, "base_verb": "fahren_verb", "particle": "Rad", "particle_meaning_hint": "Rad = bike/wheel — noun+verb compound with fahren (to drive/ride)" } },
+    { "id": "wehtun_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "wehtun", "translations_en": ["to hurt"], "example_de": "Mein Kopf tut weh.", "example_en": "My head hurts.", "cloze_word": "weh", "themes": ["body_health"], "priority": 1, "verb": { "separable": true, "irregular": true, "present_3sg": "tut ... weh", "perfekt": "hat wehgetan", "praeteritum_3sg": null, "base_verb": "tun_verb", "particle": "weh", "particle_meaning_hint": "weh = painful — fixed compound with tun (to do)" } },
+    { "id": "achtgeben_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "achtgeben", "translations_en": ["to pay attention", "to be careful"], "example_de": "Gib acht auf der Straße!", "example_en": "Be careful on the road!", "cloze_word": "acht", "themes": ["daily_routine"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "gibt ... acht", "perfekt": "hat achtgegeben", "praeteritum_3sg": null, "base_verb": "geben_verb", "particle": "acht", "particle_meaning_hint": "acht = heed/attention — fixed compound with geben (to give)" } }
+  ]
+}

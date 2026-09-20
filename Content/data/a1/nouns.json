@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A1",
+  "pos": "noun",
+  "entries": [
+    {
+      "id": "haus_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Haus",
+      "translations_en": [
+        "house",
+        "home"
+      ],
+      "example_de": "Das Haus ist sehr groß.",
+      "example_en": "The house is very big.",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Häuser"
+      },
+      "cloze_word": "Haus"
+    },
+    {
+      "id": "frau_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Frau",
+      "translations_en": [
+        "woman",
+        "wife",
+        "Mrs."
+      ],
+      "example_de": "Die Frau arbeitet im Büro.",
+      "example_en": "The woman works in the office.",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Frauen"
+      },
+      "cloze_word": "Frau"
+    }
+  ]
+}

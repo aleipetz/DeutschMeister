@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "cefr": "B2",
+  "pos": "adjective",
+  "entries": [
+    { "id": "widerspruechlich_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "widersprüchlich", "translations_en": ["contradictory"], "example_de": "Seine Aussagen waren widersprüchlich.", "example_en": "His statements were contradictory.", "cloze_word": "widersprüchlich", "themes": ["argumentation"], "priority": 2 },
+    { "id": "nachhaltig_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "nachhaltig", "translations_en": ["sustainable"], "example_de": "Wir setzen auf nachhaltige Energie.", "example_en": "We focus on sustainable energy.", "cloze_word": "nachhaltige", "themes": ["nature"], "priority": 1 },
+    { "id": "ueberzeugend_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "überzeugend", "translations_en": ["convincing"], "example_de": "Das Argument war sehr überzeugend.", "example_en": "The argument was very convincing.", "cloze_word": "überzeugend", "themes": ["argumentation"], "priority": 1 },
+    { "id": "angemessen_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "angemessen", "translations_en": ["appropriate", "adequate"], "example_de": "Die Reaktion war angemessen.", "example_en": "The reaction was appropriate.", "cloze_word": "angemessen", "themes": ["abstract_ideas"], "priority": 1 },
+    { "id": "umstritten_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "umstritten", "translations_en": ["controversial"], "example_de": "Das Thema ist sehr umstritten.", "example_en": "The topic is very controversial.", "cloze_word": "umstritten", "themes": ["society"], "priority": 1 },
+    { "id": "erheblich_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "erheblich", "translations_en": ["considerable", "significant"], "example_de": "Das hat einen erheblichen Einfluss.", "example_en": "That has a considerable influence.", "cloze_word": "erheblichen", "themes": ["abstract_ideas"], "priority": 2 }
+  ]
+}

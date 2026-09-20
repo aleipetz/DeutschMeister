@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "cefr": "B1",
+  "pos": "adjective",
+  "entries": [
+    { "id": "notwendig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "notwendig", "translations_en": ["necessary"], "example_de": "Das ist notwendig für den Erfolg.", "example_en": "That is necessary for success.", "cloze_word": "notwendig", "themes": ["abstract_ideas"], "priority": 1 },
+    { "id": "erstaunlich_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "erstaunlich", "translations_en": ["astonishing", "amazing"], "example_de": "Das Ergebnis war erstaunlich.", "example_en": "The result was astonishing.", "cloze_word": "erstaunlich", "themes": ["emotions"], "priority": 2 },
+    { "id": "zuverlaessig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "zuverlässig", "translations_en": ["reliable"], "example_de": "Er ist ein zuverlässiger Kollege.", "example_en": "He is a reliable colleague.", "cloze_word": "zuverlässiger", "themes": ["work"], "priority": 1 },
+    { "id": "unabhaengig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "unabhängig", "translations_en": ["independent"], "example_de": "Sie lebt finanziell unabhängig.", "example_en": "She lives financially independent.", "cloze_word": "unabhängig", "themes": ["abstract_ideas"], "priority": 2 },
+    { "id": "ausfuehrlich_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "ausführlich", "translations_en": ["detailed", "in detail"], "example_de": "Bitte erklären Sie das ausführlich.", "example_en": "Please explain that in detail.", "cloze_word": "ausführlich", "themes": ["communication"], "priority": 2 },
+    { "id": "freiwillig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "freiwillig", "translations_en": ["voluntary"], "example_de": "Die Teilnahme ist freiwillig.", "example_en": "Participation is voluntary.", "cloze_word": "freiwillig", "themes": ["work"], "priority": 2 }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A1",
+  "pos": "composite_verb",
+  "entries": [
+    {
+      "id": "fernsehen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "fernsehen",
+      "translations_en": [
+        "to watch TV"
+      ],
+      "example_de": "Wir sehen jeden Abend fern.",
+      "example_en": "We watch TV every evening.",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "sieht ... fern",
+        "perfekt": "hat ferngesehen",
+        "praeteritum_3sg": null,
+        "base_verb": "sehen_verb",
+        "particle": "fern",
+        "particle_meaning_hint": "fern = far/distant — fixed compound with sehen (to see), i.e. watch (the distant screen)"
+      },
+      "cloze_word": "fern"
+    },
+    {
+      "id": "kennenlernen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "kennenlernen",
+      "translations_en": [
+        "to get to know",
+        "to meet (for the first time)"
+      ],
+      "example_de": "Ich möchte dich gern kennenlernen.",
+      "example_en": "I would like to get to know you.",
+      "themes": [
+        "people"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "lernt ... kennen",
+        "perfekt": "hat kennengelernt",
+        "praeteritum_3sg": null,
+        "base_verb": "lernen_verb",
+        "particle": "kennen",
+        "particle_meaning_hint": "kennen = to know — verb+verb compound with lernen (to learn), i.e. learn-to-know = meet/get acquainted"
+      },
+      "cloze_word": "kennenlernen"
+    }
+  ]
+}

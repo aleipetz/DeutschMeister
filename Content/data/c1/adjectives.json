@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "cefr": "C1",
+  "pos": "adjective",
+  "entries": [
+    { "id": "gravierend_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "gravierend", "translations_en": ["serious", "grave"], "example_de": "Das ist ein gravierender Fehler.", "example_en": "That is a serious mistake.", "cloze_word": "gravierender", "themes": ["abstract_ideas"], "priority": 2 },
+    { "id": "plausibel_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "plausibel", "translations_en": ["plausible"], "example_de": "Seine Erklärung klingt plausibel.", "example_en": "His explanation sounds plausible.", "cloze_word": "plausibel", "themes": ["argumentation"], "priority": 2 },
+    { "id": "praegnant_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "prägnant", "translations_en": ["concise", "succinct"], "example_de": "Fassen Sie Ihre Argumente prägnant zusammen.", "example_en": "Summarize your arguments concisely.", "cloze_word": "prägnant", "themes": ["communication"], "priority": 3 },
+    { "id": "kontrovers_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "kontrovers", "translations_en": ["controversial"], "example_de": "Das Thema wurde kontrovers diskutiert.", "example_en": "The topic was discussed controversially.", "cloze_word": "kontrovers", "themes": ["argumentation"], "priority": 2 },
+    { "id": "unabdingbar_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "unabdingbar", "translations_en": ["indispensable", "essential"], "example_de": "Vertrauen ist unabdingbar für eine gute Zusammenarbeit.", "example_en": "Trust is indispensable for good cooperation.", "cloze_word": "unabdingbar", "themes": ["abstract_ideas"], "priority": 3 },
+    { "id": "vielschichtig_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "vielschichtig", "translations_en": ["multi-layered", "complex"], "example_de": "Das Problem ist sehr vielschichtig.", "example_en": "The problem is very complex.", "cloze_word": "vielschichtig", "themes": ["abstract_ideas"], "priority": 3 }
+  ]
+}

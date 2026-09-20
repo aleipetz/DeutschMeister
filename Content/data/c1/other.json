@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "cefr": "C1",
+  "pos": "other",
+  "entries": [
+    { "id": "dahingehend_other", "cefr": "C1", "pos": "other", "lemma_de": "dahingehend", "translations_en": ["to this effect", "in this regard"], "example_de": "Es gibt Pläne, dahingehend etwas zu ändern.", "example_en": "There are plans to change something in this regard.", "cloze_word": "dahingehend", "themes": ["grammar_glue"], "priority": 3 },
+    { "id": "zumal_other", "cefr": "C1", "pos": "other", "lemma_de": "zumal", "translations_en": ["especially since", "given that"], "example_de": "Wir sollten früh losfahren, zumal es Stau geben könnte.", "example_en": "We should leave early, especially since there might be traffic.", "cloze_word": "zumal", "themes": ["grammar_glue"], "priority": 2 },
+    { "id": "insofern_other", "cefr": "C1", "pos": "other", "lemma_de": "insofern", "translations_en": ["insofar as", "in that respect"], "example_de": "Insofern hat er recht.", "example_en": "In that respect, he is right.", "cloze_word": "Insofern", "themes": ["grammar_glue"], "priority": 2 }
+  ]
+}

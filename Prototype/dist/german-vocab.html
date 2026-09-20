@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deutsch Meister — German Vocabulary Trainer</title>
+<!--BUILD:STYLE_START-->
+<style>
+:root {
+  --bg: #f4f2fb;
+  --bg-gradient: linear-gradient(160deg, #f6f4ff 0%, #eef7ff 45%, #fff7f0 100%);
+  --surface: #ffffff;
+  --surface-alt: #f7f5ff;
+  --text: #241f3d;
+  --text-muted: #6b6584;
+  --border: #e7e3f7;
+
+  --primary: #6d5ce8;
+  --primary-dark: #5645d1;
+  --primary-light: #efeaff;
+  --teal: #00b8a3;
+  --teal-light: #e2fbf7;
+  --orange: #ff9f1c;
+  --orange-light: #fff3e0;
+  --pink: #ec4899;
+  --pink-light: #fde7f3;
+  --green: #22c55e;
+  --green-light: #e8fbee;
+  --blue: #3b82f6;
+  --blue-light: #e8f1ff;
+  --red: #ef4444;
+  --red-light: #fdeaea;
+  --yellow: #f5c518;
+
+  --shadow-sm: 0 2px 8px rgba(36, 31, 61, 0.06);
+  --shadow-md: 0 8px 24px rgba(36, 31, 61, 0.10);
+  --shadow-lg: 0 16px 40px rgba(36, 31, 61, 0.16);
+  --radius: 18px;
+  --radius-sm: 12px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg-gradient);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  max-width: 640px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.muted { color: var(--text-muted); }
+.small { font-size: 0.85rem; }
+
+/* ---------- Header ---------- */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  background: rgba(244, 242, 251, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.brand { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 1.15rem; }
+.brand-mark { font-size: 1.5rem; }
+.header-stats { display: flex; align-items: center; gap: 8px; }
+
+.chip {
+  display: flex; align-items: center; gap: 6px;
+  border: none; border-radius: 999px; padding: 6px 12px;
+  font-weight: 700; font-size: 0.95rem; cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+.chip-streak { background: var(--orange-light); color: #b96b00; }
+.icon-btn {
+  border: none; background: var(--surface); border-radius: 999px;
+  width: 36px; height: 36px; font-size: 1.05rem; cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Screens ---------- */
+.screens { flex: 1; padding: 8px 20px 100px; }
+.screen { display: none; animation: fadeIn 0.25s ease; }
+.screen.is-active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+.screen-title { font-size: 1.3rem; margin: 12px 0 16px; }
+.section-title { font-size: 1.05rem; margin: 28px 0 10px; }
+
+/* ---------- Home ---------- */
+.home-hero {
+  display: flex; align-items: center; gap: 20px;
+  background: var(--surface); border-radius: var(--radius);
+  padding: 20px; margin: 12px 0 16px; box-shadow: var(--shadow-md);
+}
+.home-hero-text h1 { margin: 0 0 4px; font-size: 1.4rem; }
+.home-hero-text p { margin: 0; }
+
+.ring-wrap { position: relative; width: 96px; height: 96px; flex: none; }
+.progress-ring { width: 96px; height: 96px; transform: rotate(-90deg); }
+.ring-track { fill: none; stroke: var(--border); stroke-width: 10; }
+.ring-fill {
+  fill: none; stroke: var(--primary); stroke-width: 10; stroke-linecap: round;
+  stroke-dasharray: 327; stroke-dashoffset: 327; transition: stroke-dashoffset 0.6s ease;
+}
+.ring-center {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+}
+.ring-value { font-size: 1.3rem; font-weight: 800; line-height: 1; }
+.ring-label { font-size: 0.65rem; color: var(--text-muted); margin-top: 2px; }
+
+.card-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+.stat-card {
+  background: var(--surface); border-radius: var(--radius-sm); padding: 14px 8px;
+  text-align: center; box-shadow: var(--shadow-sm);
+}
+.stat-value { font-size: 1.3rem; font-weight: 800; color: var(--primary-dark); }
+.stat-label { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+
+.cta-row { display: flex; flex-direction: column; gap: 12px; margin-top: 8px; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  border: none; border-radius: 999px; padding: 12px 20px; font-weight: 700;
+  font-size: 0.95rem; cursor: pointer; transition: transform 0.08s ease, filter 0.15s ease;
+}
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--primary); color: #fff; box-shadow: 0 6px 16px rgba(109, 92, 232, 0.35); }
+.btn-primary:hover { filter: brightness(1.05); }
+.btn-secondary { background: var(--surface); color: var(--primary-dark); box-shadow: var(--shadow-sm); border: 2px solid var(--primary-light); }
+.btn-ghost { background: transparent; color: var(--text-muted); padding: 8px 10px; }
+.btn-danger { background: var(--red-light); color: var(--red); }
+.btn-large { padding: 16px 20px; font-size: 1.05rem; }
+.btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.badge {
+  background: rgba(255,255,255,0.25); border-radius: 999px; padding: 2px 8px;
+  font-size: 0.8rem; margin-left: 6px;
+}
+
+/* ---------- Session (Learn/Review) ---------- */
+.session-header { display: flex; align-items: center; justify-content: space-between; padding: 10px 0; }
+.session-progress { font-weight: 700; color: var(--text-muted); font-size: 0.9rem; }
+.combo-display {
+  display: flex; align-items: center; gap: 6px; background: var(--orange-light);
+  color: #b96b00; padding: 4px 12px; border-radius: 999px; font-weight: 800;
+  animation: pulse 0.4s ease;
+}
+.combo-display[hidden] { display: none; }
+@keyframes pulse { 0% { transform: scale(1.15); } 100% { transform: scale(1); } }
+
+.session-content { display: flex; flex-direction: column; align-items: center; padding-top: 12px; }
+
+.word-card {
+  width: 100%; background: var(--surface); border-radius: 22px; padding: 28px 22px;
+  box-shadow: var(--shadow-lg); text-align: center; position: relative; overflow: hidden;
+}
+.word-card::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 6px; background: var(--theme-color, var(--primary));
+}
+.word-card-theme {
+  display: inline-flex; align-items: center; gap: 6px; background: var(--theme-color-light, var(--primary-light));
+  color: var(--theme-color-dark, var(--primary-dark)); padding: 4px 12px; border-radius: 999px;
+  font-size: 0.8rem; font-weight: 700; margin-bottom: 14px;
+}
+.word-lemma { font-size: 2.1rem; font-weight: 800; margin: 4px 0; }
+.gender-badge {
+  display: inline-block; padding: 2px 10px; border-radius: 999px; font-weight: 800;
+  font-size: 0.85rem; margin-right: 6px; vertical-align: middle;
+}
+.gender-der { background: var(--blue-light); color: var(--blue); }
+.gender-die { background: var(--pink-light); color: var(--pink); }
+.gender-das { background: var(--green-light); color: #17924a; }
+.pos-badge {
+  display: inline-block; background: var(--surface-alt); color: var(--text-muted);
+  padding: 2px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; margin-bottom: 10px;
+}
+.speak-btn {
+  border: none; background: var(--primary-light); color: var(--primary-dark);
+  width: 56px; height: 56px; border-radius: 50%; font-size: 1.5rem; cursor: pointer;
+  margin: 10px auto; display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-sm); transition: transform 0.12s ease;
+}
+.speak-btn:active { transform: scale(0.92); }
+.speak-btn.is-speaking { animation: pulse 0.6s ease infinite alternate; }
+
+.translation-list { font-size: 1.15rem; font-weight: 600; color: var(--primary-dark); margin: 10px 0; }
+.example-block {
+  background: var(--surface-alt); border-radius: var(--radius-sm); padding: 14px 16px;
+  margin-top: 16px; text-align: left;
+}
+.example-de { font-weight: 700; margin-bottom: 4px; }
+.example-en { color: var(--text-muted); font-size: 0.92rem; }
+
+.particle-hint {
+  margin-top: 14px; background: var(--teal-light); color: #0a7d6d;
+  border-radius: var(--radius-sm); padding: 10px 14px; font-size: 0.9rem; text-align: left;
+}
+.verb-forms { margin-top: 12px; font-size: 0.88rem; color: var(--text-muted); text-align: left; }
+.verb-forms b { color: var(--text); }
+
+.card-actions { display: flex; gap: 12px; width: 100%; margin-top: 20px; }
+.card-actions .btn { flex: 1; }
+
+.reveal-hint { color: var(--text-muted); margin-top: 16px; font-size: 0.9rem; }
+
+.session-summary { text-align: center; padding: 30px 10px; }
+.session-summary .big-emoji { font-size: 3rem; }
+.session-summary h2 { margin: 10px 0 4px; }
+
+.empty-state { text-align: center; padding: 40px 20px; color: var(--text-muted); }
+.empty-state .big-emoji { font-size: 2.6rem; display: block; margin-bottom: 10px; }
+
+/* ---------- Quiz ---------- */
+.quiz-prompt-label { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 8px; }
+.quiz-prompt { font-size: 1.7rem; font-weight: 800; margin: 4px 0 6px; }
+.quiz-prompt.is-sentence { font-size: 1.15rem; font-weight: 700; line-height: 1.5; }
+.quiz-options {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; width: 100%; margin-top: 18px;
+}
+.quiz-option-btn {
+  background: var(--surface-alt); border: 2px solid var(--border); border-radius: var(--radius-sm);
+  padding: 14px 8px; font-weight: 700; font-size: 0.88rem; cursor: pointer; min-width: 0;
+  overflow-wrap: break-word; word-break: break-word; white-space: normal; line-height: 1.25;
+  transition: transform 0.08s ease, border-color 0.15s ease, background 0.15s ease; color: var(--text);
+}
+.quiz-option-btn:active { transform: scale(0.97); }
+.quiz-option-btn.is-correct { background: var(--green-light); border-color: var(--green); color: #17924a; }
+.quiz-option-btn.is-wrong { background: var(--red-light); border-color: var(--red); color: var(--red); }
+.quiz-option-btn.is-disabled { pointer-events: none; opacity: 0.55; }
+.quiz-option-btn.is-correct.is-disabled, .quiz-option-btn.is-wrong.is-disabled { opacity: 1; }
+.quiz-feedback { margin-top: 16px; font-weight: 800; font-size: 1.05rem; }
+.quiz-feedback.is-correct { color: #17924a; }
+.quiz-feedback.is-wrong { color: var(--red); }
+.quiz-explanation {
+  margin-top: 10px; background: var(--surface-alt); border-radius: var(--radius-sm);
+  padding: 12px 14px; text-align: left; font-size: 0.9rem; color: var(--text-muted);
+}
+.quiz-hub-card { text-align: center; padding: 10px 4px; }
+.quiz-hub-count { font-size: 2.4rem; font-weight: 800; color: var(--primary-dark); margin: 6px 0; }
+
+/* ---------- Onboarding overlay ---------- */
+.onboarding-card { max-width: 380px; }
+.level-pick-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+.level-pick-btn {
+  background: var(--primary-light); color: var(--primary-dark); border: none; border-radius: var(--radius-sm);
+  padding: 16px 0; font-weight: 800; font-size: 1.05rem; cursor: pointer;
+}
+.level-pick-btn:active { transform: scale(0.95); }
+
+/* ---------- Dashboard ---------- */
+.filter-row { display: flex; gap: 10px; margin-bottom: 16px; }
+.select, .text-input {
+  border: 2px solid var(--border); background: var(--surface); border-radius: var(--radius-sm);
+  padding: 10px 12px; font-size: 0.92rem; color: var(--text); font-family: inherit;
+}
+.select { flex: 1; }
+
+.coverage-bars { display: flex; flex-direction: column; gap: 12px; }
+.coverage-row { background: var(--surface); border-radius: var(--radius-sm); padding: 12px 14px; box-shadow: var(--shadow-sm); }
+.coverage-row-top { display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 8px; font-size: 0.9rem; }
+.coverage-track { display: flex; height: 12px; border-radius: 999px; overflow: hidden; background: var(--border); }
+.seg-mastered { background: var(--green); }
+.seg-familiar { background: var(--teal); }
+.seg-learning { background: var(--orange); }
+.seg-new { background: var(--border); }
+.coverage-legend { display: flex; gap: 14px; margin-top: 16px; flex-wrap: wrap; font-size: 0.8rem; color: var(--text-muted); }
+.legend-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 4px; }
+
+.heatmap { display: grid; grid-template-columns: repeat(14, 1fr); gap: 4px; }
+.heat-cell { aspect-ratio: 1; border-radius: 4px; background: var(--border); }
+.heat-1 { background: #d6f5e3; }
+.heat-2 { background: #9be6b8; }
+.heat-3 { background: #4fce87; }
+.heat-4 { background: var(--green); }
+
+.verb-families { display: flex; flex-direction: column; gap: 12px; }
+.family-card { background: var(--surface); border-radius: var(--radius-sm); padding: 14px; box-shadow: var(--shadow-sm); }
+.family-base { font-weight: 800; margin-bottom: 8px; }
+.family-member { display: flex; justify-content: space-between; padding: 4px 0; font-size: 0.9rem; border-top: 1px solid var(--border); }
+.family-member:first-of-type { border-top: none; }
+.family-particle { color: var(--teal); font-weight: 700; }
+
+/* ---------- Achievements ---------- */
+.achievements-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.badge-tile {
+  background: var(--surface); border-radius: var(--radius-sm); padding: 16px 8px; text-align: center;
+  box-shadow: var(--shadow-sm); opacity: 0.45; filter: grayscale(0.6);
+}
+.badge-tile.is-unlocked { opacity: 1; filter: none; box-shadow: var(--shadow-md); }
+.badge-emoji { font-size: 1.8rem; display: block; margin-bottom: 6px; }
+.badge-title { font-size: 0.78rem; font-weight: 700; }
+
+/* ---------- Settings ---------- */
+.settings-group { background: var(--surface); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 14px; box-shadow: var(--shadow-sm); }
+.settings-label { display: block; font-weight: 700; margin-bottom: 8px; }
+.settings-group input[type="range"] { width: 100%; }
+.settings-group .select, .settings-group .text-input { width: 100%; }
+
+/* ---------- Tab bar ---------- */
+.tab-bar {
+  position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: 640px; display: flex; justify-content: space-around;
+  background: rgba(255,255,255,0.92); backdrop-filter: blur(10px);
+  border-top: 1px solid var(--border); padding: 8px 4px calc(8px + env(safe-area-inset-bottom));
+  z-index: 10;
+}
+.tab-btn {
+  background: none; border: none; display: flex; flex-direction: column; align-items: center;
+  gap: 2px; color: var(--text-muted); font-size: 0.68rem; font-weight: 700; cursor: pointer;
+  padding: 4px 10px; border-radius: 12px;
+}
+.tab-icon { font-size: 1.3rem; }
+.tab-btn.is-active { color: var(--primary-dark); background: var(--primary-light); }
+
+/* ---------- Celebration overlay ---------- */
+.celebration-overlay {
+  position: fixed; inset: 0; background: rgba(36,31,61,0.55);
+  display: flex; align-items: center; justify-content: center; z-index: 50; padding: 20px;
+}
+.celebration-overlay[hidden] { display: none; }
+.celebration-card {
+  background: var(--surface); border-radius: 24px; padding: 32px 24px; text-align: center;
+  max-width: 320px; box-shadow: var(--shadow-lg); animation: pop 0.35s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes pop { from { transform: scale(0.7); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.celebration-emoji { font-size: 3.2rem; }
+.celebration-title { font-size: 1.3rem; font-weight: 800; margin: 8px 0 4px; }
+.celebration-subtitle { color: var(--text-muted); margin-bottom: 18px; }
+
+@media (max-width: 380px) {
+  .card-row { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .stat-value { font-size: 1.1rem; }
+}
+
+</style>
+<!--BUILD:STYLE_END-->
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark">🦉</span>
+      <span class="brand-name">Deutsch Meister</span>
+    </div>
+    <div class="header-stats">
+      <button class="chip chip-streak" id="streak-chip" title="Current streak">
+        <span class="chip-icon">🔥</span><span id="streak-count">0</span>
+      </button>
+      <button class="icon-btn" id="settings-btn" title="Settings" aria-label="Settings">⚙️</button>
+    </div>
+  </header>
+
+  <!-- Screens -->
+  <main class="screens">
+
+    <!-- HOME -->
+    <section class="screen" id="screen-home" data-screen="home">
+      <div class="home-hero">
+        <div class="ring-wrap">
+          <svg viewBox="0 0 120 120" class="progress-ring" id="xp-ring">
+            <circle class="ring-track" cx="60" cy="60" r="52"></circle>
+            <circle class="ring-fill" id="xp-ring-fill" cx="60" cy="60" r="52"></circle>
+          </svg>
+          <div class="ring-center">
+            <div class="ring-value" id="today-xp">0</div>
+            <div class="ring-label">XP today</div>
+          </div>
+        </div>
+        <div class="home-hero-text">
+          <h1 id="home-greeting">Guten Tag!</h1>
+          <p id="home-subtitle" class="muted">Ready to grow your German vocabulary?</p>
+        </div>
+      </div>
+
+      <div class="card-row">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-due">0</div>
+          <div class="stat-label">Due for review</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-mastered">0</div>
+          <div class="stat-label">Words mastered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-level-name">A1</div>
+          <div class="stat-label">Current level</div>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <button class="btn btn-primary btn-large" id="start-review-btn">
+          🎯 Review <span id="review-due-badge" class="badge">0</span>
+        </button>
+        <button class="btn btn-secondary btn-large" id="start-learn-btn">
+          ✨ Learn new words
+        </button>
+      </div>
+    </section>
+
+    <!-- LEARN -->
+    <section class="screen" id="screen-learn" data-screen="learn">
+      <div class="session-header">
+        <button class="btn btn-ghost" data-nav="home">← Home</button>
+        <div class="combo-display" id="learn-combo-display" hidden>
+          <span>🔥</span> <span id="learn-combo-count">0</span> combo
+        </div>
+        <div class="session-progress" id="learn-progress">0 / 0</div>
+      </div>
+      <div id="learn-content" class="session-content"></div>
+    </section>
+
+    <!-- REVIEW -->
+    <section class="screen" id="screen-review" data-screen="review">
+      <div class="session-header">
+        <button class="btn btn-ghost" data-nav="home">← Home</button>
+        <div class="combo-display" id="combo-display" hidden>
+          <span id="combo-flame">🔥</span> <span id="combo-count">0</span> combo
+        </div>
+        <div class="session-progress" id="review-progress">0 / 0</div>
+      </div>
+      <div id="review-content" class="session-content"></div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="screen" id="screen-dashboard" data-screen="dashboard">
+      <h2 class="screen-title">📊 Your Coverage</h2>
+
+      <div class="filter-row">
+        <select id="filter-level" class="select"></select>
+        <select id="filter-pos" class="select"></select>
+      </div>
+
+      <div id="coverage-bars" class="coverage-bars"></div>
+
+      <h3 class="section-title">🔥 Activity</h3>
+      <div id="streak-heatmap" class="heatmap"></div>
+
+      <h3 class="section-title">🧩 Verb Families</h3>
+      <p class="muted small">Separable &amp; composite verbs grouped by their base verb — see the pattern instead of memorizing each one alone.</p>
+      <div id="verb-families" class="verb-families"></div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="screen" id="screen-quiz" data-screen="quiz">
+      <div class="session-header">
+        <button class="btn btn-ghost" data-nav="home">← Home</button>
+        <div class="combo-display" id="quiz-combo-display" hidden>
+          <span>🔥</span> <span id="quiz-combo-count">0</span> combo
+        </div>
+        <div class="session-progress" id="quiz-progress">0 / 0</div>
+      </div>
+      <div id="quiz-content" class="session-content"></div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="screen" id="screen-achievements" data-screen="achievements">
+      <h2 class="screen-title">🏆 Achievements</h2>
+      <div id="achievements-grid" class="achievements-grid"></div>
+    </section>
+
+    <!-- SETTINGS -->
+    <section class="screen" id="screen-settings" data-screen="settings">
+      <div class="session-header">
+        <button class="btn btn-ghost" data-nav="home">← Home</button>
+      </div>
+      <h2 class="screen-title">⚙️ Settings</h2>
+
+      <div class="settings-group">
+        <label class="settings-label" for="daily-goal-input">Daily XP goal</label>
+        <input type="number" id="daily-goal-input" class="text-input" min="10" step="10">
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label" for="level-override">Learning level</label>
+        <select id="level-override" class="select"></select>
+        <p class="muted small">New words are pulled from this level. Defaults to your current progress level.</p>
+      </div>
+
+      <div class="settings-group">
+        <label class="settings-label" for="speech-rate">Speech rate</label>
+        <input type="range" id="speech-rate" min="0.5" max="1.3" step="0.05">
+        <button class="btn btn-secondary" id="test-voice-btn">🔊 Test voice</button>
+        <p class="muted small" id="voice-status">Checking for a German voice…</p>
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-label">Backup your progress</div>
+        <div class="btn-row">
+          <button class="btn btn-secondary" id="export-btn">⬇️ Export progress</button>
+          <button class="btn btn-secondary" id="import-btn">⬆️ Import progress</button>
+          <input type="file" id="import-file" accept="application/json" hidden>
+        </div>
+      </div>
+
+      <div class="settings-group">
+        <div class="settings-label">Danger zone</div>
+        <button class="btn btn-danger" id="reset-btn">🗑️ Reset all progress</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bottom nav -->
+  <nav class="tab-bar">
+    <button class="tab-btn is-active" data-nav="home"><span class="tab-icon">🏠</span><span>Home</span></button>
+    <button class="tab-btn" data-nav="learn"><span class="tab-icon">✨</span><span>Learn</span></button>
+    <button class="tab-btn" data-nav="review"><span class="tab-icon">🎯</span><span>Review</span></button>
+    <button class="tab-btn" data-nav="dashboard"><span class="tab-icon">📊</span><span>Progress</span></button>
+    <button class="tab-btn" data-nav="quiz"><span class="tab-icon">🧠</span><span>Quiz</span></button>
+    <button class="tab-btn" data-nav="achievements"><span class="tab-icon">🏆</span><span>Badges</span></button>
+  </nav>
+
+  <!-- Celebration overlay -->
+  <div id="celebration-overlay" class="celebration-overlay" hidden>
+    <div class="celebration-card">
+      <div class="celebration-emoji" id="celebration-emoji">🎉</div>
+      <div class="celebration-title" id="celebration-title">Nice!</div>
+      <div class="celebration-subtitle" id="celebration-subtitle"></div>
+      <button class="btn btn-primary" id="celebration-close">Nice!</button>
+    </div>
+  </div>
+
+  <!-- Onboarding: pick a starting level -->
+  <div id="onboarding-overlay" class="celebration-overlay" hidden>
+    <div class="celebration-card onboarding-card">
+      <div class="celebration-emoji">🦉</div>
+      <div class="celebration-title">What's your German level?</div>
+      <div class="celebration-subtitle">We'll pull new words from here. You can change this anytime in Settings.</div>
+      <div class="level-pick-grid" id="onboarding-level-grid"></div>
+    </div>
+  </div>
+
+</div>
+
+<!--BUILD:SCRIPT_START-->
+<script>
+// GENERATED by Scripts/build.py — do not hand-edit. Re-run the build to refresh.
+const VOCAB_ENTRIES = [{"id": "gut_adjective", "cefr": "A1", "pos": "adjective", "lemma_de": "gut", "translations_en": ["good", "well"], "example_de": "Das Essen ist gut.", "example_en": "The food is good.", "themes": ["food"], "priority": 1, "adjective": {"comparative_irregular": "besser", "superlative_irregular": "am besten"}, "cloze_word": "gut"}, {"id": "schoen_adjective", "cefr": "A1", "pos": "adjective", "lemma_de": "schön", "translations_en": ["beautiful", "nice"], "example_de": "Das Wetter ist heute schön.", "example_en": "The weather is nice today.", "themes": ["nature"], "priority": 1, "cloze_word": "schön"}, {"id": "fernsehen_verb", "cefr": "A1", "pos": "composite_verb", "lemma_de": "fernsehen", "translations_en": ["to watch TV"], "example_de": "Wir sehen jeden Abend fern.", "example_en": "We watch TV every evening.", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": true, "irregular": true, "present_3sg": "sieht ... fern", "perfekt": "hat ferngesehen", "praeteritum_3sg": null, "base_verb": "sehen_verb", "particle": "fern", "particle_meaning_hint": "fern = far/distant — fixed compound with sehen (to see), i.e. watch (the distant screen)"}, "cloze_word": "fern"}, {"id": "kennenlernen_verb", "cefr": "A1", "pos": "composite_verb", "lemma_de": "kennenlernen", "translations_en": ["to get to know", "to meet (for the first time)"], "example_de": "Ich möchte dich gern kennenlernen.", "example_en": "I would like to get to know you.", "themes": ["people"], "priority": 2, "verb": {"separable": true, "irregular": false, "present_3sg": "lernt ... kennen", "perfekt": "hat kennengelernt", "praeteritum_3sg": null, "base_verb": "lernen_verb", "particle": "kennen", "particle_meaning_hint": "kennen = to know — verb+verb compound with lernen (to learn), i.e. learn-to-know = meet/get acquainted"}, "cloze_word": "kennenlernen"}, {"id": "haus_noun", "cefr": "A1", "pos": "noun", "lemma_de": "Haus", "translations_en": ["house", "home"], "example_de": "Das Haus ist sehr groß.", "example_en": "The house is very big.", "themes": ["home"], "priority": 1, "noun": {"gender": "das", "plural_de": "Häuser"}, "cloze_word": "Haus"}, {"id": "frau_noun", "cefr": "A1", "pos": "noun", "lemma_de": "Frau", "translations_en": ["woman", "wife", "Mrs."], "example_de": "Die Frau arbeitet im Büro.", "example_en": "The woman works in the office.", "themes": ["people"], "priority": 1, "noun": {"gender": "die", "plural_de": "Frauen"}, "cloze_word": "Frau"}, {"id": "und_other", "cefr": "A1", "pos": "other", "lemma_de": "und", "translations_en": ["and"], "example_de": "Ich habe einen Bruder und eine Schwester.", "example_en": "I have a brother and a sister.", "themes": ["grammar_glue"], "priority": 1, "cloze_word": "und"}, {"id": "aber_other", "cefr": "A1", "pos": "other", "lemma_de": "aber", "translations_en": ["but"], "example_de": "Ich bin müde, aber glücklich.", "example_en": "I am tired, but happy.", "themes": ["grammar_glue"], "priority": 1, "cloze_word": "aber"}, {"id": "aufstehen_verb", "cefr": "A1", "pos": "phrasal_verb", "lemma_de": "aufstehen", "translations_en": ["to get up", "to stand up"], "example_de": "Ich stehe um sieben Uhr auf.", "example_en": "I get up at seven o'clock.", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": true, "irregular": true, "present_3sg": "steht ... auf", "perfekt": "ist aufgestanden", "praeteritum_3sg": null, "base_verb": "stehen_verb", "particle": "auf", "particle_meaning_hint": "auf = up"}, "cloze_word": "auf"}, {"id": "einkaufen_verb", "cefr": "A1", "pos": "phrasal_verb", "lemma_de": "einkaufen", "translations_en": ["to shop", "to go shopping"], "example_de": "Wir kaufen im Supermarkt ein.", "example_en": "We shop at the supermarket.", "themes": ["shopping"], "priority": 1, "verb": {"separable": true, "irregular": false, "present_3sg": "kauft ... ein", "perfekt": "hat eingekauft", "praeteritum_3sg": null, "base_verb": "kaufen_verb", "particle": "ein", "particle_meaning_hint": "ein = in, i.e. buying things in(to your basket)"}, "cloze_word": "ein"}, {"id": "gehen_verb", "cefr": "A1", "pos": "verb", "lemma_de": "gehen", "translations_en": ["to go", "to walk"], "example_de": "Ich gehe nach Hause.", "example_en": "I am going home.", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "geht", "perfekt": "ist gegangen", "praeteritum_3sg": "ging", "base_verb": null, "particle": null, "particle_meaning_hint": null}, "cloze_word": "gehe"}, {"id": "stehen_verb", "cefr": "A1", "pos": "verb", "lemma_de": "stehen", "translations_en": ["to stand"], "example_de": "Das Auto steht vor dem Haus.", "example_en": "The car is standing in front of the house.", "themes": ["daily_routine"], "priority": 2, "verb": {"separable": false, "irregular": true, "present_3sg": "steht", "perfekt": "hat gestanden", "praeteritum_3sg": "stand", "base_verb": null, "particle": null, "particle_meaning_hint": null}, "cloze_word": "steht"}, {"id": "kaufen_verb", "cefr": "A1", "pos": "verb", "lemma_de": "kaufen", "translations_en": ["to buy"], "example_de": "Ich kaufe ein neues Buch.", "example_en": "I am buying a new book.", "themes": ["shopping"], "priority": 1, "verb": {"separable": false, "irregular": false, "present_3sg": "kauft", "perfekt": "hat gekauft", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}, "cloze_word": "kaufe"}, {"id": "sein_verb", "cefr": "A1", "pos": "verb", "lemma_de": "sein", "translations_en": ["to be"], "example_de": "Er ist müde.", "example_en": "He is tired.", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "ist", "perfekt": "ist gewesen", "praeteritum_3sg": "war", "base_verb": null, "particle": null, "particle_meaning_hint": null}, "cloze_word": "ist"}, {"id": "geben_verb", "cefr": "A2", "pos": "verb", "lemma_de": "geben", "translations_en": ["to give"], "example_de": "Er gibt mir das Buch.", "example_en": "He gives me the book.", "cloze_word": "gibt", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "gibt", "perfekt": "hat gegeben", "praeteritum_3sg": "gab", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "nehmen_verb", "cefr": "A2", "pos": "verb", "lemma_de": "nehmen", "translations_en": ["to take"], "example_de": "Sie nimmt den Bus zur Arbeit.", "example_en": "She takes the bus to work.", "cloze_word": "nimmt", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "nimmt", "perfekt": "hat genommen", "praeteritum_3sg": "nahm", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "kommen_verb", "cefr": "A2", "pos": "verb", "lemma_de": "kommen", "translations_en": ["to come"], "example_de": "Er kommt aus Deutschland.", "example_en": "He comes from Germany.", "cloze_word": "kommt", "themes": ["people"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "kommt", "perfekt": "ist gekommen", "praeteritum_3sg": "kam", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "setzen_verb", "cefr": "A2", "pos": "verb", "lemma_de": "setzen", "translations_en": ["to put, to set", "sich setzen: to sit down"], "example_de": "Bitte setzen Sie sich.", "example_en": "Please sit down.", "cloze_word": "setzen", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": false, "irregular": false, "present_3sg": "setzt", "perfekt": "hat gesetzt", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "finden_verb", "cefr": "A2", "pos": "verb", "lemma_de": "finden", "translations_en": ["to find"], "example_de": "Ich finde meine Schlüssel nicht.", "example_en": "I can't find my keys.", "cloze_word": "finde", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "findet", "perfekt": "hat gefunden", "praeteritum_3sg": "fand", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "lassen_verb", "cefr": "A2", "pos": "verb", "lemma_de": "lassen", "translations_en": ["to let", "to leave"], "example_de": "Lass mich in Ruhe.", "example_en": "Leave me alone.", "cloze_word": "Lass", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "lässt", "perfekt": "hat gelassen", "praeteritum_3sg": "ließ", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "stellen_verb", "cefr": "A2", "pos": "verb", "lemma_de": "stellen", "translations_en": ["to put, to place (upright)"], "example_de": "Sie stellt die Vase auf den Tisch.", "example_en": "She puts the vase on the table.", "cloze_word": "stellt", "themes": ["home"], "priority": 2, "verb": {"separable": false, "irregular": false, "present_3sg": "stellt", "perfekt": "hat gestellt", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "machen_verb", "cefr": "A2", "pos": "verb", "lemma_de": "machen", "translations_en": ["to make", "to do"], "example_de": "Was machst du gerade?", "example_en": "What are you doing right now?", "cloze_word": "machst", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": false, "irregular": false, "present_3sg": "macht", "perfekt": "hat gemacht", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "halten_verb", "cefr": "A2", "pos": "verb", "lemma_de": "halten", "translations_en": ["to hold"], "example_de": "Er hält das Baby im Arm.", "example_en": "He is holding the baby in his arms.", "cloze_word": "hält", "themes": ["body_health"], "priority": 2, "verb": {"separable": false, "irregular": true, "present_3sg": "hält", "perfekt": "hat gehalten", "praeteritum_3sg": "hielt", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "notwendig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "notwendig", "translations_en": ["necessary"], "example_de": "Das ist notwendig für den Erfolg.", "example_en": "That is necessary for success.", "cloze_word": "notwendig", "themes": ["abstract_ideas"], "priority": 1}, {"id": "erstaunlich_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "erstaunlich", "translations_en": ["astonishing", "amazing"], "example_de": "Das Ergebnis war erstaunlich.", "example_en": "The result was astonishing.", "cloze_word": "erstaunlich", "themes": ["emotions"], "priority": 2}, {"id": "zuverlaessig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "zuverlässig", "translations_en": ["reliable"], "example_de": "Er ist ein zuverlässiger Kollege.", "example_en": "He is a reliable colleague.", "cloze_word": "zuverlässiger", "themes": ["work"], "priority": 1}, {"id": "unabhaengig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "unabhängig", "translations_en": ["independent"], "example_de": "Sie lebt finanziell unabhängig.", "example_en": "She lives financially independent.", "cloze_word": "unabhängig", "themes": ["abstract_ideas"], "priority": 2}, {"id": "ausfuehrlich_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "ausführlich", "translations_en": ["detailed", "in detail"], "example_de": "Bitte erklären Sie das ausführlich.", "example_en": "Please explain that in detail.", "cloze_word": "ausführlich", "themes": ["communication"], "priority": 2}, {"id": "freiwillig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "freiwillig", "translations_en": ["voluntary"], "example_de": "Die Teilnahme ist freiwillig.", "example_en": "Participation is voluntary.", "cloze_word": "freiwillig", "themes": ["work"], "priority": 2}, {"id": "spazierengehen_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "spazierengehen", "translations_en": ["to go for a walk"], "example_de": "Wir gehen im Park spazieren.", "example_en": "We go for a walk in the park.", "cloze_word": "spazieren", "themes": ["daily_routine"], "priority": 1, "verb": {"separable": true, "irregular": true, "present_3sg": "geht ... spazieren", "perfekt": "ist spazierengegangen", "praeteritum_3sg": null, "base_verb": "gehen_verb", "particle": "spazieren", "particle_meaning_hint": "spazieren = to stroll — fixed compound with gehen (to go)"}}, {"id": "radfahren_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "radfahren", "translations_en": ["to cycle", "to ride a bike"], "example_de": "Sie fährt jeden Tag zur Arbeit Rad.", "example_en": "She cycles to work every day.", "cloze_word": "Rad", "themes": ["daily_routine"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "fährt ... Rad", "perfekt": "ist radgefahren", "praeteritum_3sg": null, "base_verb": "fahren_verb", "particle": "Rad", "particle_meaning_hint": "Rad = bike/wheel — noun+verb compound with fahren (to drive/ride)"}}, {"id": "wehtun_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "wehtun", "translations_en": ["to hurt"], "example_de": "Mein Kopf tut weh.", "example_en": "My head hurts.", "cloze_word": "weh", "themes": ["body_health"], "priority": 1, "verb": {"separable": true, "irregular": true, "present_3sg": "tut ... weh", "perfekt": "hat wehgetan", "praeteritum_3sg": null, "base_verb": "tun_verb", "particle": "weh", "particle_meaning_hint": "weh = painful — fixed compound with tun (to do)"}}, {"id": "achtgeben_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "achtgeben", "translations_en": ["to pay attention", "to be careful"], "example_de": "Gib acht auf der Straße!", "example_en": "Be careful on the road!", "cloze_word": "acht", "themes": ["daily_routine"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "gibt ... acht", "perfekt": "hat achtgegeben", "praeteritum_3sg": null, "base_verb": "geben_verb", "particle": "acht", "particle_meaning_hint": "acht = heed/attention — fixed compound with geben (to give)"}}, {"id": "erfahrung_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Erfahrung", "translations_en": ["experience"], "example_de": "Sie hat viel Erfahrung in diesem Bereich.", "example_en": "She has a lot of experience in this field.", "cloze_word": "Erfahrung", "themes": ["abstract_ideas"], "priority": 1, "noun": {"gender": "die", "plural_de": "Erfahrungen"}}, {"id": "entscheidung_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Entscheidung", "translations_en": ["decision"], "example_de": "Das war eine schwierige Entscheidung.", "example_en": "That was a difficult decision.", "cloze_word": "Entscheidung", "themes": ["abstract_ideas"], "priority": 1, "noun": {"gender": "die", "plural_de": "Entscheidungen"}}, {"id": "eindruck_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Eindruck", "translations_en": ["impression"], "example_de": "Er hat einen guten Eindruck gemacht.", "example_en": "He made a good impression.", "cloze_word": "Eindruck", "themes": ["abstract_ideas"], "priority": 2, "noun": {"gender": "der", "plural_de": "Eindrücke"}}, {"id": "verantwortung_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Verantwortung", "translations_en": ["responsibility"], "example_de": "Sie übernimmt die Verantwortung für das Projekt.", "example_en": "She is taking responsibility for the project.", "cloze_word": "Verantwortung", "themes": ["work"], "priority": 2, "noun": {"gender": "die", "plural_de": null}}, {"id": "umwelt_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Umwelt", "translations_en": ["environment"], "example_de": "Wir müssen die Umwelt schützen.", "example_en": "We must protect the environment.", "cloze_word": "Umwelt", "themes": ["nature"], "priority": 1, "noun": {"gender": "die", "plural_de": null}}, {"id": "vorschlag_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Vorschlag", "translations_en": ["suggestion", "proposal"], "example_de": "Das ist ein guter Vorschlag.", "example_en": "That's a good suggestion.", "cloze_word": "Vorschlag", "themes": ["work"], "priority": 2, "noun": {"gender": "der", "plural_de": "Vorschläge"}}, {"id": "beziehung_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Beziehung", "translations_en": ["relationship"], "example_de": "Sie führen eine lange Beziehung.", "example_en": "They are in a long relationship.", "cloze_word": "Beziehung", "themes": ["people"], "priority": 1, "noun": {"gender": "die", "plural_de": "Beziehungen"}}, {"id": "unterschied_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Unterschied", "translations_en": ["difference"], "example_de": "Es gibt einen großen Unterschied zwischen den beiden.", "example_en": "There is a big difference between the two.", "cloze_word": "Unterschied", "themes": ["abstract_ideas"], "priority": 1, "noun": {"gender": "der", "plural_de": "Unterschiede"}}, {"id": "ereignis_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Ereignis", "translations_en": ["event"], "example_de": "Die Hochzeit war ein besonderes Ereignis.", "example_en": "The wedding was a special event.", "cloze_word": "Ereignis", "themes": ["abstract_ideas"], "priority": 2, "noun": {"gender": "das", "plural_de": "Ereignisse"}}, {"id": "moeglichkeit_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Möglichkeit", "translations_en": ["possibility", "option"], "example_de": "Es gibt mehrere Möglichkeiten.", "example_en": "There are several possibilities.", "cloze_word": "Möglichkeiten", "themes": ["abstract_ideas"], "priority": 1, "noun": {"gender": "die", "plural_de": "Möglichkeiten"}}, {"id": "obwohl_other", "cefr": "B1", "pos": "other", "lemma_de": "obwohl", "translations_en": ["although"], "example_de": "Obwohl es regnet, gehen wir spazieren.", "example_en": "Although it's raining, we're going for a walk.", "cloze_word": "Obwohl", "themes": ["grammar_glue"], "priority": 1}, {"id": "ausserdem_other", "cefr": "B1", "pos": "other", "lemma_de": "außerdem", "translations_en": ["besides", "moreover"], "example_de": "Außerdem habe ich keine Zeit.", "example_en": "Besides, I don't have time.", "cloze_word": "Außerdem", "themes": ["grammar_glue"], "priority": 1}, {"id": "trotzdem_other", "cefr": "B1", "pos": "other", "lemma_de": "trotzdem", "translations_en": ["nevertheless", "anyway"], "example_de": "Es war teuer, aber ich habe es trotzdem gekauft.", "example_en": "It was expensive, but I bought it anyway.", "cloze_word": "trotzdem", "themes": ["grammar_glue"], "priority": 1}, {"id": "vorschlagen_verb", "cefr": "B1", "pos": "phrasal_verb", "lemma_de": "vorschlagen", "translations_en": ["to suggest", "to propose"], "example_de": "Ich schlage vor, dass wir uns morgen treffen.", "example_en": "I suggest that we meet tomorrow.", "cloze_word": "vor", "themes": ["work"], "priority": 1, "verb": {"separable": true, "irregular": true, "present_3sg": "schlägt ... vor", "perfekt": "hat vorgeschlagen", "praeteritum_3sg": null, "base_verb": "schlagen_verb", "particle": "vor", "particle_meaning_hint": "vor = forward/forth — putting an idea forward"}}, {"id": "teilnehmen_verb", "cefr": "B1", "pos": "phrasal_verb", "lemma_de": "teilnehmen", "translations_en": ["to participate", "to take part"], "example_de": "Sie nimmt an dem Kurs teil.", "example_en": "She is taking part in the course.", "cloze_word": "teil", "themes": ["education"], "priority": 1, "verb": {"separable": true, "irregular": true, "present_3sg": "nimmt ... teil", "perfekt": "hat teilgenommen", "praeteritum_3sg": null, "base_verb": "nehmen_verb", "particle": "teil", "particle_meaning_hint": "teil = part — taking a part in something"}}, {"id": "stattfinden_verb", "cefr": "B1", "pos": "phrasal_verb", "lemma_de": "stattfinden", "translations_en": ["to take place"], "example_de": "Die Konferenz findet nächste Woche statt.", "example_en": "The conference takes place next week.", "cloze_word": "statt", "themes": ["work"], "priority": 1, "verb": {"separable": true, "irregular": true, "present_3sg": "findet ... statt", "perfekt": "hat stattgefunden", "praeteritum_3sg": null, "base_verb": "finden_verb", "particle": "statt", "particle_meaning_hint": "statt = instead of / in place of — an event finding its place"}}, {"id": "zurueckkommen_verb", "cefr": "B1", "pos": "phrasal_verb", "lemma_de": "zurückkommen", "translations_en": ["to come back", "to return"], "example_de": "Er kommt morgen aus dem Urlaub zurück.", "example_en": "He is coming back from vacation tomorrow.", "cloze_word": "zurück", "themes": ["travel"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "kommt ... zurück", "perfekt": "ist zurückgekommen", "praeteritum_3sg": null, "base_verb": "kommen_verb", "particle": "zurück", "particle_meaning_hint": "zurück = back"}}, {"id": "aufgeben_verb", "cefr": "B1", "pos": "phrasal_verb", "lemma_de": "aufgeben", "translations_en": ["to give up"], "example_de": "Gib nicht so schnell auf!", "example_en": "Don't give up so quickly!", "cloze_word": "auf", "themes": ["emotions"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "gibt ... auf", "perfekt": "hat aufgegeben", "praeteritum_3sg": null, "base_verb": "geben_verb", "particle": "auf", "particle_meaning_hint": "auf = up — giving something up"}}, {"id": "umziehen_verb", "cefr": "B1", "pos": "phrasal_verb", "lemma_de": "umziehen", "translations_en": ["to move house", "to relocate"], "example_de": "Wir ziehen nächsten Monat um.", "example_en": "We're moving next month.", "cloze_word": "um", "themes": ["home"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "zieht ... um", "perfekt": "ist umgezogen", "praeteritum_3sg": null, "base_verb": "ziehen_verb", "particle": "um", "particle_meaning_hint": "um = around — moving your life around to a new place"}}, {"id": "entscheiden_verb", "cefr": "B1", "pos": "verb", "lemma_de": "sich entscheiden", "translations_en": ["to decide"], "example_de": "Er kann sich nicht entscheiden.", "example_en": "He can't decide.", "cloze_word": "entscheiden", "themes": ["abstract_ideas"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "entscheidet sich", "perfekt": "hat sich entschieden", "praeteritum_3sg": "entschied sich", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "bedeuten_verb", "cefr": "B1", "pos": "verb", "lemma_de": "bedeuten", "translations_en": ["to mean"], "example_de": "Was bedeutet dieses Wort?", "example_en": "What does this word mean?", "cloze_word": "bedeutet", "themes": ["communication"], "priority": 1, "verb": {"separable": false, "irregular": false, "present_3sg": "bedeutet", "perfekt": "hat bedeutet", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "erreichen_verb", "cefr": "B1", "pos": "verb", "lemma_de": "erreichen", "translations_en": ["to reach", "to achieve"], "example_de": "Wir haben unser Ziel erreicht.", "example_en": "We reached our goal.", "cloze_word": "erreicht", "themes": ["work"], "priority": 1, "verb": {"separable": false, "irregular": false, "present_3sg": "erreicht", "perfekt": "hat erreicht", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "vermeiden_verb", "cefr": "B1", "pos": "verb", "lemma_de": "vermeiden", "translations_en": ["to avoid"], "example_de": "Man sollte Stress vermeiden.", "example_en": "One should avoid stress.", "cloze_word": "vermeiden", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": false, "irregular": true, "present_3sg": "vermeidet", "perfekt": "hat vermieden", "praeteritum_3sg": "vermied", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "beschweren_verb", "cefr": "B1", "pos": "verb", "lemma_de": "sich beschweren", "translations_en": ["to complain"], "example_de": "Der Kunde hat sich beschwert.", "example_en": "The customer complained.", "cloze_word": "beschwert", "themes": ["communication"], "priority": 2, "verb": {"separable": false, "irregular": false, "present_3sg": "beschwert sich", "perfekt": "hat sich beschwert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "empfehlen_verb", "cefr": "B1", "pos": "verb", "lemma_de": "empfehlen", "translations_en": ["to recommend"], "example_de": "Ich kann dieses Buch sehr empfehlen.", "example_en": "I can highly recommend this book.", "cloze_word": "empfehlen", "themes": ["communication"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "empfiehlt", "perfekt": "hat empfohlen", "praeteritum_3sg": "empfahl", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "widerspruechlich_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "widersprüchlich", "translations_en": ["contradictory"], "example_de": "Seine Aussagen waren widersprüchlich.", "example_en": "His statements were contradictory.", "cloze_word": "widersprüchlich", "themes": ["argumentation"], "priority": 2}, {"id": "nachhaltig_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "nachhaltig", "translations_en": ["sustainable"], "example_de": "Wir setzen auf nachhaltige Energie.", "example_en": "We focus on sustainable energy.", "cloze_word": "nachhaltige", "themes": ["nature"], "priority": 1}, {"id": "ueberzeugend_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "überzeugend", "translations_en": ["convincing"], "example_de": "Das Argument war sehr überzeugend.", "example_en": "The argument was very convincing.", "cloze_word": "überzeugend", "themes": ["argumentation"], "priority": 1}, {"id": "angemessen_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "angemessen", "translations_en": ["appropriate", "adequate"], "example_de": "Die Reaktion war angemessen.", "example_en": "The reaction was appropriate.", "cloze_word": "angemessen", "themes": ["abstract_ideas"], "priority": 1}, {"id": "umstritten_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "umstritten", "translations_en": ["controversial"], "example_de": "Das Thema ist sehr umstritten.", "example_en": "The topic is very controversial.", "cloze_word": "umstritten", "themes": ["society"], "priority": 1}, {"id": "erheblich_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "erheblich", "translations_en": ["considerable", "significant"], "example_de": "Das hat einen erheblichen Einfluss.", "example_en": "That has a considerable influence.", "cloze_word": "erheblichen", "themes": ["abstract_ideas"], "priority": 2}, {"id": "wahrnehmen_verb", "cefr": "B2", "pos": "composite_verb", "lemma_de": "wahrnehmen", "translations_en": ["to perceive"], "example_de": "Wir nehmen die Welt unterschiedlich wahr.", "example_en": "We perceive the world differently.", "cloze_word": "wahr", "themes": ["abstract_ideas"], "priority": 1, "verb": {"separable": true, "irregular": true, "present_3sg": "nimmt ... wahr", "perfekt": "hat wahrgenommen", "praeteritum_3sg": null, "base_verb": "nehmen_verb", "particle": "wahr", "particle_meaning_hint": "wahr = true/real — perceiving something as real"}}, {"id": "teilhaben_verb", "cefr": "B2", "pos": "composite_verb", "lemma_de": "teilhaben", "translations_en": ["to participate", "to have a share (in)"], "example_de": "Jeder soll am Erfolg teilhaben.", "example_en": "Everyone should share in the success.", "cloze_word": "teil", "themes": ["society"], "priority": 3, "verb": {"separable": true, "irregular": true, "present_3sg": "hat ... teil", "perfekt": "hat teilgehabt", "praeteritum_3sg": null, "base_verb": "haben_verb", "particle": "teil", "particle_meaning_hint": "teil = part — having a part or share in something"}}, {"id": "freilassen_verb", "cefr": "B2", "pos": "composite_verb", "lemma_de": "freilassen", "translations_en": ["to release", "to set free"], "example_de": "Die Polizei musste ihn freilassen.", "example_en": "The police had to release him.", "cloze_word": "frei", "themes": ["society"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "lässt ... frei", "perfekt": "hat freigelassen", "praeteritum_3sg": null, "base_verb": "lassen_verb", "particle": "frei", "particle_meaning_hint": "frei = free — letting something go free"}}, {"id": "festlegen_verb", "cefr": "B2", "pos": "composite_verb", "lemma_de": "festlegen", "translations_en": ["to establish", "to determine", "to set"], "example_de": "Wir müssen einen Termin festlegen.", "example_en": "We need to set a date.", "cloze_word": "fest", "themes": ["work"], "priority": 2, "verb": {"separable": true, "irregular": false, "present_3sg": "legt ... fest", "perfekt": "hat festgelegt", "praeteritum_3sg": null, "base_verb": "legen_verb", "particle": "fest", "particle_meaning_hint": "fest = firmly — laying something down firmly"}}, {"id": "voraussetzung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Voraussetzung", "translations_en": ["prerequisite", "precondition"], "example_de": "Gute Deutschkenntnisse sind eine Voraussetzung für den Job.", "example_en": "Good German skills are a prerequisite for the job.", "cloze_word": "Voraussetzung", "themes": ["education"], "priority": 1, "noun": {"gender": "die", "plural_de": "Voraussetzungen"}}, {"id": "zusammenhang_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Zusammenhang", "translations_en": ["connection", "context"], "example_de": "Ich verstehe den Zusammenhang nicht.", "example_en": "I don't understand the connection.", "cloze_word": "Zusammenhang", "themes": ["abstract_ideas"], "priority": 1, "noun": {"gender": "der", "plural_de": "Zusammenhänge"}}, {"id": "auswirkung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Auswirkung", "translations_en": ["effect", "impact"], "example_de": "Der Klimawandel hat große Auswirkungen.", "example_en": "Climate change has major effects.", "cloze_word": "Auswirkungen", "themes": ["abstract_ideas"], "priority": 1, "noun": {"gender": "die", "plural_de": "Auswirkungen"}}, {"id": "wettbewerb_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Wettbewerb", "translations_en": ["competition"], "example_de": "Die Firma steht im Wettbewerb mit anderen Anbietern.", "example_en": "The company competes with other providers.", "cloze_word": "Wettbewerb", "themes": ["work"], "priority": 2, "noun": {"gender": "der", "plural_de": "Wettbewerbe"}}, {"id": "herausforderung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Herausforderung", "translations_en": ["challenge"], "example_de": "Das ist eine große Herausforderung für uns.", "example_en": "That's a big challenge for us.", "cloze_word": "Herausforderung", "themes": ["work"], "priority": 1, "noun": {"gender": "die", "plural_de": "Herausforderungen"}}, {"id": "wahrnehmung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Wahrnehmung", "translations_en": ["perception"], "example_de": "Seine Wahrnehmung der Situation war falsch.", "example_en": "His perception of the situation was wrong.", "cloze_word": "Wahrnehmung", "themes": ["abstract_ideas"], "priority": 2, "noun": {"gender": "die", "plural_de": "Wahrnehmungen"}}, {"id": "widerspruch_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Widerspruch", "translations_en": ["contradiction"], "example_de": "Das ist ein klarer Widerspruch zu seiner Aussage.", "example_en": "That's a clear contradiction to his statement.", "cloze_word": "Widerspruch", "themes": ["argumentation"], "priority": 2, "noun": {"gender": "der", "plural_de": "Widersprüche"}}, {"id": "uebereinstimmung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Übereinstimmung", "translations_en": ["agreement", "consistency"], "example_de": "Beide Berichte zeigen eine hohe Übereinstimmung.", "example_en": "Both reports show a high level of agreement.", "cloze_word": "Übereinstimmung", "themes": ["argumentation"], "priority": 3, "noun": {"gender": "die", "plural_de": "Übereinstimmungen"}}, {"id": "anspruch_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Anspruch", "translations_en": ["claim", "demand", "entitlement"], "example_de": "Sie hat Anspruch auf Urlaub.", "example_en": "She is entitled to vacation.", "cloze_word": "Anspruch", "themes": ["work"], "priority": 2, "noun": {"gender": "der", "plural_de": "Ansprüche"}}, {"id": "bedrohung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Bedrohung", "translations_en": ["threat"], "example_de": "Der Sturm stellt eine Bedrohung für die Küste dar.", "example_en": "The storm poses a threat to the coast.", "cloze_word": "Bedrohung", "themes": ["society"], "priority": 2, "noun": {"gender": "die", "plural_de": "Bedrohungen"}}, {"id": "dennoch_other", "cefr": "B2", "pos": "other", "lemma_de": "dennoch", "translations_en": ["nevertheless", "yet"], "example_de": "Es regnete, dennoch gingen wir wandern.", "example_en": "It was raining, yet we went hiking.", "cloze_word": "dennoch", "themes": ["grammar_glue"], "priority": 1}, {"id": "sodass_other", "cefr": "B2", "pos": "other", "lemma_de": "sodass", "translations_en": ["so that"], "example_de": "Er flüsterte, sodass niemand ihn hören konnte.", "example_en": "He whispered so that no one could hear him.", "cloze_word": "sodass", "themes": ["grammar_glue"], "priority": 2}, {"id": "sofern_other", "cefr": "B2", "pos": "other", "lemma_de": "sofern", "translations_en": ["provided that", "as long as"], "example_de": "Wir kommen, sofern das Wetter mitspielt.", "example_en": "We'll come, provided the weather cooperates.", "cloze_word": "sofern", "themes": ["grammar_glue"], "priority": 2}, {"id": "auseinandersetzen_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "sich auseinandersetzen", "translations_en": ["to deal with", "to engage with"], "example_de": "Er setzt sich intensiv mit dem Thema auseinander.", "example_en": "He engages intensively with the topic.", "cloze_word": "auseinander", "themes": ["argumentation"], "priority": 1, "verb": {"separable": true, "irregular": false, "present_3sg": "setzt sich ... auseinander", "perfekt": "hat sich auseinandergesetzt", "praeteritum_3sg": null, "base_verb": "setzen_verb", "particle": "auseinander", "particle_meaning_hint": "auseinander = apart — engaging closely and taking something apart mentally"}}, {"id": "zurueckfuehren_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "zurückführen", "translations_en": ["to attribute to", "to trace back to"], "example_de": "Sie führt den Erfolg auf harte Arbeit zurück.", "example_en": "She attributes the success to hard work.", "cloze_word": "zurück", "themes": ["argumentation"], "priority": 2, "verb": {"separable": true, "irregular": false, "present_3sg": "führt ... zurück", "perfekt": "hat zurückgeführt", "praeteritum_3sg": null, "base_verb": "fuehren_verb", "particle": "zurück", "particle_meaning_hint": "zurück = back — tracing something back to its cause"}}, {"id": "hervorheben_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "hervorheben", "translations_en": ["to emphasize", "to highlight"], "example_de": "Der Bericht hebt die Vorteile hervor.", "example_en": "The report highlights the advantages.", "cloze_word": "hervor", "themes": ["communication"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "hebt ... hervor", "perfekt": "hat hervorgehoben", "praeteritum_3sg": null, "base_verb": "heben_verb", "particle": "hervor", "particle_meaning_hint": "hervor = forth/out — bringing something to prominence"}}, {"id": "durchsetzen_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "durchsetzen", "translations_en": ["to enforce", "to prevail"], "example_de": "Die Regierung konnte das Gesetz durchsetzen.", "example_en": "The government managed to enforce the law.", "cloze_word": "durch", "themes": ["society"], "priority": 2, "verb": {"separable": true, "irregular": false, "present_3sg": "setzt ... durch", "perfekt": "hat durchgesetzt", "praeteritum_3sg": null, "base_verb": "setzen_verb", "particle": "durch", "particle_meaning_hint": "durch = through — pushing something through to success"}}, {"id": "auffallen_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "auffallen", "translations_en": ["to stand out", "to be noticeable"], "example_de": "Ihr Talent ist sofort aufgefallen.", "example_en": "Her talent stood out immediately.", "cloze_word": "auf", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "fällt ... auf", "perfekt": "ist aufgefallen", "praeteritum_3sg": null, "base_verb": "fallen_verb", "particle": "auf", "particle_meaning_hint": "auf = up/out — falling into notice, standing out"}}, {"id": "vorkommen_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "vorkommen", "translations_en": ["to occur", "to happen"], "example_de": "So etwas kommt selten vor.", "example_en": "Something like that rarely happens.", "cloze_word": "vor", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "kommt ... vor", "perfekt": "ist vorgekommen", "praeteritum_3sg": null, "base_verb": "kommen_verb", "particle": "vor", "particle_meaning_hint": "vor = before/forth — something coming forth, occurring"}}, {"id": "beruecksichtigen_verb", "cefr": "B2", "pos": "verb", "lemma_de": "berücksichtigen", "translations_en": ["to take into account", "to consider"], "example_de": "Wir müssen alle Faktoren berücksichtigen.", "example_en": "We need to take all factors into account.", "cloze_word": "berücksichtigen", "themes": ["work"], "priority": 1, "verb": {"separable": false, "irregular": false, "present_3sg": "berücksichtigt", "perfekt": "hat berücksichtigt", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "gewaehrleisten_verb", "cefr": "B2", "pos": "verb", "lemma_de": "gewährleisten", "translations_en": ["to ensure", "to guarantee"], "example_de": "Die Firma muss die Qualität gewährleisten.", "example_en": "The company must ensure quality.", "cloze_word": "gewährleisten", "themes": ["work"], "priority": 2, "verb": {"separable": false, "irregular": false, "present_3sg": "gewährleistet", "perfekt": "hat gewährleistet", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "beziehen_verb", "cefr": "B2", "pos": "verb", "lemma_de": "sich beziehen auf", "translations_en": ["to refer to"], "example_de": "Diese Zahl bezieht sich auf das letzte Jahr.", "example_en": "This number refers to last year.", "cloze_word": "bezieht", "themes": ["communication"], "priority": 2, "verb": {"separable": false, "irregular": true, "present_3sg": "bezieht sich", "perfekt": "hat sich bezogen", "praeteritum_3sg": "bezog sich", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "betreffen_verb", "cefr": "B2", "pos": "verb", "lemma_de": "betreffen", "translations_en": ["to concern", "to affect"], "example_de": "Das betrifft uns alle.", "example_en": "That concerns all of us.", "cloze_word": "betrifft", "themes": ["abstract_ideas"], "priority": 1, "verb": {"separable": false, "irregular": true, "present_3sg": "betrifft", "perfekt": "hat betroffen", "praeteritum_3sg": "betraf", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "verfuegen_verb", "cefr": "B2", "pos": "verb", "lemma_de": "verfügen über", "translations_en": ["to have at one's disposal"], "example_de": "Das Unternehmen verfügt über viel Erfahrung.", "example_en": "The company has a lot of experience at its disposal.", "cloze_word": "verfügt", "themes": ["work"], "priority": 3, "verb": {"separable": false, "irregular": false, "present_3sg": "verfügt", "perfekt": "hat verfügt", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "erfordern_verb", "cefr": "B2", "pos": "verb", "lemma_de": "erfordern", "translations_en": ["to require"], "example_de": "Diese Aufgabe erfordert viel Geduld.", "example_en": "This task requires a lot of patience.", "cloze_word": "erfordert", "themes": ["work"], "priority": 1, "verb": {"separable": false, "irregular": false, "present_3sg": "erfordert", "perfekt": "hat erfordert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "gravierend_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "gravierend", "translations_en": ["serious", "grave"], "example_de": "Das ist ein gravierender Fehler.", "example_en": "That is a serious mistake.", "cloze_word": "gravierender", "themes": ["abstract_ideas"], "priority": 2}, {"id": "plausibel_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "plausibel", "translations_en": ["plausible"], "example_de": "Seine Erklärung klingt plausibel.", "example_en": "His explanation sounds plausible.", "cloze_word": "plausibel", "themes": ["argumentation"], "priority": 2}, {"id": "praegnant_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "prägnant", "translations_en": ["concise", "succinct"], "example_de": "Fassen Sie Ihre Argumente prägnant zusammen.", "example_en": "Summarize your arguments concisely.", "cloze_word": "prägnant", "themes": ["communication"], "priority": 3}, {"id": "kontrovers_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "kontrovers", "translations_en": ["controversial"], "example_de": "Das Thema wurde kontrovers diskutiert.", "example_en": "The topic was discussed controversially.", "cloze_word": "kontrovers", "themes": ["argumentation"], "priority": 2}, {"id": "unabdingbar_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "unabdingbar", "translations_en": ["indispensable", "essential"], "example_de": "Vertrauen ist unabdingbar für eine gute Zusammenarbeit.", "example_en": "Trust is indispensable for good cooperation.", "cloze_word": "unabdingbar", "themes": ["abstract_ideas"], "priority": 3}, {"id": "vielschichtig_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "vielschichtig", "translations_en": ["multi-layered", "complex"], "example_de": "Das Problem ist sehr vielschichtig.", "example_en": "The problem is very complex.", "cloze_word": "vielschichtig", "themes": ["abstract_ideas"], "priority": 3}, {"id": "wiedergeben_verb", "cefr": "C1", "pos": "composite_verb", "lemma_de": "wiedergeben", "translations_en": ["to reproduce", "to render", "to convey"], "example_de": "Er gibt die Ereignisse genau wieder.", "example_en": "He renders the events accurately.", "cloze_word": "wieder", "themes": ["communication"], "priority": 3, "verb": {"separable": true, "irregular": true, "present_3sg": "gibt ... wieder", "perfekt": "hat wiedergegeben", "praeteritum_3sg": null, "base_verb": "geben_verb", "particle": "wieder", "particle_meaning_hint": "wieder = again/back — giving something back out in another form"}}, {"id": "gleichsetzen_verb", "cefr": "C1", "pos": "composite_verb", "lemma_de": "gleichsetzen", "translations_en": ["to equate"], "example_de": "Man sollte Meinung nicht mit Fakten gleichsetzen.", "example_en": "One shouldn't equate opinion with facts.", "cloze_word": "gleich", "themes": ["argumentation"], "priority": 3, "verb": {"separable": true, "irregular": false, "present_3sg": "setzt ... gleich", "perfekt": "hat gleichgesetzt", "praeteritum_3sg": null, "base_verb": "setzen_verb", "particle": "gleich", "particle_meaning_hint": "gleich = equal — setting two things as equal"}}, {"id": "vorwegnehmen_verb", "cefr": "C1", "pos": "composite_verb", "lemma_de": "vorwegnehmen", "translations_en": ["to anticipate", "to preempt"], "example_de": "Der Trailer nimmt die besten Szenen vorweg.", "example_en": "The trailer gives away the best scenes in advance.", "cloze_word": "vorweg", "themes": ["argumentation"], "priority": 4, "verb": {"separable": true, "irregular": true, "present_3sg": "nimmt ... vorweg", "perfekt": "hat vorweggenommen", "praeteritum_3sg": null, "base_verb": "nehmen_verb", "particle": "vorweg", "particle_meaning_hint": "vorweg = beforehand — taking something before its time"}}, {"id": "infragestellen_verb", "cefr": "C1", "pos": "composite_verb", "lemma_de": "infragestellen", "translations_en": ["to call into question", "to question"], "example_de": "Niemand stellt seine Kompetenz infrage.", "example_en": "No one questions his competence.", "cloze_word": "infrage", "themes": ["argumentation"], "priority": 2, "verb": {"separable": true, "irregular": false, "present_3sg": "stellt ... infrage", "perfekt": "hat infrage gestellt", "praeteritum_3sg": null, "base_verb": "stellen_verb", "particle": "infrage", "particle_meaning_hint": "infrage = into question — putting something up for doubt"}}, {"id": "erkenntnis_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Erkenntnis", "translations_en": ["insight", "realization", "finding"], "example_de": "Die Studie liefert neue Erkenntnisse.", "example_en": "The study provides new insights.", "cloze_word": "Erkenntnisse", "themes": ["education"], "priority": 1, "noun": {"gender": "die", "plural_de": "Erkenntnisse"}}, {"id": "anlass_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Anlass", "translations_en": ["occasion", "cause", "reason"], "example_de": "Es gibt keinen Anlass zur Sorge.", "example_en": "There is no cause for concern.", "cloze_word": "Anlass", "themes": ["abstract_ideas"], "priority": 2, "noun": {"gender": "der", "plural_de": "Anlässe"}}, {"id": "tendenz_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Tendenz", "translations_en": ["tendency", "trend"], "example_de": "Es gibt eine klare Tendenz zu mehr Homeoffice.", "example_en": "There is a clear trend towards more remote work.", "cloze_word": "Tendenz", "themes": ["abstract_ideas"], "priority": 1, "noun": {"gender": "die", "plural_de": "Tendenzen"}}, {"id": "vorurteil_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Vorurteil", "translations_en": ["prejudice", "bias"], "example_de": "Wir sollten keine Vorurteile haben.", "example_en": "We shouldn't have prejudices.", "cloze_word": "Vorurteile", "themes": ["society"], "priority": 2, "noun": {"gender": "das", "plural_de": "Vorurteile"}}, {"id": "instanz_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Instanz", "translations_en": ["authority", "instance"], "example_de": "Das Gericht ist die letzte Instanz.", "example_en": "The court is the final authority.", "cloze_word": "Instanz", "themes": ["society"], "priority": 3, "noun": {"gender": "die", "plural_de": "Instanzen"}}, {"id": "beitrag_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Beitrag", "translations_en": ["contribution"], "example_de": "Jeder kann einen Beitrag leisten.", "example_en": "Everyone can make a contribution.", "cloze_word": "Beitrag", "themes": ["work"], "priority": 1, "noun": {"gender": "der", "plural_de": "Beiträge"}}, {"id": "konsequenz_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Konsequenz", "translations_en": ["consequence"], "example_de": "Er muss die Konsequenzen tragen.", "example_en": "He has to bear the consequences.", "cloze_word": "Konsequenzen", "themes": ["abstract_ideas"], "priority": 1, "noun": {"gender": "die", "plural_de": "Konsequenzen"}}, {"id": "gewissheit_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Gewissheit", "translations_en": ["certainty"], "example_de": "Niemand kann das mit Gewissheit sagen.", "example_en": "No one can say that with certainty.", "cloze_word": "Gewissheit", "themes": ["abstract_ideas"], "priority": 2, "noun": {"gender": "die", "plural_de": null}}, {"id": "umbruch_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Umbruch", "translations_en": ["upheaval", "radical change"], "example_de": "Das Land befindet sich im politischen Umbruch.", "example_en": "The country is undergoing political upheaval.", "cloze_word": "Umbruch", "themes": ["society"], "priority": 3, "noun": {"gender": "der", "plural_de": "Umbrüche"}}, {"id": "kompetenz_noun", "cefr": "C1", "pos": "noun", "lemma_de": "Kompetenz", "translations_en": ["competence", "skill"], "example_de": "Sie hat große fachliche Kompetenz.", "example_en": "She has great professional competence.", "cloze_word": "Kompetenz", "themes": ["work"], "priority": 2, "noun": {"gender": "die", "plural_de": "Kompetenzen"}}, {"id": "dahingehend_other", "cefr": "C1", "pos": "other", "lemma_de": "dahingehend", "translations_en": ["to this effect", "in this regard"], "example_de": "Es gibt Pläne, dahingehend etwas zu ändern.", "example_en": "There are plans to change something in this regard.", "cloze_word": "dahingehend", "themes": ["grammar_glue"], "priority": 3}, {"id": "zumal_other", "cefr": "C1", "pos": "other", "lemma_de": "zumal", "translations_en": ["especially since", "given that"], "example_de": "Wir sollten früh losfahren, zumal es Stau geben könnte.", "example_en": "We should leave early, especially since there might be traffic.", "cloze_word": "zumal", "themes": ["grammar_glue"], "priority": 2}, {"id": "insofern_other", "cefr": "C1", "pos": "other", "lemma_de": "insofern", "translations_en": ["insofar as", "in that respect"], "example_de": "Insofern hat er recht.", "example_en": "In that respect, he is right.", "cloze_word": "Insofern", "themes": ["grammar_glue"], "priority": 2}, {"id": "abzeichnen_verb", "cefr": "C1", "pos": "phrasal_verb", "lemma_de": "sich abzeichnen", "translations_en": ["to become apparent", "to loom"], "example_de": "Ein neuer Trend zeichnet sich ab.", "example_en": "A new trend is becoming apparent.", "cloze_word": "ab", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": true, "irregular": false, "present_3sg": "zeichnet sich ... ab", "perfekt": "hat sich abgezeichnet", "praeteritum_3sg": null, "base_verb": "zeichnen_verb", "particle": "ab", "particle_meaning_hint": "ab = off/away — a shape drawing itself into view"}}, {"id": "hervorgehen_verb", "cefr": "C1", "pos": "phrasal_verb", "lemma_de": "hervorgehen", "translations_en": ["to emerge (from)", "to follow (from)"], "example_de": "Aus der Ehe gingen drei Kinder hervor.", "example_en": "Three children emerged from the marriage.", "cloze_word": "hervor", "themes": ["argumentation"], "priority": 3, "verb": {"separable": true, "irregular": true, "present_3sg": "geht ... hervor", "perfekt": "ist hervorgegangen", "praeteritum_3sg": null, "base_verb": "gehen_verb", "particle": "hervor", "particle_meaning_hint": "hervor = forth — emerging out of something"}}, {"id": "einhergehen_verb", "cefr": "C1", "pos": "phrasal_verb", "lemma_de": "einhergehen", "translations_en": ["to go along with", "to be accompanied by"], "example_de": "Der Erfolg geht oft mit viel Arbeit einher.", "example_en": "Success often goes hand in hand with a lot of work.", "cloze_word": "einher", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "geht ... einher", "perfekt": "ist einhergegangen", "praeteritum_3sg": null, "base_verb": "gehen_verb", "particle": "einher", "particle_meaning_hint": "einher = along — going along side by side with something"}}, {"id": "vorausgehen_verb", "cefr": "C1", "pos": "phrasal_verb", "lemma_de": "vorausgehen", "translations_en": ["to precede"], "example_de": "Der Diskussion ging eine lange Vorbereitung voraus.", "example_en": "The discussion was preceded by a long preparation.", "cloze_word": "voraus", "themes": ["abstract_ideas"], "priority": 3, "verb": {"separable": true, "irregular": true, "present_3sg": "geht ... voraus", "perfekt": "ist vorausgegangen", "praeteritum_3sg": null, "base_verb": "gehen_verb", "particle": "voraus", "particle_meaning_hint": "voraus = ahead — going ahead of something else"}}, {"id": "auseinanderhalten_verb", "cefr": "C1", "pos": "phrasal_verb", "lemma_de": "auseinanderhalten", "translations_en": ["to distinguish", "to tell apart"], "example_de": "Ich kann die Zwillinge nicht auseinanderhalten.", "example_en": "I can't tell the twins apart.", "cloze_word": "auseinander", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "hält ... auseinander", "perfekt": "hat auseinandergehalten", "praeteritum_3sg": null, "base_verb": "halten_verb", "particle": "auseinander", "particle_meaning_hint": "auseinander = apart — holding two things mentally apart"}}, {"id": "zugrundeliegen_verb", "cefr": "C1", "pos": "phrasal_verb", "lemma_de": "zugrundeliegen", "translations_en": ["to underlie", "to be the basis of"], "example_de": "Der Entscheidung liegt eine lange Analyse zugrunde.", "example_en": "A long analysis underlies the decision.", "cloze_word": "zugrunde", "themes": ["argumentation"], "priority": 3, "verb": {"separable": true, "irregular": true, "present_3sg": "liegt ... zugrunde", "perfekt": "hat zugrundegelegen", "praeteritum_3sg": null, "base_verb": "liegen_verb", "particle": "zugrunde", "particle_meaning_hint": "zugrunde = at the base/bottom — lying at the foundation of something"}}, {"id": "gewichten_verb", "cefr": "C1", "pos": "verb", "lemma_de": "gewichten", "translations_en": ["to weigh", "to prioritize"], "example_de": "Wir müssen die Argumente richtig gewichten.", "example_en": "We need to weigh the arguments correctly.", "cloze_word": "gewichten", "themes": ["argumentation"], "priority": 3, "verb": {"separable": false, "irregular": false, "present_3sg": "gewichtet", "perfekt": "hat gewichtet", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "veranschaulichen_verb", "cefr": "C1", "pos": "verb", "lemma_de": "veranschaulichen", "translations_en": ["to illustrate"], "example_de": "Ein Beispiel kann das veranschaulichen.", "example_en": "An example can illustrate that.", "cloze_word": "veranschaulichen", "themes": ["communication"], "priority": 2, "verb": {"separable": false, "irregular": false, "present_3sg": "veranschaulicht", "perfekt": "hat veranschaulicht", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "resultieren_verb", "cefr": "C1", "pos": "verb", "lemma_de": "resultieren", "translations_en": ["to result (from)"], "example_de": "Der Erfolg resultiert aus harter Arbeit.", "example_en": "The success results from hard work.", "cloze_word": "resultiert", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": false, "irregular": false, "present_3sg": "resultiert", "perfekt": "hat resultiert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "beeintraechtigen_verb", "cefr": "C1", "pos": "verb", "lemma_de": "beeinträchtigen", "translations_en": ["to impair", "to affect negatively"], "example_de": "Lärm kann die Konzentration beeinträchtigen.", "example_en": "Noise can impair concentration.", "cloze_word": "beeinträchtigen", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": false, "irregular": false, "present_3sg": "beeinträchtigt", "perfekt": "hat beeinträchtigt", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "unterliegen_verb", "cefr": "C1", "pos": "verb", "lemma_de": "unterliegen", "translations_en": ["to be subject to", "to lose (to)"], "example_de": "Er unterlag seinem Gegner knapp.", "example_en": "He narrowly lost to his opponent.", "cloze_word": "unterlag", "themes": ["society"], "priority": 3, "verb": {"separable": false, "irregular": true, "present_3sg": "unterliegt", "perfekt": "ist unterlegen", "praeteritum_3sg": "unterlag", "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "vernachlaessigen_verb", "cefr": "C1", "pos": "verb", "lemma_de": "vernachlässigen", "translations_en": ["to neglect"], "example_de": "Man sollte seine Gesundheit nicht vernachlässigen.", "example_en": "One shouldn't neglect one's health.", "cloze_word": "vernachlässigen", "themes": ["work"], "priority": 2, "verb": {"separable": false, "irregular": false, "present_3sg": "vernachlässigt", "perfekt": "hat vernachlässigt", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "unumgaenglich_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unumgänglich", "translations_en": ["unavoidable", "inevitable"], "example_de": "Eine Reform ist unumgänglich.", "example_en": "A reform is unavoidable.", "cloze_word": "unumgänglich", "themes": ["abstract_ideas"], "priority": 3}, {"id": "fragwuerdig_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "fragwürdig", "translations_en": ["questionable", "dubious"], "example_de": "Seine Methoden sind fragwürdig.", "example_en": "His methods are questionable.", "cloze_word": "fragwürdig", "themes": ["argumentation"], "priority": 2}, {"id": "unerlaesslich_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unerlässlich", "translations_en": ["essential", "indispensable"], "example_de": "Geduld ist unerlässlich in diesem Beruf.", "example_en": "Patience is essential in this profession.", "cloze_word": "unerlässlich", "themes": ["abstract_ideas"], "priority": 2}, {"id": "vielsagend_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "vielsagend", "translations_en": ["telling", "meaningful"], "example_de": "Sie warf ihm einen vielsagenden Blick zu.", "example_en": "She gave him a telling look.", "cloze_word": "vielsagenden", "themes": ["communication"], "priority": 4}, {"id": "schwerwiegend_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "schwerwiegend", "translations_en": ["grave", "weighty", "serious"], "example_de": "Das hat schwerwiegende Folgen.", "example_en": "That has grave consequences.", "cloze_word": "schwerwiegende", "themes": ["abstract_ideas"], "priority": 2}, {"id": "unantastbar_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unantastbar", "translations_en": ["untouchable", "inviolable"], "example_de": "Die Menschenwürde ist unantastbar.", "example_en": "Human dignity is inviolable.", "cloze_word": "unantastbar", "themes": ["society"], "priority": 3}, {"id": "gleichkommen_verb", "cefr": "C2", "pos": "composite_verb", "lemma_de": "gleichkommen", "translations_en": ["to amount to", "to be equivalent to"], "example_de": "Sein Schweigen kommt einem Geständnis gleich.", "example_en": "His silence amounts to a confession.", "cloze_word": "gleich", "themes": ["abstract_ideas"], "priority": 4, "verb": {"separable": true, "irregular": true, "present_3sg": "kommt ... gleich", "perfekt": "ist gleichgekommen", "praeteritum_3sg": null, "base_verb": "kommen_verb", "particle": "gleich", "particle_meaning_hint": "gleich = equal — coming out equal to something"}}, {"id": "vorherbestimmen_verb", "cefr": "C2", "pos": "composite_verb", "lemma_de": "vorherbestimmen", "translations_en": ["to predetermine"], "example_de": "Niemand kann die Zukunft vorherbestimmen.", "example_en": "No one can predetermine the future.", "cloze_word": "vorherbestimmen", "themes": ["abstract_ideas"], "priority": 4, "verb": {"separable": false, "irregular": false, "present_3sg": "bestimmt ... vorher", "perfekt": "hat vorherbestimmt", "praeteritum_3sg": null, "base_verb": "bestimmen_verb", "particle": "vorher", "particle_meaning_hint": "vorher = beforehand — determining something in advance"}}, {"id": "auseinanderklaffen_verb", "cefr": "C2", "pos": "composite_verb", "lemma_de": "auseinanderklaffen", "translations_en": ["to diverge", "to be at odds", "to gape apart"], "example_de": "Theorie und Praxis klaffen oft auseinander.", "example_en": "Theory and practice often diverge.", "cloze_word": "auseinander", "themes": ["society"], "priority": 5, "verb": {"separable": true, "irregular": false, "present_3sg": "klafft ... auseinander", "perfekt": "hat auseinandergeklafft", "praeteritum_3sg": null, "base_verb": "klaffen_verb", "particle": "auseinander", "particle_meaning_hint": "auseinander = apart — gaping apart from each other"}}, {"id": "wettmachen_verb", "cefr": "C2", "pos": "composite_verb", "lemma_de": "wettmachen", "translations_en": ["to make up for", "to compensate for"], "example_de": "Er will den Rückstand wettmachen.", "example_en": "He wants to make up for the deficit.", "cloze_word": "wett", "themes": ["work"], "priority": 3, "verb": {"separable": true, "irregular": false, "present_3sg": "macht ... wett", "perfekt": "hat wettgemacht", "praeteritum_3sg": null, "base_verb": "machen_verb", "particle": "wett", "particle_meaning_hint": "wett = even/compensated — making things even again"}}, {"id": "traegheit_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Trägheit", "translations_en": ["inertia", "sluggishness"], "example_de": "Die Trägheit des Systems verhindert schnelle Änderungen.", "example_en": "The inertia of the system prevents quick changes.", "cloze_word": "Trägheit", "themes": ["abstract_ideas"], "priority": 3, "noun": {"gender": "die", "plural_de": null}}, {"id": "ambivalenz_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Ambivalenz", "translations_en": ["ambivalence"], "example_de": "Seine Ambivalenz gegenüber der Entscheidung war spürbar.", "example_en": "His ambivalence towards the decision was palpable.", "cloze_word": "Ambivalenz", "themes": ["emotions"], "priority": 3, "noun": {"gender": "die", "plural_de": null}}, {"id": "vorbehalt_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Vorbehalt", "translations_en": ["reservation", "proviso"], "example_de": "Ich stimme dem nur mit Vorbehalt zu.", "example_en": "I only agree to this with reservations.", "cloze_word": "Vorbehalt", "themes": ["argumentation"], "priority": 3, "noun": {"gender": "der", "plural_de": "Vorbehalte"}}, {"id": "nuance_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Nuance", "translations_en": ["nuance"], "example_de": "Er versteht die feinen Nuancen der Sprache.", "example_en": "He understands the fine nuances of the language.", "cloze_word": "Nuancen", "themes": ["communication"], "priority": 2, "noun": {"gender": "die", "plural_de": "Nuancen"}}, {"id": "beharrlichkeit_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Beharrlichkeit", "translations_en": ["persistence", "perseverance"], "example_de": "Mit Beharrlichkeit erreichte sie ihr Ziel.", "example_en": "With persistence, she achieved her goal.", "cloze_word": "Beharrlichkeit", "themes": ["emotions"], "priority": 3, "noun": {"gender": "die", "plural_de": null}}, {"id": "missstand_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Missstand", "translations_en": ["grievance", "abuse", "deplorable state"], "example_de": "Die Reportage deckt einen Missstand auf.", "example_en": "The report exposes a grievance.", "cloze_word": "Missstand", "themes": ["society"], "priority": 3, "noun": {"gender": "der", "plural_de": "Missstände"}}, {"id": "tragweite_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Tragweite", "translations_en": ["scope", "significance", "magnitude"], "example_de": "Er verstand die Tragweite seiner Entscheidung nicht.", "example_en": "He didn't understand the significance of his decision.", "cloze_word": "Tragweite", "themes": ["abstract_ideas"], "priority": 3, "noun": {"gender": "die", "plural_de": null}}, {"id": "dilemma_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Dilemma", "translations_en": ["dilemma"], "example_de": "Sie steckt in einem echten Dilemma.", "example_en": "She is in a real dilemma.", "cloze_word": "Dilemma", "themes": ["abstract_ideas"], "priority": 2, "noun": {"gender": "das", "plural_de": "Dilemmata"}}, {"id": "unzulaenglichkeit_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Unzulänglichkeit", "translations_en": ["inadequacy", "shortcoming"], "example_de": "Das System hat einige Unzulänglichkeiten.", "example_en": "The system has some inadequacies.", "cloze_word": "Unzulänglichkeiten", "themes": ["abstract_ideas"], "priority": 4, "noun": {"gender": "die", "plural_de": "Unzulänglichkeiten"}}, {"id": "doppeldeutigkeit_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Doppeldeutigkeit", "translations_en": ["ambiguity", "double meaning"], "example_de": "Der Satz enthält eine bewusste Doppeldeutigkeit.", "example_en": "The sentence contains a deliberate ambiguity.", "cloze_word": "Doppeldeutigkeit", "themes": ["communication"], "priority": 4, "noun": {"gender": "die", "plural_de": "Doppeldeutigkeiten"}}, {"id": "mitnichten_other", "cefr": "C2", "pos": "other", "lemma_de": "mitnichten", "translations_en": ["by no means", "not at all"], "example_de": "Das ist mitnichten der Fall.", "example_en": "That is by no means the case.", "cloze_word": "mitnichten", "themes": ["grammar_glue"], "priority": 4}, {"id": "gleichwohl_other", "cefr": "C2", "pos": "other", "lemma_de": "gleichwohl", "translations_en": ["nevertheless", "all the same"], "example_de": "Er war müde, gleichwohl arbeitete er weiter.", "example_en": "He was tired; nevertheless, he kept working.", "cloze_word": "gleichwohl", "themes": ["grammar_glue"], "priority": 4}, {"id": "infolgedessen_other", "cefr": "C2", "pos": "other", "lemma_de": "infolgedessen", "translations_en": ["consequently", "as a result"], "example_de": "Er hatte keine Zeit, infolgedessen kam er zu spät.", "example_en": "He had no time, consequently he was late.", "cloze_word": "infolgedessen", "themes": ["grammar_glue"], "priority": 3}, {"id": "hinwegsetzen_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "sich hinwegsetzen", "translations_en": ["to disregard", "to override"], "example_de": "Er setzt sich über alle Regeln hinweg.", "example_en": "He disregards all the rules.", "cloze_word": "hinweg", "themes": ["society"], "priority": 3, "verb": {"separable": true, "irregular": false, "present_3sg": "setzt sich ... hinweg", "perfekt": "hat sich hinweggesetzt", "praeteritum_3sg": null, "base_verb": "setzen_verb", "particle": "hinweg", "particle_meaning_hint": "hinweg = over/across — setting oneself over the rules"}}, {"id": "aufrechterhalten_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "aufrechterhalten", "translations_en": ["to maintain", "to uphold"], "example_de": "Die Firma will das Angebot aufrechterhalten.", "example_en": "The company wants to maintain the offer.", "cloze_word": "aufrecht", "themes": ["work"], "priority": 3, "verb": {"separable": true, "irregular": true, "present_3sg": "erhält ... aufrecht", "perfekt": "hat aufrechterhalten", "praeteritum_3sg": null, "base_verb": "erhalten_verb", "particle": "aufrecht", "particle_meaning_hint": "aufrecht = upright — keeping something standing upright"}}, {"id": "zutagetreten_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "zutagetreten", "translations_en": ["to come to light", "to emerge"], "example_de": "Die Probleme traten erst später zutage.", "example_en": "The problems only came to light later.", "cloze_word": "zutage", "themes": ["abstract_ideas"], "priority": 4, "verb": {"separable": true, "irregular": true, "present_3sg": "tritt ... zutage", "perfekt": "ist zutagegetreten", "praeteritum_3sg": null, "base_verb": "treten_verb", "particle": "zutage", "particle_meaning_hint": "zutage = to light/into the open — stepping out into visibility"}}, {"id": "abfinden_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "sich abfinden", "translations_en": ["to come to terms with", "to accept"], "example_de": "Sie musste sich mit der Situation abfinden.", "example_en": "She had to come to terms with the situation.", "cloze_word": "ab", "themes": ["emotions"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "findet sich ... ab", "perfekt": "hat sich abgefunden", "praeteritum_3sg": null, "base_verb": "finden_verb", "particle": "ab", "particle_meaning_hint": "ab = off/away — settling a matter and letting it go"}}, {"id": "hinausgehen_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "hinausgehen", "translations_en": ["to go beyond", "to exceed"], "example_de": "Das geht über meine Kompetenzen hinaus.", "example_en": "That goes beyond my competencies.", "cloze_word": "hinaus", "themes": ["abstract_ideas"], "priority": 2, "verb": {"separable": true, "irregular": true, "present_3sg": "geht ... hinaus", "perfekt": "ist hinausgegangen", "praeteritum_3sg": null, "base_verb": "gehen_verb", "particle": "hinaus", "particle_meaning_hint": "hinaus = out/beyond"}}, {"id": "niederschlagen_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "sich niederschlagen", "translations_en": ["to be reflected in", "to manifest as"], "example_de": "Der Stress schlägt sich in seiner Gesundheit nieder.", "example_en": "The stress is reflected in his health.", "cloze_word": "nieder", "themes": ["abstract_ideas"], "priority": 3, "verb": {"separable": true, "irregular": true, "present_3sg": "schlägt sich ... nieder", "perfekt": "hat sich niedergeschlagen", "praeteritum_3sg": null, "base_verb": "schlagen_verb", "particle": "nieder", "particle_meaning_hint": "nieder = down — settling down into a visible form"}}, {"id": "relativieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "relativieren", "translations_en": ["to put into perspective", "to qualify"], "example_de": "Er wollte seine Aussage relativieren.", "example_en": "He wanted to qualify his statement.", "cloze_word": "relativieren", "themes": ["argumentation"], "priority": 3, "verb": {"separable": false, "irregular": false, "present_3sg": "relativiert", "perfekt": "hat relativiert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "suggerieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "suggerieren", "translations_en": ["to suggest", "to imply"], "example_de": "Die Werbung suggeriert ein perfektes Leben.", "example_en": "The advertisement suggests a perfect life.", "cloze_word": "suggeriert", "themes": ["communication"], "priority": 2, "verb": {"separable": false, "irregular": false, "present_3sg": "suggeriert", "perfekt": "hat suggeriert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "instrumentalisieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "instrumentalisieren", "translations_en": ["to instrumentalize", "to exploit (for a purpose)"], "example_de": "Die Politiker instrumentalisieren das Thema für ihre Zwecke.", "example_en": "The politicians instrumentalize the topic for their own purposes.", "cloze_word": "instrumentalisieren", "themes": ["society"], "priority": 4, "verb": {"separable": false, "irregular": false, "present_3sg": "instrumentalisiert", "perfekt": "hat instrumentalisiert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "nivellieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "nivellieren", "translations_en": ["to level out", "to homogenize"], "example_de": "Der Test nivelliert die Unterschiede zwischen den Schülern.", "example_en": "The test levels out the differences between the students.", "cloze_word": "nivelliert", "themes": ["society"], "priority": 4, "verb": {"separable": false, "irregular": false, "present_3sg": "nivelliert", "perfekt": "hat nivelliert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "kaschieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "kaschieren", "translations_en": ["to conceal", "to mask", "to disguise"], "example_de": "Sie versuchte, ihre Nervosität zu kaschieren.", "example_en": "She tried to conceal her nervousness.", "cloze_word": "kaschieren", "themes": ["communication"], "priority": 3, "verb": {"separable": false, "irregular": false, "present_3sg": "kaschiert", "perfekt": "hat kaschiert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}, {"id": "verharmlosen_verb", "cefr": "C2", "pos": "verb", "lemma_de": "verharmlosen", "translations_en": ["to downplay", "to trivialize"], "example_de": "Man sollte die Gefahr nicht verharmlosen.", "example_en": "One shouldn't downplay the danger.", "cloze_word": "verharmlosen", "themes": ["communication"], "priority": 3, "verb": {"separable": false, "irregular": false, "present_3sg": "verharmlost", "perfekt": "hat verharmlost", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null}}];
+const THEMES = [{"id": "food", "label_en": "Food & Drink", "icon": "🍽️"}, {"id": "home", "label_en": "Home & Household", "icon": "🏠"}, {"id": "daily_routine", "label_en": "Daily Routine", "icon": "⏰"}, {"id": "travel", "label_en": "Travel", "icon": "✈️"}, {"id": "people", "label_en": "People & Relationships", "icon": "🧑‍🤝‍🧑"}, {"id": "work", "label_en": "Work & Business", "icon": "💼"}, {"id": "emotions", "label_en": "Emotions", "icon": "😊"}, {"id": "nature", "label_en": "Nature & Weather", "icon": "🌳"}, {"id": "body_health", "label_en": "Body & Health", "icon": "🩺"}, {"id": "shopping", "label_en": "Shopping & Money", "icon": "🛍️"}, {"id": "communication", "label_en": "Communication", "icon": "💬"}, {"id": "technology", "label_en": "Technology", "icon": "💻"}, {"id": "education", "label_en": "Education", "icon": "🎓"}, {"id": "time_numbers", "label_en": "Time & Numbers", "icon": "🔢"}, {"id": "grammar_glue", "label_en": "Everyday Glue Words", "icon": "🔗"}, {"id": "society", "label_en": "Society & Politics", "icon": "🏛️"}, {"id": "abstract_ideas", "label_en": "Abstract Ideas", "icon": "💭"}, {"id": "argumentation", "label_en": "Argumentation & Debate", "icon": "🗣️"}];
+const VERB_FAMILIES = {"schemaVersion": 1, "families": [{"base_verb": "bestimmen_verb", "members": [{"id": "vorherbestimmen_verb", "lemma_de": "vorherbestimmen", "particle": "vorher", "particle_meaning_hint": "vorher = beforehand — determining something in advance"}]}, {"base_verb": "erhalten_verb", "members": [{"id": "aufrechterhalten_verb", "lemma_de": "aufrechterhalten", "particle": "aufrecht", "particle_meaning_hint": "aufrecht = upright — keeping something standing upright"}]}, {"base_verb": "fahren_verb", "members": [{"id": "radfahren_verb", "lemma_de": "radfahren", "particle": "Rad", "particle_meaning_hint": "Rad = bike/wheel — noun+verb compound with fahren (to drive/ride)"}]}, {"base_verb": "fallen_verb", "members": [{"id": "auffallen_verb", "lemma_de": "auffallen", "particle": "auf", "particle_meaning_hint": "auf = up/out — falling into notice, standing out"}]}, {"base_verb": "finden_verb", "members": [{"id": "abfinden_verb", "lemma_de": "sich abfinden", "particle": "ab", "particle_meaning_hint": "ab = off/away — settling a matter and letting it go"}, {"id": "stattfinden_verb", "lemma_de": "stattfinden", "particle": "statt", "particle_meaning_hint": "statt = instead of / in place of — an event finding its place"}]}, {"base_verb": "fuehren_verb", "members": [{"id": "zurueckfuehren_verb", "lemma_de": "zurückführen", "particle": "zurück", "particle_meaning_hint": "zurück = back — tracing something back to its cause"}]}, {"base_verb": "geben_verb", "members": [{"id": "achtgeben_verb", "lemma_de": "achtgeben", "particle": "acht", "particle_meaning_hint": "acht = heed/attention — fixed compound with geben (to give)"}, {"id": "aufgeben_verb", "lemma_de": "aufgeben", "particle": "auf", "particle_meaning_hint": "auf = up — giving something up"}, {"id": "wiedergeben_verb", "lemma_de": "wiedergeben", "particle": "wieder", "particle_meaning_hint": "wieder = again/back — giving something back out in another form"}]}, {"base_verb": "gehen_verb", "members": [{"id": "einhergehen_verb", "lemma_de": "einhergehen", "particle": "einher", "particle_meaning_hint": "einher = along — going along side by side with something"}, {"id": "hervorgehen_verb", "lemma_de": "hervorgehen", "particle": "hervor", "particle_meaning_hint": "hervor = forth — emerging out of something"}, {"id": "hinausgehen_verb", "lemma_de": "hinausgehen", "particle": "hinaus", "particle_meaning_hint": "hinaus = out/beyond"}, {"id": "spazierengehen_verb", "lemma_de": "spazierengehen", "particle": "spazieren", "particle_meaning_hint": "spazieren = to stroll — fixed compound with gehen (to go)"}, {"id": "vorausgehen_verb", "lemma_de": "vorausgehen", "particle": "voraus", "particle_meaning_hint": "voraus = ahead — going ahead of something else"}]}, {"base_verb": "haben_verb", "members": [{"id": "teilhaben_verb", "lemma_de": "teilhaben", "particle": "teil", "particle_meaning_hint": "teil = part — having a part or share in something"}]}, {"base_verb": "halten_verb", "members": [{"id": "auseinanderhalten_verb", "lemma_de": "auseinanderhalten", "particle": "auseinander", "particle_meaning_hint": "auseinander = apart — holding two things mentally apart"}]}, {"base_verb": "heben_verb", "members": [{"id": "hervorheben_verb", "lemma_de": "hervorheben", "particle": "hervor", "particle_meaning_hint": "hervor = forth/out — bringing something to prominence"}]}, {"base_verb": "kaufen_verb", "members": [{"id": "einkaufen_verb", "lemma_de": "einkaufen", "particle": "ein", "particle_meaning_hint": "ein = in, i.e. buying things in(to your basket)"}]}, {"base_verb": "klaffen_verb", "members": [{"id": "auseinanderklaffen_verb", "lemma_de": "auseinanderklaffen", "particle": "auseinander", "particle_meaning_hint": "auseinander = apart — gaping apart from each other"}]}, {"base_verb": "kommen_verb", "members": [{"id": "gleichkommen_verb", "lemma_de": "gleichkommen", "particle": "gleich", "particle_meaning_hint": "gleich = equal — coming out equal to something"}, {"id": "vorkommen_verb", "lemma_de": "vorkommen", "particle": "vor", "particle_meaning_hint": "vor = before/forth — something coming forth, occurring"}, {"id": "zurueckkommen_verb", "lemma_de": "zurückkommen", "particle": "zurück", "particle_meaning_hint": "zurück = back"}]}, {"base_verb": "lassen_verb", "members": [{"id": "freilassen_verb", "lemma_de": "freilassen", "particle": "frei", "particle_meaning_hint": "frei = free — letting something go free"}]}, {"base_verb": "legen_verb", "members": [{"id": "festlegen_verb", "lemma_de": "festlegen", "particle": "fest", "particle_meaning_hint": "fest = firmly — laying something down firmly"}]}, {"base_verb": "lernen_verb", "members": [{"id": "kennenlernen_verb", "lemma_de": "kennenlernen", "particle": "kennen", "particle_meaning_hint": "kennen = to know — verb+verb compound with lernen (to learn), i.e. learn-to-know = meet/get acquainted"}]}, {"base_verb": "liegen_verb", "members": [{"id": "zugrundeliegen_verb", "lemma_de": "zugrundeliegen", "particle": "zugrunde", "particle_meaning_hint": "zugrunde = at the base/bottom — lying at the foundation of something"}]}, {"base_verb": "machen_verb", "members": [{"id": "wettmachen_verb", "lemma_de": "wettmachen", "particle": "wett", "particle_meaning_hint": "wett = even/compensated — making things even again"}]}, {"base_verb": "nehmen_verb", "members": [{"id": "teilnehmen_verb", "lemma_de": "teilnehmen", "particle": "teil", "particle_meaning_hint": "teil = part — taking a part in something"}, {"id": "vorwegnehmen_verb", "lemma_de": "vorwegnehmen", "particle": "vorweg", "particle_meaning_hint": "vorweg = beforehand — taking something before its time"}, {"id": "wahrnehmen_verb", "lemma_de": "wahrnehmen", "particle": "wahr", "particle_meaning_hint": "wahr = true/real — perceiving something as real"}]}, {"base_verb": "schlagen_verb", "members": [{"id": "niederschlagen_verb", "lemma_de": "sich niederschlagen", "particle": "nieder", "particle_meaning_hint": "nieder = down — settling down into a visible form"}, {"id": "vorschlagen_verb", "lemma_de": "vorschlagen", "particle": "vor", "particle_meaning_hint": "vor = forward/forth — putting an idea forward"}]}, {"base_verb": "sehen_verb", "members": [{"id": "fernsehen_verb", "lemma_de": "fernsehen", "particle": "fern", "particle_meaning_hint": "fern = far/distant — fixed compound with sehen (to see), i.e. watch (the distant screen)"}]}, {"base_verb": "setzen_verb", "members": [{"id": "auseinandersetzen_verb", "lemma_de": "sich auseinandersetzen", "particle": "auseinander", "particle_meaning_hint": "auseinander = apart — engaging closely and taking something apart mentally"}, {"id": "durchsetzen_verb", "lemma_de": "durchsetzen", "particle": "durch", "particle_meaning_hint": "durch = through — pushing something through to success"}, {"id": "gleichsetzen_verb", "lemma_de": "gleichsetzen", "particle": "gleich", "particle_meaning_hint": "gleich = equal — setting two things as equal"}, {"id": "hinwegsetzen_verb", "lemma_de": "sich hinwegsetzen", "particle": "hinweg", "particle_meaning_hint": "hinweg = over/across — setting oneself over the rules"}]}, {"base_verb": "stehen_verb", "members": [{"id": "aufstehen_verb", "lemma_de": "aufstehen", "particle": "auf", "particle_meaning_hint": "auf = up"}]}, {"base_verb": "stellen_verb", "members": [{"id": "infragestellen_verb", "lemma_de": "infragestellen", "particle": "infrage", "particle_meaning_hint": "infrage = into question — putting something up for doubt"}]}, {"base_verb": "treten_verb", "members": [{"id": "zutagetreten_verb", "lemma_de": "zutagetreten", "particle": "zutage", "particle_meaning_hint": "zutage = to light/into the open — stepping out into visibility"}]}, {"base_verb": "tun_verb", "members": [{"id": "wehtun_verb", "lemma_de": "wehtun", "particle": "weh", "particle_meaning_hint": "weh = painful — fixed compound with tun (to do)"}]}, {"base_verb": "zeichnen_verb", "members": [{"id": "abzeichnen_verb", "lemma_de": "sich abzeichnen", "particle": "ab", "particle_meaning_hint": "ab = off/away — a shape drawing itself into view"}]}, {"base_verb": "ziehen_verb", "members": [{"id": "umziehen_verb", "lemma_de": "umziehen", "particle": "um", "particle_meaning_hint": "um = around — moving your life around to a new place"}]}]};
+
+/*
+ * Pure-logic engine: Leitner spaced repetition + XP/gamification.
+ * No DOM, no localStorage access here — inputs/outputs only, so this file
+ * can be tested standalone with plain `node Tests/engine.test.js`.
+ * Exposed as `window.Engine` in the browser build; exported via
+ * module.exports when run under Node for tests.
+ */
+(function (root) {
+  "use strict";
+
+  var BOX_INTERVALS_DAYS = [0, 1, 3, 7, 14, 30, 90];
+  var MAX_BOX = BOX_INTERVALS_DAYS.length - 1;
+
+  var MASTERY = { NEW: "new", LEARNING: "learning", FAMILIAR: "familiar", MASTERED: "mastered" };
+
+  function masteryStateForBox(boxLevel, hasBeenReviewed) {
+    if (!hasBeenReviewed) return MASTERY.NEW;
+    if (boxLevel <= 2) return MASTERY.LEARNING;
+    if (boxLevel <= 4) return MASTERY.FAMILIAR;
+    return MASTERY.MASTERED;
+  }
+
+  function addDays(date, days) {
+    var d = new Date(date.getTime());
+    d.setDate(d.getDate() + days);
+    return d;
+  }
+
+  /**
+   * Creates a fresh progress record for a vocab entry the learner has just
+   * been introduced to (not yet reviewed).
+   */
+  function createProgress(entryId, now) {
+    now = now || new Date();
+    return {
+      id: entryId,
+      boxLevel: 0,
+      nextReviewDate: now.toISOString(),
+      lastReviewedDate: null,
+      correctStreak: 0,
+      totalReviews: 0,
+      totalCorrect: 0,
+      firstSeenDate: now.toISOString(),
+      dateMastered: null,
+      isLeech: false,
+    };
+  }
+
+  /**
+   * Applies the result of one review to a progress record. Returns a NEW
+   * progress object (does not mutate the input) plus the XP earned.
+   *
+   * @param {object} progress - existing VocabProgress record
+   * @param {boolean} wasCorrect
+   * @param {number} priority - 1-5, from the content entry
+   * @param {Date} [now]
+   */
+  function applyReview(progress, wasCorrect, priority, now) {
+    now = now || new Date();
+    var wasFirstReview = progress.totalReviews === 0;
+    var next = Object.assign({}, progress);
+
+    next.totalReviews = progress.totalReviews + 1;
+    next.lastReviewedDate = now.toISOString();
+
+    if (wasCorrect) {
+      next.totalCorrect = progress.totalCorrect + 1;
+      next.correctStreak = progress.correctStreak + 1;
+      next.boxLevel = Math.min(progress.boxLevel + 1, MAX_BOX);
+    } else {
+      next.correctStreak = 0;
+      next.boxLevel = 0;
+    }
+
+    next.nextReviewDate = addDays(now, BOX_INTERVALS_DAYS[next.boxLevel]).toISOString();
+
+    var accuracy = next.totalCorrect / next.totalReviews;
+    next.isLeech = next.totalReviews > 8 && accuracy < 0.5;
+
+    var wasMastered = masteryStateForBox(progress.boxLevel, progress.totalReviews > 0) === MASTERY.MASTERED;
+    var isMasteredNow = masteryStateForBox(next.boxLevel, true) === MASTERY.MASTERED;
+    next.dateMastered = progress.dateMastered;
+    if (!wasMastered && isMasteredNow) {
+      next.dateMastered = now.toISOString();
+    } else if (!isMasteredNow) {
+      next.dateMastered = null;
+    }
+
+    var xp = 0;
+    if (wasCorrect) {
+      xp = 5 + priority;
+      if (wasFirstReview) xp += 10;
+    }
+
+    return { progress: next, xpEarned: xp };
+  }
+
+  function masteryState(progress) {
+    return masteryStateForBox(progress.boxLevel, progress.totalReviews > 0);
+  }
+
+  function isDue(progress, now) {
+    now = now || new Date();
+    return new Date(progress.nextReviewDate).getTime() <= now.getTime();
+  }
+
+  /** Combo multiplier for a given in-session consecutive-correct streak. */
+  function comboMultiplier(streak) {
+    if (streak >= 10) return 2;
+    if (streak >= 5) return 1.5;
+    return 1;
+  }
+
+  // ---- Streaks ----
+  function isSameCalendarDay(isoA, isoB) {
+    var a = new Date(isoA), b = new Date(isoB);
+    return a.getFullYear() === b.getFullYear() &&
+      a.getMonth() === b.getMonth() &&
+      a.getDate() === b.getDate();
+  }
+
+  function isNextCalendarDay(isoPrev, isoNow) {
+    var prev = new Date(isoPrev);
+    var expected = addDays(prev, 1);
+    return isSameCalendarDay(expected.toISOString(), isoNow);
+  }
+
+  /**
+   * Call once when the day's goal is met (todayXP crosses dailyGoalXP).
+   * Returns the updated streak fields.
+   */
+  function recordGoalMet(profile, now) {
+    now = now || new Date();
+    var nowISO = now.toISOString();
+    var next = Object.assign({}, profile);
+
+    if (!profile.lastActiveDate) {
+      next.currentStreakDays = 1;
+    } else if (isSameCalendarDay(profile.lastActiveDate, nowISO)) {
+      // already counted today
+      next.currentStreakDays = profile.currentStreakDays;
+    } else if (isNextCalendarDay(profile.lastActiveDate, nowISO)) {
+      next.currentStreakDays = profile.currentStreakDays + 1;
+      if (next.currentStreakDays % 7 === 0) {
+        next.streakFreezesAvailable = Math.min((profile.streakFreezesAvailable || 0) + 1, 3);
+      }
+    } else {
+      // gap of 2+ days: use a freeze if available, else reset
+      if ((profile.streakFreezesAvailable || 0) > 0) {
+        next.streakFreezesAvailable = profile.streakFreezesAvailable - 1;
+        next.currentStreakDays = profile.currentStreakDays + 1;
+      } else {
+        next.currentStreakDays = 1;
+      }
+    }
+
+    next.longestStreakDays = Math.max(profile.longestStreakDays || 0, next.currentStreakDays);
+    next.lastActiveDate = nowISO;
+    return next;
+  }
+
+  var Engine = {
+    BOX_INTERVALS_DAYS: BOX_INTERVAL_DAYS_SAFE(),
+    MAX_BOX: MAX_BOX,
+    MASTERY: MASTERY,
+    createProgress: createProgress,
+    applyReview: applyReview,
+    masteryState: masteryState,
+    isDue: isDue,
+    comboMultiplier: comboMultiplier,
+    recordGoalMet: recordGoalMet,
+  };
+
+  function BOX_INTERVAL_DAYS_SAFE() {
+    return BOX_INTERVALS_DAYS.slice();
+  }
+
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = Engine;
+  } else {
+    root.Engine = Engine;
+  }
+})(typeof window !== "undefined" ? window : globalThis);
+
+/*
+ * Thin wrapper around the browser's Web Speech API (speechSynthesis) for
+ * German text-to-speech. Browser-only (no Node export) — this file is only
+ * ever loaded inside dist/german-vocab.html.
+ */
+(function (root) {
+  "use strict";
+
+  var supported = typeof window !== "undefined" && "speechSynthesis" in window;
+  var germanVoice = null;
+  var voicesReady = false;
+  var onReadyCallbacks = [];
+
+  function pickGermanVoice() {
+    if (!supported) return null;
+    var voices = window.speechSynthesis.getVoices();
+    if (!voices || voices.length === 0) return null;
+    var exact = voices.find(function (v) { return v.lang === "de-DE"; });
+    var prefix = voices.find(function (v) { return v.lang && v.lang.toLowerCase().indexOf("de") === 0; });
+    return exact || prefix || null;
+  }
+
+  function markReady() {
+    germanVoice = pickGermanVoice();
+    voicesReady = true;
+    onReadyCallbacks.forEach(function (cb) { cb(germanVoice); });
+    onReadyCallbacks = [];
+  }
+
+  if (supported) {
+    var initial = pickGermanVoice();
+    if (initial) {
+      germanVoice = initial;
+      voicesReady = true;
+    } else {
+      // Most browsers load the voice list asynchronously.
+      window.speechSynthesis.addEventListener("voiceschanged", markReady, { once: true });
+      // Fallback in case the event never fires (some older WebKit builds).
+      setTimeout(function () {
+        if (!voicesReady) markReady();
+      }, 1000);
+    }
+  }
+
+  /** True once we've checked for a German voice (may still be null if none found). */
+  function isReady() {
+    return voicesReady;
+  }
+
+  /** True if a German voice was actually found on this system/browser. */
+  function hasGermanVoice() {
+    return !!germanVoice;
+  }
+
+  /**
+   * Speaks German text aloud. Cancels any in-flight utterance first so rapid
+   * clicks don't overlap/garble audio.
+   * @param {string} text
+   * @param {{rate?: number, onEnd?: function, onError?: function}} [opts]
+   */
+  function speak(text, opts) {
+    opts = opts || {};
+    if (!supported) {
+      if (opts.onError) opts.onError(new Error("speechSynthesis not supported in this browser"));
+      return;
+    }
+    window.speechSynthesis.cancel();
+    var utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "de-DE";
+    utterance.rate = opts.rate || 0.95;
+    if (germanVoice) utterance.voice = germanVoice;
+    if (opts.onEnd) utterance.onend = opts.onEnd;
+    if (opts.onError) utterance.onerror = opts.onError;
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function cancel() {
+    if (supported) window.speechSynthesis.cancel();
+  }
+
+  root.Speech = {
+    isSupported: function () { return supported; },
+    isReady: isReady,
+    hasGermanVoice: hasGermanVoice,
+    speak: speak,
+    cancel: cancel,
+  };
+})(typeof window !== "undefined" ? window : globalThis);
+
+/*
+ * Pure-logic quiz generator: multiple-choice questions built from vocab
+ * entries. No DOM, no localStorage access — inputs/outputs only, so this
+ * file can be tested standalone with plain `node Tests/quiz.test.js`.
+ * Exposed as `window.QuizEngine` in the browser build; exported via
+ * module.exports when run under Node for tests.
+ */
+(function (root) {
+  "use strict";
+
+  var TYPES = ["meaning_de_to_en", "meaning_en_to_de", "gender", "cloze", "listening"];
+
+  function shuffle(list, rng) {
+    var r = rng || Math.random;
+    var a = list.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(r() * (i + 1));
+      var tmp = a[i];
+      a[i] = a[j];
+      a[j] = tmp;
+    }
+    return a;
+  }
+
+  /** Which question types make sense for a given entry. */
+  function eligibleTypes(entry) {
+    var types = ["meaning_de_to_en", "meaning_en_to_de", "listening"];
+    if (entry.pos === "noun" && entry.noun && entry.noun.gender) types.push("gender");
+    if (entry.cloze_word) types.push("cloze");
+    return types;
+  }
+
+  /**
+   * Picks up to `count` distractor values (strings) for a multiple-choice
+   * question, preferring entries of the same part of speech, excluding the
+   * entry itself and any value equal to the correct answer, and de-duping
+   * by value. Pads from the wider pool (any POS, allowing value repeats
+   * only as an absolute last resort) if the pool is small.
+   */
+  function pickDistractors(entry, pool, count, valueFn, rng) {
+    var correctValue = valueFn(entry);
+    var candidates = pool.filter(function (e) {
+      return e.id !== entry.id && valueFn(e) && valueFn(e) !== correctValue;
+    });
+    var samePos = shuffle(candidates.filter(function (e) { return e.pos === entry.pos; }), rng);
+    var otherPos = shuffle(candidates.filter(function (e) { return e.pos !== entry.pos; }), rng);
+    var ordered = samePos.concat(otherPos);
+
+    var seen = {};
+    var result = [];
+    for (var i = 0; i < ordered.length && result.length < count; i++) {
+      var v = valueFn(ordered[i]);
+      if (!seen[v]) {
+        seen[v] = true;
+        result.push(v);
+      }
+    }
+    // Last resort: pool too small for `count` distinct values — allow repeats
+    // rather than shipping a question with fewer than requested options.
+    for (var j = 0; result.length < count && ordered.length > 0; j++) {
+      result.push(valueFn(ordered[j % ordered.length]));
+    }
+    return result;
+  }
+
+  function buildQuestion(entry, pool, opts) {
+    opts = opts || {};
+    var rng = opts.rng || Math.random;
+    var types = eligibleTypes(entry);
+    var type = opts.type && types.indexOf(opts.type) !== -1 ? opts.type : types[Math.floor(rng() * types.length)];
+
+    if (type === "gender") {
+      return {
+        type: type, entry: entry, prompt: entry.lemma_de,
+        promptLabel: "Which article?",
+        options: shuffle(["der", "die", "das"], rng),
+        correctAnswer: entry.noun.gender,
+      };
+    }
+
+    if (type === "meaning_de_to_en") {
+      var correctEn = entry.translations_en[0];
+      var distractorsEn = pickDistractors(entry, pool, 3, function (e) { return e.translations_en[0]; }, rng);
+      return {
+        type: type, entry: entry, prompt: entry.lemma_de,
+        promptLabel: "What does this mean?",
+        options: shuffle([correctEn].concat(distractorsEn), rng),
+        correctAnswer: correctEn,
+      };
+    }
+
+    if (type === "meaning_en_to_de") {
+      var correctDe = entry.lemma_de;
+      var distractorsDe = pickDistractors(entry, pool, 3, function (e) { return e.lemma_de; }, rng);
+      return {
+        type: type, entry: entry, prompt: entry.translations_en[0],
+        promptLabel: "Which German word means this?",
+        options: shuffle([correctDe].concat(distractorsDe), rng),
+        correctAnswer: correctDe,
+      };
+    }
+
+    if (type === "cloze") {
+      var blanked = entry.example_de.replace(entry.cloze_word, "_____");
+      var distractorsCloze = pickDistractors(entry, pool, 3, function (e) { return e.cloze_word; }, rng);
+      return {
+        type: type, entry: entry, prompt: blanked,
+        promptLabel: "Fill in the blank",
+        options: shuffle([entry.cloze_word].concat(distractorsCloze), rng),
+        correctAnswer: entry.cloze_word,
+        exampleEn: entry.example_en,
+      };
+    }
+
+    if (type === "listening") {
+      var correctL = entry.lemma_de;
+      var distractorsL = pickDistractors(entry, pool, 3, function (e) { return e.lemma_de; }, rng);
+      return {
+        type: type, entry: entry, prompt: null,
+        promptLabel: "Listen and choose the word you heard",
+        options: shuffle([correctL].concat(distractorsL), rng),
+        correctAnswer: correctL,
+        audioText: entry.lemma_de,
+      };
+    }
+
+    return null;
+  }
+
+  /**
+   * Builds a quiz session: one question per entry in `targetEntries`
+   * (optionally shuffled/limited), pulling distractors from `pool`.
+   */
+  function buildSession(targetEntries, pool, opts) {
+    opts = opts || {};
+    var rng = opts.rng || Math.random;
+    var list = opts.shuffleEntries === false ? targetEntries.slice() : shuffle(targetEntries, rng);
+    if (opts.limit) list = list.slice(0, opts.limit);
+    return list.map(function (entry) { return buildQuestion(entry, pool, { rng: rng }); }).filter(Boolean);
+  }
+
+  var QuizEngine = {
+    TYPES: TYPES,
+    eligibleTypes: eligibleTypes,
+    pickDistractors: pickDistractors,
+    buildQuestion: buildQuestion,
+    buildSession: buildSession,
+    shuffle: shuffle,
+  };
+
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = QuizEngine;
+  } else {
+    root.QuizEngine = QuizEngine;
+  }
+})(typeof window !== "undefined" ? window : globalThis);
+
+(function () {
+  "use strict";
+
+  var STORAGE_KEY = "germanVocab.v1";
+  var CEFR_ORDER = ["A1", "A2", "B1", "B2", "C1", "C2"];
+  var LEARN_SESSION_SIZE = 10;
+  var REVIEW_SESSION_SIZE = 30;
+
+  // ---------------------------------------------------------------------
+  // Content indexing (VOCAB_ENTRIES / THEMES / VERB_FAMILIES come from data.js)
+  // ---------------------------------------------------------------------
+  var entries = (typeof VOCAB_ENTRIES !== "undefined" ? VOCAB_ENTRIES : []);
+  var themesList = (typeof THEMES !== "undefined" ? THEMES : []);
+  var verbFamilies = (typeof VERB_FAMILIES !== "undefined" ? VERB_FAMILIES : { families: [] });
+
+  var entriesById = {};
+  entries.forEach(function (e) { entriesById[e.id] = e; });
+
+  var themesById = {};
+  themesList.forEach(function (t) { themesById[t.id] = t; });
+
+  var entriesByLevel = {};
+  CEFR_ORDER.forEach(function (lvl) { entriesByLevel[lvl] = []; });
+  entries.forEach(function (e) {
+    if (entriesByLevel[e.cefr]) entriesByLevel[e.cefr].push(e);
+  });
+  CEFR_ORDER.forEach(function (lvl) {
+    entriesByLevel[lvl].sort(function (a, b) {
+      return (a.priority - b.priority) || a.id.localeCompare(b.id);
+    });
+  });
+
+  // ---------------------------------------------------------------------
+  // State
+  // ---------------------------------------------------------------------
+  function todayKey(date) {
+    var d = date || new Date();
+    return d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  }
+
+  function defaultState() {
+    return {
+      progress: {},
+      profile: {
+        totalXP: 0,
+        currentStreakDays: 0,
+        longestStreakDays: 0,
+        lastActiveDate: null,
+        streakFreezesAvailable: 0,
+        dailyGoalXP: 50,
+        todayXP: 0,
+        todayDate: todayKey(),
+        goalMetToday: false,
+        bestCombo: 0,
+        totalQuizQuestions: 0,
+        totalQuizCorrect: 0,
+        hadPerfectQuiz10: false,
+      },
+      achievements: [],
+      dailyActivity: {},
+      settings: { levelOverride: "auto", speechRate: 0.95, onboarded: false },
+    };
+  }
+
+  var state = loadState();
+
+  function loadState() {
+    var raw = null;
+    try { raw = localStorage.getItem(STORAGE_KEY); } catch (e) { /* private mode etc */ }
+    if (!raw) return defaultState();
+    try {
+      var parsed = JSON.parse(raw);
+      var base = defaultState();
+      return {
+        progress: parsed.progress || base.progress,
+        profile: Object.assign(base.profile, parsed.profile || {}),
+        achievements: parsed.achievements || base.achievements,
+        dailyActivity: parsed.dailyActivity || base.dailyActivity,
+        settings: Object.assign(base.settings, parsed.settings || {}),
+      };
+    } catch (e) {
+      console.error("Failed to parse saved progress, starting fresh.", e);
+      return defaultState();
+    }
+  }
+
+  function saveState() {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch (e) { console.error("Save failed", e); }
+  }
+
+  function checkDayRollover() {
+    var key = todayKey();
+    if (state.profile.todayDate !== key) {
+      state.profile.todayDate = key;
+      state.profile.todayXP = 0;
+      state.profile.goalMetToday = false;
+    }
+  }
+
+  function recordDailyActivity(patch) {
+    var key = todayKey();
+    var day = state.dailyActivity[key] || { xpEarned: 0, reviewsCompleted: 0, newWordsLearned: 0 };
+    if (patch.xpEarned) day.xpEarned += patch.xpEarned;
+    if (patch.reviewsCompleted) day.reviewsCompleted += patch.reviewsCompleted;
+    if (patch.newWordsLearned) day.newWordsLearned += patch.newWordsLearned;
+    state.dailyActivity[key] = day;
+  }
+
+  /** Awards XP, updates today/total XP, streak (on goal-met), returns {goalJustMet}. */
+  function awardXP(amount) {
+    checkDayRollover();
+    state.profile.totalXP += amount;
+    state.profile.todayXP += amount;
+
+    var goalJustMet = false;
+    if (!state.profile.goalMetToday && state.profile.todayXP >= state.profile.dailyGoalXP) {
+      state.profile.goalMetToday = true;
+      goalJustMet = true;
+      state.profile = Object.assign(state.profile, Engine.recordGoalMet(state.profile, new Date()));
+    }
+    return { goalJustMet: goalJustMet };
+  }
+
+  // ---------------------------------------------------------------------
+  // Current level + queues
+  // ---------------------------------------------------------------------
+  function masteredCountForLevel(lvl) {
+    var count = 0;
+    entriesByLevel[lvl].forEach(function (e) {
+      var p = state.progress[e.id];
+      if (p && Engine.masteryState(p) === Engine.MASTERY.MASTERED) count++;
+    });
+    return count;
+  }
+
+  function computeCurrentLevel() {
+    if (state.settings.levelOverride && state.settings.levelOverride !== "auto") {
+      return state.settings.levelOverride;
+    }
+    var fallback = null;
+    for (var i = 0; i < CEFR_ORDER.length; i++) {
+      var lvl = CEFR_ORDER[i];
+      var total = entriesByLevel[lvl].length;
+      if (total === 0) continue;
+      fallback = lvl;
+      var mastered = masteredCountForLevel(lvl);
+      if (mastered < total) return lvl;
+    }
+    return fallback || "A1";
+  }
+
+  function newWordsQueue(level) {
+    return entriesByLevel[level].filter(function (e) { return !state.progress[e.id]; }).slice(0, LEARN_SESSION_SIZE);
+  }
+
+  function dueQueue() {
+    var now = new Date();
+    var due = [];
+    Object.keys(state.progress).forEach(function (id) {
+      var p = state.progress[id];
+      if (entriesById[id] && Engine.isDue(p, now)) due.push(p);
+    });
+    due.sort(function (a, b) { return new Date(a.nextReviewDate) - new Date(b.nextReviewDate); });
+    return due.slice(0, REVIEW_SESSION_SIZE);
+  }
+
+  // ---------------------------------------------------------------------
+  // Achievements catalog
+  // ---------------------------------------------------------------------
+  var ACHIEVEMENTS = [
+    { id: "streak_7", emoji: "🔥", title: "Week Warrior", desc: "7-day streak", check: function (c) { return c.profile.longestStreakDays >= 7; } },
+    { id: "streak_30", emoji: "🔥", title: "Monthly Master", desc: "30-day streak", check: function (c) { return c.profile.longestStreakDays >= 30; } },
+    { id: "streak_100", emoji: "💯", title: "Centurion", desc: "100-day streak", check: function (c) { return c.profile.longestStreakDays >= 100; } },
+    { id: "combo_10", emoji: "⚡", title: "Combo Breaker", desc: "10+ combo in one session", check: function (c) { return c.profile.bestCombo >= 10; } },
+    { id: "mastered_10", emoji: "🌱", title: "First Sprouts", desc: "10 words mastered", check: function (c) { return c.masteredTotal >= 10; } },
+    { id: "mastered_50", emoji: "🌿", title: "Growing Strong", desc: "50 words mastered", check: function (c) { return c.masteredTotal >= 50; } },
+    { id: "mastered_150", emoji: "🌳", title: "Vocabulary Tree", desc: "150 words mastered", check: function (c) { return c.masteredTotal >= 150; } },
+    { id: "mastered_300", emoji: "🏔️", title: "Word Mountain", desc: "300 words mastered", check: function (c) { return c.masteredTotal >= 300; } },
+    { id: "verb_master", emoji: "🧩", title: "Verb Master", desc: "20 phrasal/composite verbs mastered", check: function (c) { return c.verbMastered >= 20; } },
+    { id: "level_a1", emoji: "🥉", title: "A1 Complete", desc: "Mastered every A1 word", check: function (c) { return c.levelComplete.A1; } },
+    { id: "level_a2", emoji: "🥈", title: "A2 Complete", desc: "Mastered every A2 word", check: function (c) { return c.levelComplete.A2; } },
+    { id: "level_b1", emoji: "🥇", title: "B1 Complete", desc: "Mastered every B1 word", check: function (c) { return c.levelComplete.B1; } },
+    { id: "quiz_25", emoji: "🧠", title: "Quiz Whiz", desc: "Answer 25 quiz questions", check: function (c) { return (c.profile.totalQuizQuestions || 0) >= 25; } },
+    { id: "quiz_perfect", emoji: "🎯", title: "Perfectionist", desc: "100% on a 10+ question quiz", check: function (c) { return !!c.profile.hadPerfectQuiz10; } },
+  ];
+
+  function achievementContext() {
+    var masteredTotal = 0, verbMastered = 0;
+    var levelComplete = {};
+    Object.keys(state.progress).forEach(function (id) {
+      var p = state.progress[id];
+      var entry = entriesById[id];
+      if (!entry) return;
+      if (Engine.masteryState(p) === Engine.MASTERY.MASTERED) {
+        masteredTotal++;
+        if (entry.pos === "phrasal_verb" || entry.pos === "composite_verb") verbMastered++;
+      }
+    });
+    CEFR_ORDER.forEach(function (lvl) {
+      var total = entriesByLevel[lvl].length;
+      levelComplete[lvl] = total > 0 && masteredCountForLevel(lvl) === total;
+    });
+    return { profile: state.profile, masteredTotal: masteredTotal, verbMastered: verbMastered, levelComplete: levelComplete };
+  }
+
+  function evaluateAchievements(announce) {
+    var ctx = achievementContext();
+    var unlockedIds = state.achievements.map(function (a) { return a.id; });
+    var newlyUnlocked = [];
+    ACHIEVEMENTS.forEach(function (a) {
+      if (unlockedIds.indexOf(a.id) !== -1) return;
+      if (a.check(ctx)) {
+        state.achievements.push({ id: a.id, dateUnlocked: new Date().toISOString() });
+        newlyUnlocked.push(a);
+      }
+    });
+    if (newlyUnlocked.length) saveState();
+    if (announce && newlyUnlocked.length) {
+      showCelebration("🏆", newlyUnlocked[0].title + " unlocked!", newlyUnlocked[0].desc);
+    }
+    return newlyUnlocked;
+  }
+
+  // ---------------------------------------------------------------------
+  // DOM helpers
+  // ---------------------------------------------------------------------
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+
+  function navigate(screen) {
+    document.querySelectorAll(".screen").forEach(function (el) { el.classList.toggle("is-active", el.dataset.screen === screen); });
+    document.querySelectorAll(".tab-btn").forEach(function (el) { el.classList.toggle("is-active", el.dataset.nav === screen); });
+    if (screen === "home") renderHome();
+    if (screen === "learn") startLearnSession();
+    if (screen === "review") startReviewSession();
+    if (screen === "dashboard") renderDashboard();
+    if (screen === "quiz") renderQuizHub();
+    if (screen === "achievements") renderAchievements();
+    if (screen === "settings") renderSettings();
+  }
+
+  function showCelebration(emoji, title, subtitle) {
+    $("celebration-emoji").textContent = emoji;
+    $("celebration-title").textContent = title;
+    $("celebration-subtitle").textContent = subtitle || "";
+    $("celebration-overlay").hidden = false;
+  }
+
+  // ---------------------------------------------------------------------
+  // Home
+  // ---------------------------------------------------------------------
+  function renderHome() {
+    checkDayRollover();
+    saveState();
+    var level = computeCurrentLevel();
+    var due = dueQueue();
+    var masteredTotal = achievementContext().masteredTotal;
+
+    $("streak-count").textContent = state.profile.currentStreakDays;
+    $("today-xp").textContent = state.profile.todayXP;
+    $("stat-due").textContent = due.length;
+    $("stat-mastered").textContent = masteredTotal;
+    $("stat-level-name").textContent = level;
+    $("review-due-badge").textContent = due.length;
+
+    var pct = Math.min(1, state.profile.todayXP / Math.max(1, state.profile.dailyGoalXP));
+    var circumference = 2 * Math.PI * 52;
+    $("xp-ring-fill").style.strokeDasharray = circumference;
+    $("xp-ring-fill").style.strokeDashoffset = circumference * (1 - pct);
+
+    var newAvailable = newWordsQueue(level).length;
+    $("home-subtitle").textContent = newAvailable > 0
+      ? newAvailable + " new word" + (newAvailable === 1 ? "" : "s") + " ready in " + level
+      : "You're caught up on new words for " + level + " — nice work!";
+    $("start-learn-btn").disabled = newAvailable === 0;
+    $("start-learn-btn").style.opacity = newAvailable === 0 ? 0.5 : 1;
+  }
+
+  // ---------------------------------------------------------------------
+  // Learn session
+  // ---------------------------------------------------------------------
+  var learnSession = null;
+
+  function startLearnSession() {
+    var level = computeCurrentLevel();
+    var queue = newWordsQueue(level);
+    learnSession = { queue: queue, index: 0, learned: 0, phase: "learning", level: level };
+    $("learn-combo-display").hidden = true;
+    renderLearnCard();
+  }
+
+  function renderLearnCard() {
+    var container = $("learn-content");
+    if (!learnSession || learnSession.index >= learnSession.queue.length) {
+      if (learnSession && learnSession.phase === "learning") {
+        if (learnSession.learned > 0) {
+          recordDailyActivity({ newWordsLearned: learnSession.learned });
+          saveState();
+        }
+        var learnedEntries = learnSession.queue.filter(function (e) { return !!state.progress[e.id]; });
+        if (learnedEntries.length > 0) {
+          learnSession.phase = "quiz";
+          var quizQuestions = QuizEngine.buildSession(learnedEntries, entriesByLevel[learnSession.level], {});
+          startQuizFlow({
+            containerEl: container,
+            progressEl: $("learn-progress"),
+            comboDisplayEl: $("learn-combo-display"),
+            comboCountEl: $("learn-combo-count"),
+            questions: quizQuestions,
+            onComplete: function (stats) {
+              learnSession.phase = "done";
+              learnSession.quizStats = stats;
+              if (stats.total >= 10 && stats.correct === stats.total) state.profile.hadPerfectQuiz10 = true;
+              saveState();
+              evaluateAchievements(true);
+              renderLearnCard();
+            },
+          });
+          return;
+        }
+        learnSession.phase = "done";
+      }
+      var quizStats = learnSession && learnSession.quizStats;
+      container.innerHTML =
+        '<div class="session-summary"><div class="big-emoji">🎉</div>' +
+        "<h2>Session complete!</h2><p class=\"muted\">" +
+        (learnSession ? learnSession.learned : 0) + " new word(s) learned" +
+        (quizStats ? " · quiz: " + quizStats.correct + "/" + quizStats.total + " correct (+" + quizStats.xp + " XP)" : "") +
+        "</p>" +
+        '<button class="btn btn-primary btn-large" data-nav="home">Back to Home</button></div>';
+      bindNavButtons(container);
+      $("learn-progress").textContent = learnSession ? learnSession.queue.length + " / " + learnSession.queue.length : "0 / 0";
+      return;
+    }
+
+    var entry = learnSession.queue[learnSession.index];
+    $("learn-progress").textContent = (learnSession.index + 1) + " / " + learnSession.queue.length;
+    container.innerHTML = wordCardHTML(entry, { showAnswer: true });
+    bindCardInteractions(container, entry);
+
+    var speakBtn = container.querySelector(".speak-btn");
+    if (speakBtn) speakBtn.addEventListener("click", function () { speakEntry(entry, speakBtn); });
+    setTimeout(function () { speakEntry(entry, speakBtn); }, 300);
+
+    var nextBtn = container.querySelector("#learn-next-btn");
+    if (nextBtn) {
+      nextBtn.addEventListener("click", function () {
+        if (!state.progress[entry.id]) {
+          state.progress[entry.id] = Engine.createProgress(entry.id, new Date());
+          learnSession.learned++;
+          saveState();
+        }
+        learnSession.index++;
+        renderLearnCard();
+      });
+    }
+  }
+
+  // ---------------------------------------------------------------------
+  // Review session
+  // ---------------------------------------------------------------------
+  var reviewSession = null;
+
+  function startReviewSession() {
+    var due = dueQueue();
+    reviewSession = { queue: due, index: 0, combo: 0, correct: 0, xp: 0 };
+    $("combo-display").hidden = true;
+    renderReviewCard();
+  }
+
+  function renderReviewCard() {
+    var container = $("review-content");
+    if (!reviewSession || reviewSession.index >= reviewSession.queue.length) {
+      if (reviewSession) {
+        state.profile.bestCombo = Math.max(state.profile.bestCombo, reviewSession.combo);
+        recordDailyActivity({ reviewsCompleted: reviewSession.queue.length });
+        saveState();
+        evaluateAchievements(true);
+      }
+      $("combo-display").hidden = true;
+      var total = reviewSession ? reviewSession.queue.length : 0;
+      var correct = reviewSession ? reviewSession.correct : 0;
+      var xp = reviewSession ? reviewSession.xp : 0;
+      container.innerHTML =
+        '<div class="session-summary"><div class="big-emoji">✅</div>' +
+        "<h2>Review complete!</h2><p class=\"muted\">" + correct + " / " + total + " correct · +" + xp + " XP</p>" +
+        '<button class="btn btn-primary btn-large" data-nav="home">Back to Home</button></div>';
+      bindNavButtons(container);
+      $("review-progress").textContent = total + " / " + total;
+      return;
+    }
+
+    var progress = reviewSession.queue[reviewSession.index];
+    var entry = entriesById[progress.id];
+    $("review-progress").textContent = (reviewSession.index + 1) + " / " + reviewSession.queue.length;
+
+    container.innerHTML = wordCardHTML(entry, { showAnswer: false });
+    bindCardInteractions(container, entry);
+    var speakBtn = container.querySelector(".speak-btn");
+    if (speakBtn) speakBtn.addEventListener("click", function () { speakEntry(entry, speakBtn); });
+
+    var revealBtn = container.querySelector("#reveal-btn");
+    if (revealBtn) {
+      revealBtn.addEventListener("click", function () {
+        container.innerHTML = wordCardHTML(entry, { showAnswer: true, grading: true });
+        bindCardInteractions(container, entry);
+        var sb = container.querySelector(".speak-btn");
+        if (sb) sb.addEventListener("click", function () { speakEntry(entry, sb); });
+        setTimeout(function () { speakEntry(entry, sb); }, 200);
+
+        container.querySelector("#grade-wrong").addEventListener("click", function () { gradeReview(progress, entry, false); });
+        container.querySelector("#grade-right").addEventListener("click", function () { gradeReview(progress, entry, true); });
+      });
+    }
+  }
+
+  function gradeReview(progressRecord, entry, wasCorrect) {
+    var result = Engine.applyReview(progressRecord, wasCorrect, entry.priority, new Date());
+    state.progress[entry.id] = result.progress;
+
+    if (wasCorrect) {
+      reviewSession.combo++;
+      reviewSession.correct++;
+    } else {
+      reviewSession.combo = 0;
+    }
+    var multiplier = Engine.comboMultiplier(reviewSession.combo);
+    var xpEarned = Math.round(result.xpEarned * multiplier);
+    reviewSession.xp += xpEarned;
+
+    var xpResult = awardXP(xpEarned);
+    saveState();
+
+    if (reviewSession.combo >= 3) {
+      $("combo-display").hidden = false;
+      $("combo-count").textContent = reviewSession.combo;
+    } else {
+      $("combo-display").hidden = true;
+    }
+
+    reviewSession.index++;
+
+    if (xpResult.goalJustMet) {
+      showCelebration("🎯", "Daily goal reached!", state.profile.currentStreakDays + "-day streak");
+    }
+
+    renderReviewCard();
+  }
+
+  // ---------------------------------------------------------------------
+  // Quiz flow (shared by the post-Learn quiz and the standalone Quiz tab)
+  // ---------------------------------------------------------------------
+  var activeQuizFlow = null;
+
+  function startQuizFlow(config) {
+    activeQuizFlow = {
+      questions: config.questions,
+      index: 0,
+      correct: 0,
+      xp: 0,
+      combo: 0,
+      containerEl: config.containerEl,
+      progressEl: config.progressEl,
+      comboDisplayEl: config.comboDisplayEl,
+      comboCountEl: config.comboCountEl,
+      onComplete: config.onComplete,
+    };
+    if (activeQuizFlow.comboDisplayEl) activeQuizFlow.comboDisplayEl.hidden = true;
+    renderQuizStep();
+  }
+
+  function renderQuizStep() {
+    var flow = activeQuizFlow;
+    var container = flow.containerEl;
+
+    if (flow.index >= flow.questions.length) {
+      if (flow.comboDisplayEl) flow.comboDisplayEl.hidden = true;
+      flow.onComplete({ total: flow.questions.length, correct: flow.correct, xp: flow.xp });
+      return;
+    }
+
+    var q = flow.questions[flow.index];
+    if (flow.progressEl) flow.progressEl.textContent = (flow.index + 1) + " / " + flow.questions.length;
+    container.innerHTML = quizQuestionHTML(q);
+
+    if (q.type === "listening") {
+      var listenBtn = container.querySelector(".speak-btn");
+      if (listenBtn) listenBtn.addEventListener("click", function () { speakEntry({ lemma_de: q.audioText }, listenBtn); });
+      setTimeout(function () { speakEntry({ lemma_de: q.audioText }, listenBtn); }, 300);
+    }
+
+    var optionBtns = container.querySelectorAll(".quiz-option-btn");
+    optionBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () { handleQuizAnswer(q, parseInt(btn.dataset.index, 10), optionBtns, container); });
+    });
+  }
+
+  function quizQuestionHTML(q) {
+    var entry = q.entry;
+    var theme = themeFor(entry);
+    var colors = THEME_COLORS[entry.themes[0]] || ["#6d5ce8", "#efeaff", "#5645d1"];
+    var styleVars = 'style="--theme-color:' + colors[0] + ";--theme-color-light:" + colors[1] + ";--theme-color-dark:" + colors[2] + '"';
+
+    var promptHTML;
+    if (q.type === "listening") {
+      promptHTML = '<button class="speak-btn" aria-label="Play pronunciation">🔊</button>';
+    } else if (q.type === "cloze") {
+      promptHTML = '<div class="quiz-prompt is-sentence">' + esc(q.prompt) + "</div>";
+    } else {
+      promptHTML = '<div class="quiz-prompt">' + esc(q.prompt) + "</div>";
+    }
+
+    var optionsHTML = q.options.map(function (opt, idx) {
+      return '<button class="quiz-option-btn" data-index="' + idx + '">' + esc(opt) + "</button>";
+    }).join("");
+
+    return '<div class="word-card" ' + styleVars + '>' +
+      '<div class="word-card-theme">' + theme.icon + " " + esc(theme.label_en) + "</div>" +
+      '<div class="quiz-prompt-label">' + esc(q.promptLabel) + "</div>" +
+      promptHTML +
+      '<div class="quiz-options">' + optionsHTML + "</div>" +
+      "</div>";
+  }
+
+  function handleQuizAnswer(q, selectedIndex, optionBtns, container) {
+    var flow = activeQuizFlow;
+    var selected = q.options[selectedIndex];
+    var wasCorrect = selected === q.correctAnswer;
+    var entry = q.entry;
+
+    optionBtns.forEach(function (btn) {
+      var btnIndex = parseInt(btn.dataset.index, 10);
+      btn.classList.add("is-disabled");
+      if (q.options[btnIndex] === q.correctAnswer) btn.classList.add("is-correct");
+      else if (btnIndex === selectedIndex) btn.classList.add("is-wrong");
+    });
+
+    var xpEarned = 0;
+    var progressRecord = state.progress[entry.id];
+    if (progressRecord) {
+      var result = Engine.applyReview(progressRecord, wasCorrect, entry.priority, new Date());
+      state.progress[entry.id] = result.progress;
+      flow.combo = wasCorrect ? flow.combo + 1 : 0;
+      xpEarned = Math.round(result.xpEarned * Engine.comboMultiplier(flow.combo));
+      flow.xp += xpEarned;
+    }
+    if (wasCorrect) flow.correct++;
+
+    state.profile.totalQuizQuestions = (state.profile.totalQuizQuestions || 0) + 1;
+    if (wasCorrect) state.profile.totalQuizCorrect = (state.profile.totalQuizCorrect || 0) + 1;
+    state.profile.bestCombo = Math.max(state.profile.bestCombo || 0, flow.combo);
+
+    var xpResult = xpEarned > 0 ? awardXP(xpEarned) : { goalJustMet: false };
+    saveState();
+
+    if (flow.comboDisplayEl) {
+      if (flow.combo >= 3) { flow.comboDisplayEl.hidden = false; flow.comboCountEl.textContent = flow.combo; }
+      else flow.comboDisplayEl.hidden = true;
+    }
+
+    var feedbackHTML = '<div class="quiz-feedback ' + (wasCorrect ? "is-correct" : "is-wrong") + '">' +
+      (wasCorrect ? "✅ Correct!" : "❌ Not quite — correct answer: " + esc(q.correctAnswer)) + "</div>";
+    var explanationHTML = '<div class="quiz-explanation">' + esc(entry.example_de) + "<br>" + esc(entry.example_en) + "</div>";
+    container.insertAdjacentHTML("beforeend", feedbackHTML + explanationHTML +
+      '<div class="card-actions"><button class="btn btn-primary" id="quiz-next-btn">Next →</button></div>');
+
+    container.querySelector("#quiz-next-btn").addEventListener("click", function () {
+      activeQuizFlow.index++;
+      renderQuizStep();
+      if (xpResult.goalJustMet) showCelebration("🎯", "Daily goal reached!", state.profile.currentStreakDays + "-day streak");
+    });
+  }
+
+  // ---------------------------------------------------------------------
+  // Standalone Quiz tab — test everything you've learned so far
+  // ---------------------------------------------------------------------
+  function renderQuizHub() {
+    var container = $("quiz-content");
+    $("quiz-combo-display").hidden = true;
+    var eligible = Object.keys(state.progress).filter(function (id) { return !!entriesById[id]; });
+    var count = eligible.length;
+
+    if (count === 0) {
+      $("quiz-progress").textContent = "0 / 0";
+      container.innerHTML = '<div class="empty-state"><span class="big-emoji">🧠</span>Learn some words first — then come back here to quiz yourself on everything you know.</div>';
+      return;
+    }
+
+    var sessionSize = Math.min(20, count);
+    $("quiz-progress").textContent = "";
+    container.innerHTML =
+      '<div class="word-card quiz-hub-card">' +
+      '<div class="word-card-theme">🧠 Review Everything</div>' +
+      '<p class="muted">Multiple-choice questions drawn from every word you\'ve learned so far.</p>' +
+      '<div class="quiz-hub-count">' + count + "</div>" +
+      '<p class="muted small">word' + (count === 1 ? "" : "s") + ' learned so far</p>' +
+      '<div class="card-actions"><button class="btn btn-primary btn-large" id="start-standalone-quiz-btn">Start Quiz (' + sessionSize + " questions)</button></div>" +
+      "</div>";
+
+    container.querySelector("#start-standalone-quiz-btn").addEventListener("click", function () {
+      var targetEntries = eligible.map(function (id) { return entriesById[id]; });
+      var questions = QuizEngine.buildSession(targetEntries, entries, { limit: sessionSize });
+      startQuizFlow({
+        containerEl: container,
+        progressEl: $("quiz-progress"),
+        comboDisplayEl: $("quiz-combo-display"),
+        comboCountEl: $("quiz-combo-count"),
+        questions: questions,
+        onComplete: function (stats) {
+          if (stats.total >= 10 && stats.correct === stats.total) state.profile.hadPerfectQuiz10 = true;
+          recordDailyActivity({ reviewsCompleted: stats.total });
+          saveState();
+          evaluateAchievements(true);
+          renderQuizSummary(stats);
+        },
+      });
+    });
+  }
+
+  function renderQuizSummary(stats) {
+    var container = $("quiz-content");
+    $("quiz-progress").textContent = stats.total + " / " + stats.total;
+    container.innerHTML =
+      '<div class="session-summary"><div class="big-emoji">🧠</div>' +
+      "<h2>Quiz complete!</h2><p class=\"muted\">" + stats.correct + " / " + stats.total + " correct · +" + stats.xp + " XP</p>" +
+      '<div class="cta-row"><button class="btn btn-primary btn-large" id="quiz-again-btn">Take another quiz</button>' +
+      '<button class="btn btn-secondary btn-large" data-nav="home">Back to Home</button></div></div>';
+    bindNavButtons(container);
+    container.querySelector("#quiz-again-btn").addEventListener("click", renderQuizHub);
+  }
+
+  // ---------------------------------------------------------------------
+  // Word card rendering (shared by Learn + Review)
+  // ---------------------------------------------------------------------
+  function themeFor(entry) {
+    var id = entry.themes && entry.themes[0];
+    return themesById[id] || { icon: "📘", label_en: "General" };
+  }
+
+  var THEME_COLORS = {
+    food: ["#ff9f1c", "#fff3e0", "#b96b00"], home: ["#3b82f6", "#e8f1ff", "#1d4ed8"],
+    daily_routine: ["#6d5ce8", "#efeaff", "#5645d1"], travel: ["#00b8a3", "#e2fbf7", "#0a7d6d"],
+    people: ["#ec4899", "#fde7f3", "#be185d"], work: ["#334155", "#e2e8f0", "#1e293b"],
+    emotions: ["#f5c518", "#fff9db", "#8a6d00"], nature: ["#22c55e", "#e8fbee", "#17924a"],
+    body_health: ["#ef4444", "#fdeaea", "#b91c1c"], shopping: ["#ec4899", "#fde7f3", "#be185d"],
+    communication: ["#3b82f6", "#e8f1ff", "#1d4ed8"], technology: ["#334155", "#e2e8f0", "#1e293b"],
+    education: ["#6d5ce8", "#efeaff", "#5645d1"], time_numbers: ["#00b8a3", "#e2fbf7", "#0a7d6d"],
+    grammar_glue: ["#94a3b8", "#f1f5f9", "#475569"],
+    society: ["#0ea5e9", "#e0f2fe", "#075985"], abstract_ideas: ["#8b5cf6", "#f3e8ff", "#6d28d9"],
+    argumentation: ["#f59e0b", "#fef3c7", "#92400e"],
+  };
+
+  function wordCardHTML(entry, opts) {
+    var theme = themeFor(entry);
+    var colors = THEME_COLORS[entry.themes[0]] || ["#6d5ce8", "#efeaff", "#5645d1"];
+    var styleVars = 'style="--theme-color:' + colors[0] + ";--theme-color-light:" + colors[1] + ";--theme-color-dark:" + colors[2] + '"';
+
+    var genderBadge = "";
+    if (entry.pos === "noun" && entry.noun) {
+      genderBadge = '<span class="gender-badge gender-' + entry.noun.gender + '">' + entry.noun.gender + "</span>";
+    }
+    var posLabel = { noun: "Noun", adjective: "Adjective", verb: "Verb", phrasal_verb: "Phrasal Verb", composite_verb: "Composite Verb", other: "Word" }[entry.pos] || "Word";
+
+    var html = '<div class="word-card" ' + styleVars + '>';
+    html += '<div class="word-card-theme">' + theme.icon + " " + esc(theme.label_en) + "</div>";
+    html += '<div class="pos-badge">' + posLabel + "</div><br>";
+    html += genderBadge + '<span class="word-lemma">' + esc(entry.lemma_de) + "</span>";
+    if (entry.noun && entry.noun.plural_de) {
+      html += '<div class="muted small">Plural: ' + esc(entry.noun.plural_de) + "</div>";
+    }
+    html += '<button class="speak-btn" aria-label="Play pronunciation">🔊</button>';
+
+    if (opts.showAnswer) {
+      html += '<div class="translation-list">' + esc(entry.translations_en.join(", ")) + "</div>";
+      html += '<div class="example-block"><div class="example-de">' + esc(entry.example_de) + '</div><div class="example-en">' + esc(entry.example_en) + "</div></div>";
+
+      if (entry.verb && entry.verb.particle_meaning_hint) {
+        html += '<div class="particle-hint">🧩 <b>' + esc(entry.verb.particle) + "</b>: " + esc(entry.verb.particle_meaning_hint) + "</div>";
+      }
+      if (entry.verb) {
+        html += '<div class="verb-forms"><b>Present:</b> ' + esc(entry.verb.present_3sg) + " &nbsp; <b>Perfekt:</b> " + esc(entry.verb.perfekt) + "</div>";
+      }
+      if (entry.adjective && (entry.adjective.comparative_irregular || entry.adjective.superlative_irregular)) {
+        html += '<div class="verb-forms"><b>Comparative:</b> ' + esc(entry.adjective.comparative_irregular || "—") +
+          " &nbsp; <b>Superlative:</b> " + esc(entry.adjective.superlative_irregular || "—") + "</div>";
+      }
+      if (entry.notes) {
+        html += '<div class="muted small" style="margin-top:10px;">💡 ' + esc(entry.notes) + "</div>";
+      }
+
+      if (opts.grading) {
+        html += '<div class="card-actions"><button class="btn btn-secondary" id="grade-wrong">😕 Didn\'t know</button>' +
+          '<button class="btn btn-primary" id="grade-right">✅ Knew it</button></div>';
+      } else {
+        html += '<div class="card-actions"><button class="btn btn-primary" id="learn-next-btn">Got it → Next</button></div>';
+      }
+    } else {
+      html += '<div class="reveal-hint">Try to recall the meaning, then reveal.</div>';
+      html += '<div class="card-actions"><button class="btn btn-primary" id="reveal-btn">Show answer</button></div>';
+    }
+    html += "</div>";
+    return html;
+  }
+
+  function bindCardInteractions() { /* reserved for future per-card wiring */ }
+
+  function bindNavButtons(scope) {
+    (scope || document).querySelectorAll("[data-nav]").forEach(function (btn) {
+      btn.addEventListener("click", function () { navigate(btn.dataset.nav); });
+    });
+  }
+
+  function speakEntry(entry, btnEl) {
+    if (!entry) return;
+    if (btnEl) btnEl.classList.add("is-speaking");
+    Speech.speak(entry.lemma_de, {
+      rate: state.settings.speechRate,
+      onEnd: function () { if (btnEl) btnEl.classList.remove("is-speaking"); },
+      onError: function () { if (btnEl) btnEl.classList.remove("is-speaking"); },
+    });
+  }
+
+  // ---------------------------------------------------------------------
+  // Dashboard
+  // ---------------------------------------------------------------------
+  var POS_VALUES = ["noun", "adjective", "verb", "phrasal_verb", "composite_verb", "other"];
+
+  function populateDashboardFilters() {
+    var levelSel = $("filter-level");
+    if (!levelSel.dataset.populated) {
+      levelSel.innerHTML = '<option value="all">All levels</option>' +
+        CEFR_ORDER.map(function (l) { return '<option value="' + l + '">' + l + "</option>"; }).join("");
+      levelSel.dataset.populated = "1";
+      levelSel.addEventListener("change", renderDashboard);
+    }
+    var posSel = $("filter-pos");
+    if (!posSel.dataset.populated) {
+      posSel.innerHTML = '<option value="all">All word types</option>' +
+        POS_VALUES.map(function (p) { return '<option value="' + p + '">' + p.replace("_", " ") + "</option>"; }).join("");
+      posSel.dataset.populated = "1";
+      posSel.addEventListener("change", renderDashboard);
+    }
+  }
+
+  function renderDashboard() {
+    populateDashboardFilters();
+    var selectedLevel = $("filter-level").value || "all";
+    var selectedPos = $("filter-pos").value || "all";
+    var levels = selectedLevel === "all" ? CEFR_ORDER : [selectedLevel];
+
+    var rowsHTML = "";
+    levels.forEach(function (lvl) {
+      var levelEntries = entriesByLevel[lvl].filter(function (e) { return selectedPos === "all" || e.pos === selectedPos; });
+      var total = levelEntries.length;
+      var counts = { mastered: 0, familiar: 0, learning: 0, newC: 0 };
+      levelEntries.forEach(function (e) {
+        var p = state.progress[e.id];
+        if (!p) { counts.newC++; return; }
+        var m = Engine.masteryState(p);
+        if (m === Engine.MASTERY.MASTERED) counts.mastered++;
+        else if (m === Engine.MASTERY.FAMILIAR) counts.familiar++;
+        else counts.learning++;
+      });
+      var pct = function (n) { return total === 0 ? 0 : (n / total * 100); };
+      var introduced = counts.mastered + counts.familiar + counts.learning;
+      rowsHTML += '<div class="coverage-row"><div class="coverage-row-top"><span>' + lvl + '</span><span>' +
+        counts.mastered + " mastered · " + introduced + " / " + total + " started</span></div>" +
+        '<div class="coverage-track">' +
+        '<div class="seg-mastered" style="width:' + pct(counts.mastered) + '%"></div>' +
+        '<div class="seg-familiar" style="width:' + pct(counts.familiar) + '%"></div>' +
+        '<div class="seg-learning" style="width:' + pct(counts.learning) + '%"></div>' +
+        '<div class="seg-new" style="width:' + pct(counts.newC) + '%"></div>' +
+        "</div></div>";
+    });
+    $("coverage-bars").innerHTML = rowsHTML + '<div class="coverage-legend">' +
+      '<span><span class="legend-dot" style="background:var(--green)"></span>Mastered</span>' +
+      '<span><span class="legend-dot" style="background:var(--teal)"></span>Familiar</span>' +
+      '<span><span class="legend-dot" style="background:var(--orange)"></span>Learning</span>' +
+      '<span><span class="legend-dot" style="background:var(--border)"></span>Not started</span></div>';
+
+    renderHeatmap();
+    renderVerbFamilies();
+  }
+
+  function renderHeatmap() {
+    var cells = "";
+    var now = new Date();
+    for (var i = 83; i >= 0; i--) {
+      var d = new Date(now.getTime());
+      d.setDate(d.getDate() - i);
+      var key = todayKey(d);
+      var day = state.dailyActivity[key];
+      var cls = "heat-cell";
+      if (day) {
+        if (day.xpEarned >= 100) cls += " heat-4";
+        else if (day.xpEarned >= 50) cls += " heat-3";
+        else if (day.xpEarned >= 20) cls += " heat-2";
+        else if (day.xpEarned > 0) cls += " heat-1";
+      }
+      cells += '<div class="' + cls + '" title="' + key + (day ? " · " + day.xpEarned + " XP" : "") + '"></div>';
+    }
+    $("streak-heatmap").innerHTML = cells;
+  }
+
+  function renderVerbFamilies() {
+    var families = (verbFamilies.families || []).filter(function (f) { return f.members.length > 1; });
+    if (families.length === 0) {
+      $("verb-families").innerHTML = '<div class="empty-state"><span class="big-emoji">🧩</span>No verb families yet — add more phrasal/composite verbs sharing a base verb.</div>';
+      return;
+    }
+    var html = families.map(function (f) {
+      var baseEntry = entriesById[f.base_verb];
+      var baseLabel = baseEntry ? baseEntry.lemma_de : f.base_verb.replace("_verb", "");
+      var members = f.members.map(function (m) {
+        return '<div class="family-member"><span>' + esc(m.lemma_de) + '</span><span class="family-particle">' +
+          esc(m.particle || "") + (m.particle_meaning_hint ? " — " + esc(m.particle_meaning_hint) : "") + "</span></div>";
+      }).join("");
+      return '<div class="family-card"><div class="family-base">' + esc(baseLabel) + "</div>" + members + "</div>";
+    }).join("");
+    $("verb-families").innerHTML = html;
+  }
+
+  // ---------------------------------------------------------------------
+  // Achievements screen
+  // ---------------------------------------------------------------------
+  function renderAchievements() {
+    evaluateAchievements(false);
+    var unlockedIds = state.achievements.map(function (a) { return a.id; });
+    var html = ACHIEVEMENTS.map(function (a) {
+      var unlocked = unlockedIds.indexOf(a.id) !== -1;
+      return '<div class="badge-tile' + (unlocked ? " is-unlocked" : "") + '" title="' + esc(a.desc) + '">' +
+        '<span class="badge-emoji">' + a.emoji + "</span><div class=\"badge-title\">" + esc(a.title) + "</div></div>";
+    }).join("");
+    $("achievements-grid").innerHTML = html;
+  }
+
+  // ---------------------------------------------------------------------
+  // Settings
+  // ---------------------------------------------------------------------
+  function renderSettings() {
+    $("daily-goal-input").value = state.profile.dailyGoalXP;
+    var levelSel = $("level-override");
+    if (!levelSel.dataset.populated) {
+      levelSel.innerHTML = '<option value="auto">Auto (recommended)</option>' +
+        CEFR_ORDER.map(function (l) { return '<option value="' + l + '">' + l + "</option>"; }).join("");
+      levelSel.dataset.populated = "1";
+    }
+    levelSel.value = state.settings.levelOverride;
+    $("speech-rate").value = state.settings.speechRate;
+    updateVoiceStatus();
+  }
+
+  function updateVoiceStatus() {
+    var el = $("voice-status");
+    if (!Speech.isSupported()) { el.textContent = "Speech synthesis isn't supported in this browser."; return; }
+    if (!Speech.isReady()) {
+      el.textContent = "Checking for a German voice…";
+      setTimeout(updateVoiceStatus, 300);
+      return;
+    }
+    el.textContent = Speech.hasGermanVoice()
+      ? "A German voice is available on this device. ✅"
+      : "No German voice found — check your OS/browser language & voice settings for the best experience.";
+  }
+
+  // ---------------------------------------------------------------------
+  // Wiring
+  // ---------------------------------------------------------------------
+  function init() {
+    checkDayRollover();
+    saveState();
+
+    document.querySelectorAll("[data-nav]").forEach(function (btn) {
+      btn.addEventListener("click", function () { navigate(btn.dataset.nav); });
+    });
+
+    $("start-review-btn").addEventListener("click", function () { navigate("review"); });
+    $("start-learn-btn").addEventListener("click", function () { navigate("learn"); });
+    $("settings-btn").addEventListener("click", function () { navigate("settings"); });
+    $("celebration-close").addEventListener("click", function () { $("celebration-overlay").hidden = true; });
+
+    $("daily-goal-input").addEventListener("change", function (e) {
+      var v = parseInt(e.target.value, 10);
+      if (!isNaN(v) && v > 0) { state.profile.dailyGoalXP = v; saveState(); }
+    });
+    $("level-override").addEventListener("change", function (e) {
+      state.settings.levelOverride = e.target.value; saveState();
+    });
+    $("speech-rate").addEventListener("change", function (e) {
+      state.settings.speechRate = parseFloat(e.target.value); saveState();
+    });
+    $("test-voice-btn").addEventListener("click", function () {
+      Speech.speak("Das ist ein Test. Ich lerne Deutsch.", { rate: state.settings.speechRate });
+    });
+
+    $("export-btn").addEventListener("click", function () {
+      var blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = "german-vocab-progress-" + todayKey() + ".json";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    });
+    $("import-btn").addEventListener("click", function () { $("import-file").click(); });
+    $("import-file").addEventListener("change", function (e) {
+      var file = e.target.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function () {
+        try {
+          var parsed = JSON.parse(reader.result);
+          if (!parsed || typeof parsed !== "object" || !parsed.progress || !parsed.profile) {
+            throw new Error("File doesn't look like a valid progress export.");
+          }
+          if (confirm("This will replace your current progress with the imported file. Continue?")) {
+            state = parsed;
+            saveState();
+            navigate("home");
+            alert("Progress imported.");
+          }
+        } catch (err) {
+          alert("Couldn't import that file: " + err.message);
+        }
+        $("import-file").value = "";
+      };
+      reader.readAsText(file);
+    });
+    $("reset-btn").addEventListener("click", function () {
+      if (confirm("This permanently deletes all your progress, XP, and achievements. Are you sure?")) {
+        state = defaultState();
+        saveState();
+        navigate("home");
+      }
+    });
+
+    navigate("home");
+    maybeShowOnboarding();
+  }
+
+  function maybeShowOnboarding() {
+    if (state.settings.onboarded) return;
+    var grid = $("onboarding-level-grid");
+    grid.innerHTML = CEFR_ORDER.map(function (l) { return '<button class="level-pick-btn" data-level="' + l + '">' + l + "</button>"; }).join("");
+    grid.querySelectorAll(".level-pick-btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        state.settings.levelOverride = btn.dataset.level;
+        state.settings.onboarded = true;
+        saveState();
+        $("onboarding-overlay").hidden = true;
+        navigate("home");
+      });
+    });
+    $("onboarding-overlay").hidden = false;
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+
+</script>
+<!--BUILD:SCRIPT_END-->
+</body>
+</html>

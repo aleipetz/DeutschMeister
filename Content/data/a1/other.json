@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A1",
+  "pos": "other",
+  "entries": [
+    {
+      "id": "und_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "und",
+      "translations_en": [
+        "and"
+      ],
+      "example_de": "Ich habe einen Bruder und eine Schwester.",
+      "example_en": "I have a brother and a sister.",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1,
+      "cloze_word": "und"
+    },
+    {
+      "id": "aber_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "aber",
+      "translations_en": [
+        "but"
+      ],
+      "example_de": "Ich bin müde, aber glücklich.",
+      "example_en": "I am tired, but happy.",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1,
+      "cloze_word": "aber"
+    }
+  ]
+}
