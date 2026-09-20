@@ -1,7 +1,7 @@
 # iOS architecture
 
-Target: iPhone 17 Pro (iOS 26), personal use, installed via a free Apple ID "Personal Team".
-Native SwiftUI. No third-party dependencies.
+Target: iPhone 17 Pro, personal use, installed via a free Apple ID "Personal Team".
+Native SwiftUI. No third-party dependencies. Built with Xcode 27 (iOS 27 SDK).
 
 ## Decisions
 
@@ -12,7 +12,8 @@ Native SwiftUI. No third-party dependencies.
 | Persistence | One `progress.json` in Application Support | State is a single small document. Same shape as the web app's `germanVocab.v1`, so exports from the prototype import directly. SwiftData would add a schema and migration burden for no gain. |
 | Content delivery | One `vocab-bundle.json` in the app bundle | Generated from `Content/` by `Tools/build_bundle.py`. Committed, so building the app never requires Python. |
 | Speech | `AVSpeechSynthesizer`, `de-DE` | Reliable on-device German; replaces the Web Speech API. |
-| Minimum iOS | 26 | Only one device to support. |
+| Minimum iOS | 18.0 | Below the phone's OS on purpose, so an OS update never blocks a build. Needs 17+ for `@Observable`. |
+| Testing | Swift Testing, hosted in the app | `Domain/` and `Data/` are covered; run with the command below. |
 | Signing | Free Apple ID Personal Team | Personal use. App must be re-run from Xcode every 7 days. No iCloud / push capabilities, none needed. |
 
 ## Data flow
@@ -47,23 +48,40 @@ Rule: `Domain/` never imports SwiftUI. Views never contain scheduling, XP or qui
 
 ## Port order
 
-1. `Domain/`: models, `LeitnerEngine`, streaks, `QuizGenerator`, `Achievements`, with tests ported first
-   (`Prototype/Tests/*.test.js` are the spec). The JS tests are the parity check.
-2. `Data/`: `build_bundle.py`, `ContentStore`, `ProgressStore` (including import of prototype exports).
-3. `Speech/`.
+1. **Done.** `Domain/`: models, `LeitnerEngine`, streaks, `QuizGenerator`, `Achievements`, `StudyPlanner`, with the
+   prototype's JS tests ported (`Prototype/Tests/*.test.js` were the spec).
+2. **Done.** `Data/`: `Tools/build_bundle.py`, `ContentStore`, `ProgressStore`, import of prototype exports.
+3. `Speech/`: `SpeechService`.
 4. `DesignSystem/` and `Features/`: Home → Learn → Review → Quiz → Progress → Badges → Settings → Onboarding.
-5. Run on the simulator, then on the iPhone.
+   `Features/RootView.swift` is a placeholder until then.
+5. App icon, then run on the iPhone.
 
-## Fixes to make during the port (found in the prototype)
+## Running the tests
 
-- **Import**: the prototype replaces state without merging defaults; a partial export could break it.
-  The port must decode with defaults for every missing field and reject invalid files without touching current state.
-- **Cloze questions**: `String.replace` blanks the *first* substring match, which can hit the wrong place
-  (e.g. `gut` inside a longer word). Blank the whole-word match of `cloze_word`.
-- **Level badges** only exist for A1 to B1; add B2, C1, C2 (the learner is B2 to C1).
-- **Leech words** (`isLeech`) are tracked but never surfaced. Add a "tricky words" filter in Progress.
-- Time handling: the prototype stores ISO timestamps and compares local calendar days. Use `Calendar.current`
-  and inject a clock into the engine so streak and due-date logic is testable.
+```bash
+xcodebuild test -project iOS/DeutschMeister.xcodeproj -scheme DeutschMeister \
+  -destination 'platform=iOS Simulator,name=iPhone 17' CODE_SIGNING_ALLOWED=NO
+```
+
+`iOS/DeutschMeisterTests/ContentBundleTests.swift` also checks the shipped `vocab-bundle.json`, so a bad content
+edit fails the build even if you forget `Tools/validate_content.py`.
+
+After changing anything in `Content/data/`, run `python3 Tools/validate_content.py && python3 Tools/build_bundle.py`.
+
+## Fixes made during the port (found in the prototype)
+
+- **Import** (done): the prototype replaced state wholesale; a partial export could break it. Every field now decodes
+  with a default, out-of-range box levels are clamped, and files without `progress` and `profile` objects are rejected
+  before any state changes.
+- **Cloze blanking** (done, hardened rather than fixed): the prototype blanked the first substring match. No current
+  entry is affected, but a future one could be (`lang` in `Verlangen`). The port prefers a whole-word match, then a
+  word-start match, then any match. The word-start tier matters: 10 entries deliberately blank a particle inside the
+  infinitive (`auf` in `aufgefallen`).
+- **Level badges** (done): B2, C1 and C2 added.
+- **Corrupt save file** (done): moved aside to `progress.corrupt-<time>.json` instead of being overwritten.
+- **Clock and calendar** (done): the engine takes `now` and a `Calendar`, so streak and due-date logic is tested with a
+  fixed UTC calendar.
+- **Leech words** (`isLeech`) are tracked but never surfaced. Still to do: a "tricky words" filter in Progress.
 
 ## Content status
 
