@@ -3,11 +3,613 @@
   "cefr": "C2",
   "pos": "adjective",
   "entries": [
-    { "id": "unumgaenglich_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unumgänglich", "translations_en": ["unavoidable", "inevitable"], "example_de": "Eine Reform ist unumgänglich.", "example_en": "A reform is unavoidable.", "cloze_word": "unumgänglich", "themes": ["abstract_ideas"], "priority": 3 },
-    { "id": "fragwuerdig_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "fragwürdig", "translations_en": ["questionable", "dubious"], "example_de": "Seine Methoden sind fragwürdig.", "example_en": "His methods are questionable.", "cloze_word": "fragwürdig", "themes": ["argumentation"], "priority": 2 },
-    { "id": "unerlaesslich_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unerlässlich", "translations_en": ["essential", "indispensable"], "example_de": "Geduld ist unerlässlich in diesem Beruf.", "example_en": "Patience is essential in this profession.", "cloze_word": "unerlässlich", "themes": ["abstract_ideas"], "priority": 2 },
-    { "id": "vielsagend_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "vielsagend", "translations_en": ["telling", "meaningful"], "example_de": "Sie warf ihm einen vielsagenden Blick zu.", "example_en": "She gave him a telling look.", "cloze_word": "vielsagenden", "themes": ["communication"], "priority": 4 },
-    { "id": "schwerwiegend_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "schwerwiegend", "translations_en": ["grave", "weighty", "serious"], "example_de": "Das hat schwerwiegende Folgen.", "example_en": "That has grave consequences.", "cloze_word": "schwerwiegende", "themes": ["abstract_ideas"], "priority": 2 },
-    { "id": "unantastbar_adjective", "cefr": "C2", "pos": "adjective", "lemma_de": "unantastbar", "translations_en": ["untouchable", "inviolable"], "example_de": "Die Menschenwürde ist unantastbar.", "example_en": "Human dignity is inviolable.", "cloze_word": "unantastbar", "themes": ["society"], "priority": 3 }
+    {
+      "id": "unumgaenglich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unumgänglich",
+      "translations_en": [
+        "unavoidable",
+        "inevitable"
+      ],
+      "example_de": "Eine Reform ist unumgänglich.",
+      "example_en": "A reform is unavoidable.",
+      "cloze_word": "unumgänglich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "fragwuerdig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "fragwürdig",
+      "translations_en": [
+        "questionable",
+        "dubious"
+      ],
+      "example_de": "Seine Methoden sind fragwürdig.",
+      "example_en": "His methods are questionable.",
+      "cloze_word": "fragwürdig",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "unerlaesslich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unerlässlich",
+      "translations_en": [
+        "essential",
+        "indispensable"
+      ],
+      "example_de": "Geduld ist unerlässlich in diesem Beruf.",
+      "example_en": "Patience is essential in this profession.",
+      "cloze_word": "unerlässlich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "vielsagend_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "vielsagend",
+      "translations_en": [
+        "telling",
+        "meaningful"
+      ],
+      "example_de": "Sie warf ihm einen vielsagenden Blick zu.",
+      "example_en": "She gave him a telling look.",
+      "cloze_word": "vielsagenden",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "schwerwiegend_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "schwerwiegend",
+      "translations_en": [
+        "grave",
+        "weighty",
+        "serious"
+      ],
+      "example_de": "Das hat schwerwiegende Folgen.",
+      "example_en": "That has grave consequences.",
+      "cloze_word": "schwerwiegende",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "unantastbar_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unantastbar",
+      "translations_en": [
+        "untouchable",
+        "inviolable"
+      ],
+      "example_de": "Die Menschenwürde ist unantastbar.",
+      "example_en": "Human dignity is inviolable.",
+      "cloze_word": "unantastbar",
+      "themes": [
+        "society"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "abwegig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "abwegig",
+      "translations_en": [
+        "far-fetched"
+      ],
+      "example_de": "Das ist eine abwegige Vorstellung.",
+      "example_en": "That is a far-fetched idea.",
+      "cloze_word": "abwegige",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "haltlos_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "haltlos",
+      "translations_en": [
+        "unfounded"
+      ],
+      "example_de": "Die Vorwürfe sind haltlos.",
+      "example_en": "The accusations are unfounded.",
+      "cloze_word": "haltlos",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "gekuenstelt_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "gekünstelt",
+      "translations_en": [
+        "affected",
+        "artificial"
+      ],
+      "example_de": "Sein Lächeln wirkte gekünstelt.",
+      "example_en": "His smile seemed affected.",
+      "cloze_word": "gekünstelt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "anmassend_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "anmaßend",
+      "translations_en": [
+        "presumptuous"
+      ],
+      "example_de": "Sein Ton ist anmaßend.",
+      "example_en": "His tone is presumptuous.",
+      "cloze_word": "anmaßend",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "ueberheblich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "überheblich",
+      "translations_en": [
+        "arrogant"
+      ],
+      "example_de": "Er wirkt überheblich.",
+      "example_en": "He comes across as arrogant.",
+      "cloze_word": "überheblich",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "eloquent_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "eloquent",
+      "translations_en": [
+        "eloquent"
+      ],
+      "example_de": "Sie ist eine eloquente Rednerin.",
+      "example_en": "She is an eloquent speaker.",
+      "cloze_word": "eloquente",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "pointiert_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "pointiert",
+      "translations_en": [
+        "pointed",
+        "incisive"
+      ],
+      "example_de": "Das war eine pointierte Bemerkung.",
+      "example_en": "That was a pointed remark.",
+      "cloze_word": "pointierte",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "raetselhaft_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "rätselhaft",
+      "translations_en": [
+        "mysterious"
+      ],
+      "example_de": "Sein Verhalten ist rätselhaft.",
+      "example_en": "His behaviour is mysterious.",
+      "cloze_word": "rätselhaft",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "undurchsichtig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "undurchsichtig",
+      "translations_en": [
+        "opaque",
+        "shady"
+      ],
+      "example_de": "Seine Motive bleiben undurchsichtig.",
+      "example_en": "His motives remain opaque.",
+      "cloze_word": "undurchsichtig",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "unergruendlich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unergründlich",
+      "translations_en": [
+        "unfathomable"
+      ],
+      "example_de": "Die Wege des Schicksals sind unergründlich.",
+      "example_en": "The ways of fate are unfathomable.",
+      "cloze_word": "unergründlich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "unwaegbar_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unwägbar",
+      "translations_en": [
+        "imponderable"
+      ],
+      "example_de": "Es bleiben viele unwägbare Risiken.",
+      "example_en": "Many imponderable risks remain.",
+      "cloze_word": "unwägbare",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "unabsehbar_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unabsehbar",
+      "translations_en": [
+        "unforeseeable"
+      ],
+      "example_de": "Die Folgen sind unabsehbar.",
+      "example_en": "The consequences are unforeseeable.",
+      "cloze_word": "unabsehbar",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "unumstoesslich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unumstößlich",
+      "translations_en": [
+        "irrefutable",
+        "unshakeable"
+      ],
+      "example_de": "Das ist eine unumstößliche Tatsache.",
+      "example_en": "That is an irrefutable fact.",
+      "cloze_word": "unumstößliche",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "unwiderruflich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unwiderruflich",
+      "translations_en": [
+        "irrevocable"
+      ],
+      "example_de": "Die Entscheidung ist unwiderruflich.",
+      "example_en": "The decision is irrevocable.",
+      "cloze_word": "unwiderruflich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "unweigerlich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unweigerlich",
+      "translations_en": [
+        "inevitably"
+      ],
+      "example_de": "Das führt unweigerlich zu Streit.",
+      "example_en": "That inevitably leads to arguments.",
+      "cloze_word": "unweigerlich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "unerbittlich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unerbittlich",
+      "translations_en": [
+        "relentless"
+      ],
+      "example_de": "Die Zeit vergeht unerbittlich.",
+      "example_en": "Time passes relentlessly.",
+      "cloze_word": "unerbittlich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "ruecksichtslos_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "rücksichtslos",
+      "translations_en": [
+        "ruthless",
+        "inconsiderate"
+      ],
+      "example_de": "Er fährt rücksichtslos.",
+      "example_en": "He drives recklessly.",
+      "cloze_word": "rücksichtslos",
+      "themes": [
+        "people"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "skrupellos_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "skrupellos",
+      "translations_en": [
+        "unscrupulous"
+      ],
+      "example_de": "Er handelt skrupellos.",
+      "example_en": "He acts unscrupulously.",
+      "cloze_word": "skrupellos",
+      "themes": [
+        "people"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "gewissenhaft_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "gewissenhaft",
+      "translations_en": [
+        "conscientious"
+      ],
+      "example_de": "Sie arbeitet sehr gewissenhaft.",
+      "example_en": "She works very conscientiously.",
+      "cloze_word": "gewissenhaft",
+      "themes": [
+        "work"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "verwerflich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "verwerflich",
+      "translations_en": [
+        "reprehensible"
+      ],
+      "example_de": "Das ist moralisch verwerflich.",
+      "example_en": "That is morally reprehensible.",
+      "cloze_word": "verwerflich",
+      "themes": [
+        "society"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "verfaenglich_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "verfänglich",
+      "translations_en": [
+        "tricky",
+        "compromising"
+      ],
+      "example_de": "Das war eine verfängliche Frage.",
+      "example_en": "That was a tricky question.",
+      "cloze_word": "verfängliche",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "wehmuetig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "wehmütig",
+      "translations_en": [
+        "wistful"
+      ],
+      "example_de": "Sie lächelte wehmütig.",
+      "example_en": "She smiled wistfully.",
+      "cloze_word": "wehmütig",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "gelassen_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "gelassen",
+      "translations_en": [
+        "calm",
+        "composed"
+      ],
+      "example_de": "Er blieb gelassen.",
+      "example_en": "He remained calm.",
+      "cloze_word": "gelassen",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "unbeirrt_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "unbeirrt",
+      "translations_en": [
+        "undeterred"
+      ],
+      "example_de": "Sie verfolgte unbeirrt ihr Ziel.",
+      "example_en": "She pursued her goal undeterred.",
+      "cloze_word": "unbeirrt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "verbissen_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "verbissen",
+      "translations_en": [
+        "dogged",
+        "grim"
+      ],
+      "example_de": "Er kämpft verbissen um den Sieg.",
+      "example_en": "He fights doggedly for victory.",
+      "cloze_word": "verbissen",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "hartnaeckig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "hartnäckig",
+      "translations_en": [
+        "persistent"
+      ],
+      "example_de": "Sie blieb hartnäckig.",
+      "example_en": "She remained persistent.",
+      "cloze_word": "hartnäckig",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "engstirnig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "engstirnig",
+      "translations_en": [
+        "narrow-minded"
+      ],
+      "example_de": "Das ist eine engstirnige Sichtweise.",
+      "example_en": "That is a narrow-minded view.",
+      "cloze_word": "engstirnige",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "weltfremd_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "weltfremd",
+      "translations_en": [
+        "unworldly"
+      ],
+      "example_de": "Seine Ideen sind weltfremd.",
+      "example_en": "His ideas are unworldly.",
+      "cloze_word": "weltfremd",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "kurzsichtig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "kurzsichtig",
+      "translations_en": [
+        "short-sighted"
+      ],
+      "example_de": "Das ist eine kurzsichtige Politik.",
+      "example_en": "That is a short-sighted policy.",
+      "cloze_word": "kurzsichtige",
+      "themes": [
+        "society"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "weitsichtig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "weitsichtig",
+      "translations_en": [
+        "far-sighted"
+      ],
+      "example_de": "Sie handelt weitsichtig.",
+      "example_en": "She acts with foresight.",
+      "cloze_word": "weitsichtig",
+      "themes": [
+        "society"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "umsichtig_adjective",
+      "cefr": "C2",
+      "pos": "adjective",
+      "lemma_de": "umsichtig",
+      "translations_en": [
+        "prudent",
+        "cautious"
+      ],
+      "example_de": "Er handelte umsichtig.",
+      "example_en": "He acted prudently.",
+      "cloze_word": "umsichtig",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4
+    }
   ]
 }

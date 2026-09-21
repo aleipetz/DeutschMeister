@@ -3,11 +3,807 @@
   "cefr": "C2",
   "pos": "phrasal_verb",
   "entries": [
-    { "id": "hinwegsetzen_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "sich hinwegsetzen", "translations_en": ["to disregard", "to override"], "example_de": "Er setzt sich über alle Regeln hinweg.", "example_en": "He disregards all the rules.", "cloze_word": "hinweg", "themes": ["society"], "priority": 3, "verb": { "separable": true, "irregular": false, "present_3sg": "setzt sich ... hinweg", "perfekt": "hat sich hinweggesetzt", "praeteritum_3sg": null, "base_verb": "setzen_verb", "particle": "hinweg", "particle_meaning_hint": "hinweg = over/across — setting oneself over the rules" } },
-    { "id": "aufrechterhalten_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "aufrechterhalten", "translations_en": ["to maintain", "to uphold"], "example_de": "Die Firma will das Angebot aufrechterhalten.", "example_en": "The company wants to maintain the offer.", "cloze_word": "aufrecht", "themes": ["work"], "priority": 3, "verb": { "separable": true, "irregular": true, "present_3sg": "erhält ... aufrecht", "perfekt": "hat aufrechterhalten", "praeteritum_3sg": null, "base_verb": "erhalten_verb", "particle": "aufrecht", "particle_meaning_hint": "aufrecht = upright — keeping something standing upright" } },
-    { "id": "zutagetreten_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "zutagetreten", "translations_en": ["to come to light", "to emerge"], "example_de": "Die Probleme traten erst später zutage.", "example_en": "The problems only came to light later.", "cloze_word": "zutage", "themes": ["abstract_ideas"], "priority": 4, "verb": { "separable": true, "irregular": true, "present_3sg": "tritt ... zutage", "perfekt": "ist zutagegetreten", "praeteritum_3sg": null, "base_verb": "treten_verb", "particle": "zutage", "particle_meaning_hint": "zutage = to light/into the open — stepping out into visibility" } },
-    { "id": "abfinden_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "sich abfinden", "translations_en": ["to come to terms with", "to accept"], "example_de": "Sie musste sich mit der Situation abfinden.", "example_en": "She had to come to terms with the situation.", "cloze_word": "ab", "themes": ["emotions"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "findet sich ... ab", "perfekt": "hat sich abgefunden", "praeteritum_3sg": null, "base_verb": "finden_verb", "particle": "ab", "particle_meaning_hint": "ab = off/away — settling a matter and letting it go" } },
-    { "id": "hinausgehen_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "hinausgehen", "translations_en": ["to go beyond", "to exceed"], "example_de": "Das geht über meine Kompetenzen hinaus.", "example_en": "That goes beyond my competencies.", "cloze_word": "hinaus", "themes": ["abstract_ideas"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "geht ... hinaus", "perfekt": "ist hinausgegangen", "praeteritum_3sg": null, "base_verb": "gehen_verb", "particle": "hinaus", "particle_meaning_hint": "hinaus = out/beyond" } },
-    { "id": "niederschlagen_verb", "cefr": "C2", "pos": "phrasal_verb", "lemma_de": "sich niederschlagen", "translations_en": ["to be reflected in", "to manifest as"], "example_de": "Der Stress schlägt sich in seiner Gesundheit nieder.", "example_en": "The stress is reflected in his health.", "cloze_word": "nieder", "themes": ["abstract_ideas"], "priority": 3, "verb": { "separable": true, "irregular": true, "present_3sg": "schlägt sich ... nieder", "perfekt": "hat sich niedergeschlagen", "praeteritum_3sg": null, "base_verb": "schlagen_verb", "particle": "nieder", "particle_meaning_hint": "nieder = down — settling down into a visible form" } }
+    {
+      "id": "hinwegsetzen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "sich hinwegsetzen",
+      "translations_en": [
+        "to disregard",
+        "to override"
+      ],
+      "example_de": "Er setzt sich über alle Regeln hinweg.",
+      "example_en": "He disregards all the rules.",
+      "cloze_word": "hinweg",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt sich ... hinweg",
+        "perfekt": "hat sich hinweggesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "hinweg",
+        "particle_meaning_hint": "hinweg = over/across — setting oneself over the rules"
+      }
+    },
+    {
+      "id": "aufrechterhalten_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "aufrechterhalten",
+      "translations_en": [
+        "to maintain",
+        "to uphold"
+      ],
+      "example_de": "Die Firma will das Angebot aufrechterhalten.",
+      "example_en": "The company wants to maintain the offer.",
+      "cloze_word": "aufrecht",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "erhält ... aufrecht",
+        "perfekt": "hat aufrechterhalten",
+        "praeteritum_3sg": null,
+        "base_verb": "erhalten_verb",
+        "particle": "aufrecht",
+        "particle_meaning_hint": "aufrecht = upright — keeping something standing upright"
+      }
+    },
+    {
+      "id": "zutagetreten_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zutagetreten",
+      "translations_en": [
+        "to come to light",
+        "to emerge"
+      ],
+      "example_de": "Die Probleme traten erst später zutage.",
+      "example_en": "The problems only came to light later.",
+      "cloze_word": "zutage",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "tritt ... zutage",
+        "perfekt": "ist zutagegetreten",
+        "praeteritum_3sg": null,
+        "base_verb": "treten_verb",
+        "particle": "zutage",
+        "particle_meaning_hint": "zutage = to light/into the open — stepping out into visibility"
+      }
+    },
+    {
+      "id": "abfinden_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "sich abfinden",
+      "translations_en": [
+        "to come to terms with",
+        "to accept"
+      ],
+      "example_de": "Sie musste sich mit der Situation abfinden.",
+      "example_en": "She had to come to terms with the situation.",
+      "cloze_word": "ab",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "findet sich ... ab",
+        "perfekt": "hat sich abgefunden",
+        "praeteritum_3sg": null,
+        "base_verb": "finden_verb",
+        "particle": "ab",
+        "particle_meaning_hint": "ab = off/away — settling a matter and letting it go"
+      }
+    },
+    {
+      "id": "hinausgehen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "hinausgehen",
+      "translations_en": [
+        "to go beyond",
+        "to exceed"
+      ],
+      "example_de": "Das geht über meine Kompetenzen hinaus.",
+      "example_en": "That goes beyond my competencies.",
+      "cloze_word": "hinaus",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... hinaus",
+        "perfekt": "ist hinausgegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "hinaus",
+        "particle_meaning_hint": "hinaus = out/beyond"
+      }
+    },
+    {
+      "id": "niederschlagen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "sich niederschlagen",
+      "translations_en": [
+        "to be reflected in",
+        "to manifest as"
+      ],
+      "example_de": "Der Stress schlägt sich in seiner Gesundheit nieder.",
+      "example_en": "The stress is reflected in his health.",
+      "cloze_word": "nieder",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "schlägt sich ... nieder",
+        "perfekt": "hat sich niedergeschlagen",
+        "praeteritum_3sg": null,
+        "base_verb": "schlagen_verb",
+        "particle": "nieder",
+        "particle_meaning_hint": "nieder = down — settling down into a visible form"
+      }
+    },
+    {
+      "id": "abtun_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "abtun",
+      "translations_en": [
+        "to dismiss"
+      ],
+      "example_de": "Er tut die Kritik als Unsinn ab.",
+      "example_en": "He dismisses the criticism as nonsense.",
+      "cloze_word": "ab",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "tut ... ab",
+        "perfekt": "hat abgetan",
+        "praeteritum_3sg": null,
+        "base_verb": "tun_verb",
+        "particle": "ab",
+        "particle_meaning_hint": "ab = off/away — waving something away"
+      }
+    },
+    {
+      "id": "herabsetzen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "herabsetzen",
+      "translations_en": [
+        "to reduce",
+        "to belittle"
+      ],
+      "example_de": "Er setzt ihre Leistung herab.",
+      "example_en": "He belittles her achievement.",
+      "cloze_word": "herab",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... herab",
+        "perfekt": "hat herabgesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "herab",
+        "particle_meaning_hint": "herab = down — setting something lower"
+      }
+    },
+    {
+      "id": "herabwuerdigen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "herabwürdigen",
+      "translations_en": [
+        "to degrade",
+        "to disparage"
+      ],
+      "example_de": "Er würdigt seine Kollegen herab.",
+      "example_en": "He disparages his colleagues.",
+      "cloze_word": "herab",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "würdigt ... herab",
+        "perfekt": "hat herabgewürdigt",
+        "praeteritum_3sg": null,
+        "base_verb": "wuerdigen_verb",
+        "particle": "herab",
+        "particle_meaning_hint": "herab = down — lowering someone's worth"
+      }
+    },
+    {
+      "id": "herunterspielen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "herunterspielen",
+      "translations_en": [
+        "to downplay"
+      ],
+      "example_de": "Die Firma spielt das Problem herunter.",
+      "example_en": "The company downplays the problem.",
+      "cloze_word": "herunter",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "spielt ... herunter",
+        "perfekt": "hat heruntergespielt",
+        "praeteritum_3sg": null,
+        "base_verb": "spielen_verb",
+        "particle": "herunter",
+        "particle_meaning_hint": "herunter = down — playing something down"
+      }
+    },
+    {
+      "id": "hochspielen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "hochspielen",
+      "translations_en": [
+        "to blow up",
+        "to exaggerate"
+      ],
+      "example_de": "Die Medien spielen den Vorfall hoch.",
+      "example_en": "The media blow the incident up.",
+      "cloze_word": "hoch",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "spielt ... hoch",
+        "perfekt": "hat hochgespielt",
+        "praeteritum_3sg": null,
+        "base_verb": "spielen_verb",
+        "particle": "hoch",
+        "particle_meaning_hint": "hoch = up — playing something up"
+      }
+    },
+    {
+      "id": "entgegenhalten_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "entgegenhalten",
+      "translations_en": [
+        "to counter",
+        "to object"
+      ],
+      "example_de": "Man hält ihm entgegen, dass das falsch ist.",
+      "example_en": "People counter that this is wrong.",
+      "cloze_word": "entgegen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... entgegen",
+        "perfekt": "hat entgegengehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "entgegen",
+        "particle_meaning_hint": "entgegen = against/towards — holding something up against a claim"
+      }
+    },
+    {
+      "id": "umdeuten_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "umdeuten",
+      "translations_en": [
+        "to reinterpret"
+      ],
+      "example_de": "Er deutet die Niederlage in einen Erfolg um.",
+      "example_en": "He reinterprets the defeat as a success.",
+      "cloze_word": "um",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "deutet ... um",
+        "perfekt": "hat umgedeutet",
+        "praeteritum_3sg": null,
+        "base_verb": "deuten_verb",
+        "particle": "um",
+        "particle_meaning_hint": "um = around/over — giving something a new meaning"
+      }
+    },
+    {
+      "id": "zuwiderlaufen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zuwiderlaufen",
+      "translations_en": [
+        "to run counter to"
+      ],
+      "example_de": "Das läuft unseren Zielen zuwider.",
+      "example_en": "That runs counter to our goals.",
+      "cloze_word": "zuwider",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "läuft ... zuwider",
+        "perfekt": "ist zuwidergelaufen",
+        "praeteritum_3sg": null,
+        "base_verb": "laufen_verb",
+        "particle": "zuwider",
+        "particle_meaning_hint": "zuwider = contrary — running against"
+      }
+    },
+    {
+      "id": "zusammenfuegen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zusammenfügen",
+      "translations_en": [
+        "to join together"
+      ],
+      "example_de": "Sie fügt die Einzelteile zusammen.",
+      "example_en": "She joins the individual parts together.",
+      "cloze_word": "zusammen",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "fügt ... zusammen",
+        "perfekt": "hat zusammengefügt",
+        "praeteritum_3sg": null,
+        "base_verb": "fuegen_verb",
+        "particle": "zusammen",
+        "particle_meaning_hint": "zusammen = together — joining parts together"
+      }
+    },
+    {
+      "id": "festschreiben_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "festschreiben",
+      "translations_en": [
+        "to lay down",
+        "to enshrine"
+      ],
+      "example_de": "Das Gesetz schreibt die Rechte fest.",
+      "example_en": "The law enshrines the rights.",
+      "cloze_word": "fest",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "schreibt ... fest",
+        "perfekt": "hat festgeschrieben",
+        "praeteritum_3sg": null,
+        "base_verb": "schreiben_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firm — writing something down firmly"
+      }
+    },
+    {
+      "id": "fortbestehen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "fortbestehen",
+      "translations_en": [
+        "to continue to exist"
+      ],
+      "example_de": "Die Probleme bestehen fort.",
+      "example_en": "The problems persist.",
+      "cloze_word": "fort",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "besteht ... fort",
+        "perfekt": "hat fortbestanden",
+        "praeteritum_3sg": null,
+        "base_verb": "bestehen_verb",
+        "particle": "fort",
+        "particle_meaning_hint": "fort = onward — continuing to exist"
+      }
+    },
+    {
+      "id": "einfordern_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "einfordern",
+      "translations_en": [
+        "to demand",
+        "to insist on"
+      ],
+      "example_de": "Sie fordert ihr Recht ein.",
+      "example_en": "She insists on her right.",
+      "cloze_word": "ein",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "fordert ... ein",
+        "perfekt": "hat eingefordert",
+        "praeteritum_3sg": null,
+        "base_verb": "fordern_verb",
+        "particle": "ein",
+        "particle_meaning_hint": "ein = in — demanding what is owed"
+      }
+    },
+    {
+      "id": "herausfordern_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "herausfordern",
+      "translations_en": [
+        "to challenge",
+        "to provoke"
+      ],
+      "example_de": "Er fordert seinen Gegner heraus.",
+      "example_en": "He challenges his opponent.",
+      "cloze_word": "heraus",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "fordert ... heraus",
+        "perfekt": "hat herausgefordert",
+        "praeteritum_3sg": null,
+        "base_verb": "fordern_verb",
+        "particle": "heraus",
+        "particle_meaning_hint": "heraus = out — calling someone out"
+      }
+    },
+    {
+      "id": "entgegennehmen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "entgegennehmen",
+      "translations_en": [
+        "to accept",
+        "to receive"
+      ],
+      "example_de": "Er nimmt den Preis entgegen.",
+      "example_en": "He accepts the prize.",
+      "cloze_word": "entgegen",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... entgegen",
+        "perfekt": "hat entgegengenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "entgegen",
+        "particle_meaning_hint": "entgegen = towards — taking something coming toward you"
+      }
+    },
+    {
+      "id": "entgegensetzen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "entgegensetzen",
+      "translations_en": [
+        "to counter",
+        "to oppose"
+      ],
+      "example_de": "Wir setzen dem Vorwurf Fakten entgegen.",
+      "example_en": "We counter the accusation with facts.",
+      "cloze_word": "entgegen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... entgegen",
+        "perfekt": "hat entgegengesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "entgegen",
+        "particle_meaning_hint": "entgegen = against — setting something against a claim"
+      }
+    },
+    {
+      "id": "hinzuziehen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "hinzuziehen",
+      "translations_en": [
+        "to consult",
+        "to call in"
+      ],
+      "example_de": "Wir ziehen einen Experten hinzu.",
+      "example_en": "We call in an expert.",
+      "cloze_word": "hinzu",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "zieht ... hinzu",
+        "perfekt": "hat hinzugezogen",
+        "praeteritum_3sg": null,
+        "base_verb": "ziehen_verb",
+        "particle": "hinzu",
+        "particle_meaning_hint": "hinzu = on top — drawing someone in"
+      }
+    },
+    {
+      "id": "heranziehen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "heranziehen",
+      "translations_en": [
+        "to draw on",
+        "to consult"
+      ],
+      "example_de": "Wir ziehen mehrere Quellen heran.",
+      "example_en": "We draw on several sources.",
+      "cloze_word": "heran",
+      "themes": [
+        "education"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "zieht ... heran",
+        "perfekt": "hat herangezogen",
+        "praeteritum_3sg": null,
+        "base_verb": "ziehen_verb",
+        "particle": "heran",
+        "particle_meaning_hint": "heran = toward — drawing something closer"
+      }
+    },
+    {
+      "id": "zugrundelegen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zugrundelegen",
+      "translations_en": [
+        "to base on"
+      ],
+      "example_de": "Wir legen diese Zahlen zugrunde.",
+      "example_en": "We base this on these figures.",
+      "cloze_word": "zugrunde",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... zugrunde",
+        "perfekt": "hat zugrundegelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "zugrunde",
+        "particle_meaning_hint": "zugrunde = to the ground — laying something as a foundation"
+      }
+    },
+    {
+      "id": "wegfallen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "wegfallen",
+      "translations_en": [
+        "to be dropped",
+        "to cease"
+      ],
+      "example_de": "Diese Regelung fällt weg.",
+      "example_en": "This rule is being dropped.",
+      "cloze_word": "weg",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fällt ... weg",
+        "perfekt": "ist weggefallen",
+        "praeteritum_3sg": null,
+        "base_verb": "fallen_verb",
+        "particle": "weg",
+        "particle_meaning_hint": "weg = away — dropping out"
+      }
+    },
+    {
+      "id": "wegbrechen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "wegbrechen",
+      "translations_en": [
+        "to collapse",
+        "to break away"
+      ],
+      "example_de": "Die Einnahmen brechen weg.",
+      "example_en": "The revenue is collapsing.",
+      "cloze_word": "weg",
+      "themes": [
+        "work"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bricht ... weg",
+        "perfekt": "ist weggebrochen",
+        "praeteritum_3sg": null,
+        "base_verb": "brechen_verb",
+        "particle": "weg",
+        "particle_meaning_hint": "weg = away — breaking away"
+      }
+    },
+    {
+      "id": "einbrechen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "einbrechen",
+      "translations_en": [
+        "to break in",
+        "to slump"
+      ],
+      "example_de": "Die Wirtschaft bricht ein.",
+      "example_en": "The economy is slumping.",
+      "cloze_word": "ein",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bricht ... ein",
+        "perfekt": "ist eingebrochen",
+        "praeteritum_3sg": null,
+        "base_verb": "brechen_verb",
+        "particle": "ein",
+        "particle_meaning_hint": "ein = in — collapsing inward"
+      }
+    },
+    {
+      "id": "abbrechen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "abbrechen",
+      "translations_en": [
+        "to break off",
+        "to stop"
+      ],
+      "example_de": "Er bricht das Gespräch ab.",
+      "example_en": "He breaks off the conversation.",
+      "cloze_word": "ab",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bricht ... ab",
+        "perfekt": "hat abgebrochen",
+        "praeteritum_3sg": null,
+        "base_verb": "brechen_verb",
+        "particle": "ab",
+        "particle_meaning_hint": "ab = off — breaking something off"
+      }
+    },
+    {
+      "id": "abbringen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "abbringen",
+      "translations_en": [
+        "to dissuade"
+      ],
+      "example_de": "Nichts bringt sie von ihrem Plan ab.",
+      "example_en": "Nothing dissuades her from her plan.",
+      "cloze_word": "ab",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bringt ... ab",
+        "perfekt": "hat abgebracht",
+        "praeteritum_3sg": null,
+        "base_verb": "bringen_verb",
+        "particle": "ab",
+        "particle_meaning_hint": "ab = off/away — bringing someone away from a course"
+      }
+    },
+    {
+      "id": "aufbringen_verb",
+      "cefr": "C2",
+      "pos": "phrasal_verb",
+      "lemma_de": "aufbringen",
+      "translations_en": [
+        "to raise",
+        "to muster"
+      ],
+      "example_de": "Wir bringen das Geld auf.",
+      "example_en": "We raise the money.",
+      "cloze_word": "auf",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bringt ... auf",
+        "perfekt": "hat aufgebracht",
+        "praeteritum_3sg": null,
+        "base_verb": "bringen_verb",
+        "particle": "auf",
+        "particle_meaning_hint": "auf = up — bringing something up"
+      }
+    }
   ]
 }

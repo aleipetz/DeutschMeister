@@ -3,11 +3,676 @@
   "cefr": "C1",
   "pos": "adjective",
   "entries": [
-    { "id": "gravierend_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "gravierend", "translations_en": ["serious", "grave"], "example_de": "Das ist ein gravierender Fehler.", "example_en": "That is a serious mistake.", "cloze_word": "gravierender", "themes": ["abstract_ideas"], "priority": 2 },
-    { "id": "plausibel_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "plausibel", "translations_en": ["plausible"], "example_de": "Seine Erklärung klingt plausibel.", "example_en": "His explanation sounds plausible.", "cloze_word": "plausibel", "themes": ["argumentation"], "priority": 2 },
-    { "id": "praegnant_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "prägnant", "translations_en": ["concise", "succinct"], "example_de": "Fassen Sie Ihre Argumente prägnant zusammen.", "example_en": "Summarize your arguments concisely.", "cloze_word": "prägnant", "themes": ["communication"], "priority": 3 },
-    { "id": "kontrovers_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "kontrovers", "translations_en": ["controversial"], "example_de": "Das Thema wurde kontrovers diskutiert.", "example_en": "The topic was discussed controversially.", "cloze_word": "kontrovers", "themes": ["argumentation"], "priority": 2 },
-    { "id": "unabdingbar_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "unabdingbar", "translations_en": ["indispensable", "essential"], "example_de": "Vertrauen ist unabdingbar für eine gute Zusammenarbeit.", "example_en": "Trust is indispensable for good cooperation.", "cloze_word": "unabdingbar", "themes": ["abstract_ideas"], "priority": 3 },
-    { "id": "vielschichtig_adjective", "cefr": "C1", "pos": "adjective", "lemma_de": "vielschichtig", "translations_en": ["multi-layered", "complex"], "example_de": "Das Problem ist sehr vielschichtig.", "example_en": "The problem is very complex.", "cloze_word": "vielschichtig", "themes": ["abstract_ideas"], "priority": 3 }
+    {
+      "id": "gravierend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "gravierend",
+      "translations_en": [
+        "serious",
+        "grave"
+      ],
+      "example_de": "Das ist ein gravierender Fehler.",
+      "example_en": "That is a serious mistake.",
+      "cloze_word": "gravierender",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "plausibel_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "plausibel",
+      "translations_en": [
+        "plausible"
+      ],
+      "example_de": "Seine Erklärung klingt plausibel.",
+      "example_en": "His explanation sounds plausible.",
+      "cloze_word": "plausibel",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "praegnant_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "prägnant",
+      "translations_en": [
+        "concise",
+        "succinct"
+      ],
+      "example_de": "Fassen Sie Ihre Argumente prägnant zusammen.",
+      "example_en": "Summarize your arguments concisely.",
+      "cloze_word": "prägnant",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "kontrovers_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "kontrovers",
+      "translations_en": [
+        "controversial"
+      ],
+      "example_de": "Das Thema wurde kontrovers diskutiert.",
+      "example_en": "The topic was discussed controversially.",
+      "cloze_word": "kontrovers",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "unabdingbar_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "unabdingbar",
+      "translations_en": [
+        "indispensable",
+        "essential"
+      ],
+      "example_de": "Vertrauen ist unabdingbar für eine gute Zusammenarbeit.",
+      "example_en": "Trust is indispensable for good cooperation.",
+      "cloze_word": "unabdingbar",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "vielschichtig_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "vielschichtig",
+      "translations_en": [
+        "multi-layered",
+        "complex"
+      ],
+      "example_de": "Das Problem ist sehr vielschichtig.",
+      "example_en": "The problem is very complex.",
+      "cloze_word": "vielschichtig",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "schluessig_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "schlüssig",
+      "translations_en": [
+        "conclusive",
+        "coherent"
+      ],
+      "example_de": "Das ist eine schlüssige Argumentation.",
+      "example_en": "That is a coherent argument.",
+      "cloze_word": "schlüssige",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "stichhaltig_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "stichhaltig",
+      "translations_en": [
+        "sound",
+        "valid"
+      ],
+      "example_de": "Er nennt keinen stichhaltigen Grund.",
+      "example_en": "He gives no valid reason.",
+      "cloze_word": "stichhaltigen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "fundiert_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "fundiert",
+      "translations_en": [
+        "well-founded"
+      ],
+      "example_de": "Das ist eine fundierte Analyse.",
+      "example_en": "That is a well-founded analysis.",
+      "cloze_word": "fundierte",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "differenziert_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "differenziert",
+      "translations_en": [
+        "nuanced"
+      ],
+      "example_de": "Sie sieht die Lage sehr differenziert.",
+      "example_en": "She sees the situation in a very nuanced way.",
+      "cloze_word": "differenziert",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "nuanciert_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "nuanciert",
+      "translations_en": [
+        "subtle",
+        "nuanced"
+      ],
+      "example_de": "Das ist eine nuancierte Darstellung.",
+      "example_en": "That is a nuanced portrayal.",
+      "cloze_word": "nuancierte",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "ambivalent_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "ambivalent",
+      "translations_en": [
+        "ambivalent"
+      ],
+      "example_de": "Ich habe ein ambivalentes Verhältnis dazu.",
+      "example_en": "I have an ambivalent relationship to it.",
+      "cloze_word": "ambivalentes",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "paradox_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "paradox",
+      "translations_en": [
+        "paradoxical"
+      ],
+      "example_de": "Die Situation ist paradox.",
+      "example_en": "The situation is paradoxical.",
+      "cloze_word": "paradox",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "vorherrschend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "vorherrschend",
+      "translations_en": [
+        "prevailing"
+      ],
+      "example_de": "Die vorherrschende Meinung ändert sich.",
+      "example_en": "The prevailing opinion is changing.",
+      "cloze_word": "vorherrschende",
+      "themes": [
+        "society"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "massgeblich_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "maßgeblich",
+      "translations_en": [
+        "decisive",
+        "authoritative"
+      ],
+      "example_de": "Er war maßgeblich beteiligt.",
+      "example_en": "He was substantially involved.",
+      "cloze_word": "maßgeblich",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ausschlaggebend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "ausschlaggebend",
+      "translations_en": [
+        "decisive"
+      ],
+      "example_de": "Das war ausschlaggebend für die Entscheidung.",
+      "example_en": "That was decisive for the decision.",
+      "cloze_word": "ausschlaggebend",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "erforderlich_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "erforderlich",
+      "translations_en": [
+        "necessary",
+        "required"
+      ],
+      "example_de": "Eine Genehmigung ist erforderlich.",
+      "example_en": "A permit is required.",
+      "cloze_word": "erforderlich",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "hinreichend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "hinreichend",
+      "translations_en": [
+        "sufficient"
+      ],
+      "example_de": "Die Beweise sind nicht hinreichend.",
+      "example_en": "The evidence is not sufficient.",
+      "cloze_word": "hinreichend",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "zwingend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "zwingend",
+      "translations_en": [
+        "compelling",
+        "mandatory"
+      ],
+      "example_de": "Das ist keine zwingende Voraussetzung.",
+      "example_en": "That is not a mandatory requirement.",
+      "cloze_word": "zwingende",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "tiefgreifend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "tiefgreifend",
+      "translations_en": [
+        "far-reaching",
+        "profound"
+      ],
+      "example_de": "Es gab tiefgreifende Änderungen.",
+      "example_en": "There were profound changes.",
+      "cloze_word": "tiefgreifende",
+      "themes": [
+        "society"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "weitreichend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "weitreichend",
+      "translations_en": [
+        "far-reaching"
+      ],
+      "example_de": "Die Entscheidung hat weitreichende Folgen.",
+      "example_en": "The decision has far-reaching consequences.",
+      "cloze_word": "weitreichende",
+      "themes": [
+        "society"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "wegweisend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "wegweisend",
+      "translations_en": [
+        "pioneering"
+      ],
+      "example_de": "Das Urteil ist wegweisend.",
+      "example_en": "The ruling is pioneering.",
+      "cloze_word": "wegweisend",
+      "themes": [
+        "society"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "herausragend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "herausragend",
+      "translations_en": [
+        "outstanding"
+      ],
+      "example_de": "Sie hat herausragende Leistungen gezeigt.",
+      "example_en": "She showed outstanding performance.",
+      "cloze_word": "herausragende",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "bemerkenswert_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "bemerkenswert",
+      "translations_en": [
+        "remarkable"
+      ],
+      "example_de": "Das ist ein bemerkenswertes Ergebnis.",
+      "example_en": "That is a remarkable result.",
+      "cloze_word": "bemerkenswertes",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "beachtlich_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "beachtlich",
+      "translations_en": [
+        "considerable"
+      ],
+      "example_de": "Er hat beachtliche Fortschritte gemacht.",
+      "example_en": "He has made considerable progress.",
+      "cloze_word": "beachtliche",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "augenscheinlich_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "augenscheinlich",
+      "translations_en": [
+        "apparent"
+      ],
+      "example_de": "Er ist augenscheinlich müde.",
+      "example_en": "He is apparently tired.",
+      "cloze_word": "augenscheinlich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "einseitig_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "einseitig",
+      "translations_en": [
+        "one-sided"
+      ],
+      "example_de": "Der Bericht ist sehr einseitig.",
+      "example_en": "The report is very one-sided.",
+      "cloze_word": "einseitig",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "pauschal_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "pauschal",
+      "translations_en": [
+        "sweeping",
+        "flat-rate"
+      ],
+      "example_de": "Solche pauschalen Urteile sind unfair.",
+      "example_en": "Such sweeping judgements are unfair.",
+      "cloze_word": "pauschalen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "oberflaechlich_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "oberflächlich",
+      "translations_en": [
+        "superficial"
+      ],
+      "example_de": "Die Analyse bleibt oberflächlich.",
+      "example_en": "The analysis remains superficial.",
+      "cloze_word": "oberflächlich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "langwierig_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "langwierig",
+      "translations_en": [
+        "lengthy",
+        "protracted"
+      ],
+      "example_de": "Das Verfahren ist langwierig.",
+      "example_en": "The procedure is lengthy.",
+      "cloze_word": "langwierig",
+      "themes": [
+        "work"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "muehsam_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "mühsam",
+      "translations_en": [
+        "laborious"
+      ],
+      "example_de": "Es war ein mühsamer Prozess.",
+      "example_en": "It was a laborious process.",
+      "cloze_word": "mühsamer",
+      "themes": [
+        "work"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "unvermeidlich_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "unvermeidlich",
+      "translations_en": [
+        "unavoidable"
+      ],
+      "example_de": "Diese Entwicklung ist unvermeidlich.",
+      "example_en": "This development is unavoidable.",
+      "cloze_word": "unvermeidlich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zwangslaeufig_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "zwangsläufig",
+      "translations_en": [
+        "inevitably",
+        "necessarily"
+      ],
+      "example_de": "Das führt zwangsläufig zu Problemen.",
+      "example_en": "That inevitably leads to problems.",
+      "cloze_word": "zwangsläufig",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "stillschweigend_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "stillschweigend",
+      "translations_en": [
+        "tacit"
+      ],
+      "example_de": "Sie stimmten stillschweigend zu.",
+      "example_en": "They agreed tacitly.",
+      "cloze_word": "stillschweigend",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "ausdruecklich_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "ausdrücklich",
+      "translations_en": [
+        "explicit"
+      ],
+      "example_de": "Er hat es ausdrücklich verboten.",
+      "example_en": "He explicitly forbade it.",
+      "cloze_word": "ausdrücklich",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "unmissverstaendlich_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "unmissverständlich",
+      "translations_en": [
+        "unmistakable",
+        "clear"
+      ],
+      "example_de": "Sie machte ihre Meinung unmissverständlich klar.",
+      "example_en": "She made her opinion unmistakably clear.",
+      "cloze_word": "unmissverständlich",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "uneingeschraenkt_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "uneingeschränkt",
+      "translations_en": [
+        "unrestricted"
+      ],
+      "example_de": "Wir unterstützen ihn uneingeschränkt.",
+      "example_en": "We support him without reservation.",
+      "cloze_word": "uneingeschränkt",
+      "themes": [
+        "society"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "besonnen_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "besonnen",
+      "translations_en": [
+        "level-headed"
+      ],
+      "example_de": "Sie reagierte besonnen.",
+      "example_en": "She reacted calmly and sensibly.",
+      "cloze_word": "besonnen",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "pragmatisch_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "pragmatisch",
+      "translations_en": [
+        "pragmatic"
+      ],
+      "example_de": "Wir brauchen eine pragmatische Lösung.",
+      "example_en": "We need a pragmatic solution.",
+      "cloze_word": "pragmatische",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "skeptisch_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "skeptisch",
+      "translations_en": [
+        "sceptical"
+      ],
+      "example_de": "Ich bin skeptisch.",
+      "example_en": "I'm sceptical.",
+      "cloze_word": "skeptisch",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zynisch_adjective",
+      "cefr": "C1",
+      "pos": "adjective",
+      "lemma_de": "zynisch",
+      "translations_en": [
+        "cynical"
+      ],
+      "example_de": "Das war ein zynischer Kommentar.",
+      "example_en": "That was a cynical comment.",
+      "cloze_word": "zynischer",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3
+    }
   ]
 }

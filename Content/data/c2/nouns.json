@@ -3,15 +3,1472 @@
   "cefr": "C2",
   "pos": "noun",
   "entries": [
-    { "id": "traegheit_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Trägheit", "translations_en": ["inertia", "sluggishness"], "example_de": "Die Trägheit des Systems verhindert schnelle Änderungen.", "example_en": "The inertia of the system prevents quick changes.", "cloze_word": "Trägheit", "themes": ["abstract_ideas"], "priority": 3, "noun": { "gender": "die", "plural_de": null } },
-    { "id": "ambivalenz_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Ambivalenz", "translations_en": ["ambivalence"], "example_de": "Seine Ambivalenz gegenüber der Entscheidung war spürbar.", "example_en": "His ambivalence towards the decision was palpable.", "cloze_word": "Ambivalenz", "themes": ["emotions"], "priority": 3, "noun": { "gender": "die", "plural_de": null } },
-    { "id": "vorbehalt_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Vorbehalt", "translations_en": ["reservation", "proviso"], "example_de": "Ich stimme dem nur mit Vorbehalt zu.", "example_en": "I only agree to this with reservations.", "cloze_word": "Vorbehalt", "themes": ["argumentation"], "priority": 3, "noun": { "gender": "der", "plural_de": "Vorbehalte" } },
-    { "id": "nuance_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Nuance", "translations_en": ["nuance"], "example_de": "Er versteht die feinen Nuancen der Sprache.", "example_en": "He understands the fine nuances of the language.", "cloze_word": "Nuancen", "themes": ["communication"], "priority": 2, "noun": { "gender": "die", "plural_de": "Nuancen" } },
-    { "id": "beharrlichkeit_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Beharrlichkeit", "translations_en": ["persistence", "perseverance"], "example_de": "Mit Beharrlichkeit erreichte sie ihr Ziel.", "example_en": "With persistence, she achieved her goal.", "cloze_word": "Beharrlichkeit", "themes": ["emotions"], "priority": 3, "noun": { "gender": "die", "plural_de": null } },
-    { "id": "missstand_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Missstand", "translations_en": ["grievance", "abuse", "deplorable state"], "example_de": "Die Reportage deckt einen Missstand auf.", "example_en": "The report exposes a grievance.", "cloze_word": "Missstand", "themes": ["society"], "priority": 3, "noun": { "gender": "der", "plural_de": "Missstände" } },
-    { "id": "tragweite_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Tragweite", "translations_en": ["scope", "significance", "magnitude"], "example_de": "Er verstand die Tragweite seiner Entscheidung nicht.", "example_en": "He didn't understand the significance of his decision.", "cloze_word": "Tragweite", "themes": ["abstract_ideas"], "priority": 3, "noun": { "gender": "die", "plural_de": null } },
-    { "id": "dilemma_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Dilemma", "translations_en": ["dilemma"], "example_de": "Sie steckt in einem echten Dilemma.", "example_en": "She is in a real dilemma.", "cloze_word": "Dilemma", "themes": ["abstract_ideas"], "priority": 2, "noun": { "gender": "das", "plural_de": "Dilemmata" } },
-    { "id": "unzulaenglichkeit_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Unzulänglichkeit", "translations_en": ["inadequacy", "shortcoming"], "example_de": "Das System hat einige Unzulänglichkeiten.", "example_en": "The system has some inadequacies.", "cloze_word": "Unzulänglichkeiten", "themes": ["abstract_ideas"], "priority": 4, "noun": { "gender": "die", "plural_de": "Unzulänglichkeiten" } },
-    { "id": "doppeldeutigkeit_noun", "cefr": "C2", "pos": "noun", "lemma_de": "Doppeldeutigkeit", "translations_en": ["ambiguity", "double meaning"], "example_de": "Der Satz enthält eine bewusste Doppeldeutigkeit.", "example_en": "The sentence contains a deliberate ambiguity.", "cloze_word": "Doppeldeutigkeit", "themes": ["communication"], "priority": 4, "noun": { "gender": "die", "plural_de": "Doppeldeutigkeiten" } }
+    {
+      "id": "traegheit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Trägheit",
+      "translations_en": [
+        "inertia",
+        "sluggishness"
+      ],
+      "example_de": "Die Trägheit des Systems verhindert schnelle Änderungen.",
+      "example_en": "The inertia of the system prevents quick changes.",
+      "cloze_word": "Trägheit",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "ambivalenz_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Ambivalenz",
+      "translations_en": [
+        "ambivalence"
+      ],
+      "example_de": "Seine Ambivalenz gegenüber der Entscheidung war spürbar.",
+      "example_en": "His ambivalence towards the decision was palpable.",
+      "cloze_word": "Ambivalenz",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "vorbehalt_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Vorbehalt",
+      "translations_en": [
+        "reservation",
+        "proviso"
+      ],
+      "example_de": "Ich stimme dem nur mit Vorbehalt zu.",
+      "example_en": "I only agree to this with reservations.",
+      "cloze_word": "Vorbehalt",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Vorbehalte"
+      }
+    },
+    {
+      "id": "nuance_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Nuance",
+      "translations_en": [
+        "nuance"
+      ],
+      "example_de": "Er versteht die feinen Nuancen der Sprache.",
+      "example_en": "He understands the fine nuances of the language.",
+      "cloze_word": "Nuancen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Nuancen"
+      }
+    },
+    {
+      "id": "beharrlichkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Beharrlichkeit",
+      "translations_en": [
+        "persistence",
+        "perseverance"
+      ],
+      "example_de": "Mit Beharrlichkeit erreichte sie ihr Ziel.",
+      "example_en": "With persistence, she achieved her goal.",
+      "cloze_word": "Beharrlichkeit",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "missstand_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Missstand",
+      "translations_en": [
+        "grievance",
+        "abuse",
+        "deplorable state"
+      ],
+      "example_de": "Die Reportage deckt einen Missstand auf.",
+      "example_en": "The report exposes a grievance.",
+      "cloze_word": "Missstand",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Missstände"
+      }
+    },
+    {
+      "id": "tragweite_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Tragweite",
+      "translations_en": [
+        "scope",
+        "significance",
+        "magnitude"
+      ],
+      "example_de": "Er verstand die Tragweite seiner Entscheidung nicht.",
+      "example_en": "He didn't understand the significance of his decision.",
+      "cloze_word": "Tragweite",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "dilemma_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Dilemma",
+      "translations_en": [
+        "dilemma"
+      ],
+      "example_de": "Sie steckt in einem echten Dilemma.",
+      "example_en": "She is in a real dilemma.",
+      "cloze_word": "Dilemma",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Dilemmata"
+      }
+    },
+    {
+      "id": "unzulaenglichkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Unzulänglichkeit",
+      "translations_en": [
+        "inadequacy",
+        "shortcoming"
+      ],
+      "example_de": "Das System hat einige Unzulänglichkeiten.",
+      "example_en": "The system has some inadequacies.",
+      "cloze_word": "Unzulänglichkeiten",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Unzulänglichkeiten"
+      }
+    },
+    {
+      "id": "doppeldeutigkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Doppeldeutigkeit",
+      "translations_en": [
+        "ambiguity",
+        "double meaning"
+      ],
+      "example_de": "Der Satz enthält eine bewusste Doppeldeutigkeit.",
+      "example_en": "The sentence contains a deliberate ambiguity.",
+      "cloze_word": "Doppeldeutigkeit",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Doppeldeutigkeiten"
+      }
+    },
+    {
+      "id": "zerrissenheit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Zerrissenheit",
+      "translations_en": [
+        "inner conflict",
+        "torn state"
+      ],
+      "example_de": "Die Zerrissenheit des Landes ist spürbar.",
+      "example_en": "The country's divided state is palpable.",
+      "cloze_word": "Zerrissenheit",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "hybris_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Hybris",
+      "translations_en": [
+        "hubris"
+      ],
+      "example_de": "Seine Hybris wurde ihm zum Verhängnis.",
+      "example_en": "His hubris proved his downfall.",
+      "cloze_word": "Hybris",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "paradigmenwechsel_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Paradigmenwechsel",
+      "translations_en": [
+        "paradigm shift"
+      ],
+      "example_de": "Die Erfindung löste einen Paradigmenwechsel aus.",
+      "example_en": "The invention triggered a paradigm shift.",
+      "cloze_word": "Paradigmenwechsel",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Paradigmenwechsel"
+      }
+    },
+    {
+      "id": "praemisse_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Prämisse",
+      "translations_en": [
+        "premise"
+      ],
+      "example_de": "Die Prämisse ist falsch.",
+      "example_en": "The premise is wrong.",
+      "cloze_word": "Prämisse",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Prämissen"
+      }
+    },
+    {
+      "id": "implikation_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Implikation",
+      "translations_en": [
+        "implication"
+      ],
+      "example_de": "Die Implikationen sind weitreichend.",
+      "example_en": "The implications are far-reaching.",
+      "cloze_word": "Implikationen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Implikationen"
+      }
+    },
+    {
+      "id": "konnotation_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Konnotation",
+      "translations_en": [
+        "connotation"
+      ],
+      "example_de": "Das Wort hat eine negative Konnotation.",
+      "example_en": "The word has a negative connotation.",
+      "cloze_word": "Konnotation",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Konnotationen"
+      }
+    },
+    {
+      "id": "ambiguitaet_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Ambiguität",
+      "translations_en": [
+        "ambiguity"
+      ],
+      "example_de": "Die Ambiguität des Textes ist gewollt.",
+      "example_en": "The ambiguity of the text is intentional.",
+      "cloze_word": "Ambiguität",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Ambiguitäten"
+      }
+    },
+    {
+      "id": "anachronismus_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Anachronismus",
+      "translations_en": [
+        "anachronism"
+      ],
+      "example_de": "Dieser Brauch ist ein Anachronismus.",
+      "example_en": "This custom is an anachronism.",
+      "cloze_word": "Anachronismus",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Anachronismen"
+      }
+    },
+    {
+      "id": "antagonismus_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Antagonismus",
+      "translations_en": [
+        "antagonism"
+      ],
+      "example_de": "Der Antagonismus zwischen beiden Lagern verschärft sich.",
+      "example_en": "The antagonism between the two camps is intensifying.",
+      "cloze_word": "Antagonismus",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Antagonismen"
+      }
+    },
+    {
+      "id": "dichotomie_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Dichotomie",
+      "translations_en": [
+        "dichotomy"
+      ],
+      "example_de": "Die Dichotomie von Stadt und Land ist überholt.",
+      "example_en": "The dichotomy of city and country is outdated.",
+      "cloze_word": "Dichotomie",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Dichotomien"
+      }
+    },
+    {
+      "id": "diskrepanz_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Diskrepanz",
+      "translations_en": [
+        "discrepancy"
+      ],
+      "example_de": "Zwischen Anspruch und Wirklichkeit besteht eine Diskrepanz.",
+      "example_en": "There is a discrepancy between aspiration and reality.",
+      "cloze_word": "Diskrepanz",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Diskrepanzen"
+      }
+    },
+    {
+      "id": "dissens_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Dissens",
+      "translations_en": [
+        "dissent"
+      ],
+      "example_de": "Es herrscht Dissens über das Vorgehen.",
+      "example_en": "There is dissent about how to proceed.",
+      "cloze_word": "Dissens",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Dissense"
+      }
+    },
+    {
+      "id": "konsens_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Konsens",
+      "translations_en": [
+        "consensus"
+      ],
+      "example_de": "Wir haben endlich einen Konsens erzielt.",
+      "example_en": "We have finally reached a consensus.",
+      "cloze_word": "Konsens",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Konsense"
+      }
+    },
+    {
+      "id": "eigendynamik_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Eigendynamik",
+      "translations_en": [
+        "momentum of its own"
+      ],
+      "example_de": "Die Debatte entwickelte eine Eigendynamik.",
+      "example_en": "The debate developed a momentum of its own.",
+      "cloze_word": "Eigendynamik",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Eigendynamiken"
+      }
+    },
+    {
+      "id": "eigenverantwortung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Eigenverantwortung",
+      "translations_en": [
+        "personal responsibility"
+      ],
+      "example_de": "Eigenverantwortung wird immer wichtiger.",
+      "example_en": "Personal responsibility is becoming ever more important.",
+      "cloze_word": "Eigenverantwortung",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "zerfall_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Zerfall",
+      "translations_en": [
+        "decay",
+        "disintegration"
+      ],
+      "example_de": "Der Zerfall der Werte macht ihm Sorgen.",
+      "example_en": "The decay of values worries him.",
+      "cloze_word": "Zerfall",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "verfall_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Verfall",
+      "translations_en": [
+        "decay",
+        "decline"
+      ],
+      "example_de": "Der Verfall der Altstadt schreitet voran.",
+      "example_en": "The decay of the old town is progressing.",
+      "cloze_word": "Verfall",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "verrohung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Verrohung",
+      "translations_en": [
+        "brutalisation",
+        "coarsening"
+      ],
+      "example_de": "Die Verrohung der Sprache ist besorgniserregend.",
+      "example_en": "The coarsening of language is worrying.",
+      "cloze_word": "Verrohung",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "entfremdung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Entfremdung",
+      "translations_en": [
+        "alienation"
+      ],
+      "example_de": "Die Entfremdung zwischen beiden wuchs.",
+      "example_en": "The alienation between the two grew.",
+      "cloze_word": "Entfremdung",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Entfremdungen"
+      }
+    },
+    {
+      "id": "verdraengung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Verdrängung",
+      "translations_en": [
+        "repression",
+        "displacement"
+      ],
+      "example_de": "Verdrängung löst keine Probleme.",
+      "example_en": "Repression solves no problems.",
+      "cloze_word": "Verdrängung",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Verdrängungen"
+      }
+    },
+    {
+      "id": "vereinnahmung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Vereinnahmung",
+      "translations_en": [
+        "co-opting",
+        "appropriation"
+      ],
+      "example_de": "Er wehrt sich gegen die Vereinnahmung durch die Partei.",
+      "example_en": "He resists being co-opted by the party.",
+      "cloze_word": "Vereinnahmung",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Vereinnahmungen"
+      }
+    },
+    {
+      "id": "instrumentalisierung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Instrumentalisierung",
+      "translations_en": [
+        "instrumentalisation"
+      ],
+      "example_de": "Die Instrumentalisierung der Religion ist gefährlich.",
+      "example_en": "The instrumentalisation of religion is dangerous.",
+      "cloze_word": "Instrumentalisierung",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Instrumentalisierungen"
+      }
+    },
+    {
+      "id": "verklaerung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Verklärung",
+      "translations_en": [
+        "idealisation",
+        "transfiguration"
+      ],
+      "example_de": "Die Verklärung der Vergangenheit ist verbreitet.",
+      "example_en": "The idealisation of the past is widespread.",
+      "cloze_word": "Verklärung",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Verklärungen"
+      }
+    },
+    {
+      "id": "glaubwuerdigkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Glaubwürdigkeit",
+      "translations_en": [
+        "credibility"
+      ],
+      "example_de": "Die Glaubwürdigkeit der Politik leidet.",
+      "example_en": "The credibility of politics is suffering.",
+      "cloze_word": "Glaubwürdigkeit",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "integritaet_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Integrität",
+      "translations_en": [
+        "integrity"
+      ],
+      "example_de": "Sie ist eine Frau von großer Integrität.",
+      "example_en": "She is a woman of great integrity.",
+      "cloze_word": "Integrität",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "redlichkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Redlichkeit",
+      "translations_en": [
+        "honesty",
+        "integrity"
+      ],
+      "example_de": "Seine Redlichkeit ist unbestritten.",
+      "example_en": "His honesty is undisputed.",
+      "cloze_word": "Redlichkeit",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "aufrichtigkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Aufrichtigkeit",
+      "translations_en": [
+        "sincerity"
+      ],
+      "example_de": "Ich schätze deine Aufrichtigkeit.",
+      "example_en": "I appreciate your sincerity.",
+      "cloze_word": "Aufrichtigkeit",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "anmassung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Anmaßung",
+      "translations_en": [
+        "presumption"
+      ],
+      "example_de": "Das ist eine unglaubliche Anmaßung.",
+      "example_en": "That is an incredible presumption.",
+      "cloze_word": "Anmaßung",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Anmaßungen"
+      }
+    },
+    {
+      "id": "ueberheblichkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Überheblichkeit",
+      "translations_en": [
+        "arrogance"
+      ],
+      "example_de": "Seine Überheblichkeit ist kaum zu ertragen.",
+      "example_en": "His arrogance is hard to bear.",
+      "cloze_word": "Überheblichkeit",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "bescheidenheit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Bescheidenheit",
+      "translations_en": [
+        "modesty"
+      ],
+      "example_de": "Bescheidenheit ist eine Tugend.",
+      "example_en": "Modesty is a virtue.",
+      "cloze_word": "Bescheidenheit",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "gelassenheit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Gelassenheit",
+      "translations_en": [
+        "composure",
+        "serenity"
+      ],
+      "example_de": "Sie begegnet Kritik mit Gelassenheit.",
+      "example_en": "She meets criticism with composure.",
+      "cloze_word": "Gelassenheit",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "besonnenheit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Besonnenheit",
+      "translations_en": [
+        "prudence",
+        "level-headedness"
+      ],
+      "example_de": "In der Krise zeigte er Besonnenheit.",
+      "example_en": "In the crisis he showed prudence.",
+      "cloze_word": "Besonnenheit",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "wehmut_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Wehmut",
+      "translations_en": [
+        "wistfulness"
+      ],
+      "example_de": "Er blickt mit Wehmut zurück.",
+      "example_en": "He looks back with wistfulness.",
+      "cloze_word": "Wehmut",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "schwermut_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Schwermut",
+      "translations_en": [
+        "melancholy"
+      ],
+      "example_de": "Eine tiefe Schwermut überfiel ihn.",
+      "example_en": "A deep melancholy overcame him.",
+      "cloze_word": "Schwermut",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "sehnsucht_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Sehnsucht",
+      "translations_en": [
+        "longing"
+      ],
+      "example_de": "Sie hat Sehnsucht nach dem Meer.",
+      "example_en": "She longs for the sea.",
+      "cloze_word": "Sehnsucht",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Sehnsüchte"
+      }
+    },
+    {
+      "id": "fernweh_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Fernweh",
+      "translations_en": [
+        "wanderlust"
+      ],
+      "example_de": "Im Winter bekommt sie Fernweh.",
+      "example_en": "In winter she gets wanderlust.",
+      "cloze_word": "Fernweh",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "heimweh_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Heimweh",
+      "translations_en": [
+        "homesickness"
+      ],
+      "example_de": "Er hat Heimweh.",
+      "example_en": "He is homesick.",
+      "cloze_word": "Heimweh",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "mitgefuehl_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Mitgefühl",
+      "translations_en": [
+        "compassion"
+      ],
+      "example_de": "Sie zeigt großes Mitgefühl.",
+      "example_en": "She shows great compassion.",
+      "cloze_word": "Mitgefühl",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "anteilnahme_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Anteilnahme",
+      "translations_en": [
+        "sympathy",
+        "concern"
+      ],
+      "example_de": "Wir sprechen Ihnen unsere Anteilnahme aus.",
+      "example_en": "We express our sympathy to you.",
+      "cloze_word": "Anteilnahme",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "verdruss_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Verdruss",
+      "translations_en": [
+        "vexation",
+        "discontent"
+      ],
+      "example_de": "Der Verdruss über die Politik wächst.",
+      "example_en": "Discontent with politics is growing.",
+      "cloze_word": "Verdruss",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "groll_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Groll",
+      "translations_en": [
+        "resentment"
+      ],
+      "example_de": "Er hegt keinen Groll.",
+      "example_en": "He harbours no resentment.",
+      "cloze_word": "Groll",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "missgunst_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Missgunst",
+      "translations_en": [
+        "envy",
+        "ill will"
+      ],
+      "example_de": "Ihre Missgunst ist offensichtlich.",
+      "example_en": "Her ill will is obvious.",
+      "cloze_word": "Missgunst",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "kontroverse_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Kontroverse",
+      "translations_en": [
+        "controversy"
+      ],
+      "example_de": "Die Kontroverse dauert an.",
+      "example_en": "The controversy continues.",
+      "cloze_word": "Kontroverse",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Kontroversen"
+      }
+    },
+    {
+      "id": "polemik_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Polemik",
+      "translations_en": [
+        "polemic"
+      ],
+      "example_de": "Seine Polemik überschreitet die Grenze zur Beleidigung.",
+      "example_en": "His polemic crosses the line into insult.",
+      "cloze_word": "Polemik",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Polemiken"
+      }
+    },
+    {
+      "id": "rhetorik_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Rhetorik",
+      "translations_en": [
+        "rhetoric"
+      ],
+      "example_de": "Seine Rhetorik ist beeindruckend.",
+      "example_en": "His rhetoric is impressive.",
+      "cloze_word": "Rhetorik",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "floskel_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Floskel",
+      "translations_en": [
+        "empty phrase",
+        "cliché"
+      ],
+      "example_de": "Das sind nur leere Floskeln.",
+      "example_en": "Those are just empty phrases.",
+      "cloze_word": "Floskeln",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Floskeln"
+      }
+    },
+    {
+      "id": "pathos_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Pathos",
+      "translations_en": [
+        "pathos",
+        "grandiloquence"
+      ],
+      "example_de": "Die Rede war voller Pathos.",
+      "example_en": "The speech was full of pathos.",
+      "cloze_word": "Pathos",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "ironie_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Ironie",
+      "translations_en": [
+        "irony"
+      ],
+      "example_de": "Ihre Ironie ist nicht zu überhören.",
+      "example_en": "Her irony is unmistakable.",
+      "cloze_word": "Ironie",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Ironien"
+      }
+    },
+    {
+      "id": "sarkasmus_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Sarkasmus",
+      "translations_en": [
+        "sarcasm"
+      ],
+      "example_de": "Sein Sarkasmus verletzt viele.",
+      "example_en": "His sarcasm hurts many people.",
+      "cloze_word": "Sarkasmus",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "satire_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Satire",
+      "translations_en": [
+        "satire"
+      ],
+      "example_de": "Die Satire trifft den Kern.",
+      "example_en": "The satire hits the core.",
+      "cloze_word": "Satire",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Satiren"
+      }
+    },
+    {
+      "id": "metapher_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Metapher",
+      "translations_en": [
+        "metaphor"
+      ],
+      "example_de": "Diese Metapher ist sehr treffend.",
+      "example_en": "This metaphor is very apt.",
+      "cloze_word": "Metapher",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Metaphern"
+      }
+    },
+    {
+      "id": "anspielung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Anspielung",
+      "translations_en": [
+        "allusion",
+        "hint"
+      ],
+      "example_de": "Er machte eine Anspielung auf ihre Vergangenheit.",
+      "example_en": "He made an allusion to her past.",
+      "cloze_word": "Anspielung",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Anspielungen"
+      }
+    },
+    {
+      "id": "andeutung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Andeutung",
+      "translations_en": [
+        "hint",
+        "insinuation"
+      ],
+      "example_de": "Sie machte nur vage Andeutungen.",
+      "example_en": "She only made vague hints.",
+      "cloze_word": "Andeutungen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Andeutungen"
+      }
+    },
+    {
+      "id": "unterton_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Unterton",
+      "translations_en": [
+        "undertone"
+      ],
+      "example_de": "In seiner Stimme lag ein spöttischer Unterton.",
+      "example_en": "There was a mocking undertone in his voice.",
+      "cloze_word": "Unterton",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Untertöne"
+      }
+    },
+    {
+      "id": "subtext_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Subtext",
+      "translations_en": [
+        "subtext"
+      ],
+      "example_de": "Der Subtext ist wichtiger als der Text.",
+      "example_en": "The subtext is more important than the text.",
+      "cloze_word": "Subtext",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Subtexte"
+      }
+    },
+    {
+      "id": "zwischentoene_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Zwischentöne",
+      "translations_en": [
+        "nuances",
+        "subtle tones"
+      ],
+      "example_de": "Er hört die Zwischentöne.",
+      "example_en": "He hears the subtle tones.",
+      "cloze_word": "Zwischentöne",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "lakonie_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Lakonie",
+      "translations_en": [
+        "laconic brevity"
+      ],
+      "example_de": "Die Lakonie seiner Antwort überraschte alle.",
+      "example_en": "The terseness of his answer surprised everyone.",
+      "cloze_word": "Lakonie",
+      "themes": [
+        "communication"
+      ],
+      "priority": 5,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "ueberspitzung_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Überspitzung",
+      "translations_en": [
+        "exaggeration"
+      ],
+      "example_de": "Die Überspitzung ist ein beliebtes Stilmittel.",
+      "example_en": "Exaggeration is a popular stylistic device.",
+      "cloze_word": "Überspitzung",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Überspitzungen"
+      }
+    },
+    {
+      "id": "willkuer_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Willkür",
+      "translations_en": [
+        "arbitrariness"
+      ],
+      "example_de": "Die Behörde handelte aus Willkür.",
+      "example_en": "The authority acted arbitrarily.",
+      "cloze_word": "Willkür",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "rechtsstaatlichkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Rechtsstaatlichkeit",
+      "translations_en": [
+        "rule of law"
+      ],
+      "example_de": "Die Rechtsstaatlichkeit steht auf dem Spiel.",
+      "example_en": "The rule of law is at stake.",
+      "cloze_word": "Rechtsstaatlichkeit",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "wohlstand_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Wohlstand",
+      "translations_en": [
+        "prosperity"
+      ],
+      "example_de": "Der Wohlstand ist ungleich verteilt.",
+      "example_en": "Prosperity is unevenly distributed.",
+      "cloze_word": "Wohlstand",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "verteilungsgerechtigkeit_noun",
+      "cefr": "C2",
+      "pos": "noun",
+      "lemma_de": "Verteilungsgerechtigkeit",
+      "translations_en": [
+        "distributive justice"
+      ],
+      "example_de": "Verteilungsgerechtigkeit ist ein zentrales Thema.",
+      "example_en": "Distributive justice is a central topic.",
+      "cloze_word": "Verteilungsgerechtigkeit",
+      "themes": [
+        "society"
+      ],
+      "priority": 5,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    }
   ]
 }

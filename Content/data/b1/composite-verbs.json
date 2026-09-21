@@ -3,9 +3,769 @@
   "cefr": "B1",
   "pos": "composite_verb",
   "entries": [
-    { "id": "spazierengehen_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "spazierengehen", "translations_en": ["to go for a walk"], "example_de": "Wir gehen im Park spazieren.", "example_en": "We go for a walk in the park.", "cloze_word": "spazieren", "themes": ["daily_routine"], "priority": 1, "verb": { "separable": true, "irregular": true, "present_3sg": "geht ... spazieren", "perfekt": "ist spazierengegangen", "praeteritum_3sg": null, "base_verb": "gehen_verb", "particle": "spazieren", "particle_meaning_hint": "spazieren = to stroll — fixed compound with gehen (to go)" } },
-    { "id": "radfahren_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "radfahren", "translations_en": ["to cycle", "to ride a bike"], "example_de": "Sie fährt jeden Tag zur Arbeit Rad.", "example_en": "She cycles to work every day.", "cloze_word": "Rad", "themes": ["daily_routine"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "fährt ... Rad", "perfekt": "ist radgefahren", "praeteritum_3sg": null, "base_verb": "fahren_verb", "particle": "Rad", "particle_meaning_hint": "Rad = bike/wheel — noun+verb compound with fahren (to drive/ride)" } },
-    { "id": "wehtun_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "wehtun", "translations_en": ["to hurt"], "example_de": "Mein Kopf tut weh.", "example_en": "My head hurts.", "cloze_word": "weh", "themes": ["body_health"], "priority": 1, "verb": { "separable": true, "irregular": true, "present_3sg": "tut ... weh", "perfekt": "hat wehgetan", "praeteritum_3sg": null, "base_verb": "tun_verb", "particle": "weh", "particle_meaning_hint": "weh = painful — fixed compound with tun (to do)" } },
-    { "id": "achtgeben_verb", "cefr": "B1", "pos": "composite_verb", "lemma_de": "achtgeben", "translations_en": ["to pay attention", "to be careful"], "example_de": "Gib acht auf der Straße!", "example_en": "Be careful on the road!", "cloze_word": "acht", "themes": ["daily_routine"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "gibt ... acht", "perfekt": "hat achtgegeben", "praeteritum_3sg": null, "base_verb": "geben_verb", "particle": "acht", "particle_meaning_hint": "acht = heed/attention — fixed compound with geben (to give)" } }
+    {
+      "id": "spazierengehen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "spazierengehen",
+      "translations_en": [
+        "to go for a walk"
+      ],
+      "example_de": "Wir gehen im Park spazieren.",
+      "example_en": "We go for a walk in the park.",
+      "cloze_word": "spazieren",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... spazieren",
+        "perfekt": "ist spazierengegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "spazieren",
+        "particle_meaning_hint": "spazieren = to stroll — fixed compound with gehen (to go)"
+      }
+    },
+    {
+      "id": "radfahren_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "radfahren",
+      "translations_en": [
+        "to cycle",
+        "to ride a bike"
+      ],
+      "example_de": "Sie fährt jeden Tag zur Arbeit Rad.",
+      "example_en": "She cycles to work every day.",
+      "cloze_word": "Rad",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fährt ... Rad",
+        "perfekt": "ist radgefahren",
+        "praeteritum_3sg": null,
+        "base_verb": "fahren_verb",
+        "particle": "Rad",
+        "particle_meaning_hint": "Rad = bike/wheel — noun+verb compound with fahren (to drive/ride)"
+      }
+    },
+    {
+      "id": "wehtun_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "wehtun",
+      "translations_en": [
+        "to hurt"
+      ],
+      "example_de": "Mein Kopf tut weh.",
+      "example_en": "My head hurts.",
+      "cloze_word": "weh",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "tut ... weh",
+        "perfekt": "hat wehgetan",
+        "praeteritum_3sg": null,
+        "base_verb": "tun_verb",
+        "particle": "weh",
+        "particle_meaning_hint": "weh = painful — fixed compound with tun (to do)"
+      }
+    },
+    {
+      "id": "achtgeben_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "achtgeben",
+      "translations_en": [
+        "to pay attention",
+        "to be careful"
+      ],
+      "example_de": "Gib acht auf der Straße!",
+      "example_en": "Be careful on the road!",
+      "cloze_word": "acht",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gibt ... acht",
+        "perfekt": "hat achtgegeben",
+        "praeteritum_3sg": null,
+        "base_verb": "geben_verb",
+        "particle": "acht",
+        "particle_meaning_hint": "acht = heed/attention — fixed compound with geben (to give)"
+      }
+    },
+    {
+      "id": "krankschreiben_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "krankschreiben",
+      "translations_en": [
+        "to sign off sick"
+      ],
+      "example_de": "Der Arzt schreibt mich eine Woche krank.",
+      "example_en": "The doctor signs me off for a week.",
+      "cloze_word": "krank",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "schreibt ... krank",
+        "perfekt": "hat krankgeschrieben",
+        "praeteritum_3sg": null,
+        "base_verb": "schreiben_verb",
+        "particle": "krank",
+        "particle_meaning_hint": "krank = ill — adjective+verb compound with schreiben (to write)"
+      }
+    },
+    {
+      "id": "gutschreiben_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "gutschreiben",
+      "translations_en": [
+        "to credit"
+      ],
+      "example_de": "Die Bank schreibt den Betrag gut.",
+      "example_en": "The bank credits the amount.",
+      "cloze_word": "gut",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "schreibt ... gut",
+        "perfekt": "hat gutgeschrieben",
+        "praeteritum_3sg": null,
+        "base_verb": "schreiben_verb",
+        "particle": "gut",
+        "particle_meaning_hint": "gut = good — adverb+verb compound with schreiben (to write)"
+      }
+    },
+    {
+      "id": "blaumachen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "blaumachen",
+      "translations_en": [
+        "to skip work",
+        "to play truant"
+      ],
+      "example_de": "Er macht heute blau.",
+      "example_en": "He's skipping work today.",
+      "cloze_word": "blau",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... blau",
+        "perfekt": "hat blaugemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "blau",
+        "particle_meaning_hint": "blau = blue — colour+verb compound with machen (idiom: playing hooky)"
+      }
+    },
+    {
+      "id": "bekanntgeben_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "bekanntgeben",
+      "translations_en": [
+        "to announce"
+      ],
+      "example_de": "Die Regierung gibt das Ergebnis bekannt.",
+      "example_en": "The government announces the result.",
+      "cloze_word": "bekannt",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gibt ... bekannt",
+        "perfekt": "hat bekanntgegeben",
+        "praeteritum_3sg": null,
+        "base_verb": "geben_verb",
+        "particle": "bekannt",
+        "particle_meaning_hint": "bekannt = known — adjective+verb compound with geben (to give)"
+      }
+    },
+    {
+      "id": "sicherstellen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "sicherstellen",
+      "translations_en": [
+        "to ensure",
+        "to secure"
+      ],
+      "example_de": "Wir stellen die Qualität sicher.",
+      "example_en": "We ensure the quality.",
+      "cloze_word": "sicher",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... sicher",
+        "perfekt": "hat sichergestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "sicher",
+        "particle_meaning_hint": "sicher = safe/certain — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "festnehmen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "festnehmen",
+      "translations_en": [
+        "to arrest"
+      ],
+      "example_de": "Die Polizei nimmt den Dieb fest.",
+      "example_en": "The police arrest the thief.",
+      "cloze_word": "fest",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... fest",
+        "perfekt": "hat festgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firm — adjective+verb compound with nehmen (to take)"
+      }
+    },
+    {
+      "id": "festsetzen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "festsetzen",
+      "translations_en": [
+        "to fix",
+        "to set"
+      ],
+      "example_de": "Wir setzen den Termin fest.",
+      "example_en": "We fix the date.",
+      "cloze_word": "fest",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... fest",
+        "perfekt": "hat festgesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firm — adjective+verb compound with setzen (to set)"
+      }
+    },
+    {
+      "id": "feststellen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "feststellen",
+      "translations_en": [
+        "to notice",
+        "to establish"
+      ],
+      "example_de": "Ich stelle einen Fehler fest.",
+      "example_en": "I notice a mistake.",
+      "cloze_word": "fest",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... fest",
+        "perfekt": "hat festgestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firm — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "klarstellen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "klarstellen",
+      "translations_en": [
+        "to clarify"
+      ],
+      "example_de": "Ich stelle das klar.",
+      "example_en": "I make that clear.",
+      "cloze_word": "klar",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... klar",
+        "perfekt": "hat klargestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "klar",
+        "particle_meaning_hint": "klar = clear — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "richtigstellen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "richtigstellen",
+      "translations_en": [
+        "to correct",
+        "to set straight"
+      ],
+      "example_de": "Ich stelle den Fehler richtig.",
+      "example_en": "I correct the mistake.",
+      "cloze_word": "richtig",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... richtig",
+        "perfekt": "hat richtiggestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "richtig",
+        "particle_meaning_hint": "richtig = correct — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "sichergehen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "sichergehen",
+      "translations_en": [
+        "to make sure"
+      ],
+      "example_de": "Ich gehe lieber sicher.",
+      "example_en": "I'd rather be sure.",
+      "cloze_word": "sicher",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... sicher",
+        "perfekt": "ist sichergegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "sicher",
+        "particle_meaning_hint": "sicher = sure — adjective+verb compound with gehen (to go)"
+      }
+    },
+    {
+      "id": "schiefgehen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "schiefgehen",
+      "translations_en": [
+        "to go wrong"
+      ],
+      "example_de": "Hoffentlich geht nichts schief.",
+      "example_en": "I hope nothing goes wrong.",
+      "cloze_word": "schief",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... schief",
+        "perfekt": "ist schiefgegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "schief",
+        "particle_meaning_hint": "schief = crooked — adjective+verb compound with gehen (to go)"
+      }
+    },
+    {
+      "id": "haengenlassen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "hängenlassen",
+      "translations_en": [
+        "to let down",
+        "to leave hanging"
+      ],
+      "example_de": "Er lässt seine Freunde nie hängen.",
+      "example_en": "He never lets his friends down.",
+      "cloze_word": "hängen",
+      "themes": [
+        "people"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... hängen",
+        "perfekt": "hat hängengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "hängen",
+        "particle_meaning_hint": "hängen = to hang — fixed compound with lassen (to let)"
+      }
+    },
+    {
+      "id": "fallenlassen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "fallenlassen",
+      "translations_en": [
+        "to drop"
+      ],
+      "example_de": "Sie lässt das Glas fallen.",
+      "example_en": "She drops the glass.",
+      "cloze_word": "fallen",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... fallen",
+        "perfekt": "hat fallengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "fallen",
+        "particle_meaning_hint": "fallen = to fall — fixed compound with lassen (to let)"
+      }
+    },
+    {
+      "id": "gehenlassen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "gehenlassen",
+      "translations_en": [
+        "to let go",
+        "to let oneself go"
+      ],
+      "example_de": "Er lässt sich gehen.",
+      "example_en": "He lets himself go.",
+      "cloze_word": "gehen",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt sich ... gehen",
+        "perfekt": "hat sich gehengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "gehen",
+        "particle_meaning_hint": "gehen = to go — fixed compound with lassen (to let)"
+      }
+    },
+    {
+      "id": "laufenlassen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "laufenlassen",
+      "translations_en": [
+        "to let run"
+      ],
+      "example_de": "Lass das Wasser nicht laufen.",
+      "example_en": "Don't leave the water running.",
+      "cloze_word": "laufen",
+      "themes": [
+        "home"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... laufen",
+        "perfekt": "hat laufengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "laufen",
+        "particle_meaning_hint": "laufen = to run — fixed compound with lassen (to let)"
+      }
+    },
+    {
+      "id": "wissenlassen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "wissenlassen",
+      "translations_en": [
+        "to let know"
+      ],
+      "example_de": "Lass mich wissen, wann du kommst.",
+      "example_en": "Let me know when you're coming.",
+      "cloze_word": "wissen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... wissen",
+        "perfekt": "hat wissengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "wissen",
+        "particle_meaning_hint": "wissen = to know — fixed compound with lassen (to let)"
+      }
+    },
+    {
+      "id": "haltmachen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "haltmachen",
+      "translations_en": [
+        "to stop",
+        "to pause"
+      ],
+      "example_de": "Wir machen kurz halt.",
+      "example_en": "We stop briefly.",
+      "cloze_word": "halt",
+      "themes": [
+        "travel"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... halt",
+        "perfekt": "hat haltgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "halt",
+        "particle_meaning_hint": "halt = stop — noun+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "ernstnehmen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "ernstnehmen",
+      "translations_en": [
+        "to take seriously"
+      ],
+      "example_de": "Ich nehme das Problem ernst.",
+      "example_en": "I take the problem seriously.",
+      "cloze_word": "ernst",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... ernst",
+        "perfekt": "hat ernstgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "ernst",
+        "particle_meaning_hint": "ernst = serious — adjective+verb compound with nehmen (to take)"
+      }
+    },
+    {
+      "id": "leichtnehmen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "leichtnehmen",
+      "translations_en": [
+        "to take lightly"
+      ],
+      "example_de": "Er nimmt alles zu leicht.",
+      "example_en": "He takes everything too lightly.",
+      "cloze_word": "leicht",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... leicht",
+        "perfekt": "hat leichtgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "leicht",
+        "particle_meaning_hint": "leicht = light — adjective+verb compound with nehmen (to take)"
+      }
+    },
+    {
+      "id": "standhalten_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "standhalten",
+      "translations_en": [
+        "to withstand"
+      ],
+      "example_de": "Das Haus hält dem Sturm stand.",
+      "example_en": "The house withstands the storm.",
+      "cloze_word": "stand",
+      "themes": [
+        "nature"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... stand",
+        "perfekt": "hat standgehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "stand",
+        "particle_meaning_hint": "stand = stand — noun+verb compound with halten (to hold)"
+      }
+    },
+    {
+      "id": "leerstehen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "leerstehen",
+      "translations_en": [
+        "to stand empty"
+      ],
+      "example_de": "Das Haus steht seit Jahren leer.",
+      "example_en": "The house has been empty for years.",
+      "cloze_word": "leer",
+      "themes": [
+        "home"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "steht ... leer",
+        "perfekt": "hat leergestanden",
+        "praeteritum_3sg": null,
+        "base_verb": "stehen_verb",
+        "particle": "leer",
+        "particle_meaning_hint": "leer = empty — adjective+verb compound with stehen (to stand)"
+      }
+    },
+    {
+      "id": "liebgewinnen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "liebgewinnen",
+      "translations_en": [
+        "to grow fond of"
+      ],
+      "example_de": "Ich habe die Stadt liebgewonnen.",
+      "example_en": "I've grown fond of the city.",
+      "cloze_word": "lieb",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gewinnt ... lieb",
+        "perfekt": "hat liebgewonnen",
+        "praeteritum_3sg": null,
+        "base_verb": "gewinnen_verb",
+        "particle": "lieb",
+        "particle_meaning_hint": "lieb = dear — adjective+verb compound with gewinnen (to win)"
+      }
+    },
+    {
+      "id": "freisprechen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "freisprechen",
+      "translations_en": [
+        "to acquit"
+      ],
+      "example_de": "Das Gericht spricht ihn frei.",
+      "example_en": "The court acquits him.",
+      "cloze_word": "frei",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "spricht ... frei",
+        "perfekt": "hat freigesprochen",
+        "praeteritum_3sg": null,
+        "base_verb": "sprechen_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — adjective+verb compound with sprechen (to speak)"
+      }
+    },
+    {
+      "id": "sitzenlassen_verb",
+      "cefr": "B1",
+      "pos": "composite_verb",
+      "lemma_de": "sitzenlassen",
+      "translations_en": [
+        "to leave in the lurch"
+      ],
+      "example_de": "Er lässt seine Freundin sitzen.",
+      "example_en": "He leaves his girlfriend in the lurch.",
+      "cloze_word": "sitzen",
+      "themes": [
+        "people"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... sitzen",
+        "perfekt": "hat sitzengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "sitzen",
+        "particle_meaning_hint": "sitzen = to sit — fixed compound with lassen (to let)"
+      }
+    }
   ]
 }

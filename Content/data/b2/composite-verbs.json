@@ -3,9 +3,821 @@
   "cefr": "B2",
   "pos": "composite_verb",
   "entries": [
-    { "id": "wahrnehmen_verb", "cefr": "B2", "pos": "composite_verb", "lemma_de": "wahrnehmen", "translations_en": ["to perceive"], "example_de": "Wir nehmen die Welt unterschiedlich wahr.", "example_en": "We perceive the world differently.", "cloze_word": "wahr", "themes": ["abstract_ideas"], "priority": 1, "verb": { "separable": true, "irregular": true, "present_3sg": "nimmt ... wahr", "perfekt": "hat wahrgenommen", "praeteritum_3sg": null, "base_verb": "nehmen_verb", "particle": "wahr", "particle_meaning_hint": "wahr = true/real — perceiving something as real" } },
-    { "id": "teilhaben_verb", "cefr": "B2", "pos": "composite_verb", "lemma_de": "teilhaben", "translations_en": ["to participate", "to have a share (in)"], "example_de": "Jeder soll am Erfolg teilhaben.", "example_en": "Everyone should share in the success.", "cloze_word": "teil", "themes": ["society"], "priority": 3, "verb": { "separable": true, "irregular": true, "present_3sg": "hat ... teil", "perfekt": "hat teilgehabt", "praeteritum_3sg": null, "base_verb": "haben_verb", "particle": "teil", "particle_meaning_hint": "teil = part — having a part or share in something" } },
-    { "id": "freilassen_verb", "cefr": "B2", "pos": "composite_verb", "lemma_de": "freilassen", "translations_en": ["to release", "to set free"], "example_de": "Die Polizei musste ihn freilassen.", "example_en": "The police had to release him.", "cloze_word": "frei", "themes": ["society"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "lässt ... frei", "perfekt": "hat freigelassen", "praeteritum_3sg": null, "base_verb": "lassen_verb", "particle": "frei", "particle_meaning_hint": "frei = free — letting something go free" } },
-    { "id": "festlegen_verb", "cefr": "B2", "pos": "composite_verb", "lemma_de": "festlegen", "translations_en": ["to establish", "to determine", "to set"], "example_de": "Wir müssen einen Termin festlegen.", "example_en": "We need to set a date.", "cloze_word": "fest", "themes": ["work"], "priority": 2, "verb": { "separable": true, "irregular": false, "present_3sg": "legt ... fest", "perfekt": "hat festgelegt", "praeteritum_3sg": null, "base_verb": "legen_verb", "particle": "fest", "particle_meaning_hint": "fest = firmly — laying something down firmly" } }
+    {
+      "id": "wahrnehmen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "wahrnehmen",
+      "translations_en": [
+        "to perceive"
+      ],
+      "example_de": "Wir nehmen die Welt unterschiedlich wahr.",
+      "example_en": "We perceive the world differently.",
+      "cloze_word": "wahr",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... wahr",
+        "perfekt": "hat wahrgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "wahr",
+        "particle_meaning_hint": "wahr = true/real — perceiving something as real"
+      }
+    },
+    {
+      "id": "teilhaben_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "teilhaben",
+      "translations_en": [
+        "to participate",
+        "to have a share (in)"
+      ],
+      "example_de": "Jeder soll am Erfolg teilhaben.",
+      "example_en": "Everyone should share in the success.",
+      "cloze_word": "teil",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hat ... teil",
+        "perfekt": "hat teilgehabt",
+        "praeteritum_3sg": null,
+        "base_verb": "haben_verb",
+        "particle": "teil",
+        "particle_meaning_hint": "teil = part — having a part or share in something"
+      }
+    },
+    {
+      "id": "freilassen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "freilassen",
+      "translations_en": [
+        "to release",
+        "to set free"
+      ],
+      "example_de": "Die Polizei musste ihn freilassen.",
+      "example_en": "The police had to release him.",
+      "cloze_word": "frei",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... frei",
+        "perfekt": "hat freigelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — letting something go free"
+      }
+    },
+    {
+      "id": "festlegen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "festlegen",
+      "translations_en": [
+        "to establish",
+        "to determine",
+        "to set"
+      ],
+      "example_de": "Wir müssen einen Termin festlegen.",
+      "example_en": "We need to set a date.",
+      "cloze_word": "fest",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... fest",
+        "perfekt": "hat festgelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firmly — laying something down firmly"
+      }
+    },
+    {
+      "id": "gutheissen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "gutheißen",
+      "translations_en": [
+        "to approve"
+      ],
+      "example_de": "Ich heiße das nicht gut.",
+      "example_en": "I don't approve of that.",
+      "cloze_word": "gut",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "heißt ... gut",
+        "perfekt": "hat gutgeheißen",
+        "praeteritum_3sg": null,
+        "base_verb": "heissen_verb",
+        "particle": "gut",
+        "particle_meaning_hint": "gut = good — adjective+verb compound with heißen (to bid)"
+      }
+    },
+    {
+      "id": "kaltlassen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "kaltlassen",
+      "translations_en": [
+        "to leave cold"
+      ],
+      "example_de": "Das lässt mich kalt.",
+      "example_en": "That leaves me cold.",
+      "cloze_word": "kalt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... kalt",
+        "perfekt": "hat kaltgelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "kalt",
+        "particle_meaning_hint": "kalt = cold — adjective+verb compound with lassen (to let)"
+      }
+    },
+    {
+      "id": "nahelegen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "nahelegen",
+      "translations_en": [
+        "to suggest"
+      ],
+      "example_de": "Die Ergebnisse legen das nahe.",
+      "example_en": "The results suggest that.",
+      "cloze_word": "nahe",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... nahe",
+        "perfekt": "hat nahegelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "nahe",
+        "particle_meaning_hint": "nahe = close — adjective+verb compound with legen (to lay)"
+      }
+    },
+    {
+      "id": "nahestehen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "nahestehen",
+      "translations_en": [
+        "to be close to"
+      ],
+      "example_de": "Er steht der Familie nahe.",
+      "example_en": "He is close to the family.",
+      "cloze_word": "nahe",
+      "themes": [
+        "people"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "steht ... nahe",
+        "perfekt": "hat nahegestanden",
+        "praeteritum_3sg": null,
+        "base_verb": "stehen_verb",
+        "particle": "nahe",
+        "particle_meaning_hint": "nahe = close — adjective+verb compound with stehen (to stand)"
+      }
+    },
+    {
+      "id": "naheliegen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "naheliegen",
+      "translations_en": [
+        "to be obvious"
+      ],
+      "example_de": "Diese Lösung liegt nahe.",
+      "example_en": "This solution is obvious.",
+      "cloze_word": "nahe",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "liegt ... nahe",
+        "perfekt": "hat nahegelegen",
+        "praeteritum_3sg": null,
+        "base_verb": "liegen_verb",
+        "particle": "nahe",
+        "particle_meaning_hint": "nahe = close — adjective+verb compound with liegen (to lie)"
+      }
+    },
+    {
+      "id": "fernbleiben_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "fernbleiben",
+      "translations_en": [
+        "to stay away"
+      ],
+      "example_de": "Er bleibt der Sitzung fern.",
+      "example_en": "He stays away from the meeting.",
+      "cloze_word": "fern",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... fern",
+        "perfekt": "ist ferngeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "fern",
+        "particle_meaning_hint": "fern = far — adjective+verb compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "fernhalten_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "fernhalten",
+      "translations_en": [
+        "to keep away"
+      ],
+      "example_de": "Halten Sie Kinder vom Feuer fern.",
+      "example_en": "Keep children away from the fire.",
+      "cloze_word": "fern",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... fern",
+        "perfekt": "hat ferngehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "fern",
+        "particle_meaning_hint": "fern = far — adjective+verb compound with halten (to keep)"
+      }
+    },
+    {
+      "id": "geheimhalten_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "geheimhalten",
+      "translations_en": [
+        "to keep secret"
+      ],
+      "example_de": "Wir halten den Plan geheim.",
+      "example_en": "We keep the plan secret.",
+      "cloze_word": "geheim",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... geheim",
+        "perfekt": "hat geheimgehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "geheim",
+        "particle_meaning_hint": "geheim = secret — adjective+verb compound with halten (to keep)"
+      }
+    },
+    {
+      "id": "innehalten_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "innehalten",
+      "translations_en": [
+        "to pause"
+      ],
+      "example_de": "Er hält kurz inne.",
+      "example_en": "He pauses briefly.",
+      "cloze_word": "inne",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... inne",
+        "perfekt": "hat innegehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "inne",
+        "particle_meaning_hint": "inne = within — adverb+verb compound with halten (to hold)"
+      }
+    },
+    {
+      "id": "wahrhaben_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "wahrhaben",
+      "translations_en": [
+        "to admit",
+        "to accept as true"
+      ],
+      "example_de": "Er will das nicht wahrhaben.",
+      "example_en": "He won't admit it.",
+      "cloze_word": "wahr",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hat ... wahr",
+        "perfekt": "hat wahrgehabt",
+        "praeteritum_3sg": null,
+        "base_verb": "haben_verb",
+        "particle": "wahr",
+        "particle_meaning_hint": "wahr = true — adjective+verb compound with haben (to have)"
+      }
+    },
+    {
+      "id": "zufriedengeben_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "sich zufriedengeben",
+      "translations_en": [
+        "to be content"
+      ],
+      "example_de": "Ich gebe mich damit zufrieden.",
+      "example_en": "I'm content with that.",
+      "cloze_word": "zufrieden",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gibt sich ... zufrieden",
+        "perfekt": "hat sich zufriedengegeben",
+        "praeteritum_3sg": null,
+        "base_verb": "geben_verb",
+        "particle": "zufrieden",
+        "particle_meaning_hint": "zufrieden = content — adjective+verb compound with geben (to give)"
+      }
+    },
+    {
+      "id": "zufriedenstellen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "zufriedenstellen",
+      "translations_en": [
+        "to satisfy"
+      ],
+      "example_de": "Wir wollen alle Kunden zufriedenstellen.",
+      "example_en": "We want to satisfy all customers.",
+      "cloze_word": "zufrieden",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... zufrieden",
+        "perfekt": "hat zufriedengestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "zufrieden",
+        "particle_meaning_hint": "zufrieden = content — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "gleichstellen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "gleichstellen",
+      "translations_en": [
+        "to treat as equal"
+      ],
+      "example_de": "Das Gesetz stellt Frauen und Männer gleich.",
+      "example_en": "The law treats women and men as equal.",
+      "cloze_word": "gleich",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... gleich",
+        "perfekt": "hat gleichgestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "gleich",
+        "particle_meaning_hint": "gleich = equal — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "freistellen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "freistellen",
+      "translations_en": [
+        "to release",
+        "to exempt"
+      ],
+      "example_de": "Die Firma stellt ihn frei.",
+      "example_en": "The company releases him from duty.",
+      "cloze_word": "frei",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... frei",
+        "perfekt": "hat freigestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "blossstellen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "bloßstellen",
+      "translations_en": [
+        "to expose",
+        "to embarrass"
+      ],
+      "example_de": "Er stellt seine Kollegin bloß.",
+      "example_en": "He exposes his colleague to ridicule.",
+      "cloze_word": "bloß",
+      "themes": [
+        "people"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... bloß",
+        "perfekt": "hat bloßgestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "bloß",
+        "particle_meaning_hint": "bloß = bare — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "ruhigstellen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "ruhigstellen",
+      "translations_en": [
+        "to immobilise",
+        "to sedate"
+      ],
+      "example_de": "Der Arzt stellt das Bein ruhig.",
+      "example_en": "The doctor immobilises the leg.",
+      "cloze_word": "ruhig",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... ruhig",
+        "perfekt": "hat ruhiggestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "ruhig",
+        "particle_meaning_hint": "ruhig = still — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "lahmlegen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "lahmlegen",
+      "translations_en": [
+        "to paralyse"
+      ],
+      "example_de": "Der Streik legt den Verkehr lahm.",
+      "example_en": "The strike paralyses traffic.",
+      "cloze_word": "lahm",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... lahm",
+        "perfekt": "hat lahmgelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "lahm",
+        "particle_meaning_hint": "lahm = lame — adjective+verb compound with legen (to lay)"
+      }
+    },
+    {
+      "id": "stilllegen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "stilllegen",
+      "translations_en": [
+        "to shut down"
+      ],
+      "example_de": "Man legt das Werk still.",
+      "example_en": "The plant is being shut down.",
+      "cloze_word": "still",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... still",
+        "perfekt": "hat stillgelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "still",
+        "particle_meaning_hint": "still = still/quiet — adjective+verb compound with legen (to lay)"
+      }
+    },
+    {
+      "id": "offenlegen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "offenlegen",
+      "translations_en": [
+        "to disclose"
+      ],
+      "example_de": "Die Firma legt ihre Zahlen offen.",
+      "example_en": "The company discloses its figures.",
+      "cloze_word": "offen",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... offen",
+        "perfekt": "hat offengelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "offen",
+        "particle_meaning_hint": "offen = open — adjective+verb compound with legen (to lay)"
+      }
+    },
+    {
+      "id": "schwarzsehen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "schwarzsehen",
+      "translations_en": [
+        "to be pessimistic"
+      ],
+      "example_de": "Er sieht die Zukunft schwarz.",
+      "example_en": "He is pessimistic about the future.",
+      "cloze_word": "schwarz",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "sieht ... schwarz",
+        "perfekt": "hat schwarzgesehen",
+        "praeteritum_3sg": null,
+        "base_verb": "sehen_verb",
+        "particle": "schwarz",
+        "particle_meaning_hint": "schwarz = black — colour+verb compound with sehen (to see)"
+      }
+    },
+    {
+      "id": "schoenreden_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "schönreden",
+      "translations_en": [
+        "to gloss over"
+      ],
+      "example_de": "Er redet die Lage schön.",
+      "example_en": "He glosses over the situation.",
+      "cloze_word": "schön",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "redet ... schön",
+        "perfekt": "hat schöngeredet",
+        "praeteritum_3sg": null,
+        "base_verb": "reden_verb",
+        "particle": "schön",
+        "particle_meaning_hint": "schön = beautiful — adjective+verb compound with reden (to talk)"
+      }
+    },
+    {
+      "id": "weismachen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "weismachen",
+      "translations_en": [
+        "to make (someone) believe"
+      ],
+      "example_de": "Das kannst du mir nicht weismachen.",
+      "example_en": "You can't make me believe that.",
+      "cloze_word": "weis",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... weis",
+        "perfekt": "hat weisgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "weis",
+        "particle_meaning_hint": "weis = wise/aware — old adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "hochhalten_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "hochhalten",
+      "translations_en": [
+        "to hold up",
+        "to uphold"
+      ],
+      "example_de": "Er hält die Fahne hoch.",
+      "example_en": "He holds the flag high.",
+      "cloze_word": "hoch",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... hoch",
+        "perfekt": "hat hochgehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "hoch",
+        "particle_meaning_hint": "hoch = high — adverb+verb compound with halten (to hold)"
+      }
+    },
+    {
+      "id": "wachhalten_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "wachhalten",
+      "translations_en": [
+        "to keep awake"
+      ],
+      "example_de": "Kaffee hält mich wach.",
+      "example_en": "Coffee keeps me awake.",
+      "cloze_word": "wach",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... wach",
+        "perfekt": "hat wachgehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "wach",
+        "particle_meaning_hint": "wach = awake — adjective+verb compound with halten (to keep)"
+      }
+    },
+    {
+      "id": "breitmachen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "sich breitmachen",
+      "translations_en": [
+        "to spread",
+        "to make oneself at home"
+      ],
+      "example_de": "Die Angst macht sich breit.",
+      "example_en": "Fear is spreading.",
+      "cloze_word": "breit",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht sich ... breit",
+        "perfekt": "hat sich breitgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "breit",
+        "particle_meaning_hint": "breit = wide — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "danebenliegen_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "danebenliegen",
+      "translations_en": [
+        "to be wrong"
+      ],
+      "example_de": "Du liegst damit völlig daneben.",
+      "example_en": "You're completely wrong about that.",
+      "cloze_word": "daneben",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "liegt ... daneben",
+        "perfekt": "hat danebengelegen",
+        "praeteritum_3sg": null,
+        "base_verb": "liegen_verb",
+        "particle": "daneben",
+        "particle_meaning_hint": "daneben = beside — adverb+verb compound with liegen (to lie)"
+      }
+    },
+    {
+      "id": "freigeben_verb",
+      "cefr": "B2",
+      "pos": "composite_verb",
+      "lemma_de": "freigeben",
+      "translations_en": [
+        "to release"
+      ],
+      "example_de": "Die Behörde gibt das Gebäude frei.",
+      "example_en": "The authority releases the building.",
+      "cloze_word": "frei",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gibt ... frei",
+        "perfekt": "hat freigegeben",
+        "praeteritum_3sg": null,
+        "base_verb": "geben_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — adjective+verb compound with geben (to give)"
+      }
+    }
   ]
 }

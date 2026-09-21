@@ -1,0 +1,1116 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A2",
+  "pos": "adjective",
+  "entries": [
+    {
+      "id": "bunt_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "bunt",
+      "translations_en": [
+        "colourful"
+      ],
+      "example_de": "Das Bild ist sehr bunt.",
+      "example_en": "The picture is very colourful.",
+      "cloze_word": "bunt",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "dick_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "dick",
+      "translations_en": [
+        "thick",
+        "fat"
+      ],
+      "example_de": "Das Buch ist sehr dick.",
+      "example_en": "The book is very thick.",
+      "cloze_word": "dick",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "duenn_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "dünn",
+      "translations_en": [
+        "thin"
+      ],
+      "example_de": "Die Wand ist dünn.",
+      "example_en": "The wall is thin.",
+      "cloze_word": "dünn",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "breit_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "breit",
+      "translations_en": [
+        "wide",
+        "broad"
+      ],
+      "example_de": "Die Straße ist breit.",
+      "example_en": "The street is wide.",
+      "cloze_word": "breit",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "eng_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "eng",
+      "translations_en": [
+        "narrow",
+        "tight"
+      ],
+      "example_de": "Die Hose ist zu eng.",
+      "example_en": "The trousers are too tight.",
+      "cloze_word": "eng",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "weit_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "weit",
+      "translations_en": [
+        "far",
+        "wide"
+      ],
+      "example_de": "Der Weg ist weit.",
+      "example_en": "The way is far.",
+      "cloze_word": "weit",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "nah_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "nah",
+      "translations_en": [
+        "near",
+        "close"
+      ],
+      "example_de": "Der Bahnhof ist ganz nah.",
+      "example_en": "The station is very close.",
+      "cloze_word": "nah",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "adjective": {
+        "comparative_irregular": "näher",
+        "superlative_irregular": "am nächsten"
+      }
+    },
+    {
+      "id": "tief_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "tief",
+      "translations_en": [
+        "deep"
+      ],
+      "example_de": "Der See ist sehr tief.",
+      "example_en": "The lake is very deep.",
+      "cloze_word": "tief",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "flach_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "flach",
+      "translations_en": [
+        "flat",
+        "shallow"
+      ],
+      "example_de": "Das Land ist flach.",
+      "example_en": "The land is flat.",
+      "cloze_word": "flach",
+      "themes": [
+        "nature"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "stark_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "stark",
+      "translations_en": [
+        "strong"
+      ],
+      "example_de": "Er ist sehr stark.",
+      "example_en": "He is very strong.",
+      "cloze_word": "stark",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1,
+      "adjective": {
+        "comparative_irregular": "stärker",
+        "superlative_irregular": "am stärksten"
+      }
+    },
+    {
+      "id": "schwach_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "schwach",
+      "translations_en": [
+        "weak"
+      ],
+      "example_de": "Ich fühle mich schwach.",
+      "example_en": "I feel weak.",
+      "cloze_word": "schwach",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "adjective": {
+        "comparative_irregular": "schwächer",
+        "superlative_irregular": "am schwächsten"
+      }
+    },
+    {
+      "id": "mutig_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "mutig",
+      "translations_en": [
+        "brave"
+      ],
+      "example_de": "Das Mädchen ist mutig.",
+      "example_en": "The girl is brave.",
+      "cloze_word": "mutig",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "aengstlich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "ängstlich",
+      "translations_en": [
+        "anxious",
+        "fearful"
+      ],
+      "example_de": "Das Kind ist ängstlich.",
+      "example_en": "The child is fearful.",
+      "cloze_word": "ängstlich",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "ruhig_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "ruhig",
+      "translations_en": [
+        "quiet",
+        "calm"
+      ],
+      "example_de": "Die Straße ist ruhig.",
+      "example_en": "The street is quiet.",
+      "cloze_word": "ruhig",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "nervoes_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "nervös",
+      "translations_en": [
+        "nervous"
+      ],
+      "example_de": "Ich bin vor der Prüfung nervös.",
+      "example_en": "I'm nervous before the exam.",
+      "cloze_word": "nervös",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "wuetend_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "wütend",
+      "translations_en": [
+        "angry"
+      ],
+      "example_de": "Er ist sehr wütend.",
+      "example_en": "He is very angry.",
+      "cloze_word": "wütend",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zufrieden_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "zufrieden",
+      "translations_en": [
+        "satisfied",
+        "content"
+      ],
+      "example_de": "Ich bin mit dem Ergebnis zufrieden.",
+      "example_en": "I'm satisfied with the result.",
+      "cloze_word": "zufrieden",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "froh_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "froh",
+      "translations_en": [
+        "glad",
+        "happy"
+      ],
+      "example_de": "Ich bin froh, dass du da bist.",
+      "example_en": "I'm glad that you're here.",
+      "cloze_word": "froh",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "boese_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "böse",
+      "translations_en": [
+        "angry",
+        "evil"
+      ],
+      "example_de": "Der Hund ist nicht böse.",
+      "example_en": "The dog isn't mean.",
+      "cloze_word": "böse",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ehrlich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "ehrlich",
+      "translations_en": [
+        "honest"
+      ],
+      "example_de": "Sie ist immer ehrlich.",
+      "example_en": "She is always honest.",
+      "cloze_word": "ehrlich",
+      "themes": [
+        "people"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "hoeflich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "höflich",
+      "translations_en": [
+        "polite"
+      ],
+      "example_de": "Der Junge ist sehr höflich.",
+      "example_en": "The boy is very polite.",
+      "cloze_word": "höflich",
+      "themes": [
+        "people"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "puenktlich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "pünktlich",
+      "translations_en": [
+        "punctual"
+      ],
+      "example_de": "Der Zug ist pünktlich.",
+      "example_en": "The train is on time.",
+      "cloze_word": "pünktlich",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "fleissig_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "fleißig",
+      "translations_en": [
+        "hard-working"
+      ],
+      "example_de": "Die Schülerin ist sehr fleißig.",
+      "example_en": "The pupil is very hard-working.",
+      "cloze_word": "fleißig",
+      "themes": [
+        "education"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "faul_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "faul",
+      "translations_en": [
+        "lazy"
+      ],
+      "example_de": "Er ist heute faul.",
+      "example_en": "He is lazy today.",
+      "cloze_word": "faul",
+      "themes": [
+        "people"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "klug_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "klug",
+      "translations_en": [
+        "clever"
+      ],
+      "example_de": "Das Kind ist sehr klug.",
+      "example_en": "The child is very clever.",
+      "cloze_word": "klug",
+      "themes": [
+        "people"
+      ],
+      "priority": 2,
+      "adjective": {
+        "comparative_irregular": "klüger",
+        "superlative_irregular": "am klügsten"
+      }
+    },
+    {
+      "id": "dumm_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "dumm",
+      "translations_en": [
+        "stupid"
+      ],
+      "example_de": "Das war eine dumme Idee.",
+      "example_en": "That was a stupid idea.",
+      "cloze_word": "dumme",
+      "themes": [
+        "people"
+      ],
+      "priority": 2,
+      "adjective": {
+        "comparative_irregular": "dümmer",
+        "superlative_irregular": "am dümmsten"
+      }
+    },
+    {
+      "id": "reich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "reich",
+      "translations_en": [
+        "rich"
+      ],
+      "example_de": "Er ist sehr reich.",
+      "example_en": "He is very rich.",
+      "cloze_word": "reich",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "arm_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "arm",
+      "translations_en": [
+        "poor"
+      ],
+      "example_de": "Die Familie ist arm.",
+      "example_en": "The family is poor.",
+      "cloze_word": "arm",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "adjective": {
+        "comparative_irregular": "ärmer",
+        "superlative_irregular": "am ärmsten"
+      }
+    },
+    {
+      "id": "beruehmt_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "berühmt",
+      "translations_en": [
+        "famous"
+      ],
+      "example_de": "Die Sängerin ist berühmt.",
+      "example_en": "The singer is famous.",
+      "cloze_word": "berühmt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "modern_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "modern",
+      "translations_en": [
+        "modern"
+      ],
+      "example_de": "Die Wohnung ist modern.",
+      "example_en": "The apartment is modern.",
+      "cloze_word": "modern",
+      "themes": [
+        "home"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "praktisch_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "praktisch",
+      "translations_en": [
+        "practical"
+      ],
+      "example_de": "Die Tasche ist sehr praktisch.",
+      "example_en": "The bag is very practical.",
+      "cloze_word": "praktisch",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "bequem_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "bequem",
+      "translations_en": [
+        "comfortable"
+      ],
+      "example_de": "Das Sofa ist bequem.",
+      "example_en": "The sofa is comfortable.",
+      "cloze_word": "bequem",
+      "themes": [
+        "home"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "gemuetlich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "gemütlich",
+      "translations_en": [
+        "cosy"
+      ],
+      "example_de": "Das Café ist gemütlich.",
+      "example_en": "The café is cosy.",
+      "cloze_word": "gemütlich",
+      "themes": [
+        "home"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "gefaehrlich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "gefährlich",
+      "translations_en": [
+        "dangerous"
+      ],
+      "example_de": "Die Straße ist gefährlich.",
+      "example_en": "The road is dangerous.",
+      "cloze_word": "gefährlich",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "sicher_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "sicher",
+      "translations_en": [
+        "safe",
+        "sure"
+      ],
+      "example_de": "Ich bin mir nicht sicher.",
+      "example_en": "I'm not sure.",
+      "cloze_word": "sicher",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "moeglich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "möglich",
+      "translations_en": [
+        "possible"
+      ],
+      "example_de": "Ist das möglich?",
+      "example_en": "Is that possible?",
+      "cloze_word": "möglich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "unmoeglich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "unmöglich",
+      "translations_en": [
+        "impossible"
+      ],
+      "example_de": "Das ist unmöglich.",
+      "example_en": "That is impossible.",
+      "cloze_word": "unmöglich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "gleich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "gleich",
+      "translations_en": [
+        "same",
+        "equal"
+      ],
+      "example_de": "Wir haben den gleichen Namen.",
+      "example_en": "We have the same name.",
+      "cloze_word": "gleichen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "aehnlich_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "ähnlich",
+      "translations_en": [
+        "similar"
+      ],
+      "example_de": "Die Schwestern sehen ähnlich aus.",
+      "example_en": "The sisters look similar.",
+      "cloze_word": "ähnlich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "anders_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "anders",
+      "translations_en": [
+        "different"
+      ],
+      "example_de": "Das ist ganz anders.",
+      "example_en": "That is completely different.",
+      "cloze_word": "anders",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "besonders_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "besonders",
+      "translations_en": [
+        "special",
+        "particular"
+      ],
+      "example_de": "Das ist ein besonderer Tag.",
+      "example_en": "That is a special day.",
+      "cloze_word": "besonderer",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "normal_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "normal",
+      "translations_en": [
+        "normal"
+      ],
+      "example_de": "Das ist ganz normal.",
+      "example_en": "That is completely normal.",
+      "cloze_word": "normal",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "fremd_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "fremd",
+      "translations_en": [
+        "foreign",
+        "strange"
+      ],
+      "example_de": "Die Stadt ist mir fremd.",
+      "example_en": "The city is unfamiliar to me.",
+      "cloze_word": "fremd",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "bekannt_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "bekannt",
+      "translations_en": [
+        "known",
+        "well-known"
+      ],
+      "example_de": "Er ist in der Stadt bekannt.",
+      "example_en": "He is well-known in the city.",
+      "cloze_word": "bekannt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "wach_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "wach",
+      "translations_en": [
+        "awake"
+      ],
+      "example_de": "Ich bin schon wach.",
+      "example_en": "I'm already awake.",
+      "cloze_word": "wach",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "bereit_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "bereit",
+      "translations_en": [
+        "ready"
+      ],
+      "example_de": "Bist du bereit?",
+      "example_en": "Are you ready?",
+      "cloze_word": "bereit",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "fertig_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "fertig",
+      "translations_en": [
+        "finished",
+        "ready"
+      ],
+      "example_de": "Das Essen ist fertig.",
+      "example_en": "The food is ready.",
+      "cloze_word": "fertig",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "frei_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "frei",
+      "translations_en": [
+        "free",
+        "vacant"
+      ],
+      "example_de": "Ist dieser Platz frei?",
+      "example_en": "Is this seat free?",
+      "cloze_word": "frei",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "besetzt_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "besetzt",
+      "translations_en": [
+        "occupied",
+        "engaged"
+      ],
+      "example_de": "Die Toilette ist besetzt.",
+      "example_en": "The toilet is occupied.",
+      "cloze_word": "besetzt",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "kostenlos_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "kostenlos",
+      "translations_en": [
+        "free of charge"
+      ],
+      "example_de": "Der Eintritt ist kostenlos.",
+      "example_en": "Admission is free.",
+      "cloze_word": "kostenlos",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "guenstig_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "günstig",
+      "translations_en": [
+        "inexpensive",
+        "favourable"
+      ],
+      "example_de": "Das Hotel ist günstig.",
+      "example_en": "The hotel is inexpensive.",
+      "cloze_word": "günstig",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "noetig_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "nötig",
+      "translations_en": [
+        "necessary"
+      ],
+      "example_de": "Das ist nicht nötig.",
+      "example_en": "That isn't necessary.",
+      "cloze_word": "nötig",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "verheiratet_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "verheiratet",
+      "translations_en": [
+        "married"
+      ],
+      "example_de": "Sie ist seit zwei Jahren verheiratet.",
+      "example_en": "She has been married for two years.",
+      "cloze_word": "verheiratet",
+      "themes": [
+        "people"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "allein_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "allein",
+      "translations_en": [
+        "alone"
+      ],
+      "example_de": "Ich wohne allein.",
+      "example_en": "I live alone.",
+      "cloze_word": "allein",
+      "themes": [
+        "people"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "eigen_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "eigen",
+      "translations_en": [
+        "own"
+      ],
+      "example_de": "Er hat ein eigenes Zimmer.",
+      "example_en": "He has his own room.",
+      "cloze_word": "eigenes",
+      "themes": [
+        "home"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "echt_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "echt",
+      "translations_en": [
+        "real",
+        "genuine"
+      ],
+      "example_de": "Das Leder ist echt.",
+      "example_en": "The leather is genuine.",
+      "cloze_word": "echt",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "genau_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "genau",
+      "translations_en": [
+        "exact",
+        "precise"
+      ],
+      "example_de": "Das ist genau richtig.",
+      "example_en": "That is exactly right.",
+      "cloze_word": "genau",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "ganz_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "ganz",
+      "translations_en": [
+        "whole",
+        "entire"
+      ],
+      "example_de": "Ich habe den ganzen Tag gearbeitet.",
+      "example_en": "I worked the whole day.",
+      "cloze_word": "ganzen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "halb_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "halb",
+      "translations_en": [
+        "half"
+      ],
+      "example_de": "Es ist halb zehn.",
+      "example_en": "It is half past nine.",
+      "cloze_word": "halb",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "suess_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "süß",
+      "translations_en": [
+        "sweet"
+      ],
+      "example_de": "Der Kuchen ist sehr süß.",
+      "example_en": "The cake is very sweet.",
+      "cloze_word": "süß",
+      "themes": [
+        "food"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "sauer_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "sauer",
+      "translations_en": [
+        "sour",
+        "annoyed"
+      ],
+      "example_de": "Die Zitrone ist sauer.",
+      "example_en": "The lemon is sour.",
+      "cloze_word": "sauer",
+      "themes": [
+        "food"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "scharf_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "scharf",
+      "translations_en": [
+        "spicy",
+        "sharp"
+      ],
+      "example_de": "Das Essen ist zu scharf.",
+      "example_en": "The food is too spicy.",
+      "cloze_word": "scharf",
+      "themes": [
+        "food"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "nass_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "nass",
+      "translations_en": [
+        "wet"
+      ],
+      "example_de": "Meine Schuhe sind nass.",
+      "example_en": "My shoes are wet.",
+      "cloze_word": "nass",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2,
+      "adjective": {
+        "comparative_irregular": "nasser",
+        "superlative_irregular": "am nassesten"
+      }
+    },
+    {
+      "id": "trocken_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "trocken",
+      "translations_en": [
+        "dry"
+      ],
+      "example_de": "Die Wäsche ist trocken.",
+      "example_en": "The washing is dry.",
+      "cloze_word": "trocken",
+      "themes": [
+        "home"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "sonnig_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "sonnig",
+      "translations_en": [
+        "sunny"
+      ],
+      "example_de": "Der Tag ist sonnig.",
+      "example_en": "The day is sunny.",
+      "cloze_word": "sonnig",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "windig_adjective",
+      "cefr": "A2",
+      "pos": "adjective",
+      "lemma_de": "windig",
+      "translations_en": [
+        "windy"
+      ],
+      "example_de": "Heute ist es windig.",
+      "example_en": "It's windy today.",
+      "cloze_word": "windig",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2
+    }
+  ]
+}

@@ -3,11 +3,934 @@
   "cefr": "B2",
   "pos": "adjective",
   "entries": [
-    { "id": "widerspruechlich_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "widersprüchlich", "translations_en": ["contradictory"], "example_de": "Seine Aussagen waren widersprüchlich.", "example_en": "His statements were contradictory.", "cloze_word": "widersprüchlich", "themes": ["argumentation"], "priority": 2 },
-    { "id": "nachhaltig_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "nachhaltig", "translations_en": ["sustainable"], "example_de": "Wir setzen auf nachhaltige Energie.", "example_en": "We focus on sustainable energy.", "cloze_word": "nachhaltige", "themes": ["nature"], "priority": 1 },
-    { "id": "ueberzeugend_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "überzeugend", "translations_en": ["convincing"], "example_de": "Das Argument war sehr überzeugend.", "example_en": "The argument was very convincing.", "cloze_word": "überzeugend", "themes": ["argumentation"], "priority": 1 },
-    { "id": "angemessen_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "angemessen", "translations_en": ["appropriate", "adequate"], "example_de": "Die Reaktion war angemessen.", "example_en": "The reaction was appropriate.", "cloze_word": "angemessen", "themes": ["abstract_ideas"], "priority": 1 },
-    { "id": "umstritten_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "umstritten", "translations_en": ["controversial"], "example_de": "Das Thema ist sehr umstritten.", "example_en": "The topic is very controversial.", "cloze_word": "umstritten", "themes": ["society"], "priority": 1 },
-    { "id": "erheblich_adjective", "cefr": "B2", "pos": "adjective", "lemma_de": "erheblich", "translations_en": ["considerable", "significant"], "example_de": "Das hat einen erheblichen Einfluss.", "example_en": "That has a considerable influence.", "cloze_word": "erheblichen", "themes": ["abstract_ideas"], "priority": 2 }
+    {
+      "id": "widerspruechlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "widersprüchlich",
+      "translations_en": [
+        "contradictory"
+      ],
+      "example_de": "Seine Aussagen waren widersprüchlich.",
+      "example_en": "His statements were contradictory.",
+      "cloze_word": "widersprüchlich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "nachhaltig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "nachhaltig",
+      "translations_en": [
+        "sustainable"
+      ],
+      "example_de": "Wir setzen auf nachhaltige Energie.",
+      "example_en": "We focus on sustainable energy.",
+      "cloze_word": "nachhaltige",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "ueberzeugend_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "überzeugend",
+      "translations_en": [
+        "convincing"
+      ],
+      "example_de": "Das Argument war sehr überzeugend.",
+      "example_en": "The argument was very convincing.",
+      "cloze_word": "überzeugend",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "angemessen_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "angemessen",
+      "translations_en": [
+        "appropriate",
+        "adequate"
+      ],
+      "example_de": "Die Reaktion war angemessen.",
+      "example_en": "The reaction was appropriate.",
+      "cloze_word": "angemessen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "umstritten_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "umstritten",
+      "translations_en": [
+        "controversial"
+      ],
+      "example_de": "Das Thema ist sehr umstritten.",
+      "example_en": "The topic is very controversial.",
+      "cloze_word": "umstritten",
+      "themes": [
+        "society"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "erheblich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "erheblich",
+      "translations_en": [
+        "considerable",
+        "significant"
+      ],
+      "example_de": "Das hat einen erheblichen Einfluss.",
+      "example_en": "That has a considerable influence.",
+      "cloze_word": "erheblichen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "entscheidend_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "entscheidend",
+      "translations_en": [
+        "decisive"
+      ],
+      "example_de": "Das ist der entscheidende Punkt.",
+      "example_en": "That is the decisive point.",
+      "cloze_word": "entscheidende",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "wesentlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "wesentlich",
+      "translations_en": [
+        "essential",
+        "considerable"
+      ],
+      "example_de": "Das ist ein wesentlicher Unterschied.",
+      "example_en": "That is an essential difference.",
+      "cloze_word": "wesentlicher",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "grundlegend_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "grundlegend",
+      "translations_en": [
+        "fundamental"
+      ],
+      "example_de": "Das ist eine grundlegende Frage.",
+      "example_en": "That is a fundamental question.",
+      "cloze_word": "grundlegende",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "offensichtlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "offensichtlich",
+      "translations_en": [
+        "obvious"
+      ],
+      "example_de": "Das ist offensichtlich falsch.",
+      "example_en": "That is obviously wrong.",
+      "cloze_word": "offensichtlich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "vermutlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "vermutlich",
+      "translations_en": [
+        "presumably"
+      ],
+      "example_de": "Er kommt vermutlich später.",
+      "example_en": "He'll probably come later.",
+      "cloze_word": "vermutlich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zweifellos_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "zweifellos",
+      "translations_en": [
+        "undoubtedly"
+      ],
+      "example_de": "Das ist zweifellos richtig.",
+      "example_en": "That is undoubtedly correct.",
+      "cloze_word": "zweifellos",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "eindeutig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "eindeutig",
+      "translations_en": [
+        "clear",
+        "unambiguous"
+      ],
+      "example_de": "Das Ergebnis ist eindeutig.",
+      "example_en": "The result is unambiguous.",
+      "cloze_word": "eindeutig",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "umfassend_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "umfassend",
+      "translations_en": [
+        "comprehensive"
+      ],
+      "example_de": "Wir brauchen eine umfassende Lösung.",
+      "example_en": "We need a comprehensive solution.",
+      "cloze_word": "umfassende",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "langfristig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "langfristig",
+      "translations_en": [
+        "long-term"
+      ],
+      "example_de": "Das ist eine langfristige Planung.",
+      "example_en": "That is long-term planning.",
+      "cloze_word": "langfristige",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "kurzfristig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "kurzfristig",
+      "translations_en": [
+        "short-term"
+      ],
+      "example_de": "Er hat kurzfristig abgesagt.",
+      "example_en": "He cancelled at short notice.",
+      "cloze_word": "kurzfristig",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "vorlaeufig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "vorläufig",
+      "translations_en": [
+        "provisional"
+      ],
+      "example_de": "Das ist nur eine vorläufige Lösung.",
+      "example_en": "That is only a provisional solution.",
+      "cloze_word": "vorläufige",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "endgueltig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "endgültig",
+      "translations_en": [
+        "final"
+      ],
+      "example_de": "Das ist meine endgültige Entscheidung.",
+      "example_en": "That is my final decision.",
+      "cloze_word": "endgültige",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "dauerhaft_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "dauerhaft",
+      "translations_en": [
+        "permanent",
+        "lasting"
+      ],
+      "example_de": "Wir suchen eine dauerhafte Lösung.",
+      "example_en": "We're looking for a lasting solution.",
+      "cloze_word": "dauerhafte",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "voruebergehend_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "vorübergehend",
+      "translations_en": [
+        "temporary"
+      ],
+      "example_de": "Das ist nur vorübergehend.",
+      "example_en": "That is only temporary.",
+      "cloze_word": "vorübergehend",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ausgepraegt_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "ausgeprägt",
+      "translations_en": [
+        "pronounced"
+      ],
+      "example_de": "Er hat einen ausgeprägten Sinn für Humor.",
+      "example_en": "He has a pronounced sense of humour.",
+      "cloze_word": "ausgeprägten",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "betraechtlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "beträchtlich",
+      "translations_en": [
+        "considerable"
+      ],
+      "example_de": "Der Schaden ist beträchtlich.",
+      "example_en": "The damage is considerable.",
+      "cloze_word": "beträchtlich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "gering_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "gering",
+      "translations_en": [
+        "small",
+        "low"
+      ],
+      "example_de": "Die Kosten sind gering.",
+      "example_en": "The costs are low.",
+      "cloze_word": "gering",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zahlreich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "zahlreich",
+      "translations_en": [
+        "numerous"
+      ],
+      "example_de": "Zahlreiche Gäste sind gekommen.",
+      "example_en": "Numerous guests have come.",
+      "cloze_word": "Zahlreiche",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "beliebig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "beliebig",
+      "translations_en": [
+        "arbitrary",
+        "any"
+      ],
+      "example_de": "Sie können ein beliebiges Buch nehmen.",
+      "example_en": "You can take any book.",
+      "cloze_word": "beliebiges",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "vergleichbar_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "vergleichbar",
+      "translations_en": [
+        "comparable"
+      ],
+      "example_de": "Die Preise sind vergleichbar.",
+      "example_en": "The prices are comparable.",
+      "cloze_word": "vergleichbar",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zustaendig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "zuständig",
+      "translations_en": [
+        "responsible",
+        "in charge"
+      ],
+      "example_de": "Dafür bin ich nicht zuständig.",
+      "example_en": "I'm not responsible for that.",
+      "cloze_word": "zuständig",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "betroffen_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "betroffen",
+      "translations_en": [
+        "affected"
+      ],
+      "example_de": "Viele Menschen sind betroffen.",
+      "example_en": "Many people are affected.",
+      "cloze_word": "betroffen",
+      "themes": [
+        "society"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "beteiligt_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "beteiligt",
+      "translations_en": [
+        "involved"
+      ],
+      "example_de": "Alle Mitarbeiter waren beteiligt.",
+      "example_en": "All employees were involved.",
+      "cloze_word": "beteiligt",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "verpflichtet_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "verpflichtet",
+      "translations_en": [
+        "obliged"
+      ],
+      "example_de": "Wir sind dazu verpflichtet.",
+      "example_en": "We are obliged to do so.",
+      "cloze_word": "verpflichtet",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "berechtigt_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "berechtigt",
+      "translations_en": [
+        "entitled",
+        "justified"
+      ],
+      "example_de": "Seine Sorgen sind berechtigt.",
+      "example_en": "His worries are justified.",
+      "cloze_word": "berechtigt",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "gerecht_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "gerecht",
+      "translations_en": [
+        "fair",
+        "just"
+      ],
+      "example_de": "Die Verteilung ist nicht gerecht.",
+      "example_en": "The distribution isn't fair.",
+      "cloze_word": "gerecht",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ungerecht_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "ungerecht",
+      "translations_en": [
+        "unfair"
+      ],
+      "example_de": "Das ist ungerecht.",
+      "example_en": "That is unfair.",
+      "cloze_word": "ungerecht",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "willkuerlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "willkürlich",
+      "translations_en": [
+        "arbitrary"
+      ],
+      "example_de": "Die Entscheidung war willkürlich.",
+      "example_en": "The decision was arbitrary.",
+      "cloze_word": "willkürlich",
+      "themes": [
+        "society"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "rechtlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "rechtlich",
+      "translations_en": [
+        "legal"
+      ],
+      "example_de": "Es gibt rechtliche Probleme.",
+      "example_en": "There are legal problems.",
+      "cloze_word": "rechtliche",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "gesetzlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "gesetzlich",
+      "translations_en": [
+        "statutory",
+        "legal"
+      ],
+      "example_de": "Das ist gesetzlich vorgeschrieben.",
+      "example_en": "That is required by law.",
+      "cloze_word": "gesetzlich",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "wirksam_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "wirksam",
+      "translations_en": [
+        "effective"
+      ],
+      "example_de": "Das Medikament ist sehr wirksam.",
+      "example_en": "The medication is very effective.",
+      "cloze_word": "wirksam",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "effizient_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "effizient",
+      "translations_en": [
+        "efficient"
+      ],
+      "example_de": "Die Firma arbeitet effizient.",
+      "example_en": "The company works efficiently.",
+      "cloze_word": "effizient",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "nuetzlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "nützlich",
+      "translations_en": [
+        "useful"
+      ],
+      "example_de": "Das Programm ist sehr nützlich.",
+      "example_en": "The program is very useful.",
+      "cloze_word": "nützlich",
+      "themes": [
+        "technology"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "sinnvoll_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "sinnvoll",
+      "translations_en": [
+        "sensible",
+        "meaningful"
+      ],
+      "example_de": "Das ist eine sinnvolle Lösung.",
+      "example_en": "That is a sensible solution.",
+      "cloze_word": "sinnvolle",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "sinnlos_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "sinnlos",
+      "translations_en": [
+        "pointless"
+      ],
+      "example_de": "Diese Arbeit ist sinnlos.",
+      "example_en": "This work is pointless.",
+      "cloze_word": "sinnlos",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ueberfluessig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "überflüssig",
+      "translations_en": [
+        "superfluous"
+      ],
+      "example_de": "Das ist völlig überflüssig.",
+      "example_en": "That is completely superfluous.",
+      "cloze_word": "überflüssig",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "bedenklich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "bedenklich",
+      "translations_en": [
+        "worrying",
+        "questionable"
+      ],
+      "example_de": "Die Entwicklung ist bedenklich.",
+      "example_en": "The development is worrying.",
+      "cloze_word": "bedenklich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "bedeutsam_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "bedeutsam",
+      "translations_en": [
+        "significant"
+      ],
+      "example_de": "Das ist ein bedeutsamer Fortschritt.",
+      "example_en": "That is a significant step forward.",
+      "cloze_word": "bedeutsamer",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "anspruchsvoll_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "anspruchsvoll",
+      "translations_en": [
+        "demanding"
+      ],
+      "example_de": "Die Aufgabe ist anspruchsvoll.",
+      "example_en": "The task is demanding.",
+      "cloze_word": "anspruchsvoll",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "anstrengend_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "anstrengend",
+      "translations_en": [
+        "tiring"
+      ],
+      "example_de": "Der Tag war sehr anstrengend.",
+      "example_en": "The day was very tiring.",
+      "cloze_word": "anstrengend",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "aufwendig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "aufwendig",
+      "translations_en": [
+        "elaborate",
+        "costly"
+      ],
+      "example_de": "Das Verfahren ist sehr aufwendig.",
+      "example_en": "The procedure is very elaborate.",
+      "cloze_word": "aufwendig",
+      "themes": [
+        "work"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "riskant_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "riskant",
+      "translations_en": [
+        "risky"
+      ],
+      "example_de": "Das ist eine riskante Entscheidung.",
+      "example_en": "That is a risky decision.",
+      "cloze_word": "riskante",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "heikel_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "heikel",
+      "translations_en": [
+        "delicate",
+        "tricky"
+      ],
+      "example_de": "Das ist ein heikles Thema.",
+      "example_en": "That is a delicate topic.",
+      "cloze_word": "heikles",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "kompliziert_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "kompliziert",
+      "translations_en": [
+        "complicated"
+      ],
+      "example_de": "Die Lage ist kompliziert.",
+      "example_en": "The situation is complicated.",
+      "cloze_word": "kompliziert",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "komplex_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "komplex",
+      "translations_en": [
+        "complex"
+      ],
+      "example_de": "Das Thema ist sehr komplex.",
+      "example_en": "The topic is very complex.",
+      "cloze_word": "komplex",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "problematisch_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "problematisch",
+      "translations_en": [
+        "problematic"
+      ],
+      "example_de": "Das ist problematisch.",
+      "example_en": "That is problematic.",
+      "cloze_word": "problematisch",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "glaubwuerdig_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "glaubwürdig",
+      "translations_en": [
+        "credible"
+      ],
+      "example_de": "Seine Aussage ist glaubwürdig.",
+      "example_en": "His statement is credible.",
+      "cloze_word": "glaubwürdig",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "serioes_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "seriös",
+      "translations_en": [
+        "reputable",
+        "serious"
+      ],
+      "example_de": "Die Firma ist seriös.",
+      "example_en": "The company is reputable.",
+      "cloze_word": "seriös",
+      "themes": [
+        "work"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "subjektiv_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "subjektiv",
+      "translations_en": [
+        "subjective"
+      ],
+      "example_de": "Das ist eine subjektive Meinung.",
+      "example_en": "That's a subjective opinion.",
+      "cloze_word": "subjektive",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "objektiv_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "objektiv",
+      "translations_en": [
+        "objective"
+      ],
+      "example_de": "Wir müssen objektiv bleiben.",
+      "example_en": "We have to stay objective.",
+      "cloze_word": "objektiv",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "sachlich_adjective",
+      "cefr": "B2",
+      "pos": "adjective",
+      "lemma_de": "sachlich",
+      "translations_en": [
+        "factual",
+        "objective"
+      ],
+      "example_de": "Bleiben wir bitte sachlich.",
+      "example_en": "Let's stay factual, please.",
+      "cloze_word": "sachlich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    }
   ]
 }

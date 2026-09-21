@@ -3,11 +3,1638 @@
   "cefr": "B1",
   "pos": "verb",
   "entries": [
-    { "id": "entscheiden_verb", "cefr": "B1", "pos": "verb", "lemma_de": "sich entscheiden", "translations_en": ["to decide"], "example_de": "Er kann sich nicht entscheiden.", "example_en": "He can't decide.", "cloze_word": "entscheiden", "themes": ["abstract_ideas"], "priority": 1, "verb": { "separable": false, "irregular": true, "present_3sg": "entscheidet sich", "perfekt": "hat sich entschieden", "praeteritum_3sg": "entschied sich", "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "bedeuten_verb", "cefr": "B1", "pos": "verb", "lemma_de": "bedeuten", "translations_en": ["to mean"], "example_de": "Was bedeutet dieses Wort?", "example_en": "What does this word mean?", "cloze_word": "bedeutet", "themes": ["communication"], "priority": 1, "verb": { "separable": false, "irregular": false, "present_3sg": "bedeutet", "perfekt": "hat bedeutet", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "erreichen_verb", "cefr": "B1", "pos": "verb", "lemma_de": "erreichen", "translations_en": ["to reach", "to achieve"], "example_de": "Wir haben unser Ziel erreicht.", "example_en": "We reached our goal.", "cloze_word": "erreicht", "themes": ["work"], "priority": 1, "verb": { "separable": false, "irregular": false, "present_3sg": "erreicht", "perfekt": "hat erreicht", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "vermeiden_verb", "cefr": "B1", "pos": "verb", "lemma_de": "vermeiden", "translations_en": ["to avoid"], "example_de": "Man sollte Stress vermeiden.", "example_en": "One should avoid stress.", "cloze_word": "vermeiden", "themes": ["abstract_ideas"], "priority": 2, "verb": { "separable": false, "irregular": true, "present_3sg": "vermeidet", "perfekt": "hat vermieden", "praeteritum_3sg": "vermied", "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "beschweren_verb", "cefr": "B1", "pos": "verb", "lemma_de": "sich beschweren", "translations_en": ["to complain"], "example_de": "Der Kunde hat sich beschwert.", "example_en": "The customer complained.", "cloze_word": "beschwert", "themes": ["communication"], "priority": 2, "verb": { "separable": false, "irregular": false, "present_3sg": "beschwert sich", "perfekt": "hat sich beschwert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "empfehlen_verb", "cefr": "B1", "pos": "verb", "lemma_de": "empfehlen", "translations_en": ["to recommend"], "example_de": "Ich kann dieses Buch sehr empfehlen.", "example_en": "I can highly recommend this book.", "cloze_word": "empfehlen", "themes": ["communication"], "priority": 1, "verb": { "separable": false, "irregular": true, "present_3sg": "empfiehlt", "perfekt": "hat empfohlen", "praeteritum_3sg": "empfahl", "base_verb": null, "particle": null, "particle_meaning_hint": null } }
+    {
+      "id": "entscheiden_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich entscheiden",
+      "translations_en": [
+        "to decide"
+      ],
+      "example_de": "Er kann sich nicht entscheiden.",
+      "example_en": "He can't decide.",
+      "cloze_word": "entscheiden",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "entscheidet sich",
+        "perfekt": "hat sich entschieden",
+        "praeteritum_3sg": "entschied sich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bedeuten_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "bedeuten",
+      "translations_en": [
+        "to mean"
+      ],
+      "example_de": "Was bedeutet dieses Wort?",
+      "example_en": "What does this word mean?",
+      "cloze_word": "bedeutet",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bedeutet",
+        "perfekt": "hat bedeutet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erreichen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "erreichen",
+      "translations_en": [
+        "to reach",
+        "to achieve"
+      ],
+      "example_de": "Wir haben unser Ziel erreicht.",
+      "example_en": "We reached our goal.",
+      "cloze_word": "erreicht",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erreicht",
+        "perfekt": "hat erreicht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "vermeiden_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "vermeiden",
+      "translations_en": [
+        "to avoid"
+      ],
+      "example_de": "Man sollte Stress vermeiden.",
+      "example_en": "One should avoid stress.",
+      "cloze_word": "vermeiden",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "vermeidet",
+        "perfekt": "hat vermieden",
+        "praeteritum_3sg": "vermied",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beschweren_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich beschweren",
+      "translations_en": [
+        "to complain"
+      ],
+      "example_de": "Der Kunde hat sich beschwert.",
+      "example_en": "The customer complained.",
+      "cloze_word": "beschwert",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beschwert sich",
+        "perfekt": "hat sich beschwert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "empfehlen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "empfehlen",
+      "translations_en": [
+        "to recommend"
+      ],
+      "example_de": "Ich kann dieses Buch sehr empfehlen.",
+      "example_en": "I can highly recommend this book.",
+      "cloze_word": "empfehlen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "empfiehlt",
+        "perfekt": "hat empfohlen",
+        "praeteritum_3sg": "empfahl",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "heben_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "heben",
+      "translations_en": [
+        "to lift",
+        "to raise"
+      ],
+      "example_de": "Er hebt das Kind auf den Stuhl.",
+      "example_en": "He lifts the child onto the chair.",
+      "cloze_word": "hebt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "hebt",
+        "perfekt": "hat gehoben",
+        "praeteritum_3sg": "hob",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bereiten_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "bereiten",
+      "translations_en": [
+        "to prepare",
+        "to cause"
+      ],
+      "example_de": "Diese Aufgabe bereitet mir keine Probleme.",
+      "example_en": "This task causes me no problems.",
+      "cloze_word": "bereitet",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bereitet",
+        "perfekt": "hat bereitet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "ruhen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "ruhen",
+      "translations_en": [
+        "to rest"
+      ],
+      "example_de": "Am Sonntag ruht die Arbeit.",
+      "example_en": "On Sundays work rests.",
+      "cloze_word": "ruht",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "ruht",
+        "perfekt": "hat geruht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "wachen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "wachen",
+      "translations_en": [
+        "to be awake",
+        "to keep watch"
+      ],
+      "example_de": "Die Mutter wacht am Bett des Kindes.",
+      "example_en": "The mother keeps watch at the child's bed.",
+      "cloze_word": "wacht",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "wacht",
+        "perfekt": "hat gewacht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "leiten_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "leiten",
+      "translations_en": [
+        "to lead",
+        "to manage"
+      ],
+      "example_de": "Sie leitet eine kleine Firma.",
+      "example_en": "She runs a small company.",
+      "cloze_word": "leitet",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "leitet",
+        "perfekt": "hat geleitet",
+        "praeteritum_3sg": "leitete",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schaetzen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "schätzen",
+      "translations_en": [
+        "to estimate",
+        "to value"
+      ],
+      "example_de": "Ich schätze die Kosten auf 500 Euro.",
+      "example_en": "I estimate the costs at 500 euros.",
+      "cloze_word": "schätze",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "schätzt",
+        "perfekt": "hat geschätzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "greifen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "greifen",
+      "translations_en": [
+        "to grab",
+        "to reach"
+      ],
+      "example_de": "Er greift nach dem Glas.",
+      "example_en": "He reaches for the glass.",
+      "cloze_word": "greift",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "greift",
+        "perfekt": "hat gegriffen",
+        "praeteritum_3sg": "griff",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "weisen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "weisen",
+      "translations_en": [
+        "to point",
+        "to show"
+      ],
+      "example_de": "Er weist mit dem Finger auf die Tür.",
+      "example_en": "He points at the door.",
+      "cloze_word": "weist",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "weist",
+        "perfekt": "hat gewiesen",
+        "praeteritum_3sg": "wies",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "fuegen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "fügen",
+      "translations_en": [
+        "to add",
+        "to join"
+      ],
+      "example_de": "Sie fügt die Teile zusammen.",
+      "example_en": "She joins the parts together.",
+      "cloze_word": "fügt",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "fügt",
+        "perfekt": "hat gefügt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "lehnen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "lehnen",
+      "translations_en": [
+        "to lean"
+      ],
+      "example_de": "Das Fahrrad lehnt an der Wand.",
+      "example_en": "The bicycle is leaning against the wall.",
+      "cloze_word": "lehnt",
+      "themes": [
+        "home"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "lehnt",
+        "perfekt": "hat gelehnt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "wenden_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich wenden",
+      "translations_en": [
+        "to turn to",
+        "to contact"
+      ],
+      "example_de": "Ich wende mich an Sie.",
+      "example_en": "I'm contacting you.",
+      "cloze_word": "wende",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "wendet sich",
+        "perfekt": "hat sich gewendet",
+        "praeteritum_3sg": "wandte sich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bauen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "bauen",
+      "translations_en": [
+        "to build"
+      ],
+      "example_de": "Sie bauen ein neues Haus.",
+      "example_en": "They are building a new house.",
+      "cloze_word": "bauen",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "baut",
+        "perfekt": "hat gebaut",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "fordern_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "fordern",
+      "translations_en": [
+        "to demand"
+      ],
+      "example_de": "Die Arbeiter fordern mehr Lohn.",
+      "example_en": "The workers demand higher pay.",
+      "cloze_word": "fordern",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "fordert",
+        "perfekt": "hat gefordert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "druecken_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "drücken",
+      "translations_en": [
+        "to press",
+        "to push"
+      ],
+      "example_de": "Drücken Sie bitte den Knopf.",
+      "example_en": "Please press the button.",
+      "cloze_word": "Drücken",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "drückt",
+        "perfekt": "hat gedrückt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "nutzen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "nutzen",
+      "translations_en": [
+        "to use"
+      ],
+      "example_de": "Wir nutzen jede Chance.",
+      "example_en": "We use every chance.",
+      "cloze_word": "nutzen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "nutzt",
+        "perfekt": "hat genutzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "fassen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "fassen",
+      "translations_en": [
+        "to grasp",
+        "to hold"
+      ],
+      "example_de": "Das Glas fasst einen halben Liter.",
+      "example_en": "The glass holds half a litre.",
+      "cloze_word": "fasst",
+      "themes": [
+        "food"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "fasst",
+        "perfekt": "hat gefasst",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schaffen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "schaffen",
+      "translations_en": [
+        "to manage",
+        "to create"
+      ],
+      "example_de": "Ich schaffe das schon.",
+      "example_en": "I'll manage it.",
+      "cloze_word": "schaffe",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "schafft",
+        "perfekt": "hat geschafft",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erlauben_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "erlauben",
+      "translations_en": [
+        "to allow"
+      ],
+      "example_de": "Meine Eltern erlauben mir das nicht.",
+      "example_en": "My parents don't allow me that.",
+      "cloze_word": "erlauben",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erlaubt",
+        "perfekt": "hat erlaubt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verbieten_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "verbieten",
+      "translations_en": [
+        "to forbid"
+      ],
+      "example_de": "Der Arzt verbietet mir Zucker.",
+      "example_en": "The doctor forbids me sugar.",
+      "cloze_word": "verbietet",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "verbietet",
+        "perfekt": "hat verboten",
+        "praeteritum_3sg": "verbot",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "veraendern_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich verändern",
+      "translations_en": [
+        "to change"
+      ],
+      "example_de": "Die Stadt verändert sich stark.",
+      "example_en": "The city is changing a lot.",
+      "cloze_word": "verändert",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verändert sich",
+        "perfekt": "hat sich verändert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "entwickeln_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "entwickeln",
+      "translations_en": [
+        "to develop"
+      ],
+      "example_de": "Die Firma entwickelt neue Produkte.",
+      "example_en": "The company develops new products.",
+      "cloze_word": "entwickelt",
+      "themes": [
+        "technology"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "entwickelt",
+        "perfekt": "hat entwickelt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "entstehen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "entstehen",
+      "translations_en": [
+        "to arise",
+        "to come into being"
+      ],
+      "example_de": "Hier entsteht ein neues Viertel.",
+      "example_en": "A new district is emerging here.",
+      "cloze_word": "entsteht",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "entsteht",
+        "perfekt": "ist entstanden",
+        "praeteritum_3sg": "entstand",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erfahren_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "erfahren",
+      "translations_en": [
+        "to learn",
+        "to find out"
+      ],
+      "example_de": "Ich habe das erst gestern erfahren.",
+      "example_en": "I only found out yesterday.",
+      "cloze_word": "erfahren",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "erfährt",
+        "perfekt": "hat erfahren",
+        "praeteritum_3sg": "erfuhr",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erkennen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "erkennen",
+      "translations_en": [
+        "to recognise"
+      ],
+      "example_de": "Ich erkenne ihn sofort.",
+      "example_en": "I recognise him immediately.",
+      "cloze_word": "erkenne",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "erkennt",
+        "perfekt": "hat erkannt",
+        "praeteritum_3sg": "erkannte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erfinden_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "erfinden",
+      "translations_en": [
+        "to invent"
+      ],
+      "example_de": "Er erfindet neue Spiele.",
+      "example_en": "He invents new games.",
+      "cloze_word": "erfindet",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "erfindet",
+        "perfekt": "hat erfunden",
+        "praeteritum_3sg": "erfand",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erhoehen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "erhöhen",
+      "translations_en": [
+        "to raise",
+        "to increase"
+      ],
+      "example_de": "Der Chef erhöht die Preise.",
+      "example_en": "The boss raises the prices.",
+      "cloze_word": "erhöht",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erhöht",
+        "perfekt": "hat erhöht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "ermoeglichen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "ermöglichen",
+      "translations_en": [
+        "to make possible"
+      ],
+      "example_de": "Das Stipendium ermöglicht mir das Studium.",
+      "example_en": "The scholarship makes my studies possible.",
+      "cloze_word": "ermöglicht",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "ermöglicht",
+        "perfekt": "hat ermöglicht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erwaehnen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "erwähnen",
+      "translations_en": [
+        "to mention"
+      ],
+      "example_de": "Er hat das Problem nicht erwähnt.",
+      "example_en": "He didn't mention the problem.",
+      "cloze_word": "erwähnt",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erwähnt",
+        "perfekt": "hat erwähnt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erholen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich erholen",
+      "translations_en": [
+        "to recover",
+        "to relax"
+      ],
+      "example_de": "Ich erhole mich im Urlaub.",
+      "example_en": "I recover on holiday.",
+      "cloze_word": "erhole",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erholt sich",
+        "perfekt": "hat sich erholt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "entspannen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich entspannen",
+      "translations_en": [
+        "to relax"
+      ],
+      "example_de": "Ich entspanne mich bei Musik.",
+      "example_en": "I relax with music.",
+      "cloze_word": "entspanne",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "entspannt sich",
+        "perfekt": "hat sich entspannt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bewerben_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich bewerben",
+      "translations_en": [
+        "to apply"
+      ],
+      "example_de": "Ich bewerbe mich um eine Stelle.",
+      "example_en": "I'm applying for a job.",
+      "cloze_word": "bewerbe",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "bewirbt sich",
+        "perfekt": "hat sich beworben",
+        "praeteritum_3sg": "bewarb sich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beschaeftigen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich beschäftigen",
+      "translations_en": [
+        "to occupy oneself",
+        "to deal with"
+      ],
+      "example_de": "Ich beschäftige mich mit Musik.",
+      "example_en": "I occupy myself with music.",
+      "cloze_word": "beschäftige",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beschäftigt sich",
+        "perfekt": "hat sich beschäftigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bemuehen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich bemühen",
+      "translations_en": [
+        "to make an effort"
+      ],
+      "example_de": "Ich bemühe mich um eine Lösung.",
+      "example_en": "I'm making an effort to find a solution.",
+      "cloze_word": "bemühe",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bemüht sich",
+        "perfekt": "hat sich bemüht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verlassen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich verlassen",
+      "translations_en": [
+        "to rely (on)"
+      ],
+      "example_de": "Ich verlasse mich auf dich.",
+      "example_en": "I rely on you.",
+      "cloze_word": "verlasse",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "verlässt sich",
+        "perfekt": "hat sich verlassen",
+        "praeteritum_3sg": "verließ sich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "gewoehnen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich gewöhnen",
+      "translations_en": [
+        "to get used to"
+      ],
+      "example_de": "Ich gewöhne mich an das Klima.",
+      "example_en": "I'm getting used to the climate.",
+      "cloze_word": "gewöhne",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "gewöhnt sich",
+        "perfekt": "hat sich gewöhnt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "konzentrieren_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich konzentrieren",
+      "translations_en": [
+        "to concentrate"
+      ],
+      "example_de": "Ich kann mich nicht konzentrieren.",
+      "example_en": "I can't concentrate.",
+      "cloze_word": "konzentrieren",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "konzentriert sich",
+        "perfekt": "hat sich konzentriert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "streiten_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich streiten",
+      "translations_en": [
+        "to argue"
+      ],
+      "example_de": "Die Kinder streiten sich.",
+      "example_en": "The children are arguing.",
+      "cloze_word": "streiten",
+      "themes": [
+        "people"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "streitet sich",
+        "perfekt": "hat sich gestritten",
+        "praeteritum_3sg": "stritt sich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verletzen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich verletzen",
+      "translations_en": [
+        "to injure oneself"
+      ],
+      "example_de": "Ich habe mich beim Sport verletzt.",
+      "example_en": "I injured myself doing sport.",
+      "cloze_word": "verletzt",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verletzt sich",
+        "perfekt": "hat sich verletzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verlieben_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich verlieben",
+      "translations_en": [
+        "to fall in love"
+      ],
+      "example_de": "Sie hat sich in ihn verliebt.",
+      "example_en": "She fell in love with him.",
+      "cloze_word": "verliebt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verliebt sich",
+        "perfekt": "hat sich verliebt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "trennen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich trennen",
+      "translations_en": [
+        "to separate",
+        "to split up"
+      ],
+      "example_de": "Das Paar trennt sich.",
+      "example_en": "The couple is splitting up.",
+      "cloze_word": "trennt",
+      "themes": [
+        "people"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "trennt sich",
+        "perfekt": "hat sich getrennt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "unterscheiden_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich unterscheiden",
+      "translations_en": [
+        "to differ"
+      ],
+      "example_de": "Die beiden Systeme unterscheiden sich stark.",
+      "example_en": "The two systems differ a lot.",
+      "cloze_word": "unterscheiden",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "unterscheidet sich",
+        "perfekt": "hat sich unterschieden",
+        "praeteritum_3sg": "unterschied sich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verhalten_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich verhalten",
+      "translations_en": [
+        "to behave"
+      ],
+      "example_de": "Wie soll ich mich verhalten?",
+      "example_en": "How should I behave?",
+      "cloze_word": "verhalten",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "verhält sich",
+        "perfekt": "hat sich verhalten",
+        "praeteritum_3sg": "verhielt sich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "kuemmern_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "sich kümmern",
+      "translations_en": [
+        "to take care (of)"
+      ],
+      "example_de": "Ich kümmere mich um die Kinder.",
+      "example_en": "I take care of the children.",
+      "cloze_word": "kümmere",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "kümmert sich",
+        "perfekt": "hat sich gekümmert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "vergleichen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "vergleichen",
+      "translations_en": [
+        "to compare"
+      ],
+      "example_de": "Ich vergleiche die Preise.",
+      "example_en": "I compare the prices.",
+      "cloze_word": "vergleiche",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "vergleicht",
+        "perfekt": "hat verglichen",
+        "praeteritum_3sg": "verglich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beweisen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "beweisen",
+      "translations_en": [
+        "to prove"
+      ],
+      "example_de": "Er kann seine Unschuld beweisen.",
+      "example_en": "He can prove his innocence.",
+      "cloze_word": "beweisen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "beweist",
+        "perfekt": "hat bewiesen",
+        "praeteritum_3sg": "bewies",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "behandeln_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "behandeln",
+      "translations_en": [
+        "to treat"
+      ],
+      "example_de": "Der Arzt behandelt den Patienten.",
+      "example_en": "The doctor treats the patient.",
+      "cloze_word": "behandelt",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "behandelt",
+        "perfekt": "hat behandelt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "benoetigen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "benötigen",
+      "translations_en": [
+        "to require"
+      ],
+      "example_de": "Wir benötigen mehr Zeit.",
+      "example_en": "We need more time.",
+      "cloze_word": "benötigen",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "benötigt",
+        "perfekt": "hat benötigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beobachten_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "beobachten",
+      "translations_en": [
+        "to observe"
+      ],
+      "example_de": "Er beobachtet die Vögel.",
+      "example_en": "He observes the birds.",
+      "cloze_word": "beobachtet",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beobachtet",
+        "perfekt": "hat beobachtet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "berichten_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "berichten",
+      "translations_en": [
+        "to report"
+      ],
+      "example_de": "Die Zeitung berichtet über den Unfall.",
+      "example_en": "The newspaper reports on the accident.",
+      "cloze_word": "berichtet",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "berichtet",
+        "perfekt": "hat berichtet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beschreiben_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "beschreiben",
+      "translations_en": [
+        "to describe"
+      ],
+      "example_de": "Beschreiben Sie den Weg.",
+      "example_en": "Describe the way.",
+      "cloze_word": "Beschreiben",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "beschreibt",
+        "perfekt": "hat beschrieben",
+        "praeteritum_3sg": "beschrieb",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "besitzen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "besitzen",
+      "translations_en": [
+        "to own"
+      ],
+      "example_de": "Sie besitzt ein kleines Haus.",
+      "example_en": "She owns a small house.",
+      "cloze_word": "besitzt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "besitzt",
+        "perfekt": "hat besessen",
+        "praeteritum_3sg": "besaß",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bestaetigen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "bestätigen",
+      "translations_en": [
+        "to confirm"
+      ],
+      "example_de": "Ich bestätige den Termin.",
+      "example_en": "I confirm the appointment.",
+      "cloze_word": "bestätige",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bestätigt",
+        "perfekt": "hat bestätigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bestehen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "bestehen",
+      "translations_en": [
+        "to pass",
+        "to exist"
+      ],
+      "example_de": "Er besteht die Prüfung.",
+      "example_en": "He passes the exam.",
+      "cloze_word": "besteht",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "besteht",
+        "perfekt": "hat bestanden",
+        "praeteritum_3sg": "bestand",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "entdecken_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "entdecken",
+      "translations_en": [
+        "to discover"
+      ],
+      "example_de": "Sie entdecken eine neue Insel.",
+      "example_en": "They discover a new island.",
+      "cloze_word": "entdecken",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "entdeckt",
+        "perfekt": "hat entdeckt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "ersetzen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "ersetzen",
+      "translations_en": [
+        "to replace"
+      ],
+      "example_de": "Wir ersetzen das alte Gerät.",
+      "example_en": "We replace the old device.",
+      "cloze_word": "ersetzen",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "ersetzt",
+        "perfekt": "hat ersetzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erziehen_verb",
+      "cefr": "B1",
+      "pos": "verb",
+      "lemma_de": "erziehen",
+      "translations_en": [
+        "to bring up",
+        "to raise"
+      ],
+      "example_de": "Sie erzieht ihre Kinder allein.",
+      "example_en": "She raises her children alone.",
+      "cloze_word": "erzieht",
+      "themes": [
+        "people"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "erzieht",
+        "perfekt": "hat erzogen",
+        "praeteritum_3sg": "erzog",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    }
   ]
 }

@@ -3,8 +3,169 @@
   "cefr": "C2",
   "pos": "other",
   "entries": [
-    { "id": "mitnichten_other", "cefr": "C2", "pos": "other", "lemma_de": "mitnichten", "translations_en": ["by no means", "not at all"], "example_de": "Das ist mitnichten der Fall.", "example_en": "That is by no means the case.", "cloze_word": "mitnichten", "themes": ["grammar_glue"], "priority": 4 },
-    { "id": "gleichwohl_other", "cefr": "C2", "pos": "other", "lemma_de": "gleichwohl", "translations_en": ["nevertheless", "all the same"], "example_de": "Er war müde, gleichwohl arbeitete er weiter.", "example_en": "He was tired; nevertheless, he kept working.", "cloze_word": "gleichwohl", "themes": ["grammar_glue"], "priority": 4 },
-    { "id": "infolgedessen_other", "cefr": "C2", "pos": "other", "lemma_de": "infolgedessen", "translations_en": ["consequently", "as a result"], "example_de": "Er hatte keine Zeit, infolgedessen kam er zu spät.", "example_en": "He had no time, consequently he was late.", "cloze_word": "infolgedessen", "themes": ["grammar_glue"], "priority": 3 }
+    {
+      "id": "mitnichten_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "mitnichten",
+      "translations_en": [
+        "by no means",
+        "not at all"
+      ],
+      "example_de": "Das ist mitnichten der Fall.",
+      "example_en": "That is by no means the case.",
+      "cloze_word": "mitnichten",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "gleichwohl_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "gleichwohl",
+      "translations_en": [
+        "nevertheless",
+        "all the same"
+      ],
+      "example_de": "Er war müde, gleichwohl arbeitete er weiter.",
+      "example_en": "He was tired; nevertheless, he kept working.",
+      "cloze_word": "gleichwohl",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "infolgedessen_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "infolgedessen",
+      "translations_en": [
+        "consequently",
+        "as a result"
+      ],
+      "example_de": "Er hatte keine Zeit, infolgedessen kam er zu spät.",
+      "example_en": "He had no time, consequently he was late.",
+      "cloze_word": "infolgedessen",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "nichtsdestotrotz_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "nichtsdestotrotz",
+      "translations_en": [
+        "nevertheless"
+      ],
+      "example_de": "Nichtsdestotrotz bleibt er optimistisch.",
+      "example_en": "Nevertheless he remains optimistic.",
+      "cloze_word": "Nichtsdestotrotz",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "zusehends_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "zusehends",
+      "translations_en": [
+        "visibly",
+        "increasingly"
+      ],
+      "example_de": "Ihr Zustand verbessert sich zusehends.",
+      "example_en": "Her condition is visibly improving.",
+      "cloze_word": "zusehends",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "ungeachtet_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "ungeachtet",
+      "translations_en": [
+        "regardless of"
+      ],
+      "example_de": "Ungeachtet der Kritik machte er weiter.",
+      "example_en": "Regardless of the criticism, he carried on.",
+      "cloze_word": "Ungeachtet",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "sozusagen_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "sozusagen",
+      "translations_en": [
+        "so to speak"
+      ],
+      "example_de": "Er ist sozusagen der Chef.",
+      "example_en": "He is, so to speak, the boss.",
+      "cloze_word": "sozusagen",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "gleichermassen_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "gleichermaßen",
+      "translations_en": [
+        "equally"
+      ],
+      "example_de": "Das gilt gleichermaßen für alle.",
+      "example_en": "That applies equally to everyone.",
+      "cloze_word": "gleichermaßen",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "insbesondere_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "insbesondere",
+      "translations_en": [
+        "in particular"
+      ],
+      "example_de": "Insbesondere die Jungen sind betroffen.",
+      "example_en": "Young people in particular are affected.",
+      "cloze_word": "Insbesondere",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "ueberdies_other",
+      "cefr": "C2",
+      "pos": "other",
+      "lemma_de": "überdies",
+      "translations_en": [
+        "moreover"
+      ],
+      "example_de": "Überdies ist er nicht qualifiziert.",
+      "example_en": "Moreover, he is not qualified.",
+      "cloze_word": "Überdies",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 4
+    }
   ]
 }

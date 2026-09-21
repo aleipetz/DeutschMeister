@@ -107,6 +107,1896 @@
         "particle_meaning_hint": null
       },
       "cloze_word": "ist"
+    },
+    {
+      "id": "haben_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "haben",
+      "translations_en": [
+        "to have"
+      ],
+      "example_de": "Ich habe einen Bruder.",
+      "example_en": "I have a brother.",
+      "cloze_word": "habe",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "hat",
+        "perfekt": "hat gehabt",
+        "praeteritum_3sg": "hatte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "werden_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "werden",
+      "translations_en": [
+        "to become"
+      ],
+      "example_de": "Es wird kalt.",
+      "example_en": "It's getting cold.",
+      "cloze_word": "wird",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "wird",
+        "perfekt": "ist geworden",
+        "praeteritum_3sg": "wurde",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "koennen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "können",
+      "translations_en": [
+        "can",
+        "to be able to"
+      ],
+      "example_de": "Ich kann gut schwimmen.",
+      "example_en": "I can swim well.",
+      "cloze_word": "kann",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "kann",
+        "perfekt": "hat gekonnt",
+        "praeteritum_3sg": "konnte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "muessen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "müssen",
+      "translations_en": [
+        "must",
+        "to have to"
+      ],
+      "example_de": "Ich muss heute arbeiten.",
+      "example_en": "I have to work today.",
+      "cloze_word": "muss",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "muss",
+        "perfekt": "hat gemusst",
+        "praeteritum_3sg": "musste",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "wollen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "wollen",
+      "translations_en": [
+        "to want"
+      ],
+      "example_de": "Er will nach Hause gehen.",
+      "example_en": "He wants to go home.",
+      "cloze_word": "will",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "will",
+        "perfekt": "hat gewollt",
+        "praeteritum_3sg": "wollte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "sollen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "sollen",
+      "translations_en": [
+        "should",
+        "to be supposed to"
+      ],
+      "example_de": "Du sollst zum Arzt gehen.",
+      "example_en": "You should go to the doctor.",
+      "cloze_word": "sollst",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "soll",
+        "perfekt": "hat gesollt",
+        "praeteritum_3sg": "sollte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "duerfen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "dürfen",
+      "translations_en": [
+        "may",
+        "to be allowed to"
+      ],
+      "example_de": "Hier darf man nicht rauchen.",
+      "example_en": "You may not smoke here.",
+      "cloze_word": "darf",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "darf",
+        "perfekt": "hat gedurft",
+        "praeteritum_3sg": "durfte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "moegen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "mögen",
+      "translations_en": [
+        "to like"
+      ],
+      "example_de": "Ich mag Kaffee.",
+      "example_en": "I like coffee.",
+      "cloze_word": "mag",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "mag",
+        "perfekt": "hat gemocht",
+        "praeteritum_3sg": "mochte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "wohnen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "wohnen",
+      "translations_en": [
+        "to live",
+        "to reside"
+      ],
+      "example_de": "Ich wohne in Hamburg.",
+      "example_en": "I live in Hamburg.",
+      "cloze_word": "wohne",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "wohnt",
+        "perfekt": "hat gewohnt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "heissen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "heißen",
+      "translations_en": [
+        "to be called"
+      ],
+      "example_de": "Wie heißt du?",
+      "example_en": "What is your name?",
+      "cloze_word": "heißt",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "heißt",
+        "perfekt": "hat geheißen",
+        "praeteritum_3sg": "hieß",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "sprechen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "sprechen",
+      "translations_en": [
+        "to speak"
+      ],
+      "example_de": "Sie spricht sehr gut Deutsch.",
+      "example_en": "She speaks German very well.",
+      "cloze_word": "spricht",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "spricht",
+        "perfekt": "hat gesprochen",
+        "praeteritum_3sg": "sprach",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "sagen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "sagen",
+      "translations_en": [
+        "to say",
+        "to tell"
+      ],
+      "example_de": "Was sagst du?",
+      "example_en": "What do you say?",
+      "cloze_word": "sagst",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "sagt",
+        "perfekt": "hat gesagt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "fragen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "fragen",
+      "translations_en": [
+        "to ask"
+      ],
+      "example_de": "Ich frage den Lehrer.",
+      "example_en": "I ask the teacher.",
+      "cloze_word": "frage",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "fragt",
+        "perfekt": "hat gefragt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "antworten_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "antworten",
+      "translations_en": [
+        "to answer"
+      ],
+      "example_de": "Bitte antworte schnell.",
+      "example_en": "Please answer quickly.",
+      "cloze_word": "antworte",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "antwortet",
+        "perfekt": "hat geantwortet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "arbeiten_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "arbeiten",
+      "translations_en": [
+        "to work"
+      ],
+      "example_de": "Er arbeitet in einer Bank.",
+      "example_en": "He works in a bank.",
+      "cloze_word": "arbeitet",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "arbeitet",
+        "perfekt": "hat gearbeitet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "lernen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "lernen",
+      "translations_en": [
+        "to learn",
+        "to study"
+      ],
+      "example_de": "Ich lerne Deutsch.",
+      "example_en": "I'm learning German.",
+      "cloze_word": "lerne",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "lernt",
+        "perfekt": "hat gelernt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "spielen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "spielen",
+      "translations_en": [
+        "to play"
+      ],
+      "example_de": "Die Kinder spielen im Garten.",
+      "example_en": "The children play in the garden.",
+      "cloze_word": "spielen",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "spielt",
+        "perfekt": "hat gespielt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "trinken_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "trinken",
+      "translations_en": [
+        "to drink"
+      ],
+      "example_de": "Ich trinke gern Tee.",
+      "example_en": "I like drinking tea.",
+      "cloze_word": "trinke",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "trinkt",
+        "perfekt": "hat getrunken",
+        "praeteritum_3sg": "trank",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "essen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "essen",
+      "translations_en": [
+        "to eat"
+      ],
+      "example_de": "Wir essen um sieben Uhr.",
+      "example_en": "We eat at seven o'clock.",
+      "cloze_word": "essen",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "isst",
+        "perfekt": "hat gegessen",
+        "praeteritum_3sg": "aß",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "kochen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "kochen",
+      "translations_en": [
+        "to cook"
+      ],
+      "example_de": "Er kocht heute Abend.",
+      "example_en": "He is cooking tonight.",
+      "cloze_word": "kocht",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "kocht",
+        "perfekt": "hat gekocht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "lesen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "lesen",
+      "translations_en": [
+        "to read"
+      ],
+      "example_de": "Sie liest jeden Tag ein Buch.",
+      "example_en": "She reads a book every day.",
+      "cloze_word": "liest",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "liest",
+        "perfekt": "hat gelesen",
+        "praeteritum_3sg": "las",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schreiben_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "schreiben",
+      "translations_en": [
+        "to write"
+      ],
+      "example_de": "Ich schreibe eine E-Mail.",
+      "example_en": "I'm writing an email.",
+      "cloze_word": "schreibe",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "schreibt",
+        "perfekt": "hat geschrieben",
+        "praeteritum_3sg": "schrieb",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "hoeren_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "hören",
+      "translations_en": [
+        "to hear",
+        "to listen"
+      ],
+      "example_de": "Ich höre Musik.",
+      "example_en": "I'm listening to music.",
+      "cloze_word": "höre",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "hört",
+        "perfekt": "hat gehört",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "sehen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "sehen",
+      "translations_en": [
+        "to see"
+      ],
+      "example_de": "Ich sehe einen Vogel.",
+      "example_en": "I see a bird.",
+      "cloze_word": "sehe",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "sieht",
+        "perfekt": "hat gesehen",
+        "praeteritum_3sg": "sah",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "laufen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "laufen",
+      "translations_en": [
+        "to run",
+        "to walk"
+      ],
+      "example_de": "Er läuft jeden Morgen im Park.",
+      "example_en": "He runs in the park every morning.",
+      "cloze_word": "läuft",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "läuft",
+        "perfekt": "ist gelaufen",
+        "praeteritum_3sg": "lief",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "fahren_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "fahren",
+      "translations_en": [
+        "to drive",
+        "to travel"
+      ],
+      "example_de": "Wir fahren mit dem Zug.",
+      "example_en": "We travel by train.",
+      "cloze_word": "fahren",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "fährt",
+        "perfekt": "ist gefahren",
+        "praeteritum_3sg": "fuhr",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "fliegen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "fliegen",
+      "translations_en": [
+        "to fly"
+      ],
+      "example_de": "Wir fliegen nach Spanien.",
+      "example_en": "We're flying to Spain.",
+      "cloze_word": "fliegen",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "fliegt",
+        "perfekt": "ist geflogen",
+        "praeteritum_3sg": "flog",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schlafen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "schlafen",
+      "translations_en": [
+        "to sleep"
+      ],
+      "example_de": "Das Baby schläft schon.",
+      "example_en": "The baby is already asleep.",
+      "cloze_word": "schläft",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "schläft",
+        "perfekt": "hat geschlafen",
+        "praeteritum_3sg": "schlief",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "wissen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "wissen",
+      "translations_en": [
+        "to know (a fact)"
+      ],
+      "example_de": "Ich weiß die Antwort nicht.",
+      "example_en": "I don't know the answer.",
+      "cloze_word": "weiß",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "weiß",
+        "perfekt": "hat gewusst",
+        "praeteritum_3sg": "wusste",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "kennen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "kennen",
+      "translations_en": [
+        "to know (a person or place)"
+      ],
+      "example_de": "Ich kenne diese Stadt.",
+      "example_en": "I know this city.",
+      "cloze_word": "kenne",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "kennt",
+        "perfekt": "hat gekannt",
+        "praeteritum_3sg": "kannte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "brauchen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "brauchen",
+      "translations_en": [
+        "to need"
+      ],
+      "example_de": "Ich brauche ein neues Handy.",
+      "example_en": "I need a new phone.",
+      "cloze_word": "brauche",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "braucht",
+        "perfekt": "hat gebraucht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bringen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "bringen",
+      "translations_en": [
+        "to bring",
+        "to take"
+      ],
+      "example_de": "Er bringt die Kinder zur Schule.",
+      "example_en": "He takes the children to school.",
+      "cloze_word": "bringt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "bringt",
+        "perfekt": "hat gebracht",
+        "praeteritum_3sg": "brachte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "lieben_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "lieben",
+      "translations_en": [
+        "to love"
+      ],
+      "example_de": "Ich liebe dich.",
+      "example_en": "I love you.",
+      "cloze_word": "liebe",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "liebt",
+        "perfekt": "hat geliebt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "leben_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "leben",
+      "translations_en": [
+        "to live"
+      ],
+      "example_de": "Er lebt seit zehn Jahren in Wien.",
+      "example_en": "He has lived in Vienna for ten years.",
+      "cloze_word": "lebt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "lebt",
+        "perfekt": "hat gelebt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bleiben_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "bleiben",
+      "translations_en": [
+        "to stay",
+        "to remain"
+      ],
+      "example_de": "Ich bleibe heute zu Hause.",
+      "example_en": "I'm staying at home today.",
+      "cloze_word": "bleibe",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "bleibt",
+        "perfekt": "ist geblieben",
+        "praeteritum_3sg": "blieb",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "tanzen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "tanzen",
+      "translations_en": [
+        "to dance"
+      ],
+      "example_de": "Sie tanzt sehr gern.",
+      "example_en": "She loves dancing.",
+      "cloze_word": "tanzt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "tanzt",
+        "perfekt": "hat getanzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "singen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "singen",
+      "translations_en": [
+        "to sing"
+      ],
+      "example_de": "Er singt unter der Dusche.",
+      "example_en": "He sings in the shower.",
+      "cloze_word": "singt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "singt",
+        "perfekt": "hat gesungen",
+        "praeteritum_3sg": "sang",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "oeffnen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "öffnen",
+      "translations_en": [
+        "to open"
+      ],
+      "example_de": "Kannst du bitte das Fenster öffnen?",
+      "example_en": "Can you open the window, please?",
+      "cloze_word": "öffnen",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "öffnet",
+        "perfekt": "hat geöffnet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schliessen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "schließen",
+      "translations_en": [
+        "to close"
+      ],
+      "example_de": "Wir schließen um sechs Uhr.",
+      "example_en": "We close at six o'clock.",
+      "cloze_word": "schließen",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "schließt",
+        "perfekt": "hat geschlossen",
+        "praeteritum_3sg": "schloss",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "lachen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "lachen",
+      "translations_en": [
+        "to laugh"
+      ],
+      "example_de": "Die Kinder lachen laut.",
+      "example_en": "The children are laughing loudly.",
+      "cloze_word": "lachen",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "lacht",
+        "perfekt": "hat gelacht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "warten_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "warten",
+      "translations_en": [
+        "to wait"
+      ],
+      "example_de": "Ich warte auf den Bus.",
+      "example_en": "I'm waiting for the bus.",
+      "cloze_word": "warte",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "wartet",
+        "perfekt": "hat gewartet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "zahlen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "zahlen",
+      "translations_en": [
+        "to pay"
+      ],
+      "example_de": "Ich zahle mit Karte.",
+      "example_en": "I pay by card.",
+      "cloze_word": "zahle",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "zahlt",
+        "perfekt": "hat gezahlt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "kosten_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "kosten",
+      "translations_en": [
+        "to cost"
+      ],
+      "example_de": "Was kostet das Brot?",
+      "example_en": "How much does the bread cost?",
+      "cloze_word": "kostet",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "kostet",
+        "perfekt": "hat gekostet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "treffen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "treffen",
+      "translations_en": [
+        "to meet"
+      ],
+      "example_de": "Ich treffe meine Freunde im Café.",
+      "example_en": "I meet my friends at the café.",
+      "cloze_word": "treffe",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "trifft",
+        "perfekt": "hat getroffen",
+        "praeteritum_3sg": "traf",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "helfen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "helfen",
+      "translations_en": [
+        "to help"
+      ],
+      "example_de": "Kannst du mir helfen?",
+      "example_en": "Can you help me?",
+      "cloze_word": "helfen",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "hilft",
+        "perfekt": "hat geholfen",
+        "praeteritum_3sg": "half",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "denken_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "denken",
+      "translations_en": [
+        "to think"
+      ],
+      "example_de": "Ich denke oft an dich.",
+      "example_en": "I often think of you.",
+      "cloze_word": "denke",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "denkt",
+        "perfekt": "hat gedacht",
+        "praeteritum_3sg": "dachte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "glauben_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "glauben",
+      "translations_en": [
+        "to believe",
+        "to think"
+      ],
+      "example_de": "Ich glaube, das ist richtig.",
+      "example_en": "I think that's right.",
+      "cloze_word": "glaube",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "glaubt",
+        "perfekt": "hat geglaubt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "suchen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "suchen",
+      "translations_en": [
+        "to look for"
+      ],
+      "example_de": "Ich suche meinen Schlüssel.",
+      "example_en": "I'm looking for my key.",
+      "cloze_word": "suche",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "sucht",
+        "perfekt": "hat gesucht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "sitzen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "sitzen",
+      "translations_en": [
+        "to sit"
+      ],
+      "example_de": "Wir sitzen im Garten.",
+      "example_en": "We're sitting in the garden.",
+      "cloze_word": "sitzen",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "sitzt",
+        "perfekt": "hat gesessen",
+        "praeteritum_3sg": "saß",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "liegen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "liegen",
+      "translations_en": [
+        "to lie",
+        "to be located"
+      ],
+      "example_de": "Das Buch liegt auf dem Tisch.",
+      "example_en": "The book is lying on the table.",
+      "cloze_word": "liegt",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "liegt",
+        "perfekt": "hat gelegen",
+        "praeteritum_3sg": "lag",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "rufen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "rufen",
+      "translations_en": [
+        "to call",
+        "to shout"
+      ],
+      "example_de": "Die Mutter ruft die Kinder.",
+      "example_en": "The mother calls the children.",
+      "cloze_word": "ruft",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "ruft",
+        "perfekt": "hat gerufen",
+        "praeteritum_3sg": "rief",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "zeigen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "zeigen",
+      "translations_en": [
+        "to show"
+      ],
+      "example_de": "Er zeigt mir die Stadt.",
+      "example_en": "He shows me the city.",
+      "cloze_word": "zeigt",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "zeigt",
+        "perfekt": "hat gezeigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schenken_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "schenken",
+      "translations_en": [
+        "to give (as a gift)"
+      ],
+      "example_de": "Ich schenke ihr Blumen.",
+      "example_en": "I give her flowers.",
+      "cloze_word": "schenke",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "schenkt",
+        "perfekt": "hat geschenkt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "waschen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "waschen",
+      "translations_en": [
+        "to wash"
+      ],
+      "example_de": "Ich wasche meine Hände.",
+      "example_en": "I wash my hands.",
+      "cloze_word": "wasche",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "wäscht",
+        "perfekt": "hat gewaschen",
+        "praeteritum_3sg": "wusch",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "putzen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "putzen",
+      "translations_en": [
+        "to clean"
+      ],
+      "example_de": "Sie putzt die Küche.",
+      "example_en": "She cleans the kitchen.",
+      "cloze_word": "putzt",
+      "themes": [
+        "home"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "putzt",
+        "perfekt": "hat geputzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "tragen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "tragen",
+      "translations_en": [
+        "to carry",
+        "to wear"
+      ],
+      "example_de": "Er trägt einen schweren Koffer.",
+      "example_en": "He is carrying a heavy suitcase.",
+      "cloze_word": "trägt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "trägt",
+        "perfekt": "hat getragen",
+        "praeteritum_3sg": "trug",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "holen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "holen",
+      "translations_en": [
+        "to fetch",
+        "to get"
+      ],
+      "example_de": "Ich hole schnell das Buch.",
+      "example_en": "I'll quickly get the book.",
+      "cloze_word": "hole",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "holt",
+        "perfekt": "hat geholt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "besuchen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "besuchen",
+      "translations_en": [
+        "to visit"
+      ],
+      "example_de": "Wir besuchen unsere Oma.",
+      "example_en": "We're visiting our grandma.",
+      "cloze_word": "besuchen",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "besucht",
+        "perfekt": "hat besucht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verstehen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "verstehen",
+      "translations_en": [
+        "to understand"
+      ],
+      "example_de": "Ich verstehe dich nicht.",
+      "example_en": "I don't understand you.",
+      "cloze_word": "verstehe",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "versteht",
+        "perfekt": "hat verstanden",
+        "praeteritum_3sg": "verstand",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "studieren_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "studieren",
+      "translations_en": [
+        "to study (at university)"
+      ],
+      "example_de": "Sie studiert Medizin in München.",
+      "example_en": "She studies medicine in Munich.",
+      "cloze_word": "studiert",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "studiert",
+        "perfekt": "hat studiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verkaufen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "verkaufen",
+      "translations_en": [
+        "to sell"
+      ],
+      "example_de": "Er verkauft sein altes Auto.",
+      "example_en": "He is selling his old car.",
+      "cloze_word": "verkauft",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verkauft",
+        "perfekt": "hat verkauft",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "reisen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "reisen",
+      "translations_en": [
+        "to travel"
+      ],
+      "example_de": "Wir reisen gern.",
+      "example_en": "We like travelling.",
+      "cloze_word": "reisen",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "reist",
+        "perfekt": "ist gereist",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schwimmen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "schwimmen",
+      "translations_en": [
+        "to swim"
+      ],
+      "example_de": "Ich schwimme jeden Tag.",
+      "example_en": "I swim every day.",
+      "cloze_word": "schwimme",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "schwimmt",
+        "perfekt": "ist geschwommen",
+        "praeteritum_3sg": "schwamm",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "regnen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "regnen",
+      "translations_en": [
+        "to rain"
+      ],
+      "example_de": "Es regnet schon den ganzen Tag.",
+      "example_en": "It has been raining all day.",
+      "cloze_word": "regnet",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "regnet",
+        "perfekt": "hat geregnet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bestellen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "bestellen",
+      "translations_en": [
+        "to order"
+      ],
+      "example_de": "Ich bestelle einen Kaffee.",
+      "example_en": "I order a coffee.",
+      "cloze_word": "bestelle",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bestellt",
+        "perfekt": "hat bestellt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "vergessen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "vergessen",
+      "translations_en": [
+        "to forget"
+      ],
+      "example_de": "Ich vergesse oft meinen Schlüssel.",
+      "example_en": "I often forget my key.",
+      "cloze_word": "vergesse",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "vergisst",
+        "perfekt": "hat vergessen",
+        "praeteritum_3sg": "vergaß",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "gehoeren_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "gehören",
+      "translations_en": [
+        "to belong to"
+      ],
+      "example_de": "Das Buch gehört mir.",
+      "example_en": "The book belongs to me.",
+      "cloze_word": "gehört",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "gehört",
+        "perfekt": "hat gehört",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beginnen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "beginnen",
+      "translations_en": [
+        "to begin"
+      ],
+      "example_de": "Der Kurs beginnt um neun Uhr.",
+      "example_en": "The course begins at nine o'clock.",
+      "cloze_word": "beginnt",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "beginnt",
+        "perfekt": "hat begonnen",
+        "praeteritum_3sg": "begann",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "danken_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "danken",
+      "translations_en": [
+        "to thank"
+      ],
+      "example_de": "Ich danke dir für die Hilfe.",
+      "example_en": "I thank you for the help.",
+      "cloze_word": "danke",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "dankt",
+        "perfekt": "hat gedankt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "gefallen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "gefallen",
+      "translations_en": [
+        "to please",
+        "to like"
+      ],
+      "example_de": "Das Kleid gefällt mir.",
+      "example_en": "I like the dress.",
+      "cloze_word": "gefällt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "gefällt",
+        "perfekt": "hat gefallen",
+        "praeteritum_3sg": "gefiel",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "fehlen_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "fehlen",
+      "translations_en": [
+        "to be missing"
+      ],
+      "example_de": "Mir fehlt ein Stift.",
+      "example_en": "I'm missing a pen.",
+      "cloze_word": "fehlt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "fehlt",
+        "perfekt": "hat gefehlt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "feiern_verb",
+      "cefr": "A1",
+      "pos": "verb",
+      "lemma_de": "feiern",
+      "translations_en": [
+        "to celebrate"
+      ],
+      "example_de": "Wir feiern meinen Geburtstag.",
+      "example_en": "We're celebrating my birthday.",
+      "cloze_word": "feiern",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "feiert",
+        "perfekt": "hat gefeiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
     }
   ]
 }

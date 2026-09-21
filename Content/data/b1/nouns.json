@@ -3,15 +3,2456 @@
   "cefr": "B1",
   "pos": "noun",
   "entries": [
-    { "id": "erfahrung_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Erfahrung", "translations_en": ["experience"], "example_de": "Sie hat viel Erfahrung in diesem Bereich.", "example_en": "She has a lot of experience in this field.", "cloze_word": "Erfahrung", "themes": ["abstract_ideas"], "priority": 1, "noun": { "gender": "die", "plural_de": "Erfahrungen" } },
-    { "id": "entscheidung_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Entscheidung", "translations_en": ["decision"], "example_de": "Das war eine schwierige Entscheidung.", "example_en": "That was a difficult decision.", "cloze_word": "Entscheidung", "themes": ["abstract_ideas"], "priority": 1, "noun": { "gender": "die", "plural_de": "Entscheidungen" } },
-    { "id": "eindruck_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Eindruck", "translations_en": ["impression"], "example_de": "Er hat einen guten Eindruck gemacht.", "example_en": "He made a good impression.", "cloze_word": "Eindruck", "themes": ["abstract_ideas"], "priority": 2, "noun": { "gender": "der", "plural_de": "Eindrücke" } },
-    { "id": "verantwortung_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Verantwortung", "translations_en": ["responsibility"], "example_de": "Sie übernimmt die Verantwortung für das Projekt.", "example_en": "She is taking responsibility for the project.", "cloze_word": "Verantwortung", "themes": ["work"], "priority": 2, "noun": { "gender": "die", "plural_de": null } },
-    { "id": "umwelt_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Umwelt", "translations_en": ["environment"], "example_de": "Wir müssen die Umwelt schützen.", "example_en": "We must protect the environment.", "cloze_word": "Umwelt", "themes": ["nature"], "priority": 1, "noun": { "gender": "die", "plural_de": null } },
-    { "id": "vorschlag_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Vorschlag", "translations_en": ["suggestion", "proposal"], "example_de": "Das ist ein guter Vorschlag.", "example_en": "That's a good suggestion.", "cloze_word": "Vorschlag", "themes": ["work"], "priority": 2, "noun": { "gender": "der", "plural_de": "Vorschläge" } },
-    { "id": "beziehung_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Beziehung", "translations_en": ["relationship"], "example_de": "Sie führen eine lange Beziehung.", "example_en": "They are in a long relationship.", "cloze_word": "Beziehung", "themes": ["people"], "priority": 1, "noun": { "gender": "die", "plural_de": "Beziehungen" } },
-    { "id": "unterschied_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Unterschied", "translations_en": ["difference"], "example_de": "Es gibt einen großen Unterschied zwischen den beiden.", "example_en": "There is a big difference between the two.", "cloze_word": "Unterschied", "themes": ["abstract_ideas"], "priority": 1, "noun": { "gender": "der", "plural_de": "Unterschiede" } },
-    { "id": "ereignis_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Ereignis", "translations_en": ["event"], "example_de": "Die Hochzeit war ein besonderes Ereignis.", "example_en": "The wedding was a special event.", "cloze_word": "Ereignis", "themes": ["abstract_ideas"], "priority": 2, "noun": { "gender": "das", "plural_de": "Ereignisse" } },
-    { "id": "moeglichkeit_noun", "cefr": "B1", "pos": "noun", "lemma_de": "Möglichkeit", "translations_en": ["possibility", "option"], "example_de": "Es gibt mehrere Möglichkeiten.", "example_en": "There are several possibilities.", "cloze_word": "Möglichkeiten", "themes": ["abstract_ideas"], "priority": 1, "noun": { "gender": "die", "plural_de": "Möglichkeiten" } }
+    {
+      "id": "erfahrung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Erfahrung",
+      "translations_en": [
+        "experience"
+      ],
+      "example_de": "Sie hat viel Erfahrung in diesem Bereich.",
+      "example_en": "She has a lot of experience in this field.",
+      "cloze_word": "Erfahrung",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Erfahrungen"
+      }
+    },
+    {
+      "id": "entscheidung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Entscheidung",
+      "translations_en": [
+        "decision"
+      ],
+      "example_de": "Das war eine schwierige Entscheidung.",
+      "example_en": "That was a difficult decision.",
+      "cloze_word": "Entscheidung",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Entscheidungen"
+      }
+    },
+    {
+      "id": "eindruck_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Eindruck",
+      "translations_en": [
+        "impression"
+      ],
+      "example_de": "Er hat einen guten Eindruck gemacht.",
+      "example_en": "He made a good impression.",
+      "cloze_word": "Eindruck",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Eindrücke"
+      }
+    },
+    {
+      "id": "verantwortung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Verantwortung",
+      "translations_en": [
+        "responsibility"
+      ],
+      "example_de": "Sie übernimmt die Verantwortung für das Projekt.",
+      "example_en": "She is taking responsibility for the project.",
+      "cloze_word": "Verantwortung",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "umwelt_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Umwelt",
+      "translations_en": [
+        "environment"
+      ],
+      "example_de": "Wir müssen die Umwelt schützen.",
+      "example_en": "We must protect the environment.",
+      "cloze_word": "Umwelt",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "vorschlag_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Vorschlag",
+      "translations_en": [
+        "suggestion",
+        "proposal"
+      ],
+      "example_de": "Das ist ein guter Vorschlag.",
+      "example_en": "That's a good suggestion.",
+      "cloze_word": "Vorschlag",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Vorschläge"
+      }
+    },
+    {
+      "id": "beziehung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Beziehung",
+      "translations_en": [
+        "relationship"
+      ],
+      "example_de": "Sie führen eine lange Beziehung.",
+      "example_en": "They are in a long relationship.",
+      "cloze_word": "Beziehung",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Beziehungen"
+      }
+    },
+    {
+      "id": "unterschied_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Unterschied",
+      "translations_en": [
+        "difference"
+      ],
+      "example_de": "Es gibt einen großen Unterschied zwischen den beiden.",
+      "example_en": "There is a big difference between the two.",
+      "cloze_word": "Unterschied",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Unterschiede"
+      }
+    },
+    {
+      "id": "ereignis_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Ereignis",
+      "translations_en": [
+        "event"
+      ],
+      "example_de": "Die Hochzeit war ein besonderes Ereignis.",
+      "example_en": "The wedding was a special event.",
+      "cloze_word": "Ereignis",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Ereignisse"
+      }
+    },
+    {
+      "id": "moeglichkeit_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Möglichkeit",
+      "translations_en": [
+        "possibility",
+        "option"
+      ],
+      "example_de": "Es gibt mehrere Möglichkeiten.",
+      "example_en": "There are several possibilities.",
+      "cloze_word": "Möglichkeiten",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Möglichkeiten"
+      }
+    },
+    {
+      "id": "gesellschaft_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Gesellschaft",
+      "translations_en": [
+        "society"
+      ],
+      "example_de": "Die Gesellschaft verändert sich schnell.",
+      "example_en": "Society is changing quickly.",
+      "cloze_word": "Gesellschaft",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Gesellschaften"
+      }
+    },
+    {
+      "id": "kultur_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Kultur",
+      "translations_en": [
+        "culture"
+      ],
+      "example_de": "Jedes Land hat seine eigene Kultur.",
+      "example_en": "Every country has its own culture.",
+      "cloze_word": "Kultur",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Kulturen"
+      }
+    },
+    {
+      "id": "politik_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Politik",
+      "translations_en": [
+        "politics",
+        "policy"
+      ],
+      "example_de": "Er interessiert sich für Politik.",
+      "example_en": "He is interested in politics.",
+      "cloze_word": "Politik",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "regierung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Regierung",
+      "translations_en": [
+        "government"
+      ],
+      "example_de": "Die Regierung plant neue Gesetze.",
+      "example_en": "The government is planning new laws.",
+      "cloze_word": "Regierung",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Regierungen"
+      }
+    },
+    {
+      "id": "wirtschaft_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Wirtschaft",
+      "translations_en": [
+        "economy"
+      ],
+      "example_de": "Die Wirtschaft wächst nur langsam.",
+      "example_en": "The economy is only growing slowly.",
+      "cloze_word": "Wirtschaft",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "arbeitgeber_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Arbeitgeber",
+      "translations_en": [
+        "employer"
+      ],
+      "example_de": "Mein Arbeitgeber zahlt pünktlich.",
+      "example_en": "My employer pays on time.",
+      "cloze_word": "Arbeitgeber",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Arbeitgeber"
+      }
+    },
+    {
+      "id": "arbeitnehmer_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Arbeitnehmer",
+      "translations_en": [
+        "employee"
+      ],
+      "example_de": "Die Arbeitnehmer haben Anspruch auf Urlaub.",
+      "example_en": "Employees are entitled to holidays.",
+      "cloze_word": "Arbeitnehmer",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Arbeitnehmer"
+      }
+    },
+    {
+      "id": "arbeitsplatz_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Arbeitsplatz",
+      "translations_en": [
+        "workplace",
+        "job"
+      ],
+      "example_de": "Er hat einen sicheren Arbeitsplatz.",
+      "example_en": "He has a secure job.",
+      "cloze_word": "Arbeitsplatz",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Arbeitsplätze"
+      }
+    },
+    {
+      "id": "vertrag_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Vertrag",
+      "translations_en": [
+        "contract"
+      ],
+      "example_de": "Ich unterschreibe den Vertrag morgen.",
+      "example_en": "I'm signing the contract tomorrow.",
+      "cloze_word": "Vertrag",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Verträge"
+      }
+    },
+    {
+      "id": "versicherung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Versicherung",
+      "translations_en": [
+        "insurance"
+      ],
+      "example_de": "Die Versicherung zahlt den Schaden.",
+      "example_en": "The insurance pays for the damage.",
+      "cloze_word": "Versicherung",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Versicherungen"
+      }
+    },
+    {
+      "id": "steuer_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Steuer",
+      "translations_en": [
+        "tax"
+      ],
+      "example_de": "Die Steuern sind in diesem Land hoch.",
+      "example_en": "Taxes are high in this country.",
+      "cloze_word": "Steuern",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Steuern"
+      }
+    },
+    {
+      "id": "kosten_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Kosten",
+      "translations_en": [
+        "costs"
+      ],
+      "example_de": "Die Kosten steigen jedes Jahr.",
+      "example_en": "The costs rise every year.",
+      "cloze_word": "Kosten",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "einkommen_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Einkommen",
+      "translations_en": [
+        "income"
+      ],
+      "example_de": "Sein Einkommen ist niedrig.",
+      "example_en": "His income is low.",
+      "cloze_word": "Einkommen",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Einkommen"
+      }
+    },
+    {
+      "id": "verkehr_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Verkehr",
+      "translations_en": [
+        "traffic"
+      ],
+      "example_de": "Der Verkehr ist heute schlimm.",
+      "example_en": "The traffic is bad today.",
+      "cloze_word": "Verkehr",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "unfall_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Unfall",
+      "translations_en": [
+        "accident"
+      ],
+      "example_de": "Auf der Autobahn gab es einen Unfall.",
+      "example_en": "There was an accident on the motorway.",
+      "cloze_word": "Unfall",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Unfälle"
+      }
+    },
+    {
+      "id": "gefahr_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Gefahr",
+      "translations_en": [
+        "danger"
+      ],
+      "example_de": "Es besteht keine Gefahr.",
+      "example_en": "There is no danger.",
+      "cloze_word": "Gefahr",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Gefahren"
+      }
+    },
+    {
+      "id": "sicherheit_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Sicherheit",
+      "translations_en": [
+        "safety",
+        "security"
+      ],
+      "example_de": "Die Sicherheit ist sehr wichtig.",
+      "example_en": "Safety is very important.",
+      "cloze_word": "Sicherheit",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "verbot_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Verbot",
+      "translations_en": [
+        "ban",
+        "prohibition"
+      ],
+      "example_de": "Das Verbot gilt ab morgen.",
+      "example_en": "The ban applies from tomorrow.",
+      "cloze_word": "Verbot",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Verbote"
+      }
+    },
+    {
+      "id": "regel_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Regel",
+      "translations_en": [
+        "rule"
+      ],
+      "example_de": "Es gibt klare Regeln.",
+      "example_en": "There are clear rules.",
+      "cloze_word": "Regeln",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Regeln"
+      }
+    },
+    {
+      "id": "gesetz_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Gesetz",
+      "translations_en": [
+        "law"
+      ],
+      "example_de": "Das Gesetz gilt für alle.",
+      "example_en": "The law applies to everyone.",
+      "cloze_word": "Gesetz",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Gesetze"
+      }
+    },
+    {
+      "id": "recht_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Recht",
+      "translations_en": [
+        "right",
+        "law"
+      ],
+      "example_de": "Jeder hat das Recht auf Bildung.",
+      "example_en": "Everyone has the right to education.",
+      "cloze_word": "Recht",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Rechte"
+      }
+    },
+    {
+      "id": "pflicht_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Pflicht",
+      "translations_en": [
+        "duty"
+      ],
+      "example_de": "Es ist meine Pflicht zu helfen.",
+      "example_en": "It is my duty to help.",
+      "cloze_word": "Pflicht",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Pflichten"
+      }
+    },
+    {
+      "id": "freiheit_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Freiheit",
+      "translations_en": [
+        "freedom"
+      ],
+      "example_de": "Freiheit ist ihm sehr wichtig.",
+      "example_en": "Freedom is very important to him.",
+      "cloze_word": "Freiheit",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Freiheiten"
+      }
+    },
+    {
+      "id": "demokratie_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Demokratie",
+      "translations_en": [
+        "democracy"
+      ],
+      "example_de": "Die Demokratie braucht mutige Bürger.",
+      "example_en": "Democracy needs brave citizens.",
+      "cloze_word": "Demokratie",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Demokratien"
+      }
+    },
+    {
+      "id": "wahl_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Wahl",
+      "translations_en": [
+        "election",
+        "choice"
+      ],
+      "example_de": "Die Wahl findet im Herbst statt.",
+      "example_en": "The election takes place in autumn.",
+      "cloze_word": "Wahl",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Wahlen"
+      }
+    },
+    {
+      "id": "partei_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Partei",
+      "translations_en": [
+        "party (political)"
+      ],
+      "example_de": "Er ist Mitglied einer Partei.",
+      "example_en": "He is a member of a party.",
+      "cloze_word": "Partei",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Parteien"
+      }
+    },
+    {
+      "id": "buerger_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Bürger",
+      "translations_en": [
+        "citizen"
+      ],
+      "example_de": "Die Bürger dürfen abstimmen.",
+      "example_en": "The citizens may vote.",
+      "cloze_word": "Bürger",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Bürger"
+      }
+    },
+    {
+      "id": "staat_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Staat",
+      "translations_en": [
+        "state"
+      ],
+      "example_de": "Der Staat bezahlt die Schulen.",
+      "example_en": "The state pays for the schools.",
+      "cloze_word": "Staat",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Staaten"
+      }
+    },
+    {
+      "id": "behoerde_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Behörde",
+      "translations_en": [
+        "authority",
+        "agency"
+      ],
+      "example_de": "Die Behörde ist heute geschlossen.",
+      "example_en": "The agency is closed today.",
+      "cloze_word": "Behörde",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Behörden"
+      }
+    },
+    {
+      "id": "antrag_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Antrag",
+      "translations_en": [
+        "application",
+        "request"
+      ],
+      "example_de": "Ich stelle einen Antrag auf Urlaub.",
+      "example_en": "I'm submitting a request for leave.",
+      "cloze_word": "Antrag",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Anträge"
+      }
+    },
+    {
+      "id": "formular_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Formular",
+      "translations_en": [
+        "form"
+      ],
+      "example_de": "Das Formular gibt es auch online.",
+      "example_en": "The form is also available online.",
+      "cloze_word": "Formular",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Formulare"
+      }
+    },
+    {
+      "id": "unterschrift_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Unterschrift",
+      "translations_en": [
+        "signature"
+      ],
+      "example_de": "Hier fehlt Ihre Unterschrift.",
+      "example_en": "Your signature is missing here.",
+      "cloze_word": "Unterschrift",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Unterschriften"
+      }
+    },
+    {
+      "id": "abschluss_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Abschluss",
+      "translations_en": [
+        "degree",
+        "conclusion"
+      ],
+      "example_de": "Sie hat einen guten Abschluss.",
+      "example_en": "She has a good degree.",
+      "cloze_word": "Abschluss",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Abschlüsse"
+      }
+    },
+    {
+      "id": "zeugnis_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Zeugnis",
+      "translations_en": [
+        "certificate",
+        "report card"
+      ],
+      "example_de": "Das Zeugnis ist sehr gut.",
+      "example_en": "The certificate is very good.",
+      "cloze_word": "Zeugnis",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Zeugnisse"
+      }
+    },
+    {
+      "id": "faehigkeit_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Fähigkeit",
+      "translations_en": [
+        "ability",
+        "skill"
+      ],
+      "example_de": "Sie hat viele Fähigkeiten.",
+      "example_en": "She has many skills.",
+      "cloze_word": "Fähigkeiten",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Fähigkeiten"
+      }
+    },
+    {
+      "id": "kenntnis_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Kenntnis",
+      "translations_en": [
+        "knowledge"
+      ],
+      "example_de": "Ich habe gute Kenntnisse in Englisch.",
+      "example_en": "I have good knowledge of English.",
+      "cloze_word": "Kenntnisse",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Kenntnisse"
+      }
+    },
+    {
+      "id": "interesse_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Interesse",
+      "translations_en": [
+        "interest"
+      ],
+      "example_de": "Er hat großes Interesse an Kunst.",
+      "example_en": "He has great interest in art.",
+      "cloze_word": "Interesse",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Interessen"
+      }
+    },
+    {
+      "id": "leistung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Leistung",
+      "translations_en": [
+        "performance",
+        "achievement"
+      ],
+      "example_de": "Die Leistung war beeindruckend.",
+      "example_en": "The performance was impressive.",
+      "cloze_word": "Leistung",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Leistungen"
+      }
+    },
+    {
+      "id": "erfolg_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Erfolg",
+      "translations_en": [
+        "success"
+      ],
+      "example_de": "Der Erfolg kommt nicht von allein.",
+      "example_en": "Success doesn't come by itself.",
+      "cloze_word": "Erfolg",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Erfolge"
+      }
+    },
+    {
+      "id": "wunsch_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Wunsch",
+      "translations_en": [
+        "wish"
+      ],
+      "example_de": "Mein größter Wunsch ist ein eigenes Haus.",
+      "example_en": "My greatest wish is a house of my own.",
+      "cloze_word": "Wunsch",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Wünsche"
+      }
+    },
+    {
+      "id": "traum_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Traum",
+      "translations_en": [
+        "dream"
+      ],
+      "example_de": "Das ist mein Traum.",
+      "example_en": "That is my dream.",
+      "cloze_word": "Traum",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Träume"
+      }
+    },
+    {
+      "id": "hoffnung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Hoffnung",
+      "translations_en": [
+        "hope"
+      ],
+      "example_de": "Ich habe noch Hoffnung.",
+      "example_en": "I still have hope.",
+      "cloze_word": "Hoffnung",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Hoffnungen"
+      }
+    },
+    {
+      "id": "sorge_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Sorge",
+      "translations_en": [
+        "worry"
+      ],
+      "example_de": "Ich mache mir Sorgen um dich.",
+      "example_en": "I'm worried about you.",
+      "cloze_word": "Sorgen",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Sorgen"
+      }
+    },
+    {
+      "id": "stress_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Stress",
+      "translations_en": [
+        "stress"
+      ],
+      "example_de": "Im Beruf habe ich viel Stress.",
+      "example_en": "I have a lot of stress at work.",
+      "cloze_word": "Stress",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "aerger_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Ärger",
+      "translations_en": [
+        "trouble",
+        "annoyance"
+      ],
+      "example_de": "Ich habe Ärger mit dem Nachbarn.",
+      "example_en": "I'm having trouble with the neighbour.",
+      "cloze_word": "Ärger",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "streit_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Streit",
+      "translations_en": [
+        "quarrel"
+      ],
+      "example_de": "Sie hatten einen Streit.",
+      "example_en": "They had an argument.",
+      "cloze_word": "Streit",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Streite"
+      }
+    },
+    {
+      "id": "konflikt_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Konflikt",
+      "translations_en": [
+        "conflict"
+      ],
+      "example_de": "Der Konflikt ist noch nicht gelöst.",
+      "example_en": "The conflict hasn't been resolved yet.",
+      "cloze_word": "Konflikt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Konflikte"
+      }
+    },
+    {
+      "id": "loesung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Lösung",
+      "translations_en": [
+        "solution"
+      ],
+      "example_de": "Wir suchen eine Lösung.",
+      "example_en": "We're looking for a solution.",
+      "cloze_word": "Lösung",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Lösungen"
+      }
+    },
+    {
+      "id": "ursache_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Ursache",
+      "translations_en": [
+        "cause"
+      ],
+      "example_de": "Die Ursache ist unbekannt.",
+      "example_en": "The cause is unknown.",
+      "cloze_word": "Ursache",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Ursachen"
+      }
+    },
+    {
+      "id": "folge_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Folge",
+      "translations_en": [
+        "consequence",
+        "result"
+      ],
+      "example_de": "Das hat schlimme Folgen.",
+      "example_en": "That has serious consequences.",
+      "cloze_word": "Folgen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Folgen"
+      }
+    },
+    {
+      "id": "wirkung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Wirkung",
+      "translations_en": [
+        "effect"
+      ],
+      "example_de": "Das Medikament zeigt Wirkung.",
+      "example_en": "The medication is having an effect.",
+      "cloze_word": "Wirkung",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Wirkungen"
+      }
+    },
+    {
+      "id": "vorteil_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Vorteil",
+      "translations_en": [
+        "advantage"
+      ],
+      "example_de": "Das ist ein großer Vorteil.",
+      "example_en": "That is a big advantage.",
+      "cloze_word": "Vorteil",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Vorteile"
+      }
+    },
+    {
+      "id": "nachteil_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Nachteil",
+      "translations_en": [
+        "disadvantage"
+      ],
+      "example_de": "Der Nachteil ist der hohe Preis.",
+      "example_en": "The disadvantage is the high price.",
+      "cloze_word": "Nachteil",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Nachteile"
+      }
+    },
+    {
+      "id": "risiko_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Risiko",
+      "translations_en": [
+        "risk"
+      ],
+      "example_de": "Das Risiko ist zu groß.",
+      "example_en": "The risk is too big.",
+      "cloze_word": "Risiko",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Risiken"
+      }
+    },
+    {
+      "id": "chance_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Chance",
+      "translations_en": [
+        "chance"
+      ],
+      "example_de": "Er hat eine gute Chance.",
+      "example_en": "He has a good chance.",
+      "cloze_word": "Chance",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Chancen"
+      }
+    },
+    {
+      "id": "zukunft_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Zukunft",
+      "translations_en": [
+        "future"
+      ],
+      "example_de": "Ich mache mir Gedanken über die Zukunft.",
+      "example_en": "I think about the future.",
+      "cloze_word": "Zukunft",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "vergangenheit_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Vergangenheit",
+      "translations_en": [
+        "past"
+      ],
+      "example_de": "Die Vergangenheit kann man nicht ändern.",
+      "example_en": "You can't change the past.",
+      "cloze_word": "Vergangenheit",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "geschichte_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Geschichte",
+      "translations_en": [
+        "history",
+        "story"
+      ],
+      "example_de": "Ich interessiere mich für Geschichte.",
+      "example_en": "I'm interested in history.",
+      "cloze_word": "Geschichte",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Geschichten"
+      }
+    },
+    {
+      "id": "tradition_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Tradition",
+      "translations_en": [
+        "tradition"
+      ],
+      "example_de": "Das ist eine alte Tradition.",
+      "example_en": "That is an old tradition.",
+      "cloze_word": "Tradition",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Traditionen"
+      }
+    },
+    {
+      "id": "fest_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Fest",
+      "translations_en": [
+        "celebration",
+        "festival"
+      ],
+      "example_de": "Das Fest dauert drei Tage.",
+      "example_en": "The festival lasts three days.",
+      "cloze_word": "Fest",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Feste"
+      }
+    },
+    {
+      "id": "feiertag_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Feiertag",
+      "translations_en": [
+        "public holiday"
+      ],
+      "example_de": "Am Feiertag sind alle Geschäfte zu.",
+      "example_en": "On the public holiday all the shops are closed.",
+      "cloze_word": "Feiertag",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Feiertage"
+      }
+    },
+    {
+      "id": "brauch_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Brauch",
+      "translations_en": [
+        "custom"
+      ],
+      "example_de": "Dieser Brauch ist sehr alt.",
+      "example_en": "This custom is very old.",
+      "cloze_word": "Brauch",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Bräuche"
+      }
+    },
+    {
+      "id": "heimat_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Heimat",
+      "translations_en": [
+        "home",
+        "homeland"
+      ],
+      "example_de": "Ich vermisse meine Heimat.",
+      "example_en": "I miss my homeland.",
+      "cloze_word": "Heimat",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "herkunft_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Herkunft",
+      "translations_en": [
+        "origin"
+      ],
+      "example_de": "Seine Herkunft spielt keine Rolle.",
+      "example_en": "His origin doesn't matter.",
+      "cloze_word": "Herkunft",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "absicht_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Absicht",
+      "translations_en": [
+        "intention"
+      ],
+      "example_de": "Ich habe keine böse Absicht.",
+      "example_en": "I have no bad intention.",
+      "cloze_word": "Absicht",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Absichten"
+      }
+    },
+    {
+      "id": "vergleich_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Vergleich",
+      "translations_en": [
+        "comparison"
+      ],
+      "example_de": "Im Vergleich ist das billig.",
+      "example_en": "In comparison that is cheap.",
+      "cloze_word": "Vergleich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Vergleiche"
+      }
+    },
+    {
+      "id": "bedeutung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Bedeutung",
+      "translations_en": [
+        "meaning",
+        "importance"
+      ],
+      "example_de": "Das Wort hat zwei Bedeutungen.",
+      "example_en": "The word has two meanings.",
+      "cloze_word": "Bedeutungen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Bedeutungen"
+      }
+    },
+    {
+      "id": "inhalt_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Inhalt",
+      "translations_en": [
+        "content"
+      ],
+      "example_de": "Der Inhalt des Buches ist spannend.",
+      "example_en": "The content of the book is exciting.",
+      "cloze_word": "Inhalt",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Inhalte"
+      }
+    },
+    {
+      "id": "thema_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Thema",
+      "translations_en": [
+        "topic",
+        "subject"
+      ],
+      "example_de": "Das Thema ist sehr interessant.",
+      "example_en": "The topic is very interesting.",
+      "cloze_word": "Thema",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Themen"
+      }
+    },
+    {
+      "id": "diskussion_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Diskussion",
+      "translations_en": [
+        "discussion"
+      ],
+      "example_de": "Die Diskussion war sehr lebhaft.",
+      "example_en": "The discussion was very lively.",
+      "cloze_word": "Diskussion",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Diskussionen"
+      }
+    },
+    {
+      "id": "argument_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Argument",
+      "translations_en": [
+        "argument"
+      ],
+      "example_de": "Das ist ein gutes Argument.",
+      "example_en": "That's a good argument.",
+      "cloze_word": "Argument",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Argumente"
+      }
+    },
+    {
+      "id": "ansicht_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Ansicht",
+      "translations_en": [
+        "view",
+        "opinion"
+      ],
+      "example_de": "Ich bin anderer Ansicht.",
+      "example_en": "I take a different view.",
+      "cloze_word": "Ansicht",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Ansichten"
+      }
+    },
+    {
+      "id": "bericht_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Bericht",
+      "translations_en": [
+        "report"
+      ],
+      "example_de": "Ich schreibe einen Bericht.",
+      "example_en": "I'm writing a report.",
+      "cloze_word": "Bericht",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Berichte"
+      }
+    },
+    {
+      "id": "artikel_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Artikel",
+      "translations_en": [
+        "article"
+      ],
+      "example_de": "Der Artikel ist sehr interessant.",
+      "example_en": "The article is very interesting.",
+      "cloze_word": "Artikel",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Artikel"
+      }
+    },
+    {
+      "id": "interview_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Interview",
+      "translations_en": [
+        "interview"
+      ],
+      "example_de": "Das Interview dauert eine Stunde.",
+      "example_en": "The interview lasts an hour.",
+      "cloze_word": "Interview",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Interviews"
+      }
+    },
+    {
+      "id": "werbung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Werbung",
+      "translations_en": [
+        "advertising"
+      ],
+      "example_de": "Die Werbung im Fernsehen nervt.",
+      "example_en": "The advertising on TV is annoying.",
+      "cloze_word": "Werbung",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "umfrage_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Umfrage",
+      "translations_en": [
+        "survey"
+      ],
+      "example_de": "Die Umfrage zeigt ein klares Ergebnis.",
+      "example_en": "The survey shows a clear result.",
+      "cloze_word": "Umfrage",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Umfragen"
+      }
+    },
+    {
+      "id": "medien_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Medien",
+      "translations_en": [
+        "media"
+      ],
+      "example_de": "Die Medien berichten darüber.",
+      "example_en": "The media are reporting on it.",
+      "cloze_word": "Medien",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "presse_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Presse",
+      "translations_en": [
+        "press"
+      ],
+      "example_de": "Die Presse war bei der Veranstaltung.",
+      "example_en": "The press was at the event.",
+      "cloze_word": "Presse",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "journalist_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Journalist",
+      "translations_en": [
+        "journalist"
+      ],
+      "example_de": "Der Journalist stellt viele Fragen.",
+      "example_en": "The journalist asks many questions.",
+      "cloze_word": "Journalist",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Journalisten"
+      }
+    },
+    {
+      "id": "veranstaltung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Veranstaltung",
+      "translations_en": [
+        "event"
+      ],
+      "example_de": "Die Veranstaltung beginnt um acht.",
+      "example_en": "The event starts at eight.",
+      "cloze_word": "Veranstaltung",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Veranstaltungen"
+      }
+    },
+    {
+      "id": "konzert_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Konzert",
+      "translations_en": [
+        "concert"
+      ],
+      "example_de": "Das Konzert war ausverkauft.",
+      "example_en": "The concert was sold out.",
+      "cloze_word": "Konzert",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Konzerte"
+      }
+    },
+    {
+      "id": "ausstellung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Ausstellung",
+      "translations_en": [
+        "exhibition"
+      ],
+      "example_de": "Die Ausstellung ist bis Juni geöffnet.",
+      "example_en": "The exhibition is open until June.",
+      "cloze_word": "Ausstellung",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Ausstellungen"
+      }
+    },
+    {
+      "id": "theater_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Theater",
+      "translations_en": [
+        "theatre"
+      ],
+      "example_de": "Wir gehen heute ins Theater.",
+      "example_en": "We're going to the theatre today.",
+      "cloze_word": "Theater",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Theater"
+      }
+    },
+    {
+      "id": "fuehrung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Führung",
+      "translations_en": [
+        "guided tour",
+        "leadership"
+      ],
+      "example_de": "Die Führung beginnt um zehn Uhr.",
+      "example_en": "The guided tour starts at ten.",
+      "cloze_word": "Führung",
+      "themes": [
+        "travel"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Führungen"
+      }
+    },
+    {
+      "id": "sehenswuerdigkeit_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Sehenswürdigkeit",
+      "translations_en": [
+        "sight",
+        "attraction"
+      ],
+      "example_de": "Wir besuchen alle Sehenswürdigkeiten.",
+      "example_en": "We visit all the sights.",
+      "cloze_word": "Sehenswürdigkeiten",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Sehenswürdigkeiten"
+      }
+    },
+    {
+      "id": "unterkunft_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Unterkunft",
+      "translations_en": [
+        "accommodation"
+      ],
+      "example_de": "Die Unterkunft ist sehr günstig.",
+      "example_en": "The accommodation is very cheap.",
+      "cloze_word": "Unterkunft",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Unterkünfte"
+      }
+    },
+    {
+      "id": "reservierung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Reservierung",
+      "translations_en": [
+        "reservation"
+      ],
+      "example_de": "Ich habe eine Reservierung auf den Namen Meyer.",
+      "example_en": "I have a reservation under the name Meyer.",
+      "cloze_word": "Reservierung",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Reservierungen"
+      }
+    },
+    {
+      "id": "beschwerde_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Beschwerde",
+      "translations_en": [
+        "complaint"
+      ],
+      "example_de": "Ich schreibe eine Beschwerde.",
+      "example_en": "I'm writing a complaint.",
+      "cloze_word": "Beschwerde",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Beschwerden"
+      }
+    },
+    {
+      "id": "entschuldigung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Entschuldigung",
+      "translations_en": [
+        "apology",
+        "excuse"
+      ],
+      "example_de": "Ich nehme Ihre Entschuldigung an.",
+      "example_en": "I accept your apology.",
+      "cloze_word": "Entschuldigung",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Entschuldigungen"
+      }
+    },
+    {
+      "id": "ersatz_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Ersatz",
+      "translations_en": [
+        "replacement"
+      ],
+      "example_de": "Wir schicken Ihnen Ersatz.",
+      "example_en": "We'll send you a replacement.",
+      "cloze_word": "Ersatz",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "reparatur_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Reparatur",
+      "translations_en": [
+        "repair"
+      ],
+      "example_de": "Die Reparatur kostet viel.",
+      "example_en": "The repair costs a lot.",
+      "cloze_word": "Reparatur",
+      "themes": [
+        "home"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Reparaturen"
+      }
+    },
+    {
+      "id": "lieferung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Lieferung",
+      "translations_en": [
+        "delivery"
+      ],
+      "example_de": "Die Lieferung kommt morgen.",
+      "example_en": "The delivery arrives tomorrow.",
+      "cloze_word": "Lieferung",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Lieferungen"
+      }
+    },
+    {
+      "id": "bestellung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Bestellung",
+      "translations_en": [
+        "order"
+      ],
+      "example_de": "Meine Bestellung ist angekommen.",
+      "example_en": "My order has arrived.",
+      "cloze_word": "Bestellung",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Bestellungen"
+      }
+    },
+    {
+      "id": "garantie_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Garantie",
+      "translations_en": [
+        "guarantee",
+        "warranty"
+      ],
+      "example_de": "Das Gerät hat zwei Jahre Garantie.",
+      "example_en": "The device has a two-year warranty.",
+      "cloze_word": "Garantie",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Garantien"
+      }
+    },
+    {
+      "id": "muell_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Müll",
+      "translations_en": [
+        "rubbish",
+        "waste"
+      ],
+      "example_de": "Der Müll wird am Montag abgeholt.",
+      "example_en": "The rubbish is collected on Monday.",
+      "cloze_word": "Müll",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "energie_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Energie",
+      "translations_en": [
+        "energy"
+      ],
+      "example_de": "Wir sparen Energie.",
+      "example_en": "We save energy.",
+      "cloze_word": "Energie",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Energien"
+      }
+    },
+    {
+      "id": "klima_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Klima",
+      "translations_en": [
+        "climate"
+      ],
+      "example_de": "Das Klima ändert sich.",
+      "example_en": "The climate is changing.",
+      "cloze_word": "Klima",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Klimate"
+      }
+    },
+    {
+      "id": "umweltschutz_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Umweltschutz",
+      "translations_en": [
+        "environmental protection"
+      ],
+      "example_de": "Umweltschutz ist uns wichtig.",
+      "example_en": "Environmental protection is important to us.",
+      "cloze_word": "Umweltschutz",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "temperatur_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Temperatur",
+      "translations_en": [
+        "temperature"
+      ],
+      "example_de": "Die Temperatur sinkt.",
+      "example_en": "The temperature is falling.",
+      "cloze_word": "Temperatur",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Temperaturen"
+      }
+    },
+    {
+      "id": "ernaehrung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Ernährung",
+      "translations_en": [
+        "nutrition",
+        "diet"
+      ],
+      "example_de": "Gesunde Ernährung ist wichtig.",
+      "example_en": "A healthy diet is important.",
+      "cloze_word": "Ernährung",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "bewegung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Bewegung",
+      "translations_en": [
+        "movement",
+        "exercise"
+      ],
+      "example_de": "Bewegung ist gesund.",
+      "example_en": "Exercise is healthy.",
+      "cloze_word": "Bewegung",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Bewegungen"
+      }
+    },
+    {
+      "id": "untersuchung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Untersuchung",
+      "translations_en": [
+        "examination"
+      ],
+      "example_de": "Die Untersuchung dauert zehn Minuten.",
+      "example_en": "The examination takes ten minutes.",
+      "cloze_word": "Untersuchung",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Untersuchungen"
+      }
+    },
+    {
+      "id": "behandlung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Behandlung",
+      "translations_en": [
+        "treatment"
+      ],
+      "example_de": "Die Behandlung war erfolgreich.",
+      "example_en": "The treatment was successful.",
+      "cloze_word": "Behandlung",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Behandlungen"
+      }
+    },
+    {
+      "id": "rezept_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Rezept",
+      "translations_en": [
+        "prescription",
+        "recipe"
+      ],
+      "example_de": "Der Arzt schreibt ein Rezept.",
+      "example_en": "The doctor writes a prescription.",
+      "cloze_word": "Rezept",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Rezepte"
+      }
+    },
+    {
+      "id": "kunst_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Kunst",
+      "translations_en": [
+        "art"
+      ],
+      "example_de": "Sie interessiert sich für Kunst.",
+      "example_en": "She is interested in art.",
+      "cloze_word": "Kunst",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Künste"
+      }
+    },
+    {
+      "id": "wissenschaft_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Wissenschaft",
+      "translations_en": [
+        "science"
+      ],
+      "example_de": "Die Wissenschaft macht Fortschritte.",
+      "example_en": "Science is making progress.",
+      "cloze_word": "Wissenschaft",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Wissenschaften"
+      }
+    },
+    {
+      "id": "forschung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Forschung",
+      "translations_en": [
+        "research"
+      ],
+      "example_de": "Die Forschung braucht mehr Geld.",
+      "example_en": "Research needs more money.",
+      "cloze_word": "Forschung",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Forschungen"
+      }
+    },
+    {
+      "id": "fortschritt_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Fortschritt",
+      "translations_en": [
+        "progress"
+      ],
+      "example_de": "Ich mache Fortschritte in Deutsch.",
+      "example_en": "I'm making progress in German.",
+      "cloze_word": "Fortschritte",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Fortschritte"
+      }
+    },
+    {
+      "id": "erklaerung_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Erklärung",
+      "translations_en": [
+        "explanation"
+      ],
+      "example_de": "Ich brauche eine Erklärung.",
+      "example_en": "I need an explanation.",
+      "cloze_word": "Erklärung",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Erklärungen"
+      }
+    },
+    {
+      "id": "bereich_noun",
+      "cefr": "B1",
+      "pos": "noun",
+      "lemma_de": "Bereich",
+      "translations_en": [
+        "area",
+        "field"
+      ],
+      "example_de": "Er arbeitet im Bereich Marketing.",
+      "example_en": "He works in the field of marketing.",
+      "cloze_word": "Bereich",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Bereiche"
+      }
+    }
   ]
 }

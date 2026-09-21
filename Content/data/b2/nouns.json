@@ -3,15 +3,2163 @@
   "cefr": "B2",
   "pos": "noun",
   "entries": [
-    { "id": "voraussetzung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Voraussetzung", "translations_en": ["prerequisite", "precondition"], "example_de": "Gute Deutschkenntnisse sind eine Voraussetzung für den Job.", "example_en": "Good German skills are a prerequisite for the job.", "cloze_word": "Voraussetzung", "themes": ["education"], "priority": 1, "noun": { "gender": "die", "plural_de": "Voraussetzungen" } },
-    { "id": "zusammenhang_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Zusammenhang", "translations_en": ["connection", "context"], "example_de": "Ich verstehe den Zusammenhang nicht.", "example_en": "I don't understand the connection.", "cloze_word": "Zusammenhang", "themes": ["abstract_ideas"], "priority": 1, "noun": { "gender": "der", "plural_de": "Zusammenhänge" } },
-    { "id": "auswirkung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Auswirkung", "translations_en": ["effect", "impact"], "example_de": "Der Klimawandel hat große Auswirkungen.", "example_en": "Climate change has major effects.", "cloze_word": "Auswirkungen", "themes": ["abstract_ideas"], "priority": 1, "noun": { "gender": "die", "plural_de": "Auswirkungen" } },
-    { "id": "wettbewerb_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Wettbewerb", "translations_en": ["competition"], "example_de": "Die Firma steht im Wettbewerb mit anderen Anbietern.", "example_en": "The company competes with other providers.", "cloze_word": "Wettbewerb", "themes": ["work"], "priority": 2, "noun": { "gender": "der", "plural_de": "Wettbewerbe" } },
-    { "id": "herausforderung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Herausforderung", "translations_en": ["challenge"], "example_de": "Das ist eine große Herausforderung für uns.", "example_en": "That's a big challenge for us.", "cloze_word": "Herausforderung", "themes": ["work"], "priority": 1, "noun": { "gender": "die", "plural_de": "Herausforderungen" } },
-    { "id": "wahrnehmung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Wahrnehmung", "translations_en": ["perception"], "example_de": "Seine Wahrnehmung der Situation war falsch.", "example_en": "His perception of the situation was wrong.", "cloze_word": "Wahrnehmung", "themes": ["abstract_ideas"], "priority": 2, "noun": { "gender": "die", "plural_de": "Wahrnehmungen" } },
-    { "id": "widerspruch_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Widerspruch", "translations_en": ["contradiction"], "example_de": "Das ist ein klarer Widerspruch zu seiner Aussage.", "example_en": "That's a clear contradiction to his statement.", "cloze_word": "Widerspruch", "themes": ["argumentation"], "priority": 2, "noun": { "gender": "der", "plural_de": "Widersprüche" } },
-    { "id": "uebereinstimmung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Übereinstimmung", "translations_en": ["agreement", "consistency"], "example_de": "Beide Berichte zeigen eine hohe Übereinstimmung.", "example_en": "Both reports show a high level of agreement.", "cloze_word": "Übereinstimmung", "themes": ["argumentation"], "priority": 3, "noun": { "gender": "die", "plural_de": "Übereinstimmungen" } },
-    { "id": "anspruch_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Anspruch", "translations_en": ["claim", "demand", "entitlement"], "example_de": "Sie hat Anspruch auf Urlaub.", "example_en": "She is entitled to vacation.", "cloze_word": "Anspruch", "themes": ["work"], "priority": 2, "noun": { "gender": "der", "plural_de": "Ansprüche" } },
-    { "id": "bedrohung_noun", "cefr": "B2", "pos": "noun", "lemma_de": "Bedrohung", "translations_en": ["threat"], "example_de": "Der Sturm stellt eine Bedrohung für die Küste dar.", "example_en": "The storm poses a threat to the coast.", "cloze_word": "Bedrohung", "themes": ["society"], "priority": 2, "noun": { "gender": "die", "plural_de": "Bedrohungen" } }
+    {
+      "id": "voraussetzung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Voraussetzung",
+      "translations_en": [
+        "prerequisite",
+        "precondition"
+      ],
+      "example_de": "Gute Deutschkenntnisse sind eine Voraussetzung für den Job.",
+      "example_en": "Good German skills are a prerequisite for the job.",
+      "cloze_word": "Voraussetzung",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Voraussetzungen"
+      }
+    },
+    {
+      "id": "zusammenhang_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Zusammenhang",
+      "translations_en": [
+        "connection",
+        "context"
+      ],
+      "example_de": "Ich verstehe den Zusammenhang nicht.",
+      "example_en": "I don't understand the connection.",
+      "cloze_word": "Zusammenhang",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Zusammenhänge"
+      }
+    },
+    {
+      "id": "auswirkung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Auswirkung",
+      "translations_en": [
+        "effect",
+        "impact"
+      ],
+      "example_de": "Der Klimawandel hat große Auswirkungen.",
+      "example_en": "Climate change has major effects.",
+      "cloze_word": "Auswirkungen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Auswirkungen"
+      }
+    },
+    {
+      "id": "wettbewerb_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Wettbewerb",
+      "translations_en": [
+        "competition"
+      ],
+      "example_de": "Die Firma steht im Wettbewerb mit anderen Anbietern.",
+      "example_en": "The company competes with other providers.",
+      "cloze_word": "Wettbewerb",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Wettbewerbe"
+      }
+    },
+    {
+      "id": "herausforderung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Herausforderung",
+      "translations_en": [
+        "challenge"
+      ],
+      "example_de": "Das ist eine große Herausforderung für uns.",
+      "example_en": "That's a big challenge for us.",
+      "cloze_word": "Herausforderung",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Herausforderungen"
+      }
+    },
+    {
+      "id": "wahrnehmung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Wahrnehmung",
+      "translations_en": [
+        "perception"
+      ],
+      "example_de": "Seine Wahrnehmung der Situation war falsch.",
+      "example_en": "His perception of the situation was wrong.",
+      "cloze_word": "Wahrnehmung",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Wahrnehmungen"
+      }
+    },
+    {
+      "id": "widerspruch_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Widerspruch",
+      "translations_en": [
+        "contradiction"
+      ],
+      "example_de": "Das ist ein klarer Widerspruch zu seiner Aussage.",
+      "example_en": "That's a clear contradiction to his statement.",
+      "cloze_word": "Widerspruch",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Widersprüche"
+      }
+    },
+    {
+      "id": "uebereinstimmung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Übereinstimmung",
+      "translations_en": [
+        "agreement",
+        "consistency"
+      ],
+      "example_de": "Beide Berichte zeigen eine hohe Übereinstimmung.",
+      "example_en": "Both reports show a high level of agreement.",
+      "cloze_word": "Übereinstimmung",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Übereinstimmungen"
+      }
+    },
+    {
+      "id": "anspruch_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Anspruch",
+      "translations_en": [
+        "claim",
+        "demand",
+        "entitlement"
+      ],
+      "example_de": "Sie hat Anspruch auf Urlaub.",
+      "example_en": "She is entitled to vacation.",
+      "cloze_word": "Anspruch",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Ansprüche"
+      }
+    },
+    {
+      "id": "bedrohung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Bedrohung",
+      "translations_en": [
+        "threat"
+      ],
+      "example_de": "Der Sturm stellt eine Bedrohung für die Küste dar.",
+      "example_en": "The storm poses a threat to the coast.",
+      "cloze_word": "Bedrohung",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Bedrohungen"
+      }
+    },
+    {
+      "id": "gerechtigkeit_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Gerechtigkeit",
+      "translations_en": [
+        "justice",
+        "fairness"
+      ],
+      "example_de": "Gerechtigkeit ist ein wichtiger Wert.",
+      "example_en": "Justice is an important value.",
+      "cloze_word": "Gerechtigkeit",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "ungleichheit_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Ungleichheit",
+      "translations_en": [
+        "inequality"
+      ],
+      "example_de": "Die Ungleichheit wächst.",
+      "example_en": "Inequality is growing.",
+      "cloze_word": "Ungleichheit",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Ungleichheiten"
+      }
+    },
+    {
+      "id": "entwicklung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Entwicklung",
+      "translations_en": [
+        "development"
+      ],
+      "example_de": "Die Entwicklung verläuft positiv.",
+      "example_en": "The development is going well.",
+      "cloze_word": "Entwicklung",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Entwicklungen"
+      }
+    },
+    {
+      "id": "veraenderung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Veränderung",
+      "translations_en": [
+        "change"
+      ],
+      "example_de": "Die Veränderung war groß.",
+      "example_en": "The change was big.",
+      "cloze_word": "Veränderung",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Veränderungen"
+      }
+    },
+    {
+      "id": "wandel_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Wandel",
+      "translations_en": [
+        "change",
+        "transformation"
+      ],
+      "example_de": "Die Gesellschaft befindet sich im Wandel.",
+      "example_en": "Society is undergoing change.",
+      "cloze_word": "Wandel",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "trend_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Trend",
+      "translations_en": [
+        "trend"
+      ],
+      "example_de": "Das ist ein neuer Trend.",
+      "example_en": "That is a new trend.",
+      "cloze_word": "Trend",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Trends"
+      }
+    },
+    {
+      "id": "ansatz_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Ansatz",
+      "translations_en": [
+        "approach"
+      ],
+      "example_de": "Das ist ein interessanter Ansatz.",
+      "example_en": "That is an interesting approach.",
+      "cloze_word": "Ansatz",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Ansätze"
+      }
+    },
+    {
+      "id": "konzept_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Konzept",
+      "translations_en": [
+        "concept",
+        "plan"
+      ],
+      "example_de": "Wir brauchen ein neues Konzept.",
+      "example_en": "We need a new concept.",
+      "cloze_word": "Konzept",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Konzepte"
+      }
+    },
+    {
+      "id": "strategie_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Strategie",
+      "translations_en": [
+        "strategy"
+      ],
+      "example_de": "Die Strategie war erfolgreich.",
+      "example_en": "The strategy was successful.",
+      "cloze_word": "Strategie",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Strategien"
+      }
+    },
+    {
+      "id": "massnahme_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Maßnahme",
+      "translations_en": [
+        "measure"
+      ],
+      "example_de": "Die Regierung ergreift neue Maßnahmen.",
+      "example_en": "The government is taking new measures.",
+      "cloze_word": "Maßnahmen",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Maßnahmen"
+      }
+    },
+    {
+      "id": "verfahren_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Verfahren",
+      "translations_en": [
+        "procedure",
+        "process"
+      ],
+      "example_de": "Das Verfahren dauert lange.",
+      "example_en": "The procedure takes a long time.",
+      "cloze_word": "Verfahren",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Verfahren"
+      }
+    },
+    {
+      "id": "prozess_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Prozess",
+      "translations_en": [
+        "process",
+        "trial"
+      ],
+      "example_de": "Der Prozess ist kompliziert.",
+      "example_en": "The process is complicated.",
+      "cloze_word": "Prozess",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Prozesse"
+      }
+    },
+    {
+      "id": "ablauf_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Ablauf",
+      "translations_en": [
+        "sequence",
+        "course"
+      ],
+      "example_de": "Der Ablauf der Veranstaltung ist klar.",
+      "example_en": "The course of the event is clear.",
+      "cloze_word": "Ablauf",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Abläufe"
+      }
+    },
+    {
+      "id": "bedingung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Bedingung",
+      "translations_en": [
+        "condition"
+      ],
+      "example_de": "Die Bedingungen sind fair.",
+      "example_en": "The conditions are fair.",
+      "cloze_word": "Bedingungen",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Bedingungen"
+      }
+    },
+    {
+      "id": "anforderung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Anforderung",
+      "translations_en": [
+        "requirement"
+      ],
+      "example_de": "Die Anforderungen sind hoch.",
+      "example_en": "The requirements are high.",
+      "cloze_word": "Anforderung",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Anforderungen"
+      }
+    },
+    {
+      "id": "zustaendigkeit_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Zuständigkeit",
+      "translations_en": [
+        "responsibility",
+        "jurisdiction"
+      ],
+      "example_de": "Das fällt nicht in meine Zuständigkeit.",
+      "example_en": "That doesn't fall within my responsibility.",
+      "cloze_word": "Zuständigkeit",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Zuständigkeiten"
+      }
+    },
+    {
+      "id": "qualifikation_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Qualifikation",
+      "translations_en": [
+        "qualification"
+      ],
+      "example_de": "Sie hat die nötige Qualifikation.",
+      "example_en": "She has the necessary qualification.",
+      "cloze_word": "Qualifikation",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Qualifikationen"
+      }
+    },
+    {
+      "id": "fachkraft_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Fachkraft",
+      "translations_en": [
+        "skilled worker"
+      ],
+      "example_de": "Die Firma sucht Fachkräfte.",
+      "example_en": "The company is looking for skilled workers.",
+      "cloze_word": "Fachkräfte",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Fachkräfte"
+      }
+    },
+    {
+      "id": "arbeitsmarkt_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Arbeitsmarkt",
+      "translations_en": [
+        "labour market"
+      ],
+      "example_de": "Der Arbeitsmarkt ist angespannt.",
+      "example_en": "The labour market is tight.",
+      "cloze_word": "Arbeitsmarkt",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Arbeitsmärkte"
+      }
+    },
+    {
+      "id": "arbeitslosigkeit_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Arbeitslosigkeit",
+      "translations_en": [
+        "unemployment"
+      ],
+      "example_de": "Die Arbeitslosigkeit sinkt.",
+      "example_en": "Unemployment is falling.",
+      "cloze_word": "Arbeitslosigkeit",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "gewerkschaft_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Gewerkschaft",
+      "translations_en": [
+        "trade union"
+      ],
+      "example_de": "Die Gewerkschaft fordert höhere Löhne.",
+      "example_en": "The union demands higher wages.",
+      "cloze_word": "Gewerkschaft",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Gewerkschaften"
+      }
+    },
+    {
+      "id": "unternehmen_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Unternehmen",
+      "translations_en": [
+        "company",
+        "enterprise"
+      ],
+      "example_de": "Das Unternehmen wächst schnell.",
+      "example_en": "The company is growing fast.",
+      "cloze_word": "Unternehmen",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Unternehmen"
+      }
+    },
+    {
+      "id": "konzern_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Konzern",
+      "translations_en": [
+        "corporation"
+      ],
+      "example_de": "Der Konzern hat tausend Mitarbeiter.",
+      "example_en": "The corporation has a thousand employees.",
+      "cloze_word": "Konzern",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Konzerne"
+      }
+    },
+    {
+      "id": "branche_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Branche",
+      "translations_en": [
+        "industry",
+        "sector"
+      ],
+      "example_de": "Er arbeitet in einer anderen Branche.",
+      "example_en": "He works in a different industry.",
+      "cloze_word": "Branche",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Branchen"
+      }
+    },
+    {
+      "id": "nachfrage_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Nachfrage",
+      "translations_en": [
+        "demand"
+      ],
+      "example_de": "Die Nachfrage steigt.",
+      "example_en": "Demand is rising.",
+      "cloze_word": "Nachfrage",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "verbraucher_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Verbraucher",
+      "translations_en": [
+        "consumer"
+      ],
+      "example_de": "Die Verbraucher sind unzufrieden.",
+      "example_en": "The consumers are dissatisfied.",
+      "cloze_word": "Verbraucher",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Verbraucher"
+      }
+    },
+    {
+      "id": "konsum_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Konsum",
+      "translations_en": [
+        "consumption"
+      ],
+      "example_de": "Der Konsum nimmt zu.",
+      "example_en": "Consumption is increasing.",
+      "cloze_word": "Konsum",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "einfluss_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Einfluss",
+      "translations_en": [
+        "influence"
+      ],
+      "example_de": "Er hat großen Einfluss auf die Entscheidung.",
+      "example_en": "He has great influence on the decision.",
+      "cloze_word": "Einfluss",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Einflüsse"
+      }
+    },
+    {
+      "id": "bedarf_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Bedarf",
+      "translations_en": [
+        "need",
+        "demand"
+      ],
+      "example_de": "Der Bedarf an Pflegekräften wächst.",
+      "example_en": "The need for care workers is growing.",
+      "cloze_word": "Bedarf",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "mangel_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Mangel",
+      "translations_en": [
+        "lack",
+        "shortage",
+        "defect"
+      ],
+      "example_de": "Es gibt einen Mangel an Wohnungen.",
+      "example_en": "There is a shortage of apartments.",
+      "cloze_word": "Mangel",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Mängel"
+      }
+    },
+    {
+      "id": "ressource_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Ressource",
+      "translations_en": [
+        "resource"
+      ],
+      "example_de": "Die Ressourcen sind begrenzt.",
+      "example_en": "Resources are limited.",
+      "cloze_word": "Ressource",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Ressourcen"
+      }
+    },
+    {
+      "id": "rohstoff_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Rohstoff",
+      "translations_en": [
+        "raw material"
+      ],
+      "example_de": "Rohstoffe werden knapper.",
+      "example_en": "Raw materials are becoming scarcer.",
+      "cloze_word": "Rohstoff",
+      "themes": [
+        "nature"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Rohstoffe"
+      }
+    },
+    {
+      "id": "landwirtschaft_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Landwirtschaft",
+      "translations_en": [
+        "agriculture"
+      ],
+      "example_de": "Die Landwirtschaft braucht viel Wasser.",
+      "example_en": "Agriculture needs a lot of water.",
+      "cloze_word": "Landwirtschaft",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "industrie_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Industrie",
+      "translations_en": [
+        "industry"
+      ],
+      "example_de": "Die Industrie stellt viele Autos her.",
+      "example_en": "Industry makes a lot of cars.",
+      "cloze_word": "Industrie",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Industrien"
+      }
+    },
+    {
+      "id": "infrastruktur_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Infrastruktur",
+      "translations_en": [
+        "infrastructure"
+      ],
+      "example_de": "Die Infrastruktur muss verbessert werden.",
+      "example_en": "The infrastructure has to be improved.",
+      "cloze_word": "Infrastruktur",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Infrastrukturen"
+      }
+    },
+    {
+      "id": "belastung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Belastung",
+      "translations_en": [
+        "burden",
+        "strain"
+      ],
+      "example_de": "Die Belastung im Job ist hoch.",
+      "example_en": "The strain at work is high.",
+      "cloze_word": "Belastung",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Belastungen"
+      }
+    },
+    {
+      "id": "umstand_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Umstand",
+      "translations_en": [
+        "circumstance"
+      ],
+      "example_de": "Unter diesen Umständen können wir nicht bleiben.",
+      "example_en": "Under these circumstances we can't stay.",
+      "cloze_word": "Umständen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Umstände"
+      }
+    },
+    {
+      "id": "sachverhalt_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Sachverhalt",
+      "translations_en": [
+        "facts of the matter"
+      ],
+      "example_de": "Der Sachverhalt ist kompliziert.",
+      "example_en": "The facts of the matter are complicated.",
+      "cloze_word": "Sachverhalt",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Sachverhalte"
+      }
+    },
+    {
+      "id": "tatsache_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Tatsache",
+      "translations_en": [
+        "fact"
+      ],
+      "example_de": "Das ist eine Tatsache.",
+      "example_en": "That is a fact.",
+      "cloze_word": "Tatsache",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Tatsachen"
+      }
+    },
+    {
+      "id": "behauptung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Behauptung",
+      "translations_en": [
+        "claim",
+        "assertion"
+      ],
+      "example_de": "Diese Behauptung ist falsch.",
+      "example_en": "This claim is false.",
+      "cloze_word": "Behauptung",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Behauptungen"
+      }
+    },
+    {
+      "id": "vermutung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Vermutung",
+      "translations_en": [
+        "assumption",
+        "guess"
+      ],
+      "example_de": "Das ist nur eine Vermutung.",
+      "example_en": "That's just a guess.",
+      "cloze_word": "Vermutung",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Vermutungen"
+      }
+    },
+    {
+      "id": "annahme_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Annahme",
+      "translations_en": [
+        "assumption"
+      ],
+      "example_de": "Die Annahme ist falsch.",
+      "example_en": "The assumption is wrong.",
+      "cloze_word": "Annahme",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Annahmen"
+      }
+    },
+    {
+      "id": "these_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "These",
+      "translations_en": [
+        "thesis",
+        "claim"
+      ],
+      "example_de": "Er stellt eine mutige These auf.",
+      "example_en": "He puts forward a bold thesis.",
+      "cloze_word": "These",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Thesen"
+      }
+    },
+    {
+      "id": "beweis_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Beweis",
+      "translations_en": [
+        "proof",
+        "evidence"
+      ],
+      "example_de": "Wir brauchen einen Beweis.",
+      "example_en": "We need proof.",
+      "cloze_word": "Beweis",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Beweise"
+      }
+    },
+    {
+      "id": "zweifel_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Zweifel",
+      "translations_en": [
+        "doubt"
+      ],
+      "example_de": "Ich habe Zweifel an seiner Aussage.",
+      "example_en": "I have doubts about his statement.",
+      "cloze_word": "Zweifel",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Zweifel"
+      }
+    },
+    {
+      "id": "ueberzeugung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Überzeugung",
+      "translations_en": [
+        "conviction",
+        "belief"
+      ],
+      "example_de": "Das ist meine feste Überzeugung.",
+      "example_en": "That is my firm conviction.",
+      "cloze_word": "Überzeugung",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Überzeugungen"
+      }
+    },
+    {
+      "id": "grundsatz_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Grundsatz",
+      "translations_en": [
+        "principle"
+      ],
+      "example_de": "Das ist ein wichtiger Grundsatz.",
+      "example_en": "That is an important principle.",
+      "cloze_word": "Grundsatz",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Grundsätze"
+      }
+    },
+    {
+      "id": "prinzip_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Prinzip",
+      "translations_en": [
+        "principle"
+      ],
+      "example_de": "Ich handle nach meinen Prinzipien.",
+      "example_en": "I act according to my principles.",
+      "cloze_word": "Prinzipien",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Prinzipien"
+      }
+    },
+    {
+      "id": "ausnahme_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Ausnahme",
+      "translations_en": [
+        "exception"
+      ],
+      "example_de": "Es gibt eine Ausnahme.",
+      "example_en": "There is an exception.",
+      "cloze_word": "Ausnahme",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Ausnahmen"
+      }
+    },
+    {
+      "id": "spielraum_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Spielraum",
+      "translations_en": [
+        "room to manoeuvre"
+      ],
+      "example_de": "Wir haben wenig Spielraum.",
+      "example_en": "We have little room to manoeuvre.",
+      "cloze_word": "Spielraum",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Spielräume"
+      }
+    },
+    {
+      "id": "einschraenkung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Einschränkung",
+      "translations_en": [
+        "restriction"
+      ],
+      "example_de": "Es gibt keine Einschränkungen.",
+      "example_en": "There are no restrictions.",
+      "cloze_word": "Einschränkungen",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Einschränkungen"
+      }
+    },
+    {
+      "id": "verpflichtung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Verpflichtung",
+      "translations_en": [
+        "obligation"
+      ],
+      "example_de": "Ich habe viele Verpflichtungen.",
+      "example_en": "I have many obligations.",
+      "cloze_word": "Verpflichtungen",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Verpflichtungen"
+      }
+    },
+    {
+      "id": "genehmigung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Genehmigung",
+      "translations_en": [
+        "permit",
+        "approval"
+      ],
+      "example_de": "Wir brauchen eine Genehmigung.",
+      "example_en": "We need a permit.",
+      "cloze_word": "Genehmigung",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Genehmigungen"
+      }
+    },
+    {
+      "id": "verordnung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Verordnung",
+      "translations_en": [
+        "regulation",
+        "decree"
+      ],
+      "example_de": "Die Verordnung tritt morgen in Kraft.",
+      "example_en": "The regulation comes into force tomorrow.",
+      "cloze_word": "Verordnung",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Verordnungen"
+      }
+    },
+    {
+      "id": "richtlinie_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Richtlinie",
+      "translations_en": [
+        "guideline",
+        "directive"
+      ],
+      "example_de": "Wir beachten die Richtlinien.",
+      "example_en": "We observe the guidelines.",
+      "cloze_word": "Richtlinien",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Richtlinien"
+      }
+    },
+    {
+      "id": "rechtsanwalt_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Rechtsanwalt",
+      "translations_en": [
+        "lawyer"
+      ],
+      "example_de": "Der Rechtsanwalt berät die Firma.",
+      "example_en": "The lawyer advises the company.",
+      "cloze_word": "Rechtsanwalt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Rechtsanwälte"
+      }
+    },
+    {
+      "id": "gericht_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Gericht",
+      "translations_en": [
+        "court"
+      ],
+      "example_de": "Das Gericht entscheidet morgen.",
+      "example_en": "The court decides tomorrow.",
+      "cloze_word": "Gericht",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Gerichte"
+      }
+    },
+    {
+      "id": "urteil_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Urteil",
+      "translations_en": [
+        "verdict",
+        "judgement"
+      ],
+      "example_de": "Das Urteil ist gefallen.",
+      "example_en": "The verdict has been reached.",
+      "cloze_word": "Urteil",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Urteile"
+      }
+    },
+    {
+      "id": "strafe_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Strafe",
+      "translations_en": [
+        "punishment",
+        "penalty"
+      ],
+      "example_de": "Die Strafe ist hoch.",
+      "example_en": "The penalty is high.",
+      "cloze_word": "Strafe",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Strafen"
+      }
+    },
+    {
+      "id": "verbrechen_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Verbrechen",
+      "translations_en": [
+        "crime"
+      ],
+      "example_de": "Das Verbrechen geschah nachts.",
+      "example_en": "The crime happened at night.",
+      "cloze_word": "Verbrechen",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Verbrechen"
+      }
+    },
+    {
+      "id": "taeter_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Täter",
+      "translations_en": [
+        "perpetrator"
+      ],
+      "example_de": "Die Polizei sucht den Täter.",
+      "example_en": "The police are looking for the perpetrator.",
+      "cloze_word": "Täter",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Täter"
+      }
+    },
+    {
+      "id": "opfer_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Opfer",
+      "translations_en": [
+        "victim",
+        "sacrifice"
+      ],
+      "example_de": "Das Opfer wurde verletzt.",
+      "example_en": "The victim was injured.",
+      "cloze_word": "Opfer",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Opfer"
+      }
+    },
+    {
+      "id": "zeuge_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Zeuge",
+      "translations_en": [
+        "witness"
+      ],
+      "example_de": "Der Zeuge hat alles gesehen.",
+      "example_en": "The witness saw everything.",
+      "cloze_word": "Zeuge",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Zeugen"
+      }
+    },
+    {
+      "id": "datenschutz_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Datenschutz",
+      "translations_en": [
+        "data protection"
+      ],
+      "example_de": "Der Datenschutz ist wichtig.",
+      "example_en": "Data protection is important.",
+      "cloze_word": "Datenschutz",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "daten_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Daten",
+      "translations_en": [
+        "data"
+      ],
+      "example_de": "Die Daten sind sicher.",
+      "example_en": "The data are safe.",
+      "cloze_word": "Daten",
+      "themes": [
+        "technology"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "ueberwachung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Überwachung",
+      "translations_en": [
+        "surveillance"
+      ],
+      "example_de": "Die Überwachung wird kritisiert.",
+      "example_en": "The surveillance is being criticised.",
+      "cloze_word": "Überwachung",
+      "themes": [
+        "technology"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Überwachungen"
+      }
+    },
+    {
+      "id": "netzwerk_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Netzwerk",
+      "translations_en": [
+        "network"
+      ],
+      "example_de": "Das Netzwerk ist gestört.",
+      "example_en": "The network is down.",
+      "cloze_word": "Netzwerk",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Netzwerke"
+      }
+    },
+    {
+      "id": "plattform_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Plattform",
+      "translations_en": [
+        "platform"
+      ],
+      "example_de": "Die Plattform hat viele Nutzer.",
+      "example_en": "The platform has many users.",
+      "cloze_word": "Plattform",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Plattformen"
+      }
+    },
+    {
+      "id": "nutzer_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Nutzer",
+      "translations_en": [
+        "user"
+      ],
+      "example_de": "Die Nutzer beschweren sich.",
+      "example_en": "The users are complaining.",
+      "cloze_word": "Nutzer",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Nutzer"
+      }
+    },
+    {
+      "id": "verbreitung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Verbreitung",
+      "translations_en": [
+        "spread",
+        "distribution"
+      ],
+      "example_de": "Die Verbreitung von Falschmeldungen ist gefährlich.",
+      "example_en": "The spread of fake news is dangerous.",
+      "cloze_word": "Verbreitung",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "oeffentlichkeit_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Öffentlichkeit",
+      "translations_en": [
+        "the public"
+      ],
+      "example_de": "Die Öffentlichkeit erfährt davon.",
+      "example_en": "The public will find out about it.",
+      "cloze_word": "Öffentlichkeit",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "debatte_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Debatte",
+      "translations_en": [
+        "debate"
+      ],
+      "example_de": "Die Debatte war sehr hitzig.",
+      "example_en": "The debate was very heated.",
+      "cloze_word": "Debatte",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Debatten"
+      }
+    },
+    {
+      "id": "kritik_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Kritik",
+      "translations_en": [
+        "criticism"
+      ],
+      "example_de": "Die Kritik ist berechtigt.",
+      "example_en": "The criticism is justified.",
+      "cloze_word": "Kritik",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "vorwurf_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Vorwurf",
+      "translations_en": [
+        "reproach",
+        "accusation"
+      ],
+      "example_de": "Der Vorwurf ist unbegründet.",
+      "example_en": "The accusation is unfounded.",
+      "cloze_word": "Vorwurf",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Vorwürfe"
+      }
+    },
+    {
+      "id": "stellungnahme_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Stellungnahme",
+      "translations_en": [
+        "statement",
+        "comment"
+      ],
+      "example_de": "Wir warten auf eine Stellungnahme.",
+      "example_en": "We are waiting for a statement.",
+      "cloze_word": "Stellungnahme",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Stellungnahmen"
+      }
+    },
+    {
+      "id": "analyse_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Analyse",
+      "translations_en": [
+        "analysis"
+      ],
+      "example_de": "Die Analyse zeigt klare Ergebnisse.",
+      "example_en": "The analysis shows clear results.",
+      "cloze_word": "Analyse",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Analysen"
+      }
+    },
+    {
+      "id": "studie_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Studie",
+      "translations_en": [
+        "study"
+      ],
+      "example_de": "Eine neue Studie beweist das.",
+      "example_en": "A new study proves it.",
+      "cloze_word": "Studie",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Studien"
+      }
+    },
+    {
+      "id": "erhebung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Erhebung",
+      "translations_en": [
+        "survey",
+        "census"
+      ],
+      "example_de": "Die Erhebung läuft seit einem Jahr.",
+      "example_en": "The survey has been running for a year.",
+      "cloze_word": "Erhebung",
+      "themes": [
+        "education"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Erhebungen"
+      }
+    },
+    {
+      "id": "statistik_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Statistik",
+      "translations_en": [
+        "statistics"
+      ],
+      "example_de": "Die Statistik zeigt einen Anstieg.",
+      "example_en": "The statistics show an increase.",
+      "cloze_word": "Statistik",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Statistiken"
+      }
+    },
+    {
+      "id": "durchschnitt_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Durchschnitt",
+      "translations_en": [
+        "average"
+      ],
+      "example_de": "Im Durchschnitt arbeite ich acht Stunden.",
+      "example_en": "On average I work eight hours.",
+      "cloze_word": "Durchschnitt",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "anteil_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Anteil",
+      "translations_en": [
+        "share",
+        "proportion"
+      ],
+      "example_de": "Der Anteil der Frauen steigt.",
+      "example_en": "The proportion of women is rising.",
+      "cloze_word": "Anteil",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Anteile"
+      }
+    },
+    {
+      "id": "zunahme_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Zunahme",
+      "translations_en": [
+        "increase"
+      ],
+      "example_de": "Die Zunahme ist deutlich.",
+      "example_en": "The increase is clear.",
+      "cloze_word": "Zunahme",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Zunahmen"
+      }
+    },
+    {
+      "id": "rueckgang_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Rückgang",
+      "translations_en": [
+        "decline"
+      ],
+      "example_de": "Es gab einen Rückgang der Verkäufe.",
+      "example_en": "There was a decline in sales.",
+      "cloze_word": "Rückgang",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Rückgänge"
+      }
+    },
+    {
+      "id": "anstieg_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Anstieg",
+      "translations_en": [
+        "rise"
+      ],
+      "example_de": "Der Anstieg der Preise ist stark.",
+      "example_en": "The rise in prices is sharp.",
+      "cloze_word": "Anstieg",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Anstiege"
+      }
+    },
+    {
+      "id": "schwankung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Schwankung",
+      "translations_en": [
+        "fluctuation"
+      ],
+      "example_de": "Es gibt starke Schwankungen.",
+      "example_en": "There are strong fluctuations.",
+      "cloze_word": "Schwankungen",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Schwankungen"
+      }
+    },
+    {
+      "id": "krise_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Krise",
+      "translations_en": [
+        "crisis"
+      ],
+      "example_de": "Die Krise dauert an.",
+      "example_en": "The crisis continues.",
+      "cloze_word": "Krise",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Krisen"
+      }
+    },
+    {
+      "id": "ausmass_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Ausmaß",
+      "translations_en": [
+        "extent",
+        "scale"
+      ],
+      "example_de": "Das Ausmaß des Schadens ist groß.",
+      "example_en": "The extent of the damage is large.",
+      "cloze_word": "Ausmaß",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Ausmaße"
+      }
+    },
+    {
+      "id": "pflege_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Pflege",
+      "translations_en": [
+        "care",
+        "nursing"
+      ],
+      "example_de": "Die Pflege alter Menschen ist wichtig.",
+      "example_en": "Caring for elderly people is important.",
+      "cloze_word": "Pflege",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "alter_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Alter",
+      "translations_en": [
+        "age",
+        "old age"
+      ],
+      "example_de": "Im Alter braucht man Ruhe.",
+      "example_en": "In old age you need peace.",
+      "cloze_word": "Alter",
+      "themes": [
+        "people"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "generation_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Generation",
+      "translations_en": [
+        "generation"
+      ],
+      "example_de": "Die junge Generation denkt anders.",
+      "example_en": "The young generation thinks differently.",
+      "cloze_word": "Generation",
+      "themes": [
+        "society"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Generationen"
+      }
+    },
+    {
+      "id": "rente_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Rente",
+      "translations_en": [
+        "pension"
+      ],
+      "example_de": "Die Rente reicht kaum.",
+      "example_en": "The pension is hardly enough.",
+      "cloze_word": "Rente",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Renten"
+      }
+    },
+    {
+      "id": "integration_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Integration",
+      "translations_en": [
+        "integration"
+      ],
+      "example_de": "Die Integration braucht Zeit.",
+      "example_en": "Integration takes time.",
+      "cloze_word": "Integration",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "vielfalt_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Vielfalt",
+      "translations_en": [
+        "diversity"
+      ],
+      "example_de": "Die Vielfalt macht die Stadt lebendig.",
+      "example_en": "Diversity makes the city lively.",
+      "cloze_word": "Vielfalt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "toleranz_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Toleranz",
+      "translations_en": [
+        "tolerance"
+      ],
+      "example_de": "Toleranz ist wichtig für das Zusammenleben.",
+      "example_en": "Tolerance is important for living together.",
+      "cloze_word": "Toleranz",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "diskriminierung_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Diskriminierung",
+      "translations_en": [
+        "discrimination"
+      ],
+      "example_de": "Diskriminierung ist verboten.",
+      "example_en": "Discrimination is forbidden.",
+      "cloze_word": "Diskriminierung",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Diskriminierungen"
+      }
+    },
+    {
+      "id": "solidaritaet_noun",
+      "cefr": "B2",
+      "pos": "noun",
+      "lemma_de": "Solidarität",
+      "translations_en": [
+        "solidarity"
+      ],
+      "example_de": "Solidarität ist in Krisen wichtig.",
+      "example_en": "Solidarity is important in crises.",
+      "cloze_word": "Solidarität",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    }
   ]
 }

@@ -45,6 +45,2926 @@
         "plural_de": "Frauen"
       },
       "cloze_word": "Frau"
+    },
+    {
+      "id": "mann_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Mann",
+      "translations_en": [
+        "man",
+        "husband"
+      ],
+      "example_de": "Der Mann liest die Zeitung.",
+      "example_en": "The man reads the newspaper.",
+      "cloze_word": "Mann",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Männer"
+      }
+    },
+    {
+      "id": "kind_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Kind",
+      "translations_en": [
+        "child"
+      ],
+      "example_de": "Das Kind spielt im Garten.",
+      "example_en": "The child plays in the garden.",
+      "cloze_word": "Kind",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Kinder"
+      }
+    },
+    {
+      "id": "mutter_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Mutter",
+      "translations_en": [
+        "mother"
+      ],
+      "example_de": "Meine Mutter kocht gern.",
+      "example_en": "My mother likes cooking.",
+      "cloze_word": "Mutter",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Mütter"
+      }
+    },
+    {
+      "id": "vater_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Vater",
+      "translations_en": [
+        "father"
+      ],
+      "example_de": "Mein Vater arbeitet bei der Bank.",
+      "example_en": "My father works at the bank.",
+      "cloze_word": "Vater",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Väter"
+      }
+    },
+    {
+      "id": "bruder_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Bruder",
+      "translations_en": [
+        "brother"
+      ],
+      "example_de": "Mein Bruder wohnt in Berlin.",
+      "example_en": "My brother lives in Berlin.",
+      "cloze_word": "Bruder",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Brüder"
+      }
+    },
+    {
+      "id": "schwester_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Schwester",
+      "translations_en": [
+        "sister"
+      ],
+      "example_de": "Meine Schwester ist Lehrerin.",
+      "example_en": "My sister is a teacher.",
+      "cloze_word": "Schwester",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Schwestern"
+      }
+    },
+    {
+      "id": "sohn_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Sohn",
+      "translations_en": [
+        "son"
+      ],
+      "example_de": "Ihr Sohn ist fünf Jahre alt.",
+      "example_en": "Her son is five years old.",
+      "cloze_word": "Sohn",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Söhne"
+      }
+    },
+    {
+      "id": "tochter_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Tochter",
+      "translations_en": [
+        "daughter"
+      ],
+      "example_de": "Die Tochter geht in die Schule.",
+      "example_en": "The daughter goes to school.",
+      "cloze_word": "Tochter",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Töchter"
+      }
+    },
+    {
+      "id": "eltern_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Eltern",
+      "translations_en": [
+        "parents"
+      ],
+      "example_de": "Meine Eltern kommen morgen.",
+      "example_en": "My parents are coming tomorrow.",
+      "cloze_word": "Eltern",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "freund_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Freund",
+      "translations_en": [
+        "friend",
+        "boyfriend"
+      ],
+      "example_de": "Er ist mein bester Freund.",
+      "example_en": "He is my best friend.",
+      "cloze_word": "Freund",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Freunde"
+      }
+    },
+    {
+      "id": "freundin_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Freundin",
+      "translations_en": [
+        "friend (female)",
+        "girlfriend"
+      ],
+      "example_de": "Meine Freundin heißt Anna.",
+      "example_en": "My friend is called Anna.",
+      "cloze_word": "Freundin",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Freundinnen"
+      }
+    },
+    {
+      "id": "familie_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Familie",
+      "translations_en": [
+        "family"
+      ],
+      "example_de": "Die Familie isst zusammen.",
+      "example_en": "The family eats together.",
+      "cloze_word": "Familie",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Familien"
+      }
+    },
+    {
+      "id": "baby_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Baby",
+      "translations_en": [
+        "baby"
+      ],
+      "example_de": "Das Baby schläft.",
+      "example_en": "The baby is sleeping.",
+      "cloze_word": "Baby",
+      "themes": [
+        "people"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Babys"
+      }
+    },
+    {
+      "id": "junge_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Junge",
+      "translations_en": [
+        "boy"
+      ],
+      "example_de": "Der Junge spielt Fußball.",
+      "example_en": "The boy plays football.",
+      "cloze_word": "Junge",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Jungen"
+      }
+    },
+    {
+      "id": "maedchen_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Mädchen",
+      "translations_en": [
+        "girl"
+      ],
+      "example_de": "Das Mädchen liest ein Buch.",
+      "example_en": "The girl is reading a book.",
+      "cloze_word": "Mädchen",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Mädchen"
+      }
+    },
+    {
+      "id": "herr_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Herr",
+      "translations_en": [
+        "gentleman",
+        "Mr."
+      ],
+      "example_de": "Guten Tag, Herr Müller!",
+      "example_en": "Good day, Mr. Müller!",
+      "cloze_word": "Herr",
+      "themes": [
+        "people"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Herren"
+      }
+    },
+    {
+      "id": "lehrer_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Lehrer",
+      "translations_en": [
+        "teacher"
+      ],
+      "example_de": "Der Lehrer erklärt die Aufgabe.",
+      "example_en": "The teacher explains the task.",
+      "cloze_word": "Lehrer",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Lehrer"
+      }
+    },
+    {
+      "id": "lehrerin_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Lehrerin",
+      "translations_en": [
+        "teacher (female)"
+      ],
+      "example_de": "Die Lehrerin ist sehr nett.",
+      "example_en": "The teacher is very nice.",
+      "cloze_word": "Lehrerin",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Lehrerinnen"
+      }
+    },
+    {
+      "id": "student_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Student",
+      "translations_en": [
+        "student"
+      ],
+      "example_de": "Der Student wohnt bei seinen Eltern.",
+      "example_en": "The student lives with his parents.",
+      "cloze_word": "Student",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Studenten"
+      }
+    },
+    {
+      "id": "arzt_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Arzt",
+      "translations_en": [
+        "doctor"
+      ],
+      "example_de": "Der Arzt untersucht den Patienten.",
+      "example_en": "The doctor examines the patient.",
+      "cloze_word": "Arzt",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Ärzte"
+      }
+    },
+    {
+      "id": "wohnung_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Wohnung",
+      "translations_en": [
+        "apartment",
+        "flat"
+      ],
+      "example_de": "Die Wohnung ist klein, aber schön.",
+      "example_en": "The apartment is small but nice.",
+      "cloze_word": "Wohnung",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Wohnungen"
+      }
+    },
+    {
+      "id": "zimmer_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Zimmer",
+      "translations_en": [
+        "room"
+      ],
+      "example_de": "Mein Zimmer ist im ersten Stock.",
+      "example_en": "My room is on the first floor.",
+      "cloze_word": "Zimmer",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Zimmer"
+      }
+    },
+    {
+      "id": "kueche_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Küche",
+      "translations_en": [
+        "kitchen"
+      ],
+      "example_de": "Sie ist in der Küche.",
+      "example_en": "She is in the kitchen.",
+      "cloze_word": "Küche",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Küchen"
+      }
+    },
+    {
+      "id": "bad_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Bad",
+      "translations_en": [
+        "bathroom",
+        "bath"
+      ],
+      "example_de": "Das Bad ist neben dem Schlafzimmer.",
+      "example_en": "The bathroom is next to the bedroom.",
+      "cloze_word": "Bad",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Bäder"
+      }
+    },
+    {
+      "id": "tuer_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Tür",
+      "translations_en": [
+        "door"
+      ],
+      "example_de": "Bitte mach die Tür zu.",
+      "example_en": "Please close the door.",
+      "cloze_word": "Tür",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Türen"
+      }
+    },
+    {
+      "id": "fenster_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Fenster",
+      "translations_en": [
+        "window"
+      ],
+      "example_de": "Das Fenster ist offen.",
+      "example_en": "The window is open.",
+      "cloze_word": "Fenster",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Fenster"
+      }
+    },
+    {
+      "id": "tisch_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Tisch",
+      "translations_en": [
+        "table"
+      ],
+      "example_de": "Wir essen am Tisch.",
+      "example_en": "We eat at the table.",
+      "cloze_word": "Tisch",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Tische"
+      }
+    },
+    {
+      "id": "stuhl_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Stuhl",
+      "translations_en": [
+        "chair"
+      ],
+      "example_de": "Der Stuhl ist sehr bequem.",
+      "example_en": "The chair is very comfortable.",
+      "cloze_word": "Stuhl",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Stühle"
+      }
+    },
+    {
+      "id": "bett_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Bett",
+      "translations_en": [
+        "bed"
+      ],
+      "example_de": "Ich gehe ins Bett.",
+      "example_en": "I'm going to bed.",
+      "cloze_word": "Bett",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Betten"
+      }
+    },
+    {
+      "id": "garten_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Garten",
+      "translations_en": [
+        "garden"
+      ],
+      "example_de": "Wir haben einen großen Garten.",
+      "example_en": "We have a big garden.",
+      "cloze_word": "Garten",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Gärten"
+      }
+    },
+    {
+      "id": "haustuer_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Haustür",
+      "translations_en": [
+        "front door"
+      ],
+      "example_de": "Die Haustür ist zu.",
+      "example_en": "The front door is closed.",
+      "cloze_word": "Haustür",
+      "themes": [
+        "home"
+      ],
+      "priority": 3,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Haustüren"
+      }
+    },
+    {
+      "id": "lampe_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Lampe",
+      "translations_en": [
+        "lamp"
+      ],
+      "example_de": "Die Lampe steht neben dem Bett.",
+      "example_en": "The lamp is next to the bed.",
+      "cloze_word": "Lampe",
+      "themes": [
+        "home"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Lampen"
+      }
+    },
+    {
+      "id": "strasse_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Straße",
+      "translations_en": [
+        "street",
+        "road"
+      ],
+      "example_de": "Die Straße ist sehr laut.",
+      "example_en": "The street is very loud.",
+      "cloze_word": "Straße",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Straßen"
+      }
+    },
+    {
+      "id": "stadt_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Stadt",
+      "translations_en": [
+        "city",
+        "town"
+      ],
+      "example_de": "Berlin ist eine große Stadt.",
+      "example_en": "Berlin is a big city.",
+      "cloze_word": "Stadt",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Städte"
+      }
+    },
+    {
+      "id": "dorf_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Dorf",
+      "translations_en": [
+        "village"
+      ],
+      "example_de": "Er wohnt in einem kleinen Dorf.",
+      "example_en": "He lives in a small village.",
+      "cloze_word": "Dorf",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Dörfer"
+      }
+    },
+    {
+      "id": "brot_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Brot",
+      "translations_en": [
+        "bread"
+      ],
+      "example_de": "Ich esse Brot mit Butter.",
+      "example_en": "I eat bread with butter.",
+      "cloze_word": "Brot",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Brote"
+      }
+    },
+    {
+      "id": "wasser_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Wasser",
+      "translations_en": [
+        "water"
+      ],
+      "example_de": "Ich trinke ein Glas Wasser.",
+      "example_en": "I drink a glass of water.",
+      "cloze_word": "Wasser",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "milch_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Milch",
+      "translations_en": [
+        "milk"
+      ],
+      "example_de": "Die Milch ist im Kühlschrank.",
+      "example_en": "The milk is in the fridge.",
+      "cloze_word": "Milch",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "kaffee_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Kaffee",
+      "translations_en": [
+        "coffee"
+      ],
+      "example_de": "Ich trinke jeden Morgen Kaffee.",
+      "example_en": "I drink coffee every morning.",
+      "cloze_word": "Kaffee",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "tee_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Tee",
+      "translations_en": [
+        "tea"
+      ],
+      "example_de": "Möchtest du einen Tee?",
+      "example_en": "Would you like a tea?",
+      "cloze_word": "Tee",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Tees"
+      }
+    },
+    {
+      "id": "bier_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Bier",
+      "translations_en": [
+        "beer"
+      ],
+      "example_de": "Er trinkt ein Bier.",
+      "example_en": "He drinks a beer.",
+      "cloze_word": "Bier",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Biere"
+      }
+    },
+    {
+      "id": "wein_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Wein",
+      "translations_en": [
+        "wine"
+      ],
+      "example_de": "Wir bestellen eine Flasche Wein.",
+      "example_en": "We order a bottle of wine.",
+      "cloze_word": "Wein",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Weine"
+      }
+    },
+    {
+      "id": "apfel_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Apfel",
+      "translations_en": [
+        "apple"
+      ],
+      "example_de": "Der Apfel ist rot.",
+      "example_en": "The apple is red.",
+      "cloze_word": "Apfel",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Äpfel"
+      }
+    },
+    {
+      "id": "banane_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Banane",
+      "translations_en": [
+        "banana"
+      ],
+      "example_de": "Ich esse eine Banane.",
+      "example_en": "I eat a banana.",
+      "cloze_word": "Banane",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Bananen"
+      }
+    },
+    {
+      "id": "kartoffel_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Kartoffel",
+      "translations_en": [
+        "potato"
+      ],
+      "example_de": "Die Kartoffel ist noch heiß.",
+      "example_en": "The potato is still hot.",
+      "cloze_word": "Kartoffel",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Kartoffeln"
+      }
+    },
+    {
+      "id": "ei_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Ei",
+      "translations_en": [
+        "egg"
+      ],
+      "example_de": "Ich esse ein Ei zum Frühstück.",
+      "example_en": "I eat an egg for breakfast.",
+      "cloze_word": "Ei",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Eier"
+      }
+    },
+    {
+      "id": "kaese_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Käse",
+      "translations_en": [
+        "cheese"
+      ],
+      "example_de": "Der Käse schmeckt gut.",
+      "example_en": "The cheese tastes good.",
+      "cloze_word": "Käse",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "fleisch_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Fleisch",
+      "translations_en": [
+        "meat"
+      ],
+      "example_de": "Sie isst kein Fleisch.",
+      "example_en": "She doesn't eat meat.",
+      "cloze_word": "Fleisch",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "fisch_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Fisch",
+      "translations_en": [
+        "fish"
+      ],
+      "example_de": "Der Fisch ist frisch.",
+      "example_en": "The fish is fresh.",
+      "cloze_word": "Fisch",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Fische"
+      }
+    },
+    {
+      "id": "obst_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Obst",
+      "translations_en": [
+        "fruit"
+      ],
+      "example_de": "Ich kaufe Obst auf dem Markt.",
+      "example_en": "I buy fruit at the market.",
+      "cloze_word": "Obst",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "gemuese_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Gemüse",
+      "translations_en": [
+        "vegetables"
+      ],
+      "example_de": "Das Gemüse ist frisch.",
+      "example_en": "The vegetables are fresh.",
+      "cloze_word": "Gemüse",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "suppe_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Suppe",
+      "translations_en": [
+        "soup"
+      ],
+      "example_de": "Die Suppe ist heiß.",
+      "example_en": "The soup is hot.",
+      "cloze_word": "Suppe",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Suppen"
+      }
+    },
+    {
+      "id": "salat_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Salat",
+      "translations_en": [
+        "salad",
+        "lettuce"
+      ],
+      "example_de": "Ich bestelle einen Salat.",
+      "example_en": "I order a salad.",
+      "cloze_word": "Salat",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Salate"
+      }
+    },
+    {
+      "id": "kuchen_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Kuchen",
+      "translations_en": [
+        "cake"
+      ],
+      "example_de": "Der Kuchen schmeckt lecker.",
+      "example_en": "The cake tastes delicious.",
+      "cloze_word": "Kuchen",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Kuchen"
+      }
+    },
+    {
+      "id": "zucker_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Zucker",
+      "translations_en": [
+        "sugar"
+      ],
+      "example_de": "Ich nehme keinen Zucker.",
+      "example_en": "I don't take sugar.",
+      "cloze_word": "Zucker",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "salz_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Salz",
+      "translations_en": [
+        "salt"
+      ],
+      "example_de": "Gibst du mir bitte das Salz?",
+      "example_en": "Could you pass me the salt, please?",
+      "cloze_word": "Salz",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "butter_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Butter",
+      "translations_en": [
+        "butter"
+      ],
+      "example_de": "Die Butter liegt auf dem Tisch.",
+      "example_en": "The butter is on the table.",
+      "cloze_word": "Butter",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "reis_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Reis",
+      "translations_en": [
+        "rice"
+      ],
+      "example_de": "Wir essen Fisch mit Reis.",
+      "example_en": "We eat fish with rice.",
+      "cloze_word": "Reis",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "nudeln_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Nudeln",
+      "translations_en": [
+        "pasta",
+        "noodles"
+      ],
+      "example_de": "Die Nudeln sind fertig.",
+      "example_en": "The pasta is ready.",
+      "cloze_word": "Nudeln",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "restaurant_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Restaurant",
+      "translations_en": [
+        "restaurant"
+      ],
+      "example_de": "Das Restaurant ist sehr gut.",
+      "example_en": "The restaurant is very good.",
+      "cloze_word": "Restaurant",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Restaurants"
+      }
+    },
+    {
+      "id": "fruehstueck_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Frühstück",
+      "translations_en": [
+        "breakfast"
+      ],
+      "example_de": "Das Frühstück ist um acht Uhr.",
+      "example_en": "Breakfast is at eight o'clock.",
+      "cloze_word": "Frühstück",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Frühstücke"
+      }
+    },
+    {
+      "id": "mittagessen_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Mittagessen",
+      "translations_en": [
+        "lunch"
+      ],
+      "example_de": "Das Mittagessen ist fertig.",
+      "example_en": "Lunch is ready.",
+      "cloze_word": "Mittagessen",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Mittagessen"
+      }
+    },
+    {
+      "id": "abendessen_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Abendessen",
+      "translations_en": [
+        "dinner"
+      ],
+      "example_de": "Wir machen das Abendessen zusammen.",
+      "example_en": "We make dinner together.",
+      "cloze_word": "Abendessen",
+      "themes": [
+        "food"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Abendessen"
+      }
+    },
+    {
+      "id": "tag_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Tag",
+      "translations_en": [
+        "day"
+      ],
+      "example_de": "Der Tag beginnt früh.",
+      "example_en": "The day starts early.",
+      "cloze_word": "Tag",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Tage"
+      }
+    },
+    {
+      "id": "woche_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Woche",
+      "translations_en": [
+        "week"
+      ],
+      "example_de": "Die Woche hat sieben Tage.",
+      "example_en": "The week has seven days.",
+      "cloze_word": "Woche",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Wochen"
+      }
+    },
+    {
+      "id": "monat_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Monat",
+      "translations_en": [
+        "month"
+      ],
+      "example_de": "Der Monat hat dreißig Tage.",
+      "example_en": "The month has thirty days.",
+      "cloze_word": "Monat",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Monate"
+      }
+    },
+    {
+      "id": "jahr_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Jahr",
+      "translations_en": [
+        "year"
+      ],
+      "example_de": "Das Jahr hat zwölf Monate.",
+      "example_en": "The year has twelve months.",
+      "cloze_word": "Jahr",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Jahre"
+      }
+    },
+    {
+      "id": "uhr_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Uhr",
+      "translations_en": [
+        "clock",
+        "o'clock"
+      ],
+      "example_de": "Es ist drei Uhr.",
+      "example_en": "It is three o'clock.",
+      "cloze_word": "Uhr",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Uhren"
+      }
+    },
+    {
+      "id": "stunde_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Stunde",
+      "translations_en": [
+        "hour",
+        "lesson"
+      ],
+      "example_de": "Die Stunde dauert eine Stunde.",
+      "example_en": "The lesson lasts an hour.",
+      "cloze_word": "Stunde",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Stunden"
+      }
+    },
+    {
+      "id": "minute_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Minute",
+      "translations_en": [
+        "minute"
+      ],
+      "example_de": "Warte bitte eine Minute.",
+      "example_en": "Please wait a minute.",
+      "cloze_word": "Minute",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Minuten"
+      }
+    },
+    {
+      "id": "morgen_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Morgen",
+      "translations_en": [
+        "morning"
+      ],
+      "example_de": "Am Morgen trinke ich Kaffee.",
+      "example_en": "In the morning I drink coffee.",
+      "cloze_word": "Morgen",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Morgen"
+      }
+    },
+    {
+      "id": "abend_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Abend",
+      "translations_en": [
+        "evening"
+      ],
+      "example_de": "Am Abend sehe ich fern.",
+      "example_en": "In the evening I watch TV.",
+      "cloze_word": "Abend",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Abende"
+      }
+    },
+    {
+      "id": "nacht_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Nacht",
+      "translations_en": [
+        "night"
+      ],
+      "example_de": "Die Nacht ist kalt.",
+      "example_en": "The night is cold.",
+      "cloze_word": "Nacht",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Nächte"
+      }
+    },
+    {
+      "id": "wochenende_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Wochenende",
+      "translations_en": [
+        "weekend"
+      ],
+      "example_de": "Am Wochenende schlafe ich lange.",
+      "example_en": "At the weekend I sleep in.",
+      "cloze_word": "Wochenende",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Wochenenden"
+      }
+    },
+    {
+      "id": "zeit_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Zeit",
+      "translations_en": [
+        "time"
+      ],
+      "example_de": "Ich habe heute keine Zeit.",
+      "example_en": "I don't have time today.",
+      "cloze_word": "Zeit",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "geburtstag_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Geburtstag",
+      "translations_en": [
+        "birthday"
+      ],
+      "example_de": "Morgen ist mein Geburtstag.",
+      "example_en": "Tomorrow is my birthday.",
+      "cloze_word": "Geburtstag",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Geburtstage"
+      }
+    },
+    {
+      "id": "auto_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Auto",
+      "translations_en": [
+        "car"
+      ],
+      "example_de": "Das Auto ist neu.",
+      "example_en": "The car is new.",
+      "cloze_word": "Auto",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Autos"
+      }
+    },
+    {
+      "id": "bus_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Bus",
+      "translations_en": [
+        "bus"
+      ],
+      "example_de": "Der Bus kommt in fünf Minuten.",
+      "example_en": "The bus comes in five minutes.",
+      "cloze_word": "Bus",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Busse"
+      }
+    },
+    {
+      "id": "zug_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Zug",
+      "translations_en": [
+        "train"
+      ],
+      "example_de": "Der Zug hat Verspätung.",
+      "example_en": "The train is delayed.",
+      "cloze_word": "Zug",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Züge"
+      }
+    },
+    {
+      "id": "bahnhof_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Bahnhof",
+      "translations_en": [
+        "train station"
+      ],
+      "example_de": "Wir treffen uns am Bahnhof.",
+      "example_en": "We meet at the train station.",
+      "cloze_word": "Bahnhof",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Bahnhöfe"
+      }
+    },
+    {
+      "id": "flughafen_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Flughafen",
+      "translations_en": [
+        "airport"
+      ],
+      "example_de": "Der Flughafen ist weit weg.",
+      "example_en": "The airport is far away.",
+      "cloze_word": "Flughafen",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Flughäfen"
+      }
+    },
+    {
+      "id": "flugzeug_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Flugzeug",
+      "translations_en": [
+        "airplane"
+      ],
+      "example_de": "Das Flugzeug landet um zehn Uhr.",
+      "example_en": "The plane lands at ten o'clock.",
+      "cloze_word": "Flugzeug",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Flugzeuge"
+      }
+    },
+    {
+      "id": "fahrrad_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Fahrrad",
+      "translations_en": [
+        "bicycle"
+      ],
+      "example_de": "Mein Fahrrad ist kaputt.",
+      "example_en": "My bicycle is broken.",
+      "cloze_word": "Fahrrad",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Fahrräder"
+      }
+    },
+    {
+      "id": "taxi_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Taxi",
+      "translations_en": [
+        "taxi"
+      ],
+      "example_de": "Wir nehmen ein Taxi.",
+      "example_en": "We take a taxi.",
+      "cloze_word": "Taxi",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Taxis"
+      }
+    },
+    {
+      "id": "koffer_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Koffer",
+      "translations_en": [
+        "suitcase"
+      ],
+      "example_de": "Mein Koffer ist schwer.",
+      "example_en": "My suitcase is heavy.",
+      "cloze_word": "Koffer",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Koffer"
+      }
+    },
+    {
+      "id": "reise_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Reise",
+      "translations_en": [
+        "trip",
+        "journey"
+      ],
+      "example_de": "Die Reise nach Rom war schön.",
+      "example_en": "The trip to Rome was lovely.",
+      "cloze_word": "Reise",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Reisen"
+      }
+    },
+    {
+      "id": "urlaub_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Urlaub",
+      "translations_en": [
+        "holiday",
+        "vacation"
+      ],
+      "example_de": "Wir machen im Sommer Urlaub.",
+      "example_en": "We go on holiday in the summer.",
+      "cloze_word": "Urlaub",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Urlaube"
+      }
+    },
+    {
+      "id": "hotel_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Hotel",
+      "translations_en": [
+        "hotel"
+      ],
+      "example_de": "Das Hotel liegt direkt am Meer.",
+      "example_en": "The hotel is right by the sea.",
+      "cloze_word": "Hotel",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Hotels"
+      }
+    },
+    {
+      "id": "fahrkarte_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Fahrkarte",
+      "translations_en": [
+        "ticket"
+      ],
+      "example_de": "Ich brauche eine Fahrkarte.",
+      "example_en": "I need a ticket.",
+      "cloze_word": "Fahrkarte",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Fahrkarten"
+      }
+    },
+    {
+      "id": "land_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Land",
+      "translations_en": [
+        "country",
+        "land"
+      ],
+      "example_de": "Deutschland ist ein großes Land.",
+      "example_en": "Germany is a big country.",
+      "cloze_word": "Land",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Länder"
+      }
+    },
+    {
+      "id": "geld_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Geld",
+      "translations_en": [
+        "money"
+      ],
+      "example_de": "Ich habe kein Geld.",
+      "example_en": "I have no money.",
+      "cloze_word": "Geld",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "preis_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Preis",
+      "translations_en": [
+        "price"
+      ],
+      "example_de": "Der Preis ist zu hoch.",
+      "example_en": "The price is too high.",
+      "cloze_word": "Preis",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Preise"
+      }
+    },
+    {
+      "id": "euro_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Euro",
+      "translations_en": [
+        "euro"
+      ],
+      "example_de": "Das kostet zehn Euro.",
+      "example_en": "That costs ten euros.",
+      "cloze_word": "Euro",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Euro"
+      }
+    },
+    {
+      "id": "supermarkt_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Supermarkt",
+      "translations_en": [
+        "supermarket"
+      ],
+      "example_de": "Ich gehe in den Supermarkt.",
+      "example_en": "I'm going to the supermarket.",
+      "cloze_word": "Supermarkt",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Supermärkte"
+      }
+    },
+    {
+      "id": "markt_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Markt",
+      "translations_en": [
+        "market"
+      ],
+      "example_de": "Auf dem Markt gibt es frisches Obst.",
+      "example_en": "There is fresh fruit at the market.",
+      "cloze_word": "Markt",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Märkte"
+      }
+    },
+    {
+      "id": "tasche_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Tasche",
+      "translations_en": [
+        "bag"
+      ],
+      "example_de": "Meine Tasche ist voll.",
+      "example_en": "My bag is full.",
+      "cloze_word": "Tasche",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Taschen"
+      }
+    },
+    {
+      "id": "kleid_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Kleid",
+      "translations_en": [
+        "dress"
+      ],
+      "example_de": "Das Kleid ist rot.",
+      "example_en": "The dress is red.",
+      "cloze_word": "Kleid",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Kleider"
+      }
+    },
+    {
+      "id": "hose_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Hose",
+      "translations_en": [
+        "trousers",
+        "pants"
+      ],
+      "example_de": "Die Hose ist zu klein.",
+      "example_en": "The trousers are too small.",
+      "cloze_word": "Hose",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Hosen"
+      }
+    },
+    {
+      "id": "schuh_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Schuh",
+      "translations_en": [
+        "shoe"
+      ],
+      "example_de": "Der Schuh passt nicht.",
+      "example_en": "The shoe doesn't fit.",
+      "cloze_word": "Schuh",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Schuhe"
+      }
+    },
+    {
+      "id": "jacke_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Jacke",
+      "translations_en": [
+        "jacket"
+      ],
+      "example_de": "Die Jacke ist warm.",
+      "example_en": "The jacket is warm.",
+      "cloze_word": "Jacke",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Jacken"
+      }
+    },
+    {
+      "id": "kopf_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Kopf",
+      "translations_en": [
+        "head"
+      ],
+      "example_de": "Er schüttelt den Kopf.",
+      "example_en": "He shakes his head.",
+      "cloze_word": "Kopf",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Köpfe"
+      }
+    },
+    {
+      "id": "hand_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Hand",
+      "translations_en": [
+        "hand"
+      ],
+      "example_de": "Gib mir deine Hand.",
+      "example_en": "Give me your hand.",
+      "cloze_word": "Hand",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Hände"
+      }
+    },
+    {
+      "id": "auge_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Auge",
+      "translations_en": [
+        "eye"
+      ],
+      "example_de": "Sie hat blaue Augen.",
+      "example_en": "She has blue eyes.",
+      "cloze_word": "Augen",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Augen"
+      }
+    },
+    {
+      "id": "ohr_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Ohr",
+      "translations_en": [
+        "ear"
+      ],
+      "example_de": "Mein Ohr tut weh.",
+      "example_en": "My ear hurts.",
+      "cloze_word": "Ohr",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Ohren"
+      }
+    },
+    {
+      "id": "mund_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Mund",
+      "translations_en": [
+        "mouth"
+      ],
+      "example_de": "Mach bitte den Mund auf.",
+      "example_en": "Please open your mouth.",
+      "cloze_word": "Mund",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Münder"
+      }
+    },
+    {
+      "id": "nase_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Nase",
+      "translations_en": [
+        "nose"
+      ],
+      "example_de": "Meine Nase ist verstopft.",
+      "example_en": "My nose is blocked.",
+      "cloze_word": "Nase",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Nasen"
+      }
+    },
+    {
+      "id": "arm_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Arm",
+      "translations_en": [
+        "arm"
+      ],
+      "example_de": "Mein Arm tut weh.",
+      "example_en": "My arm hurts.",
+      "cloze_word": "Arm",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Arme"
+      }
+    },
+    {
+      "id": "bein_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Bein",
+      "translations_en": [
+        "leg"
+      ],
+      "example_de": "Sein Bein ist gebrochen.",
+      "example_en": "His leg is broken.",
+      "cloze_word": "Bein",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Beine"
+      }
+    },
+    {
+      "id": "fuss_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Fuß",
+      "translations_en": [
+        "foot"
+      ],
+      "example_de": "Der Fuß tut mir weh.",
+      "example_en": "My foot hurts.",
+      "cloze_word": "Fuß",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Füße"
+      }
+    },
+    {
+      "id": "herz_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Herz",
+      "translations_en": [
+        "heart"
+      ],
+      "example_de": "Mein Herz schlägt schnell.",
+      "example_en": "My heart is beating fast.",
+      "cloze_word": "Herz",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Herzen"
+      }
+    },
+    {
+      "id": "haar_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Haar",
+      "translations_en": [
+        "hair"
+      ],
+      "example_de": "Sie hat lange Haare.",
+      "example_en": "She has long hair.",
+      "cloze_word": "Haare",
+      "themes": [
+        "body_health"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Haare"
+      }
+    },
+    {
+      "id": "wetter_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Wetter",
+      "translations_en": [
+        "weather"
+      ],
+      "example_de": "Das Wetter war gestern schlecht.",
+      "example_en": "The weather was bad yesterday.",
+      "cloze_word": "Wetter",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "sonne_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Sonne",
+      "translations_en": [
+        "sun"
+      ],
+      "example_de": "Die Sonne geht im Osten auf.",
+      "example_en": "The sun rises in the east.",
+      "cloze_word": "Sonne",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "regen_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Regen",
+      "translations_en": [
+        "rain"
+      ],
+      "example_de": "Der Regen hört nicht auf.",
+      "example_en": "The rain doesn't stop.",
+      "cloze_word": "Regen",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "wind_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Wind",
+      "translations_en": [
+        "wind"
+      ],
+      "example_de": "Der Wind ist kalt.",
+      "example_en": "The wind is cold.",
+      "cloze_word": "Wind",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Winde"
+      }
+    },
+    {
+      "id": "baum_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Baum",
+      "translations_en": [
+        "tree"
+      ],
+      "example_de": "Der Baum ist sehr alt.",
+      "example_en": "The tree is very old.",
+      "cloze_word": "Baum",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Bäume"
+      }
+    },
+    {
+      "id": "blume_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Blume",
+      "translations_en": [
+        "flower"
+      ],
+      "example_de": "Die Blume riecht gut.",
+      "example_en": "The flower smells good.",
+      "cloze_word": "Blume",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Blumen"
+      }
+    },
+    {
+      "id": "berg_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Berg",
+      "translations_en": [
+        "mountain"
+      ],
+      "example_de": "Der Berg ist hoch.",
+      "example_en": "The mountain is high.",
+      "cloze_word": "Berg",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Berge"
+      }
+    },
+    {
+      "id": "meer_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Meer",
+      "translations_en": [
+        "sea",
+        "ocean"
+      ],
+      "example_de": "Wir fahren ans Meer.",
+      "example_en": "We are going to the sea.",
+      "cloze_word": "Meer",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Meere"
+      }
+    },
+    {
+      "id": "see_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "See",
+      "translations_en": [
+        "lake"
+      ],
+      "example_de": "Wir schwimmen im See.",
+      "example_en": "We swim in the lake.",
+      "cloze_word": "See",
+      "themes": [
+        "nature"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Seen"
+      }
+    },
+    {
+      "id": "hund_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Hund",
+      "translations_en": [
+        "dog"
+      ],
+      "example_de": "Der Hund bellt laut.",
+      "example_en": "The dog barks loudly.",
+      "cloze_word": "Hund",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Hunde"
+      }
+    },
+    {
+      "id": "katze_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Katze",
+      "translations_en": [
+        "cat"
+      ],
+      "example_de": "Die Katze schläft auf dem Sofa.",
+      "example_en": "The cat is sleeping on the sofa.",
+      "cloze_word": "Katze",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Katzen"
+      }
+    },
+    {
+      "id": "tier_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Tier",
+      "translations_en": [
+        "animal"
+      ],
+      "example_de": "Das Tier ist sehr klein.",
+      "example_en": "The animal is very small.",
+      "cloze_word": "Tier",
+      "themes": [
+        "nature"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Tiere"
+      }
+    },
+    {
+      "id": "schule_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Schule",
+      "translations_en": [
+        "school"
+      ],
+      "example_de": "Die Schule beginnt um acht Uhr.",
+      "example_en": "School starts at eight o'clock.",
+      "cloze_word": "Schule",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Schulen"
+      }
+    },
+    {
+      "id": "buch_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Buch",
+      "translations_en": [
+        "book"
+      ],
+      "example_de": "Das Buch ist sehr interessant.",
+      "example_en": "The book is very interesting.",
+      "cloze_word": "Buch",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Bücher"
+      }
+    },
+    {
+      "id": "heft_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Heft",
+      "translations_en": [
+        "notebook"
+      ],
+      "example_de": "Ich schreibe in mein Heft.",
+      "example_en": "I write in my notebook.",
+      "cloze_word": "Heft",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Hefte"
+      }
+    },
+    {
+      "id": "stift_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Stift",
+      "translations_en": [
+        "pen",
+        "pencil"
+      ],
+      "example_de": "Hast du einen Stift?",
+      "example_en": "Do you have a pen?",
+      "cloze_word": "Stift",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Stifte"
+      }
+    },
+    {
+      "id": "frage_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Frage",
+      "translations_en": [
+        "question"
+      ],
+      "example_de": "Ich habe eine Frage.",
+      "example_en": "I have a question.",
+      "cloze_word": "Frage",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Fragen"
+      }
+    },
+    {
+      "id": "antwort_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Antwort",
+      "translations_en": [
+        "answer"
+      ],
+      "example_de": "Die Antwort ist richtig.",
+      "example_en": "The answer is correct.",
+      "cloze_word": "Antwort",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Antworten"
+      }
+    },
+    {
+      "id": "wort_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Wort",
+      "translations_en": [
+        "word"
+      ],
+      "example_de": "Dieses Wort kenne ich nicht.",
+      "example_en": "I don't know this word.",
+      "cloze_word": "Wort",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Wörter"
+      }
+    },
+    {
+      "id": "sprache_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Sprache",
+      "translations_en": [
+        "language"
+      ],
+      "example_de": "Deutsch ist eine schöne Sprache.",
+      "example_en": "German is a beautiful language.",
+      "cloze_word": "Sprache",
+      "themes": [
+        "education"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Sprachen"
+      }
+    },
+    {
+      "id": "name_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Name",
+      "translations_en": [
+        "name"
+      ],
+      "example_de": "Wie ist dein Name?",
+      "example_en": "What is your name?",
+      "cloze_word": "Name",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Namen"
+      }
+    },
+    {
+      "id": "nummer_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Nummer",
+      "translations_en": [
+        "number"
+      ],
+      "example_de": "Wie ist deine Nummer?",
+      "example_en": "What is your number?",
+      "cloze_word": "Nummer",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Nummern"
+      }
+    },
+    {
+      "id": "telefon_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Telefon",
+      "translations_en": [
+        "telephone"
+      ],
+      "example_de": "Das Telefon klingelt.",
+      "example_en": "The phone is ringing.",
+      "cloze_word": "Telefon",
+      "themes": [
+        "technology"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Telefone"
+      }
+    },
+    {
+      "id": "handy_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Handy",
+      "translations_en": [
+        "mobile phone"
+      ],
+      "example_de": "Ich telefoniere mit meinem Handy.",
+      "example_en": "I'm phoning on my mobile.",
+      "cloze_word": "Handy",
+      "themes": [
+        "technology"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Handys"
+      }
+    },
+    {
+      "id": "computer_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Computer",
+      "translations_en": [
+        "computer"
+      ],
+      "example_de": "Der Computer ist schnell.",
+      "example_en": "The computer is fast.",
+      "cloze_word": "Computer",
+      "themes": [
+        "technology"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Computer"
+      }
+    },
+    {
+      "id": "brief_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Brief",
+      "translations_en": [
+        "letter"
+      ],
+      "example_de": "Ich schreibe einen Brief.",
+      "example_en": "I'm writing a letter.",
+      "cloze_word": "Brief",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Briefe"
+      }
+    },
+    {
+      "id": "film_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Film",
+      "translations_en": [
+        "film",
+        "movie"
+      ],
+      "example_de": "Der Film war sehr gut.",
+      "example_en": "The film was very good.",
+      "cloze_word": "Film",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": "Filme"
+      }
+    },
+    {
+      "id": "musik_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Musik",
+      "translations_en": [
+        "music"
+      ],
+      "example_de": "Ich höre gern Musik.",
+      "example_en": "I like listening to music.",
+      "cloze_word": "Musik",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "spiel_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Spiel",
+      "translations_en": [
+        "game"
+      ],
+      "example_de": "Das Spiel beginnt um drei Uhr.",
+      "example_en": "The game starts at three o'clock.",
+      "cloze_word": "Spiel",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Spiele"
+      }
+    },
+    {
+      "id": "sport_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Sport",
+      "translations_en": [
+        "sport"
+      ],
+      "example_de": "Ich mache jeden Tag Sport.",
+      "example_en": "I do sport every day.",
+      "cloze_word": "Sport",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "der",
+        "plural_de": null
+      }
+    },
+    {
+      "id": "arbeit_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Arbeit",
+      "translations_en": [
+        "work",
+        "job"
+      ],
+      "example_de": "Die Arbeit macht mir Spaß.",
+      "example_en": "I enjoy my work.",
+      "cloze_word": "Arbeit",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Arbeiten"
+      }
+    },
+    {
+      "id": "buero_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Büro",
+      "translations_en": [
+        "office"
+      ],
+      "example_de": "Ich bin im Büro.",
+      "example_en": "I am in the office.",
+      "cloze_word": "Büro",
+      "themes": [
+        "work"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Büros"
+      }
+    },
+    {
+      "id": "firma_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Firma",
+      "translations_en": [
+        "company"
+      ],
+      "example_de": "Die Firma ist sehr groß.",
+      "example_en": "The company is very big.",
+      "cloze_word": "Firma",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "noun": {
+        "gender": "die",
+        "plural_de": "Firmen"
+      }
+    },
+    {
+      "id": "problem_noun",
+      "cefr": "A1",
+      "pos": "noun",
+      "lemma_de": "Problem",
+      "translations_en": [
+        "problem"
+      ],
+      "example_de": "Das ist kein Problem.",
+      "example_en": "That is no problem.",
+      "cloze_word": "Problem",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1,
+      "noun": {
+        "gender": "das",
+        "plural_de": "Probleme"
+      }
     }
   ]
 }

@@ -3,11 +3,1563 @@
   "cefr": "C1",
   "pos": "verb",
   "entries": [
-    { "id": "gewichten_verb", "cefr": "C1", "pos": "verb", "lemma_de": "gewichten", "translations_en": ["to weigh", "to prioritize"], "example_de": "Wir müssen die Argumente richtig gewichten.", "example_en": "We need to weigh the arguments correctly.", "cloze_word": "gewichten", "themes": ["argumentation"], "priority": 3, "verb": { "separable": false, "irregular": false, "present_3sg": "gewichtet", "perfekt": "hat gewichtet", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "veranschaulichen_verb", "cefr": "C1", "pos": "verb", "lemma_de": "veranschaulichen", "translations_en": ["to illustrate"], "example_de": "Ein Beispiel kann das veranschaulichen.", "example_en": "An example can illustrate that.", "cloze_word": "veranschaulichen", "themes": ["communication"], "priority": 2, "verb": { "separable": false, "irregular": false, "present_3sg": "veranschaulicht", "perfekt": "hat veranschaulicht", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "resultieren_verb", "cefr": "C1", "pos": "verb", "lemma_de": "resultieren", "translations_en": ["to result (from)"], "example_de": "Der Erfolg resultiert aus harter Arbeit.", "example_en": "The success results from hard work.", "cloze_word": "resultiert", "themes": ["abstract_ideas"], "priority": 2, "verb": { "separable": false, "irregular": false, "present_3sg": "resultiert", "perfekt": "hat resultiert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "beeintraechtigen_verb", "cefr": "C1", "pos": "verb", "lemma_de": "beeinträchtigen", "translations_en": ["to impair", "to affect negatively"], "example_de": "Lärm kann die Konzentration beeinträchtigen.", "example_en": "Noise can impair concentration.", "cloze_word": "beeinträchtigen", "themes": ["abstract_ideas"], "priority": 2, "verb": { "separable": false, "irregular": false, "present_3sg": "beeinträchtigt", "perfekt": "hat beeinträchtigt", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "unterliegen_verb", "cefr": "C1", "pos": "verb", "lemma_de": "unterliegen", "translations_en": ["to be subject to", "to lose (to)"], "example_de": "Er unterlag seinem Gegner knapp.", "example_en": "He narrowly lost to his opponent.", "cloze_word": "unterlag", "themes": ["society"], "priority": 3, "verb": { "separable": false, "irregular": true, "present_3sg": "unterliegt", "perfekt": "ist unterlegen", "praeteritum_3sg": "unterlag", "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "vernachlaessigen_verb", "cefr": "C1", "pos": "verb", "lemma_de": "vernachlässigen", "translations_en": ["to neglect"], "example_de": "Man sollte seine Gesundheit nicht vernachlässigen.", "example_en": "One shouldn't neglect one's health.", "cloze_word": "vernachlässigen", "themes": ["work"], "priority": 2, "verb": { "separable": false, "irregular": false, "present_3sg": "vernachlässigt", "perfekt": "hat vernachlässigt", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } }
+    {
+      "id": "gewichten_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "gewichten",
+      "translations_en": [
+        "to weigh",
+        "to prioritize"
+      ],
+      "example_de": "Wir müssen die Argumente richtig gewichten.",
+      "example_en": "We need to weigh the arguments correctly.",
+      "cloze_word": "gewichten",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "gewichtet",
+        "perfekt": "hat gewichtet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "veranschaulichen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "veranschaulichen",
+      "translations_en": [
+        "to illustrate"
+      ],
+      "example_de": "Ein Beispiel kann das veranschaulichen.",
+      "example_en": "An example can illustrate that.",
+      "cloze_word": "veranschaulichen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "veranschaulicht",
+        "perfekt": "hat veranschaulicht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "resultieren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "resultieren",
+      "translations_en": [
+        "to result (from)"
+      ],
+      "example_de": "Der Erfolg resultiert aus harter Arbeit.",
+      "example_en": "The success results from hard work.",
+      "cloze_word": "resultiert",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "resultiert",
+        "perfekt": "hat resultiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beeintraechtigen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "beeinträchtigen",
+      "translations_en": [
+        "to impair",
+        "to affect negatively"
+      ],
+      "example_de": "Lärm kann die Konzentration beeinträchtigen.",
+      "example_en": "Noise can impair concentration.",
+      "cloze_word": "beeinträchtigen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beeinträchtigt",
+        "perfekt": "hat beeinträchtigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "unterliegen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "unterliegen",
+      "translations_en": [
+        "to be subject to",
+        "to lose (to)"
+      ],
+      "example_de": "Er unterlag seinem Gegner knapp.",
+      "example_en": "He narrowly lost to his opponent.",
+      "cloze_word": "unterlag",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "unterliegt",
+        "perfekt": "ist unterlegen",
+        "praeteritum_3sg": "unterlag",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "vernachlaessigen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "vernachlässigen",
+      "translations_en": [
+        "to neglect"
+      ],
+      "example_de": "Man sollte seine Gesundheit nicht vernachlässigen.",
+      "example_en": "One shouldn't neglect one's health.",
+      "cloze_word": "vernachlässigen",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "vernachlässigt",
+        "perfekt": "hat vernachlässigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bewirken_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bewirken",
+      "translations_en": [
+        "to bring about",
+        "to cause"
+      ],
+      "example_de": "Die Reform bewirkt eine Verbesserung.",
+      "example_en": "The reform brings about an improvement.",
+      "cloze_word": "bewirkt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bewirkt",
+        "perfekt": "hat bewirkt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beeinflussen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "beeinflussen",
+      "translations_en": [
+        "to influence"
+      ],
+      "example_de": "Die Medien beeinflussen die Meinung.",
+      "example_en": "The media influence opinion.",
+      "cloze_word": "beeinflussen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beeinflusst",
+        "perfekt": "hat beeinflusst",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bedingen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bedingen",
+      "translations_en": [
+        "to cause",
+        "to require"
+      ],
+      "example_de": "Das eine bedingt das andere.",
+      "example_en": "The one determines the other.",
+      "cloze_word": "bedingt",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bedingt",
+        "perfekt": "hat bedingt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bezwecken_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bezwecken",
+      "translations_en": [
+        "to aim at"
+      ],
+      "example_de": "Was bezweckt er damit?",
+      "example_en": "What is he aiming at with that?",
+      "cloze_word": "bezweckt",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bezweckt",
+        "perfekt": "hat bezweckt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beguenstigen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "begünstigen",
+      "translations_en": [
+        "to favour"
+      ],
+      "example_de": "Die Regel begünstigt große Firmen.",
+      "example_en": "The rule favours large companies.",
+      "cloze_word": "begünstigt",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "begünstigt",
+        "perfekt": "hat begünstigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "benachteiligen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "benachteiligen",
+      "translations_en": [
+        "to disadvantage"
+      ],
+      "example_de": "Das System benachteiligt Frauen.",
+      "example_en": "The system disadvantages women.",
+      "cloze_word": "benachteiligt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "benachteiligt",
+        "perfekt": "hat benachteiligt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bekraeftigen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bekräftigen",
+      "translations_en": [
+        "to reaffirm"
+      ],
+      "example_de": "Der Minister bekräftigt seine Aussage.",
+      "example_en": "The minister reaffirms his statement.",
+      "cloze_word": "bekräftigt",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bekräftigt",
+        "perfekt": "hat bekräftigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beschoenigen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "beschönigen",
+      "translations_en": [
+        "to gloss over"
+      ],
+      "example_de": "Man kann die Lage nicht beschönigen.",
+      "example_en": "You can't gloss over the situation.",
+      "cloze_word": "beschönigen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beschönigt",
+        "perfekt": "hat beschönigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bestreiten_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bestreiten",
+      "translations_en": [
+        "to dispute",
+        "to deny"
+      ],
+      "example_de": "Er bestreitet die Vorwürfe.",
+      "example_en": "He denies the accusations.",
+      "cloze_word": "bestreitet",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "bestreitet",
+        "perfekt": "hat bestritten",
+        "praeteritum_3sg": "bestritt",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "betonen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "betonen",
+      "translations_en": [
+        "to emphasise"
+      ],
+      "example_de": "Sie betont die Bedeutung der Bildung.",
+      "example_en": "She emphasises the importance of education.",
+      "cloze_word": "betont",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "betont",
+        "perfekt": "hat betont",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "differenzieren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "differenzieren",
+      "translations_en": [
+        "to differentiate"
+      ],
+      "example_de": "Man muss hier differenzieren.",
+      "example_en": "One has to differentiate here.",
+      "cloze_word": "differenzieren",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "differenziert",
+        "perfekt": "hat differenziert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "entkraeften_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "entkräften",
+      "translations_en": [
+        "to refute",
+        "to weaken"
+      ],
+      "example_de": "Die Studie entkräftet diese These.",
+      "example_en": "The study refutes this thesis.",
+      "cloze_word": "entkräftet",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "entkräftet",
+        "perfekt": "hat entkräftet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erlaeutern_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "erläutern",
+      "translations_en": [
+        "to explain in detail"
+      ],
+      "example_de": "Der Redner erläutert seinen Plan.",
+      "example_en": "The speaker explains his plan in detail.",
+      "cloze_word": "erläutert",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erläutert",
+        "perfekt": "hat erläutert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "ermessen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "ermessen",
+      "translations_en": [
+        "to gauge",
+        "to fathom"
+      ],
+      "example_de": "Das Ausmaß ist kaum zu ermessen.",
+      "example_en": "The extent can hardly be gauged.",
+      "cloze_word": "ermessen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "ermisst",
+        "perfekt": "hat ermessen",
+        "praeteritum_3sg": "ermaß",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erwaegen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "erwägen",
+      "translations_en": [
+        "to consider"
+      ],
+      "example_de": "Wir erwägen einen Umzug.",
+      "example_en": "We are considering a move.",
+      "cloze_word": "erwägen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "erwägt",
+        "perfekt": "hat erwogen",
+        "praeteritum_3sg": "erwog",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "festigen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "festigen",
+      "translations_en": [
+        "to strengthen"
+      ],
+      "example_de": "Die Krise festigt den Zusammenhalt.",
+      "example_en": "The crisis strengthens solidarity.",
+      "cloze_word": "festigt",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "festigt",
+        "perfekt": "hat gefestigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "untermauern_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "untermauern",
+      "translations_en": [
+        "to substantiate",
+        "to underpin"
+      ],
+      "example_de": "Er untermauert seine These mit Zahlen.",
+      "example_en": "He substantiates his thesis with figures.",
+      "cloze_word": "untermauert",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "untermauert",
+        "perfekt": "hat untermauert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "widerlegen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "widerlegen",
+      "translations_en": [
+        "to refute"
+      ],
+      "example_de": "Sie widerlegt jedes Argument.",
+      "example_en": "She refutes every argument.",
+      "cloze_word": "widerlegt",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "widerlegt",
+        "perfekt": "hat widerlegt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verdeutlichen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "verdeutlichen",
+      "translations_en": [
+        "to make clear"
+      ],
+      "example_de": "Das Beispiel verdeutlicht das Problem.",
+      "example_en": "The example makes the problem clear.",
+      "cloze_word": "verdeutlicht",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verdeutlicht",
+        "perfekt": "hat verdeutlicht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verkennen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "verkennen",
+      "translations_en": [
+        "to misjudge"
+      ],
+      "example_de": "Man darf die Lage nicht verkennen.",
+      "example_en": "One must not misjudge the situation.",
+      "cloze_word": "verkennen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "verkennt",
+        "perfekt": "hat verkannt",
+        "praeteritum_3sg": "verkannte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verschaerfen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "verschärfen",
+      "translations_en": [
+        "to tighten",
+        "to aggravate"
+      ],
+      "example_de": "Die Regierung verschärft die Regeln.",
+      "example_en": "The government tightens the rules.",
+      "cloze_word": "verschärft",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verschärft",
+        "perfekt": "hat verschärft",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verwerfen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "verwerfen",
+      "translations_en": [
+        "to reject",
+        "to discard"
+      ],
+      "example_de": "Sie verwirft den Plan.",
+      "example_en": "She discards the plan.",
+      "cloze_word": "verwirft",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "verwirft",
+        "perfekt": "hat verworfen",
+        "praeteritum_3sg": "verwarf",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verzerren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "verzerren",
+      "translations_en": [
+        "to distort"
+      ],
+      "example_de": "Die Medien verzerren die Realität.",
+      "example_en": "The media distort reality.",
+      "cloze_word": "verzerren",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verzerrt",
+        "perfekt": "hat verzerrt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "wuerdigen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "würdigen",
+      "translations_en": [
+        "to acknowledge",
+        "to honour"
+      ],
+      "example_de": "Wir würdigen seine Leistung.",
+      "example_en": "We honour his achievement.",
+      "cloze_word": "würdigen",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "würdigt",
+        "perfekt": "hat gewürdigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "argumentieren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "argumentieren",
+      "translations_en": [
+        "to argue"
+      ],
+      "example_de": "Er argumentiert sehr überzeugend.",
+      "example_en": "He argues very convincingly.",
+      "cloze_word": "argumentiert",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "argumentiert",
+        "perfekt": "hat argumentiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "appellieren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "appellieren",
+      "translations_en": [
+        "to appeal"
+      ],
+      "example_de": "Ich appelliere an Ihre Vernunft.",
+      "example_en": "I appeal to your reason.",
+      "cloze_word": "appelliere",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "appelliert",
+        "perfekt": "hat appelliert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beanspruchen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "beanspruchen",
+      "translations_en": [
+        "to claim",
+        "to require"
+      ],
+      "example_de": "Das Projekt beansprucht viel Zeit.",
+      "example_en": "The project requires a lot of time.",
+      "cloze_word": "beansprucht",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beansprucht",
+        "perfekt": "hat beansprucht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bedenken_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bedenken",
+      "translations_en": [
+        "to consider"
+      ],
+      "example_de": "Bedenken Sie die Folgen.",
+      "example_en": "Consider the consequences.",
+      "cloze_word": "Bedenken",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "bedenkt",
+        "perfekt": "hat bedacht",
+        "praeteritum_3sg": "bedachte",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beharren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "beharren",
+      "translations_en": [
+        "to insist"
+      ],
+      "example_de": "Er beharrt auf seiner Meinung.",
+      "example_en": "He insists on his opinion.",
+      "cloze_word": "beharrt",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beharrt",
+        "perfekt": "hat beharrt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bemaengeln_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bemängeln",
+      "translations_en": [
+        "to criticise",
+        "to find fault with"
+      ],
+      "example_de": "Die Kunden bemängeln die Qualität.",
+      "example_en": "The customers criticise the quality.",
+      "cloze_word": "bemängeln",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bemängelt",
+        "perfekt": "hat bemängelt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beschraenken_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "beschränken",
+      "translations_en": [
+        "to limit"
+      ],
+      "example_de": "Wir beschränken die Zahl der Teilnehmer.",
+      "example_en": "We limit the number of participants.",
+      "cloze_word": "beschränken",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beschränkt",
+        "perfekt": "hat beschränkt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bewaeltigen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bewältigen",
+      "translations_en": [
+        "to cope with",
+        "to manage"
+      ],
+      "example_de": "Sie bewältigt die Aufgabe problemlos.",
+      "example_en": "She copes with the task without problems.",
+      "cloze_word": "bewältigt",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bewältigt",
+        "perfekt": "hat bewältigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bezeichnen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "bezeichnen",
+      "translations_en": [
+        "to describe",
+        "to label"
+      ],
+      "example_de": "Man bezeichnet ihn als Experten.",
+      "example_en": "He is described as an expert.",
+      "cloze_word": "bezeichnet",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "bezeichnet",
+        "perfekt": "hat bezeichnet",
+        "praeteritum_3sg": "bezeichnete",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "dokumentieren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "dokumentieren",
+      "translations_en": [
+        "to document"
+      ],
+      "example_de": "Wir dokumentieren alle Schritte.",
+      "example_en": "We document all steps.",
+      "cloze_word": "dokumentieren",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "dokumentiert",
+        "perfekt": "hat dokumentiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "empfinden_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "empfinden",
+      "translations_en": [
+        "to feel",
+        "to perceive"
+      ],
+      "example_de": "Sie empfindet große Freude.",
+      "example_en": "She feels great joy.",
+      "cloze_word": "empfindet",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "empfindet",
+        "perfekt": "hat empfunden",
+        "praeteritum_3sg": "empfand",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "entsprechen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "entsprechen",
+      "translations_en": [
+        "to correspond to"
+      ],
+      "example_de": "Das entspricht nicht der Wahrheit.",
+      "example_en": "That does not correspond to the truth.",
+      "cloze_word": "entspricht",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "entspricht",
+        "perfekt": "hat entsprochen",
+        "praeteritum_3sg": "entsprach",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "entwerfen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "entwerfen",
+      "translations_en": [
+        "to design",
+        "to draft"
+      ],
+      "example_de": "Sie entwirft ein neues Konzept.",
+      "example_en": "She drafts a new concept.",
+      "cloze_word": "entwirft",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "entwirft",
+        "perfekt": "hat entworfen",
+        "praeteritum_3sg": "entwarf",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erfassen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "erfassen",
+      "translations_en": [
+        "to record",
+        "to grasp"
+      ],
+      "example_de": "Wir erfassen alle Daten.",
+      "example_en": "We record all the data.",
+      "cloze_word": "erfassen",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erfasst",
+        "perfekt": "hat erfasst",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "ergaenzen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "ergänzen",
+      "translations_en": [
+        "to complement",
+        "to add"
+      ],
+      "example_de": "Ich möchte kurz ergänzen.",
+      "example_en": "I would like to add briefly.",
+      "cloze_word": "ergänzen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "ergänzt",
+        "perfekt": "hat ergänzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erschliessen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "erschließen",
+      "translations_en": [
+        "to open up",
+        "to develop"
+      ],
+      "example_de": "Die Firma erschließt neue Märkte.",
+      "example_en": "The company opens up new markets.",
+      "cloze_word": "erschließt",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "erschließt",
+        "perfekt": "hat erschlossen",
+        "praeteritum_3sg": "erschloss",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erstreben_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "erstreben",
+      "translations_en": [
+        "to strive for"
+      ],
+      "example_de": "Sie erstrebt eine akademische Laufbahn.",
+      "example_en": "She strives for an academic career.",
+      "cloze_word": "erstrebt",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erstrebt",
+        "perfekt": "hat erstrebt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "folgern_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "folgern",
+      "translations_en": [
+        "to conclude"
+      ],
+      "example_de": "Daraus folgere ich, dass er lügt.",
+      "example_en": "From this I conclude that he is lying.",
+      "cloze_word": "folgere",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "folgert",
+        "perfekt": "hat gefolgert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "generieren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "generieren",
+      "translations_en": [
+        "to generate"
+      ],
+      "example_de": "Das Programm generiert automatisch Berichte.",
+      "example_en": "The program generates reports automatically.",
+      "cloze_word": "generiert",
+      "themes": [
+        "technology"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "generiert",
+        "perfekt": "hat generiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "grenzen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "grenzen",
+      "translations_en": [
+        "to border"
+      ],
+      "example_de": "Das Grundstück grenzt an den Wald.",
+      "example_en": "The plot borders the forest.",
+      "cloze_word": "grenzt",
+      "themes": [
+        "nature"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "grenzt",
+        "perfekt": "hat gegrenzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "gleichen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "gleichen",
+      "translations_en": [
+        "to resemble"
+      ],
+      "example_de": "Die Brüder gleichen einander sehr.",
+      "example_en": "The brothers resemble each other a lot.",
+      "cloze_word": "gleichen",
+      "themes": [
+        "people"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "gleicht",
+        "perfekt": "hat geglichen",
+        "praeteritum_3sg": "glich",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "deuten_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "deuten",
+      "translations_en": [
+        "to interpret"
+      ],
+      "example_de": "Man kann das Ergebnis unterschiedlich deuten.",
+      "example_en": "The result can be interpreted differently.",
+      "cloze_word": "deuten",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "deutet",
+        "perfekt": "hat gedeutet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "klammern_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "sich klammern",
+      "translations_en": [
+        "to cling"
+      ],
+      "example_de": "Sie klammert sich an ihre Hoffnung.",
+      "example_en": "She clings to her hope.",
+      "cloze_word": "klammert",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "klammert sich",
+        "perfekt": "hat sich geklammert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "spiegeln_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "spiegeln",
+      "translations_en": [
+        "to reflect"
+      ],
+      "example_de": "Das Wasser spiegelt den Himmel.",
+      "example_en": "The water reflects the sky.",
+      "cloze_word": "spiegelt",
+      "themes": [
+        "nature"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "spiegelt",
+        "perfekt": "hat gespiegelt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "kehren_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "kehren",
+      "translations_en": [
+        "to sweep",
+        "to turn"
+      ],
+      "example_de": "Er kehrt den Hof.",
+      "example_en": "He sweeps the yard.",
+      "cloze_word": "kehrt",
+      "themes": [
+        "home"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "kehrt",
+        "perfekt": "hat gekehrt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "spitzen_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "spitzen",
+      "translations_en": [
+        "to sharpen"
+      ],
+      "example_de": "Er spitzt den Bleistift.",
+      "example_en": "He sharpens the pencil.",
+      "cloze_word": "spitzt",
+      "themes": [
+        "education"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "spitzt",
+        "perfekt": "hat gespitzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "decken_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "decken",
+      "translations_en": [
+        "to cover",
+        "to lay (a table)"
+      ],
+      "example_de": "Ich decke den Tisch.",
+      "example_en": "I'm laying the table.",
+      "cloze_word": "decke",
+      "themes": [
+        "home"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "deckt",
+        "perfekt": "hat gedeckt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "steuern_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "steuern",
+      "translations_en": [
+        "to steer",
+        "to control"
+      ],
+      "example_de": "Er steuert das Boot.",
+      "example_en": "He steers the boat.",
+      "cloze_word": "steuert",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "steuert",
+        "perfekt": "hat gesteuert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schieben_verb",
+      "cefr": "C1",
+      "pos": "verb",
+      "lemma_de": "schieben",
+      "translations_en": [
+        "to push"
+      ],
+      "example_de": "Ich schiebe den Wagen.",
+      "example_en": "I push the cart.",
+      "cloze_word": "schiebe",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "schiebt",
+        "perfekt": "hat geschoben",
+        "praeteritum_3sg": "schob",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    }
   ]
 }

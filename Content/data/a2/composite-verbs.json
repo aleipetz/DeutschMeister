@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A2",
+  "pos": "composite_verb",
+  "entries": [
+    {
+      "id": "wohlfuehlen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "sich wohlfühlen",
+      "translations_en": [
+        "to feel comfortable"
+      ],
+      "example_de": "Ich fühle mich hier wohl.",
+      "example_en": "I feel comfortable here.",
+      "cloze_word": "wohl",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "fühlt sich ... wohl",
+        "perfekt": "hat sich wohlgefühlt",
+        "praeteritum_3sg": null,
+        "base_verb": "fuehlen_verb",
+        "particle": "wohl",
+        "particle_meaning_hint": "wohl = well — adverb+verb compound with fühlen (to feel)"
+      }
+    },
+    {
+      "id": "klarkommen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "klarkommen",
+      "translations_en": [
+        "to cope",
+        "to get along"
+      ],
+      "example_de": "Ich komme mit dem Computer nicht klar.",
+      "example_en": "I can't cope with the computer.",
+      "cloze_word": "klar",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... klar",
+        "perfekt": "ist klargekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "klar",
+        "particle_meaning_hint": "klar = clear — adjective+verb compound with kommen (to come)"
+      }
+    },
+    {
+      "id": "klarmachen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "klarmachen",
+      "translations_en": [
+        "to make clear"
+      ],
+      "example_de": "Ich mache ihm die Regeln klar.",
+      "example_en": "I make the rules clear to him.",
+      "cloze_word": "klar",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... klar",
+        "perfekt": "hat klargemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "klar",
+        "particle_meaning_hint": "klar = clear — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "festhalten_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "festhalten",
+      "translations_en": [
+        "to hold on to"
+      ],
+      "example_de": "Halte dich bitte fest!",
+      "example_en": "Please hold on tight!",
+      "cloze_word": "fest",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... fest",
+        "perfekt": "hat festgehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firm — adjective+verb compound with halten (to hold)"
+      }
+    },
+    {
+      "id": "festmachen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "festmachen",
+      "translations_en": [
+        "to fasten"
+      ],
+      "example_de": "Ich mache das Boot am Steg fest.",
+      "example_en": "I moor the boat at the jetty.",
+      "cloze_word": "fest",
+      "themes": [
+        "travel"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... fest",
+        "perfekt": "hat festgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firm — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "freihalten_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "freihalten",
+      "translations_en": [
+        "to keep free"
+      ],
+      "example_de": "Bitte halten Sie den Eingang frei.",
+      "example_en": "Please keep the entrance clear.",
+      "cloze_word": "frei",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... frei",
+        "perfekt": "hat freigehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — adjective+verb compound with halten (to keep)"
+      }
+    },
+    {
+      "id": "freimachen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "freimachen",
+      "translations_en": [
+        "to clear",
+        "to free up"
+      ],
+      "example_de": "Ich mache Samstag den ganzen Tag frei.",
+      "example_en": "I'm freeing up all of Saturday.",
+      "cloze_word": "frei",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... frei",
+        "perfekt": "hat freigemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "verlorengehen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "verlorengehen",
+      "translations_en": [
+        "to get lost",
+        "to be lost"
+      ],
+      "example_de": "Mein Koffer ist verlorengegangen.",
+      "example_en": "My suitcase got lost.",
+      "cloze_word": "verloren",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... verloren",
+        "perfekt": "ist verlorengegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "verloren",
+        "particle_meaning_hint": "verloren = lost — participle+verb compound with gehen (to go)"
+      }
+    },
+    {
+      "id": "gleichbleiben_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "gleichbleiben",
+      "translations_en": [
+        "to stay the same"
+      ],
+      "example_de": "Der Preis bleibt gleich.",
+      "example_en": "The price stays the same.",
+      "cloze_word": "gleich",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... gleich",
+        "perfekt": "ist gleichgeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "gleich",
+        "particle_meaning_hint": "gleich = same — adjective+verb compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "uebrigbleiben_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "übrigbleiben",
+      "translations_en": [
+        "to be left over"
+      ],
+      "example_de": "Es bleibt nichts übrig.",
+      "example_en": "Nothing is left.",
+      "cloze_word": "übrig",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... übrig",
+        "perfekt": "ist übriggeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "übrig",
+        "particle_meaning_hint": "übrig = left over — adjective+verb compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "bekanntmachen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "bekanntmachen",
+      "translations_en": [
+        "to announce",
+        "to introduce"
+      ],
+      "example_de": "Ich mache dich mit meiner Schwester bekannt.",
+      "example_en": "I introduce you to my sister.",
+      "cloze_word": "bekannt",
+      "themes": [
+        "people"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... bekannt",
+        "perfekt": "hat bekanntgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "bekannt",
+        "particle_meaning_hint": "bekannt = known — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "bereitstellen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "bereitstellen",
+      "translations_en": [
+        "to provide",
+        "to make available"
+      ],
+      "example_de": "Die Firma stellt ein Auto bereit.",
+      "example_en": "The company provides a car.",
+      "cloze_word": "bereit",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... bereit",
+        "perfekt": "hat bereitgestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "bereit",
+        "particle_meaning_hint": "bereit = ready — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "bereithalten_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "bereithalten",
+      "translations_en": [
+        "to have ready"
+      ],
+      "example_de": "Halten Sie bitte Ihren Ausweis bereit.",
+      "example_en": "Please have your ID ready.",
+      "cloze_word": "bereit",
+      "themes": [
+        "travel"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... bereit",
+        "perfekt": "hat bereitgehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "bereit",
+        "particle_meaning_hint": "bereit = ready — adjective+verb compound with halten (to hold)"
+      }
+    },
+    {
+      "id": "krankmelden_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "sich krankmelden",
+      "translations_en": [
+        "to call in sick"
+      ],
+      "example_de": "Ich melde mich heute krank.",
+      "example_en": "I'm calling in sick today.",
+      "cloze_word": "krank",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "meldet sich ... krank",
+        "perfekt": "hat sich krankgemeldet",
+        "praeteritum_3sg": null,
+        "base_verb": "melden_verb",
+        "particle": "krank",
+        "particle_meaning_hint": "krank = ill — adjective+verb compound with melden (to report)"
+      }
+    },
+    {
+      "id": "haengenbleiben_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "hängenbleiben",
+      "translations_en": [
+        "to get stuck"
+      ],
+      "example_de": "Mein Ärmel bleibt am Nagel hängen.",
+      "example_en": "My sleeve gets caught on the nail.",
+      "cloze_word": "hängen",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... hängen",
+        "perfekt": "ist hängengeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "hängen",
+        "particle_meaning_hint": "hängen = to hang — fixed compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "steckenbleiben_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "steckenbleiben",
+      "translations_en": [
+        "to get stuck"
+      ],
+      "example_de": "Das Auto bleibt im Schnee stecken.",
+      "example_en": "The car gets stuck in the snow.",
+      "cloze_word": "stecken",
+      "themes": [
+        "travel"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... stecken",
+        "perfekt": "ist steckengeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "stecken",
+        "particle_meaning_hint": "stecken = to be stuck — fixed compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "vollmachen_verb",
+      "cefr": "A2",
+      "pos": "composite_verb",
+      "lemma_de": "vollmachen",
+      "translations_en": [
+        "to fill up"
+      ],
+      "example_de": "Ich mache das Glas voll.",
+      "example_en": "I fill the glass up.",
+      "cloze_word": "voll",
+      "themes": [
+        "food"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... voll",
+        "perfekt": "hat vollgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "voll",
+        "particle_meaning_hint": "voll = full — adjective+verb compound with machen (to make)"
+      }
+    }
+  ]
+}

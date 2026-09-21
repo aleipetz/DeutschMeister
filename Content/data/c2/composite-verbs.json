@@ -3,9 +3,582 @@
   "cefr": "C2",
   "pos": "composite_verb",
   "entries": [
-    { "id": "gleichkommen_verb", "cefr": "C2", "pos": "composite_verb", "lemma_de": "gleichkommen", "translations_en": ["to amount to", "to be equivalent to"], "example_de": "Sein Schweigen kommt einem Geständnis gleich.", "example_en": "His silence amounts to a confession.", "cloze_word": "gleich", "themes": ["abstract_ideas"], "priority": 4, "verb": { "separable": true, "irregular": true, "present_3sg": "kommt ... gleich", "perfekt": "ist gleichgekommen", "praeteritum_3sg": null, "base_verb": "kommen_verb", "particle": "gleich", "particle_meaning_hint": "gleich = equal — coming out equal to something" } },
-    { "id": "vorherbestimmen_verb", "cefr": "C2", "pos": "composite_verb", "lemma_de": "vorherbestimmen", "translations_en": ["to predetermine"], "example_de": "Niemand kann die Zukunft vorherbestimmen.", "example_en": "No one can predetermine the future.", "cloze_word": "vorherbestimmen", "themes": ["abstract_ideas"], "priority": 4, "verb": { "separable": false, "irregular": false, "present_3sg": "bestimmt ... vorher", "perfekt": "hat vorherbestimmt", "praeteritum_3sg": null, "base_verb": "bestimmen_verb", "particle": "vorher", "particle_meaning_hint": "vorher = beforehand — determining something in advance" } },
-    { "id": "auseinanderklaffen_verb", "cefr": "C2", "pos": "composite_verb", "lemma_de": "auseinanderklaffen", "translations_en": ["to diverge", "to be at odds", "to gape apart"], "example_de": "Theorie und Praxis klaffen oft auseinander.", "example_en": "Theory and practice often diverge.", "cloze_word": "auseinander", "themes": ["society"], "priority": 5, "verb": { "separable": true, "irregular": false, "present_3sg": "klafft ... auseinander", "perfekt": "hat auseinandergeklafft", "praeteritum_3sg": null, "base_verb": "klaffen_verb", "particle": "auseinander", "particle_meaning_hint": "auseinander = apart — gaping apart from each other" } },
-    { "id": "wettmachen_verb", "cefr": "C2", "pos": "composite_verb", "lemma_de": "wettmachen", "translations_en": ["to make up for", "to compensate for"], "example_de": "Er will den Rückstand wettmachen.", "example_en": "He wants to make up for the deficit.", "cloze_word": "wett", "themes": ["work"], "priority": 3, "verb": { "separable": true, "irregular": false, "present_3sg": "macht ... wett", "perfekt": "hat wettgemacht", "praeteritum_3sg": null, "base_verb": "machen_verb", "particle": "wett", "particle_meaning_hint": "wett = even/compensated — making things even again" } }
+    {
+      "id": "gleichkommen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "gleichkommen",
+      "translations_en": [
+        "to amount to",
+        "to be equivalent to"
+      ],
+      "example_de": "Sein Schweigen kommt einem Geständnis gleich.",
+      "example_en": "His silence amounts to a confession.",
+      "cloze_word": "gleich",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... gleich",
+        "perfekt": "ist gleichgekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "gleich",
+        "particle_meaning_hint": "gleich = equal — coming out equal to something"
+      }
+    },
+    {
+      "id": "vorherbestimmen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "vorherbestimmen",
+      "translations_en": [
+        "to predetermine"
+      ],
+      "example_de": "Niemand kann die Zukunft vorherbestimmen.",
+      "example_en": "No one can predetermine the future.",
+      "cloze_word": "vorherbestimmen",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bestimmt ... vorher",
+        "perfekt": "hat vorherbestimmt",
+        "praeteritum_3sg": null,
+        "base_verb": "bestimmen_verb",
+        "particle": "vorher",
+        "particle_meaning_hint": "vorher = beforehand — determining something in advance"
+      }
+    },
+    {
+      "id": "auseinanderklaffen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "auseinanderklaffen",
+      "translations_en": [
+        "to diverge",
+        "to be at odds",
+        "to gape apart"
+      ],
+      "example_de": "Theorie und Praxis klaffen oft auseinander.",
+      "example_en": "Theory and practice often diverge.",
+      "cloze_word": "auseinander",
+      "themes": [
+        "society"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "klafft ... auseinander",
+        "perfekt": "hat auseinandergeklafft",
+        "praeteritum_3sg": null,
+        "base_verb": "klaffen_verb",
+        "particle": "auseinander",
+        "particle_meaning_hint": "auseinander = apart — gaping apart from each other"
+      }
+    },
+    {
+      "id": "wettmachen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "wettmachen",
+      "translations_en": [
+        "to make up for",
+        "to compensate for"
+      ],
+      "example_de": "Er will den Rückstand wettmachen.",
+      "example_en": "He wants to make up for the deficit.",
+      "cloze_word": "wett",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... wett",
+        "perfekt": "hat wettgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "wett",
+        "particle_meaning_hint": "wett = even/compensated — making things even again"
+      }
+    },
+    {
+      "id": "offenbleiben_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "offenbleiben",
+      "translations_en": [
+        "to remain open"
+      ],
+      "example_de": "Die Frage bleibt offen.",
+      "example_en": "The question remains open.",
+      "cloze_word": "offen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... offen",
+        "perfekt": "ist offengeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "offen",
+        "particle_meaning_hint": "offen = open — adjective+verb compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "offenhalten_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "offenhalten",
+      "translations_en": [
+        "to keep open"
+      ],
+      "example_de": "Wir halten alle Optionen offen.",
+      "example_en": "We keep all options open.",
+      "cloze_word": "offen",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... offen",
+        "perfekt": "hat offengehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "offen",
+        "particle_meaning_hint": "offen = open — adjective+verb compound with halten (to keep)"
+      }
+    },
+    {
+      "id": "freilegen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "freilegen",
+      "translations_en": [
+        "to uncover"
+      ],
+      "example_de": "Die Archäologen legen die Mauern frei.",
+      "example_en": "The archaeologists uncover the walls.",
+      "cloze_word": "frei",
+      "themes": [
+        "nature"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... frei",
+        "perfekt": "hat freigelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — adjective+verb compound with legen (to lay)"
+      }
+    },
+    {
+      "id": "freisetzen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "freisetzen",
+      "translations_en": [
+        "to release"
+      ],
+      "example_de": "Das Feuer setzt giftige Stoffe frei.",
+      "example_en": "The fire releases toxic substances.",
+      "cloze_word": "frei",
+      "themes": [
+        "nature"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... frei",
+        "perfekt": "hat freigesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — adjective+verb compound with setzen (to set)"
+      }
+    },
+    {
+      "id": "fernliegen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "fernliegen",
+      "translations_en": [
+        "to be far from one's mind"
+      ],
+      "example_de": "Das liegt mir völlig fern.",
+      "example_en": "That is far from my mind.",
+      "cloze_word": "fern",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "liegt ... fern",
+        "perfekt": "hat ferngelegen",
+        "praeteritum_3sg": null,
+        "base_verb": "liegen_verb",
+        "particle": "fern",
+        "particle_meaning_hint": "fern = far — adjective+verb compound with liegen (to lie)"
+      }
+    },
+    {
+      "id": "nahebringen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "nahebringen",
+      "translations_en": [
+        "to bring closer"
+      ],
+      "example_de": "Die Lehrerin bringt den Kindern die Kultur nahe.",
+      "example_en": "The teacher brings the culture closer to the children.",
+      "cloze_word": "nahe",
+      "themes": [
+        "education"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bringt ... nahe",
+        "perfekt": "hat nahegebracht",
+        "praeteritum_3sg": null,
+        "base_verb": "bringen_verb",
+        "particle": "nahe",
+        "particle_meaning_hint": "nahe = close — adjective+verb compound with bringen (to bring)"
+      }
+    },
+    {
+      "id": "nahekommen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "nahekommen",
+      "translations_en": [
+        "to come close to"
+      ],
+      "example_de": "Das kommt der Wahrheit nahe.",
+      "example_en": "That comes close to the truth.",
+      "cloze_word": "nahe",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... nahe",
+        "perfekt": "ist nahegekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "nahe",
+        "particle_meaning_hint": "nahe = close — adjective+verb compound with kommen (to come)"
+      }
+    },
+    {
+      "id": "feststehen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "feststehen",
+      "translations_en": [
+        "to be certain"
+      ],
+      "example_de": "Der Termin steht fest.",
+      "example_en": "The date is fixed.",
+      "cloze_word": "fest",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "steht ... fest",
+        "perfekt": "hat festgestanden",
+        "praeteritum_3sg": null,
+        "base_verb": "stehen_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firm — adjective+verb compound with stehen (to stand)"
+      }
+    },
+    {
+      "id": "festsitzen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "festsitzen",
+      "translations_en": [
+        "to be stuck"
+      ],
+      "example_de": "Das Schiff sitzt auf einer Sandbank fest.",
+      "example_en": "The ship is stuck on a sandbank.",
+      "cloze_word": "fest",
+      "themes": [
+        "travel"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "sitzt ... fest",
+        "perfekt": "hat festgesessen",
+        "praeteritum_3sg": null,
+        "base_verb": "sitzen_verb",
+        "particle": "fest",
+        "particle_meaning_hint": "fest = firm — adjective+verb compound with sitzen (to sit)"
+      }
+    },
+    {
+      "id": "bestehenbleiben_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "bestehenbleiben",
+      "translations_en": [
+        "to remain in place"
+      ],
+      "example_de": "Die Regel bleibt bestehen.",
+      "example_en": "The rule remains in place.",
+      "cloze_word": "bestehen",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... bestehen",
+        "perfekt": "ist bestehengeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "bestehen",
+        "particle_meaning_hint": "bestehen = to exist — fixed compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "kundgeben_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "kundgeben",
+      "translations_en": [
+        "to announce"
+      ],
+      "example_de": "Der Minister gibt seinen Rücktritt kund.",
+      "example_en": "The minister announces his resignation.",
+      "cloze_word": "kund",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gibt ... kund",
+        "perfekt": "hat kundgegeben",
+        "praeteritum_3sg": null,
+        "base_verb": "geben_verb",
+        "particle": "kund",
+        "particle_meaning_hint": "kund = known — adjective+verb compound with geben (to give)"
+      }
+    },
+    {
+      "id": "lockerlassen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "lockerlassen",
+      "translations_en": [
+        "to let up"
+      ],
+      "example_de": "Sie lässt nicht locker.",
+      "example_en": "She doesn't let up.",
+      "cloze_word": "locker",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... locker",
+        "perfekt": "hat lockergelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "locker",
+        "particle_meaning_hint": "locker = loose — adjective+verb compound with lassen (to let)"
+      }
+    },
+    {
+      "id": "madigmachen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "madigmachen",
+      "translations_en": [
+        "to run down",
+        "to spoil"
+      ],
+      "example_de": "Er macht ihr die Freude madig.",
+      "example_en": "He spoils her joy.",
+      "cloze_word": "madig",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... madig",
+        "perfekt": "hat madiggemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "madig",
+        "particle_meaning_hint": "madig = maggoty — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "schwarzmalen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "schwarzmalen",
+      "translations_en": [
+        "to be pessimistic"
+      ],
+      "example_de": "Er malt die Zukunft schwarz.",
+      "example_en": "He paints the future black.",
+      "cloze_word": "schwarz",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "malt ... schwarz",
+        "perfekt": "hat schwarzgemalt",
+        "praeteritum_3sg": null,
+        "base_verb": "malen_verb",
+        "particle": "schwarz",
+        "particle_meaning_hint": "schwarz = black — colour+verb compound with malen (to paint)"
+      }
+    },
+    {
+      "id": "uebelnehmen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "übelnehmen",
+      "translations_en": [
+        "to take offence"
+      ],
+      "example_de": "Ich nehme dir das nicht übel.",
+      "example_en": "I don't hold it against you.",
+      "cloze_word": "übel",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... übel",
+        "perfekt": "hat übelgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "übel",
+        "particle_meaning_hint": "übel = bad — adjective+verb compound with nehmen (to take)"
+      }
+    },
+    {
+      "id": "kleinhalten_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "kleinhalten",
+      "translations_en": [
+        "to keep down"
+      ],
+      "example_de": "Man hält die Löhne klein.",
+      "example_en": "Wages are being kept low.",
+      "cloze_word": "klein",
+      "themes": [
+        "work"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... klein",
+        "perfekt": "hat kleingehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "klein",
+        "particle_meaning_hint": "klein = small — adjective+verb compound with halten (to keep)"
+      }
+    },
+    {
+      "id": "heisslaufen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "heißlaufen",
+      "translations_en": [
+        "to overheat"
+      ],
+      "example_de": "Der Motor läuft heiß.",
+      "example_en": "The engine is overheating.",
+      "cloze_word": "heiß",
+      "themes": [
+        "technology"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "läuft ... heiß",
+        "perfekt": "ist heißgelaufen",
+        "praeteritum_3sg": null,
+        "base_verb": "laufen_verb",
+        "particle": "heiß",
+        "particle_meaning_hint": "heiß = hot — adjective+verb compound with laufen (to run)"
+      }
+    },
+    {
+      "id": "trockenlegen_verb",
+      "cefr": "C2",
+      "pos": "composite_verb",
+      "lemma_de": "trockenlegen",
+      "translations_en": [
+        "to drain"
+      ],
+      "example_de": "Man legt das Moor trocken.",
+      "example_en": "The bog is being drained.",
+      "cloze_word": "trocken",
+      "themes": [
+        "nature"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... trocken",
+        "perfekt": "hat trockengelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "trocken",
+        "particle_meaning_hint": "trocken = dry — adjective+verb compound with legen (to lay)"
+      }
+    }
   ]
 }

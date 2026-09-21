@@ -34,6 +34,332 @@
       ],
       "priority": 1,
       "cloze_word": "aber"
+    },
+    {
+      "id": "oder_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "oder",
+      "translations_en": [
+        "or"
+      ],
+      "example_de": "Möchtest du Kaffee oder Tee?",
+      "example_en": "Would you like coffee or tea?",
+      "cloze_word": "oder",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "weil_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "weil",
+      "translations_en": [
+        "because"
+      ],
+      "example_de": "Ich bleibe zu Hause, weil ich krank bin.",
+      "example_en": "I'm staying home because I'm ill.",
+      "cloze_word": "weil",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "dass_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "dass",
+      "translations_en": [
+        "that"
+      ],
+      "example_de": "Ich glaube, dass er kommt.",
+      "example_en": "I think that he is coming.",
+      "cloze_word": "dass",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "wenn_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "wenn",
+      "translations_en": [
+        "if",
+        "when"
+      ],
+      "example_de": "Wenn es regnet, bleibe ich zu Hause.",
+      "example_en": "If it rains, I stay at home.",
+      "cloze_word": "Wenn",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "sehr_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "sehr",
+      "translations_en": [
+        "very"
+      ],
+      "example_de": "Das Essen ist sehr gut.",
+      "example_en": "The food is very good.",
+      "cloze_word": "sehr",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "auch_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "auch",
+      "translations_en": [
+        "also",
+        "too"
+      ],
+      "example_de": "Ich komme auch.",
+      "example_en": "I'm coming too.",
+      "cloze_word": "auch",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "nicht_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "nicht",
+      "translations_en": [
+        "not"
+      ],
+      "example_de": "Ich weiß das nicht.",
+      "example_en": "I don't know that.",
+      "cloze_word": "nicht",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "nur_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "nur",
+      "translations_en": [
+        "only",
+        "just"
+      ],
+      "example_de": "Ich habe nur zehn Euro.",
+      "example_en": "I only have ten euros.",
+      "cloze_word": "nur",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "schon_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "schon",
+      "translations_en": [
+        "already"
+      ],
+      "example_de": "Ich habe schon gegessen.",
+      "example_en": "I have already eaten.",
+      "cloze_word": "schon",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "noch_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "noch",
+      "translations_en": [
+        "still",
+        "yet"
+      ],
+      "example_de": "Ich bin noch müde.",
+      "example_en": "I'm still tired.",
+      "cloze_word": "noch",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "dann_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "dann",
+      "translations_en": [
+        "then"
+      ],
+      "example_de": "Erst esse ich, dann gehe ich.",
+      "example_en": "First I eat, then I go.",
+      "cloze_word": "dann",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "jetzt_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "jetzt",
+      "translations_en": [
+        "now"
+      ],
+      "example_de": "Ich habe jetzt keine Zeit.",
+      "example_en": "I have no time now.",
+      "cloze_word": "jetzt",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "hier_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "hier",
+      "translations_en": [
+        "here"
+      ],
+      "example_de": "Ich wohne hier.",
+      "example_en": "I live here.",
+      "cloze_word": "hier",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "immer_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "immer",
+      "translations_en": [
+        "always"
+      ],
+      "example_de": "Er ist immer pünktlich.",
+      "example_en": "He is always on time.",
+      "cloze_word": "immer",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "manchmal_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "manchmal",
+      "translations_en": [
+        "sometimes"
+      ],
+      "example_de": "Manchmal gehe ich zu Fuß.",
+      "example_en": "Sometimes I walk.",
+      "cloze_word": "Manchmal",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "wieder_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "wieder",
+      "translations_en": [
+        "again"
+      ],
+      "example_de": "Komm bald wieder!",
+      "example_en": "Come back soon!",
+      "cloze_word": "wieder",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "bitte_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "bitte",
+      "translations_en": [
+        "please",
+        "you're welcome"
+      ],
+      "example_de": "Ein Kaffee, bitte.",
+      "example_en": "A coffee, please.",
+      "cloze_word": "bitte",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "danke_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "danke",
+      "translations_en": [
+        "thank you"
+      ],
+      "example_de": "Danke für das Essen.",
+      "example_en": "Thanks for the meal.",
+      "cloze_word": "Danke",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "vielleicht_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "vielleicht",
+      "translations_en": [
+        "maybe",
+        "perhaps"
+      ],
+      "example_de": "Vielleicht komme ich später.",
+      "example_en": "Maybe I'll come later.",
+      "cloze_word": "Vielleicht",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "gestern_other",
+      "cefr": "A1",
+      "pos": "other",
+      "lemma_de": "gestern",
+      "translations_en": [
+        "yesterday"
+      ],
+      "example_de": "Gestern war ich im Kino.",
+      "example_en": "Yesterday I was at the cinema.",
+      "cloze_word": "Gestern",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
     }
   ]
 }

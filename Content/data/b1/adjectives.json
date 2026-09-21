@@ -3,11 +3,768 @@
   "cefr": "B1",
   "pos": "adjective",
   "entries": [
-    { "id": "notwendig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "notwendig", "translations_en": ["necessary"], "example_de": "Das ist notwendig für den Erfolg.", "example_en": "That is necessary for success.", "cloze_word": "notwendig", "themes": ["abstract_ideas"], "priority": 1 },
-    { "id": "erstaunlich_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "erstaunlich", "translations_en": ["astonishing", "amazing"], "example_de": "Das Ergebnis war erstaunlich.", "example_en": "The result was astonishing.", "cloze_word": "erstaunlich", "themes": ["emotions"], "priority": 2 },
-    { "id": "zuverlaessig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "zuverlässig", "translations_en": ["reliable"], "example_de": "Er ist ein zuverlässiger Kollege.", "example_en": "He is a reliable colleague.", "cloze_word": "zuverlässiger", "themes": ["work"], "priority": 1 },
-    { "id": "unabhaengig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "unabhängig", "translations_en": ["independent"], "example_de": "Sie lebt finanziell unabhängig.", "example_en": "She lives financially independent.", "cloze_word": "unabhängig", "themes": ["abstract_ideas"], "priority": 2 },
-    { "id": "ausfuehrlich_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "ausführlich", "translations_en": ["detailed", "in detail"], "example_de": "Bitte erklären Sie das ausführlich.", "example_en": "Please explain that in detail.", "cloze_word": "ausführlich", "themes": ["communication"], "priority": 2 },
-    { "id": "freiwillig_adjective", "cefr": "B1", "pos": "adjective", "lemma_de": "freiwillig", "translations_en": ["voluntary"], "example_de": "Die Teilnahme ist freiwillig.", "example_en": "Participation is voluntary.", "cloze_word": "freiwillig", "themes": ["work"], "priority": 2 }
+    {
+      "id": "notwendig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "notwendig",
+      "translations_en": [
+        "necessary"
+      ],
+      "example_de": "Das ist notwendig für den Erfolg.",
+      "example_en": "That is necessary for success.",
+      "cloze_word": "notwendig",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "erstaunlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "erstaunlich",
+      "translations_en": [
+        "astonishing",
+        "amazing"
+      ],
+      "example_de": "Das Ergebnis war erstaunlich.",
+      "example_en": "The result was astonishing.",
+      "cloze_word": "erstaunlich",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zuverlaessig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "zuverlässig",
+      "translations_en": [
+        "reliable"
+      ],
+      "example_de": "Er ist ein zuverlässiger Kollege.",
+      "example_en": "He is a reliable colleague.",
+      "cloze_word": "zuverlässiger",
+      "themes": [
+        "work"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "unabhaengig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "unabhängig",
+      "translations_en": [
+        "independent"
+      ],
+      "example_de": "Sie lebt finanziell unabhängig.",
+      "example_en": "She lives financially independent.",
+      "cloze_word": "unabhängig",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ausfuehrlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "ausführlich",
+      "translations_en": [
+        "detailed",
+        "in detail"
+      ],
+      "example_de": "Bitte erklären Sie das ausführlich.",
+      "example_en": "Please explain that in detail.",
+      "cloze_word": "ausführlich",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "freiwillig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "freiwillig",
+      "translations_en": [
+        "voluntary"
+      ],
+      "example_de": "Die Teilnahme ist freiwillig.",
+      "example_en": "Participation is voluntary.",
+      "cloze_word": "freiwillig",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "erfolgreich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "erfolgreich",
+      "translations_en": [
+        "successful"
+      ],
+      "example_de": "Sie ist sehr erfolgreich.",
+      "example_en": "She is very successful.",
+      "cloze_word": "erfolgreich",
+      "themes": [
+        "work"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "erfahren_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "erfahren",
+      "translations_en": [
+        "experienced"
+      ],
+      "example_de": "Er ist ein erfahrener Arzt.",
+      "example_en": "He is an experienced doctor.",
+      "cloze_word": "erfahrener",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "verantwortlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "verantwortlich",
+      "translations_en": [
+        "responsible"
+      ],
+      "example_de": "Wer ist dafür verantwortlich?",
+      "example_en": "Who is responsible for it?",
+      "cloze_word": "verantwortlich",
+      "themes": [
+        "work"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "selbststaendig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "selbstständig",
+      "translations_en": [
+        "independent",
+        "self-employed"
+      ],
+      "example_de": "Sie ist selbstständig.",
+      "example_en": "She is self-employed.",
+      "cloze_word": "selbstständig",
+      "themes": [
+        "work"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "offiziell_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "offiziell",
+      "translations_en": [
+        "official"
+      ],
+      "example_de": "Das ist eine offizielle Mitteilung.",
+      "example_en": "That is an official notice.",
+      "cloze_word": "offizielle",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "oeffentlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "öffentlich",
+      "translations_en": [
+        "public"
+      ],
+      "example_de": "Der Park ist öffentlich.",
+      "example_en": "The park is public.",
+      "cloze_word": "öffentlich",
+      "themes": [
+        "society"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "privat_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "privat",
+      "translations_en": [
+        "private"
+      ],
+      "example_de": "Das ist privat.",
+      "example_en": "That is private.",
+      "cloze_word": "privat",
+      "themes": [
+        "society"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "persoenlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "persönlich",
+      "translations_en": [
+        "personal"
+      ],
+      "example_de": "Das ist eine persönliche Frage.",
+      "example_en": "That's a personal question.",
+      "cloze_word": "persönliche",
+      "themes": [
+        "people"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "beruflich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "beruflich",
+      "translations_en": [
+        "professional",
+        "for work"
+      ],
+      "example_de": "Ich bin beruflich in Berlin.",
+      "example_en": "I'm in Berlin for work.",
+      "cloze_word": "beruflich",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "finanziell_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "finanziell",
+      "translations_en": [
+        "financial"
+      ],
+      "example_de": "Er hat finanzielle Probleme.",
+      "example_en": "He has financial problems.",
+      "cloze_word": "finanzielle",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "wirtschaftlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "wirtschaftlich",
+      "translations_en": [
+        "economic"
+      ],
+      "example_de": "Die wirtschaftliche Lage ist schwierig.",
+      "example_en": "The economic situation is difficult.",
+      "cloze_word": "wirtschaftliche",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "politisch_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "politisch",
+      "translations_en": [
+        "political"
+      ],
+      "example_de": "Das ist ein politisches Thema.",
+      "example_en": "That's a political topic.",
+      "cloze_word": "politisches",
+      "themes": [
+        "society"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "sozial_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "sozial",
+      "translations_en": [
+        "social"
+      ],
+      "example_de": "Sie arbeitet in einem sozialen Beruf.",
+      "example_en": "She works in a social profession.",
+      "cloze_word": "sozialen",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "kulturell_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "kulturell",
+      "translations_en": [
+        "cultural"
+      ],
+      "example_de": "Die Stadt hat viele kulturelle Angebote.",
+      "example_en": "The city has many cultural offerings.",
+      "cloze_word": "kulturelle",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "international_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "international",
+      "translations_en": [
+        "international"
+      ],
+      "example_de": "Die Firma ist international tätig.",
+      "example_en": "The company operates internationally.",
+      "cloze_word": "international",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "typisch_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "typisch",
+      "translations_en": [
+        "typical"
+      ],
+      "example_de": "Das ist typisch deutsch.",
+      "example_en": "That's typically German.",
+      "cloze_word": "typisch",
+      "themes": [
+        "society"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "ueblich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "üblich",
+      "translations_en": [
+        "usual",
+        "customary"
+      ],
+      "example_de": "Das ist hier üblich.",
+      "example_en": "That's customary here.",
+      "cloze_word": "üblich",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ungewoehnlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "ungewöhnlich",
+      "translations_en": [
+        "unusual"
+      ],
+      "example_de": "Das ist ein ungewöhnlicher Name.",
+      "example_en": "That's an unusual name.",
+      "cloze_word": "ungewöhnlicher",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "seltsam_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "seltsam",
+      "translations_en": [
+        "strange"
+      ],
+      "example_de": "Das klingt seltsam.",
+      "example_en": "That sounds strange.",
+      "cloze_word": "seltsam",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "peinlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "peinlich",
+      "translations_en": [
+        "embarrassing"
+      ],
+      "example_de": "Das war mir sehr peinlich.",
+      "example_en": "I found that very embarrassing.",
+      "cloze_word": "peinlich",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ueberrascht_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "überrascht",
+      "translations_en": [
+        "surprised"
+      ],
+      "example_de": "Ich bin sehr überrascht.",
+      "example_en": "I'm very surprised.",
+      "cloze_word": "überrascht",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "enttaeuscht_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "enttäuscht",
+      "translations_en": [
+        "disappointed"
+      ],
+      "example_de": "Sie ist von dem Film enttäuscht.",
+      "example_en": "She is disappointed with the film.",
+      "cloze_word": "enttäuscht",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "begeistert_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "begeistert",
+      "translations_en": [
+        "enthusiastic"
+      ],
+      "example_de": "Wir sind von der Stadt begeistert.",
+      "example_en": "We're enthusiastic about the city.",
+      "cloze_word": "begeistert",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "neugierig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "neugierig",
+      "translations_en": [
+        "curious"
+      ],
+      "example_de": "Das Kind ist neugierig.",
+      "example_en": "The child is curious.",
+      "cloze_word": "neugierig",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "eifersuechtig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "eifersüchtig",
+      "translations_en": [
+        "jealous"
+      ],
+      "example_de": "Er ist eifersüchtig.",
+      "example_en": "He is jealous.",
+      "cloze_word": "eifersüchtig",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "verrueckt_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "verrückt",
+      "translations_en": [
+        "crazy"
+      ],
+      "example_de": "Das ist doch verrückt!",
+      "example_en": "That's crazy!",
+      "cloze_word": "verrückt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "geduldig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "geduldig",
+      "translations_en": [
+        "patient"
+      ],
+      "example_de": "Der Lehrer ist sehr geduldig.",
+      "example_en": "The teacher is very patient.",
+      "cloze_word": "geduldig",
+      "themes": [
+        "people"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "sorgfaeltig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "sorgfältig",
+      "translations_en": [
+        "careful",
+        "thorough"
+      ],
+      "example_de": "Er arbeitet sehr sorgfältig.",
+      "example_en": "He works very carefully.",
+      "cloze_word": "sorgfältig",
+      "themes": [
+        "work"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "vorsichtig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "vorsichtig",
+      "translations_en": [
+        "careful",
+        "cautious"
+      ],
+      "example_de": "Fahren Sie bitte vorsichtig.",
+      "example_en": "Please drive carefully.",
+      "cloze_word": "vorsichtig",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "deutlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "deutlich",
+      "translations_en": [
+        "clear",
+        "distinct"
+      ],
+      "example_de": "Das Ergebnis ist deutlich.",
+      "example_en": "The result is clear.",
+      "cloze_word": "deutlich",
+      "themes": [
+        "communication"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "verschieden_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "verschieden",
+      "translations_en": [
+        "different",
+        "various"
+      ],
+      "example_de": "Wir haben verschiedene Meinungen.",
+      "example_en": "We have different opinions.",
+      "cloze_word": "verschiedene",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "gemeinsam_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "gemeinsam",
+      "translations_en": [
+        "common",
+        "together"
+      ],
+      "example_de": "Wir haben viel gemeinsam.",
+      "example_en": "We have a lot in common.",
+      "cloze_word": "gemeinsam",
+      "themes": [
+        "people"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "kritisch_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "kritisch",
+      "translations_en": [
+        "critical"
+      ],
+      "example_de": "Er ist sehr kritisch.",
+      "example_en": "He is very critical.",
+      "cloze_word": "kritisch",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "positiv_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "positiv",
+      "translations_en": [
+        "positive"
+      ],
+      "example_de": "Das ist eine positive Nachricht.",
+      "example_en": "That's positive news.",
+      "cloze_word": "positive",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "negativ_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "negativ",
+      "translations_en": [
+        "negative"
+      ],
+      "example_de": "Das Ergebnis ist negativ.",
+      "example_en": "The result is negative.",
+      "cloze_word": "negativ",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "jaehrlich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "jährlich",
+      "translations_en": [
+        "annual",
+        "yearly"
+      ],
+      "example_de": "Die Messe findet jährlich statt.",
+      "example_en": "The fair takes place annually.",
+      "cloze_word": "jährlich",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "taeglich_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "täglich",
+      "translations_en": [
+        "daily"
+      ],
+      "example_de": "Ich nehme täglich eine Tablette.",
+      "example_en": "I take a tablet daily.",
+      "cloze_word": "täglich",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "ehemalig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "ehemalig",
+      "translations_en": [
+        "former"
+      ],
+      "example_de": "Das ist mein ehemaliger Chef.",
+      "example_en": "That is my former boss.",
+      "cloze_word": "ehemaliger",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "gueltig_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "gültig",
+      "translations_en": [
+        "valid"
+      ],
+      "example_de": "Der Pass ist noch gültig.",
+      "example_en": "The passport is still valid.",
+      "cloze_word": "gültig",
+      "themes": [
+        "society"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "verboten_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "verboten",
+      "translations_en": [
+        "forbidden"
+      ],
+      "example_de": "Rauchen ist hier verboten.",
+      "example_en": "Smoking is forbidden here.",
+      "cloze_word": "verboten",
+      "themes": [
+        "society"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "erlaubt_adjective",
+      "cefr": "B1",
+      "pos": "adjective",
+      "lemma_de": "erlaubt",
+      "translations_en": [
+        "allowed"
+      ],
+      "example_de": "Ist das erlaubt?",
+      "example_en": "Is that allowed?",
+      "cloze_word": "erlaubt",
+      "themes": [
+        "society"
+      ],
+      "priority": 1
+    }
   ]
 }

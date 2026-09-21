@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "cefr": "A2",
+  "pos": "other",
+  "entries": [
+    {
+      "id": "deshalb_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "deshalb",
+      "translations_en": [
+        "therefore",
+        "that's why"
+      ],
+      "example_de": "Ich bin krank, deshalb bleibe ich zu Hause.",
+      "example_en": "I'm ill, that's why I'm staying at home.",
+      "cloze_word": "deshalb",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "damit_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "damit",
+      "translations_en": [
+        "so that",
+        "with it"
+      ],
+      "example_de": "Ich lerne viel, damit ich die Prüfung bestehe.",
+      "example_en": "I study a lot so that I pass the exam.",
+      "cloze_word": "damit",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "waehrend_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "während",
+      "translations_en": [
+        "while",
+        "during"
+      ],
+      "example_de": "Während ich koche, hört er Musik.",
+      "example_en": "While I cook, he listens to music.",
+      "cloze_word": "Während",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "bevor_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "bevor",
+      "translations_en": [
+        "before"
+      ],
+      "example_de": "Iss etwas, bevor du gehst.",
+      "example_en": "Eat something before you go.",
+      "cloze_word": "bevor",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "nachdem_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "nachdem",
+      "translations_en": [
+        "after"
+      ],
+      "example_de": "Nachdem er gegessen hatte, ging er.",
+      "example_en": "After he had eaten, he left.",
+      "cloze_word": "Nachdem",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "seit_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "seit",
+      "translations_en": [
+        "since",
+        "for"
+      ],
+      "example_de": "Ich wohne seit einem Jahr hier.",
+      "example_en": "I've been living here for a year.",
+      "cloze_word": "seit",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "bis_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "bis",
+      "translations_en": [
+        "until",
+        "by"
+      ],
+      "example_de": "Ich arbeite bis sechs Uhr.",
+      "example_en": "I work until six o'clock.",
+      "cloze_word": "bis",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "sondern_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "sondern",
+      "translations_en": [
+        "but rather"
+      ],
+      "example_de": "Er ist nicht müde, sondern hungrig.",
+      "example_en": "He isn't tired but hungry.",
+      "cloze_word": "sondern",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "leider_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "leider",
+      "translations_en": [
+        "unfortunately"
+      ],
+      "example_de": "Ich habe leider keine Zeit.",
+      "example_en": "Unfortunately I have no time.",
+      "cloze_word": "leider",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "natuerlich_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "natürlich",
+      "translations_en": [
+        "of course",
+        "naturally"
+      ],
+      "example_de": "Natürlich helfe ich dir.",
+      "example_en": "Of course I'll help you.",
+      "cloze_word": "Natürlich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "eigentlich_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "eigentlich",
+      "translations_en": [
+        "actually"
+      ],
+      "example_de": "Eigentlich wollte ich zu Hause bleiben.",
+      "example_en": "Actually I wanted to stay at home.",
+      "cloze_word": "Eigentlich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ueberall_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "überall",
+      "translations_en": [
+        "everywhere"
+      ],
+      "example_de": "Ich habe überall gesucht.",
+      "example_en": "I looked everywhere.",
+      "cloze_word": "überall",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "jemand_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "jemand",
+      "translations_en": [
+        "someone"
+      ],
+      "example_de": "Ist jemand da?",
+      "example_en": "Is anyone there?",
+      "cloze_word": "jemand",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "niemand_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "niemand",
+      "translations_en": [
+        "nobody"
+      ],
+      "example_de": "Niemand hat angerufen.",
+      "example_en": "Nobody called.",
+      "cloze_word": "Niemand",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "etwas_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "etwas",
+      "translations_en": [
+        "something"
+      ],
+      "example_de": "Ich möchte etwas trinken.",
+      "example_en": "I'd like something to drink.",
+      "cloze_word": "etwas",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "nichts_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "nichts",
+      "translations_en": [
+        "nothing"
+      ],
+      "example_de": "Ich weiß nichts davon.",
+      "example_en": "I know nothing about it.",
+      "cloze_word": "nichts",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "genug_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "genug",
+      "translations_en": [
+        "enough"
+      ],
+      "example_de": "Ich habe genug gegessen.",
+      "example_en": "I've eaten enough.",
+      "cloze_word": "genug",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "ziemlich_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "ziemlich",
+      "translations_en": [
+        "quite",
+        "fairly"
+      ],
+      "example_de": "Es ist ziemlich kalt.",
+      "example_en": "It is quite cold.",
+      "cloze_word": "ziemlich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "endlich_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "endlich",
+      "translations_en": [
+        "finally"
+      ],
+      "example_de": "Endlich sind wir da!",
+      "example_en": "We're finally here!",
+      "cloze_word": "Endlich",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "ploetzlich_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "plötzlich",
+      "translations_en": [
+        "suddenly"
+      ],
+      "example_de": "Plötzlich klingelt das Telefon.",
+      "example_en": "Suddenly the phone rings.",
+      "cloze_word": "Plötzlich",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "sofort_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "sofort",
+      "translations_en": [
+        "immediately"
+      ],
+      "example_de": "Komm bitte sofort!",
+      "example_en": "Please come immediately!",
+      "cloze_word": "sofort",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "bald_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "bald",
+      "translations_en": [
+        "soon"
+      ],
+      "example_de": "Bis bald!",
+      "example_en": "See you soon!",
+      "cloze_word": "bald",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "spaeter_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "später",
+      "translations_en": [
+        "later"
+      ],
+      "example_de": "Ich rufe dich später an.",
+      "example_en": "I'll call you later.",
+      "cloze_word": "später",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "selten_other",
+      "cefr": "A2",
+      "pos": "other",
+      "lemma_de": "selten",
+      "translations_en": [
+        "rarely"
+      ],
+      "example_de": "Ich sehe ihn nur selten.",
+      "example_en": "I only rarely see him.",
+      "cloze_word": "selten",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 2
+    }
+  ]
+}

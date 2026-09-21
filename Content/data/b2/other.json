@@ -3,8 +3,252 @@
   "cefr": "B2",
   "pos": "other",
   "entries": [
-    { "id": "dennoch_other", "cefr": "B2", "pos": "other", "lemma_de": "dennoch", "translations_en": ["nevertheless", "yet"], "example_de": "Es regnete, dennoch gingen wir wandern.", "example_en": "It was raining, yet we went hiking.", "cloze_word": "dennoch", "themes": ["grammar_glue"], "priority": 1 },
-    { "id": "sodass_other", "cefr": "B2", "pos": "other", "lemma_de": "sodass", "translations_en": ["so that"], "example_de": "Er flüsterte, sodass niemand ihn hören konnte.", "example_en": "He whispered so that no one could hear him.", "cloze_word": "sodass", "themes": ["grammar_glue"], "priority": 2 },
-    { "id": "sofern_other", "cefr": "B2", "pos": "other", "lemma_de": "sofern", "translations_en": ["provided that", "as long as"], "example_de": "Wir kommen, sofern das Wetter mitspielt.", "example_en": "We'll come, provided the weather cooperates.", "cloze_word": "sofern", "themes": ["grammar_glue"], "priority": 2 }
+    {
+      "id": "dennoch_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "dennoch",
+      "translations_en": [
+        "nevertheless",
+        "yet"
+      ],
+      "example_de": "Es regnete, dennoch gingen wir wandern.",
+      "example_en": "It was raining, yet we went hiking.",
+      "cloze_word": "dennoch",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "sodass_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "sodass",
+      "translations_en": [
+        "so that"
+      ],
+      "example_de": "Er flüsterte, sodass niemand ihn hören konnte.",
+      "example_en": "He whispered so that no one could hear him.",
+      "cloze_word": "sodass",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "sofern_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "sofern",
+      "translations_en": [
+        "provided that",
+        "as long as"
+      ],
+      "example_de": "Wir kommen, sofern das Wetter mitspielt.",
+      "example_en": "We'll come, provided the weather cooperates.",
+      "cloze_word": "sofern",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "hingegen_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "hingegen",
+      "translations_en": [
+        "whereas",
+        "on the other hand"
+      ],
+      "example_de": "Er ist fleißig, sie hingegen ist faul.",
+      "example_en": "He is hard-working, she on the other hand is lazy.",
+      "cloze_word": "hingegen",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "folglich_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "folglich",
+      "translations_en": [
+        "consequently"
+      ],
+      "example_de": "Er war krank, folglich blieb er zu Hause.",
+      "example_en": "He was ill, so he stayed at home.",
+      "cloze_word": "folglich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "somit_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "somit",
+      "translations_en": [
+        "thus",
+        "therefore"
+      ],
+      "example_de": "Somit ist die Frage geklärt.",
+      "example_en": "Thus the question is settled.",
+      "cloze_word": "Somit",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zudem_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "zudem",
+      "translations_en": [
+        "moreover"
+      ],
+      "example_de": "Er ist klug und zudem fleißig.",
+      "example_en": "He is clever and, moreover, hard-working.",
+      "cloze_word": "zudem",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ferner_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "ferner",
+      "translations_en": [
+        "furthermore"
+      ],
+      "example_de": "Ferner bitten wir um Ihre Unterschrift.",
+      "example_en": "Furthermore we ask for your signature.",
+      "cloze_word": "Ferner",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "keineswegs_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "keineswegs",
+      "translations_en": [
+        "by no means"
+      ],
+      "example_de": "Das ist keineswegs sicher.",
+      "example_en": "That is by no means certain.",
+      "cloze_word": "keineswegs",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "mittlerweile_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "mittlerweile",
+      "translations_en": [
+        "by now",
+        "meanwhile"
+      ],
+      "example_de": "Er hat mittlerweile eine neue Stelle.",
+      "example_en": "He has a new job by now.",
+      "cloze_word": "mittlerweile",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "bislang_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "bislang",
+      "translations_en": [
+        "so far"
+      ],
+      "example_de": "Bislang gab es keine Probleme.",
+      "example_en": "So far there have been no problems.",
+      "cloze_word": "Bislang",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "zunaechst_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "zunächst",
+      "translations_en": [
+        "first of all"
+      ],
+      "example_de": "Zunächst möchte ich mich vorstellen.",
+      "example_en": "First of all I'd like to introduce myself.",
+      "cloze_word": "Zunächst",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "urspruenglich_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "ursprünglich",
+      "translations_en": [
+        "originally"
+      ],
+      "example_de": "Ursprünglich wollte er Arzt werden.",
+      "example_en": "Originally he wanted to become a doctor.",
+      "cloze_word": "Ursprünglich",
+      "themes": [
+        "time_numbers"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ebenfalls_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "ebenfalls",
+      "translations_en": [
+        "likewise",
+        "also"
+      ],
+      "example_de": "Das gilt ebenfalls für Sie.",
+      "example_en": "That applies to you as well.",
+      "cloze_word": "ebenfalls",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "gegebenenfalls_other",
+      "cefr": "B2",
+      "pos": "other",
+      "lemma_de": "gegebenenfalls",
+      "translations_en": [
+        "if necessary",
+        "where applicable"
+      ],
+      "example_de": "Wir schicken Ihnen gegebenenfalls Ersatz.",
+      "example_en": "We'll send you a replacement if necessary.",
+      "cloze_word": "gegebenenfalls",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    }
   ]
 }

@@ -19,110 +19,92 @@ verbs (25% combined) are deliberately overweighted — the user's top priority.
 
 Status values: `pending` (not started) · `in-progress` · `done` (validated + built).
 
-**2026-09-02 update**: user is actually B2–C1 level already, so a full B1→C2
-batch (35 entries/level) was authored in one pass instead of following strict
-level-first sequencing, so the app is immediately useful at their real level.
-A1 remains only the original 14-entry proof-of-pipeline sample; A2 got 9
-high-frequency base verbs (geben, nehmen, kommen, setzen, finden, lassen,
-stellen, machen, halten) added specifically to complete verb-family
-cross-references for phrasal/composite verbs at B1+ (not a real A2 push).
-**Next batches should prioritize A1/A2 only if/when needed** — otherwise keep
-deepening B1→C2 (they're each only ~35/300-350 entries in, i.e. ~10% done) or
-extend into fuller B1-C2 coverage before circling back to fill out A1/A2.
+**2026-09-20 update**: the full plan was authored in one pass (1,950 entries, up from 163),
+reaching or passing the target in all but five cells: A1 adjectives (49/53), A1 composite verbs
+(31/35), A2 phrasal verbs (52/53), A2 composite verbs (17/35) and B1 composite verbs (29/30).
+A2 composite verbs is the real gap: German has few genuine adjective/noun/adverb+verb compounds at
+that level, so filling it would mean padding with rarer words.
+Every entry was cross-checked against its base verb (present stem, participle, particle prefix), but
+the German has had only automated and spot-check review, so expect the occasional word to need a fix.
+
+**Next up**: read the content in the app and fix what looks off; then deepen composite verbs and any
+level the learner actually studies. After any content change, run
+`python3 Tools/validate_content.py && python3 Tools/build_bundle.py` so the iOS app picks it up.
 
 ## A1
 
-| Category | Target | Done | Status | Last Updated | Notes |
-|---|---|---|---|---|---|
-| Nouns | 123 | 2 | in-progress | 2026-09-02 | Phase 0 sample: Haus, Frau |
-| Adjectives | 53 | 2 | in-progress | 2026-09-02 | Phase 0 sample: gut, schön |
-| Verbs (non-phrasal) | 70 | 4 | in-progress | 2026-09-02 | gehen, sein, stehen, kaufen |
-| Phrasal verbs | 53 | 2 | in-progress | 2026-09-02 | aufstehen, einkaufen |
-| Composite verbs | 35 | 2 | in-progress | 2026-09-02 | fernsehen, kennenlernen |
-| Other (glue words) | 18 | 2 | in-progress | 2026-09-02 | und, aber |
+| Category | Target | Done | Status |
+|---|---|---|---|
+| Nouns | 123 | 147 | done |
+| Adjectives | 53 | 49 | in-progress |
+| Verbs (non-phrasal) | 70 | 76 | done |
+| Phrasal verbs | 53 | 56 | done |
+| Composite verbs | 35 | 31 | in-progress |
+| Other (glue words) | 18 | 22 | done |
 
 ## A2
 
-| Category | Target | Done | Status | Last Updated | Notes |
-|---|---|---|---|---|---|
-| Nouns | 123 | 0 | pending | | |
-| Adjectives | 53 | 0 | pending | | |
-| Verbs (non-phrasal) | 70 | 9 | in-progress | 2026-09-02 | geben, nehmen, kommen, setzen, finden, lassen, stellen, machen, halten — added as base-verb cross-refs for B1+ phrasal/composite verbs, not a real A2 content push |
-| Phrasal verbs | 53 | 0 | pending | | |
-| Composite verbs | 35 | 0 | pending | | |
-| Other (glue words) | 18 | 0 | pending | | |
+| Category | Target | Done | Status |
+|---|---|---|---|
+| Nouns | 123 | 177 | done |
+| Adjectives | 53 | 66 | done |
+| Verbs (non-phrasal) | 70 | 81 | done |
+| Phrasal verbs | 53 | 52 | in-progress |
+| Composite verbs | 35 | 17 | in-progress |
+| Other (glue words) | 18 | 24 | done |
 
 ## B1
 
-| Category | Target | Done | Status | Last Updated | Notes |
-|---|---|---|---|---|---|
-| Nouns | 105 | 10 | in-progress | 2026-09-02 | Erfahrung, Entscheidung, Eindruck, Verantwortung, Umwelt, Vorschlag, Beziehung, Unterschied, Ereignis, Möglichkeit |
-| Adjectives | 45 | 6 | in-progress | 2026-09-02 | notwendig, erstaunlich, zuverlässig, unabhängig, ausführlich, freiwillig |
-| Verbs (non-phrasal) | 60 | 6 | in-progress | 2026-09-02 | sich entscheiden, bedeuten, erreichen, vermeiden, sich beschweren, empfehlen |
-| Phrasal verbs | 45 | 6 | in-progress | 2026-09-02 | vorschlagen, teilnehmen, stattfinden, zurückkommen, aufgeben, umziehen |
-| Composite verbs | 30 | 4 | in-progress | 2026-09-02 | spazierengehen, radfahren, wehtun, achtgeben |
-| Other (glue words) | 15 | 3 | in-progress | 2026-09-02 | obwohl, außerdem, trotzdem |
+| Category | Target | Done | Status |
+|---|---|---|---|
+| Nouns | 105 | 121 | done |
+| Adjectives | 45 | 47 | done |
+| Verbs (non-phrasal) | 60 | 62 | done |
+| Phrasal verbs | 45 | 53 | done |
+| Composite verbs | 30 | 29 | in-progress |
+| Other (glue words) | 15 | 15 | done |
 
 ## B2
 
-| Category | Target | Done | Status | Last Updated | Notes |
-|---|---|---|---|---|---|
-| Nouns | 105 | 10 | in-progress | 2026-09-02 | Voraussetzung, Zusammenhang, Auswirkung, Wettbewerb, Herausforderung, Wahrnehmung, Widerspruch, Übereinstimmung, Anspruch, Bedrohung |
-| Adjectives | 45 | 6 | in-progress | 2026-09-02 | widersprüchlich, nachhaltig, überzeugend, angemessen, umstritten, erheblich |
-| Verbs (non-phrasal) | 60 | 6 | in-progress | 2026-09-02 | berücksichtigen, gewährleisten, sich beziehen auf, betreffen, verfügen über, erfordern |
-| Phrasal verbs | 45 | 6 | in-progress | 2026-09-02 | sich auseinandersetzen, zurückführen, hervorheben, durchsetzen, auffallen, vorkommen |
-| Composite verbs | 30 | 4 | in-progress | 2026-09-02 | wahrnehmen, teilhaben, freilassen, festlegen |
-| Other (glue words) | 15 | 3 | in-progress | 2026-09-02 | dennoch, sodass, sofern |
+| Category | Target | Done | Status |
+|---|---|---|---|
+| Nouns | 105 | 106 | done |
+| Adjectives | 45 | 57 | done |
+| Verbs (non-phrasal) | 60 | 75 | done |
+| Phrasal verbs | 45 | 48 | done |
+| Composite verbs | 30 | 31 | done |
+| Other (glue words) | 15 | 15 | done |
 
 ## C1
 
-| Category | Target | Done | Status | Last Updated | Notes |
-|---|---|---|---|---|---|
-| Nouns | 88 | 10 | in-progress | 2026-09-02 | Erkenntnis, Anlass, Tendenz, Vorurteil, Instanz, Beitrag, Konsequenz, Gewissheit, Umbruch, Kompetenz |
-| Adjectives | 38 | 6 | in-progress | 2026-09-02 | gravierend, plausibel, prägnant, kontrovers, unabdingbar, vielschichtig |
-| Verbs (non-phrasal) | 50 | 6 | in-progress | 2026-09-02 | gewichten, veranschaulichen, resultieren, beeinträchtigen, unterliegen, vernachlässigen |
-| Phrasal verbs | 38 | 6 | in-progress | 2026-09-02 | sich abzeichnen, hervorgehen, einhergehen, vorausgehen, auseinanderhalten, zugrundeliegen |
-| Composite verbs | 25 | 4 | in-progress | 2026-09-02 | wiedergeben, gleichsetzen, vorwegnehmen, infragestellen |
-| Other (glue words) | 13 | 3 | in-progress | 2026-09-02 | dahingehend, zumal, insofern |
+| Category | Target | Done | Status |
+|---|---|---|---|
+| Nouns | 88 | 89 | done |
+| Adjectives | 38 | 41 | done |
+| Verbs (non-phrasal) | 50 | 59 | done |
+| Phrasal verbs | 38 | 41 | done |
+| Composite verbs | 25 | 28 | done |
+| Other (glue words) | 13 | 15 | done |
 
 ## C2
 
-| Category | Target | Done | Status | Last Updated | Notes |
-|---|---|---|---|---|---|
-| Nouns | 70 | 10 | in-progress | 2026-09-02 | Trägheit, Ambivalenz, Vorbehalt, Nuance, Beharrlichkeit, Missstand, Tragweite, Dilemma, Unzulänglichkeit, Doppeldeutigkeit |
-| Adjectives | 30 | 6 | in-progress | 2026-09-02 | unumgänglich, fragwürdig, unerlässlich, vielsagend, schwerwiegend, unantastbar |
-| Verbs (non-phrasal) | 40 | 6 | in-progress | 2026-09-02 | relativieren, suggerieren, instrumentalisieren, nivellieren, kaschieren, verharmlosen |
-| Phrasal verbs | 30 | 6 | in-progress | 2026-09-02 | sich hinwegsetzen, aufrechterhalten, zutagetreten, sich abfinden, hinausgehen, sich niederschlagen |
-| Composite verbs | 20 | 4 | in-progress | 2026-09-02 | gleichkommen, vorherbestimmen, auseinanderklaffen, wettmachen |
-| Other (glue words) | 10 | 3 | in-progress | 2026-09-02 | mitnichten, gleichwohl, infolgedessen |
+| Category | Target | Done | Status |
+|---|---|---|---|
+| Nouns | 70 | 72 | done |
+| Adjectives | 30 | 37 | done |
+| Verbs (non-phrasal) | 40 | 50 | done |
+| Phrasal verbs | 30 | 30 | done |
+| Composite verbs | 20 | 22 | done |
+| Other (glue words) | 10 | 10 | done |
 
 ## Summary
 
 | Level | Target | Done | % |
 |---|---|---|---|
-| A1 | 354 | 14 | 4% |
-| A2 | 354 | 9 | 3% |
-| B1 | 300 | 35 | 12% |
-| B2 | 300 | 35 | 12% |
-| C1 | 252 | 35 | 14% |
-| C2 | 200 | 35 | 18% |
-| **Total** | **~1,760** | **163** | **~9%** |
-
-Known base-verb cross-reference gaps (validator prints these as warnings, not
-errors — fine to leave until a convenient batch touches them): `sehen`,
-`lernen`, `fahren`, `tun`, `schlagen`, `ziehen`, `haben`, `legen`, `führen`,
-`heben`, `fallen`, `zeichnen`, `halten` (exists as A2 entry — wait, already
-added), `liegen`, `bestimmen`, `klaffen`, `erhalten`, `treten` are referenced
-as `base_verb` by at least one phrasal/composite verb but don't have their own
-entry yet. Adding these (mostly A1/A2-level simple verbs) would clean up the
-Verb Families dashboard further.
-
-## Next up
-
-Given the user's real level (B2–C1), prioritize **deepening B1→C2** over
-filling A1/A2 gaps: pick any B1-C2 level/category above and add another batch
-(aim for the category's target column). Phrasal/composite verbs should keep
-getting proportionally more attention (25% combined) per the user's stated
-priority. Cross-reference new `base_verb` ids against the gap list above —
-resolving one of those gap verbs while authoring a new phrasal/composite verb
-batch is a nice two-for-one.
+| A1 | 352 | 381 | 108% |
+| A2 | 352 | 417 | 118% |
+| B1 | 300 | 327 | 109% |
+| B2 | 300 | 332 | 111% |
+| C1 | 252 | 273 | 108% |
+| C2 | 200 | 221 | 110% |
+| **Total** | **~1,756** | **1,951** | **111%** |

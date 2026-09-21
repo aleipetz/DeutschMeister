@@ -3,8 +3,253 @@
   "cefr": "C1",
   "pos": "other",
   "entries": [
-    { "id": "dahingehend_other", "cefr": "C1", "pos": "other", "lemma_de": "dahingehend", "translations_en": ["to this effect", "in this regard"], "example_de": "Es gibt Pläne, dahingehend etwas zu ändern.", "example_en": "There are plans to change something in this regard.", "cloze_word": "dahingehend", "themes": ["grammar_glue"], "priority": 3 },
-    { "id": "zumal_other", "cefr": "C1", "pos": "other", "lemma_de": "zumal", "translations_en": ["especially since", "given that"], "example_de": "Wir sollten früh losfahren, zumal es Stau geben könnte.", "example_en": "We should leave early, especially since there might be traffic.", "cloze_word": "zumal", "themes": ["grammar_glue"], "priority": 2 },
-    { "id": "insofern_other", "cefr": "C1", "pos": "other", "lemma_de": "insofern", "translations_en": ["insofar as", "in that respect"], "example_de": "Insofern hat er recht.", "example_en": "In that respect, he is right.", "cloze_word": "Insofern", "themes": ["grammar_glue"], "priority": 2 }
+    {
+      "id": "dahingehend_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "dahingehend",
+      "translations_en": [
+        "to this effect",
+        "in this regard"
+      ],
+      "example_de": "Es gibt Pläne, dahingehend etwas zu ändern.",
+      "example_en": "There are plans to change something in this regard.",
+      "cloze_word": "dahingehend",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "zumal_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "zumal",
+      "translations_en": [
+        "especially since",
+        "given that"
+      ],
+      "example_de": "Wir sollten früh losfahren, zumal es Stau geben könnte.",
+      "example_en": "We should leave early, especially since there might be traffic.",
+      "cloze_word": "zumal",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "insofern_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "insofern",
+      "translations_en": [
+        "insofar as",
+        "in that respect"
+      ],
+      "example_de": "Insofern hat er recht.",
+      "example_en": "In that respect, he is right.",
+      "cloze_word": "Insofern",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "inwiefern_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "inwiefern",
+      "translations_en": [
+        "to what extent"
+      ],
+      "example_de": "Ich frage mich, inwiefern das stimmt.",
+      "example_en": "I wonder to what extent that is true.",
+      "cloze_word": "inwiefern",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "demzufolge_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "demzufolge",
+      "translations_en": [
+        "accordingly"
+      ],
+      "example_de": "Demzufolge hat er recht.",
+      "example_en": "Accordingly he is right.",
+      "cloze_word": "Demzufolge",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "diesbezueglich_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "diesbezüglich",
+      "translations_en": [
+        "in this regard"
+      ],
+      "example_de": "Ich habe diesbezüglich keine Bedenken.",
+      "example_en": "I have no concerns in this regard.",
+      "cloze_word": "diesbezüglich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "dementsprechend_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "dementsprechend",
+      "translations_en": [
+        "accordingly"
+      ],
+      "example_de": "Er war krank und reagierte dementsprechend.",
+      "example_en": "He was ill and reacted accordingly.",
+      "cloze_word": "dementsprechend",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "andernfalls_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "andernfalls",
+      "translations_en": [
+        "otherwise"
+      ],
+      "example_de": "Beeil dich, andernfalls verpasst du den Zug.",
+      "example_en": "Hurry, otherwise you'll miss the train.",
+      "cloze_word": "andernfalls",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "ansonsten_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "ansonsten",
+      "translations_en": [
+        "otherwise",
+        "apart from that"
+      ],
+      "example_de": "Ansonsten ist alles in Ordnung.",
+      "example_en": "Otherwise everything is fine.",
+      "cloze_word": "Ansonsten",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "allenfalls_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "allenfalls",
+      "translations_en": [
+        "at most",
+        "possibly"
+      ],
+      "example_de": "Das dauert allenfalls eine Stunde.",
+      "example_en": "That takes an hour at most.",
+      "cloze_word": "allenfalls",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "mitunter_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "mitunter",
+      "translations_en": [
+        "occasionally"
+      ],
+      "example_de": "Mitunter ist das schwierig.",
+      "example_en": "Occasionally that is difficult.",
+      "cloze_word": "Mitunter",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "durchaus_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "durchaus",
+      "translations_en": [
+        "quite",
+        "certainly"
+      ],
+      "example_de": "Das ist durchaus möglich.",
+      "example_en": "That is quite possible.",
+      "cloze_word": "durchaus",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "lediglich_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "lediglich",
+      "translations_en": [
+        "merely",
+        "only"
+      ],
+      "example_de": "Ich habe lediglich eine Frage.",
+      "example_en": "I merely have one question.",
+      "cloze_word": "lediglich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "nahezu_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "nahezu",
+      "translations_en": [
+        "almost",
+        "nearly"
+      ],
+      "example_de": "Das ist nahezu unmöglich.",
+      "example_en": "That is almost impossible.",
+      "cloze_word": "nahezu",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "geradezu_other",
+      "cefr": "C1",
+      "pos": "other",
+      "lemma_de": "geradezu",
+      "translations_en": [
+        "downright"
+      ],
+      "example_de": "Das ist geradezu lächerlich.",
+      "example_en": "That is downright ridiculous.",
+      "cloze_word": "geradezu",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 3
+    }
   ]
 }

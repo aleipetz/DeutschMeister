@@ -107,8 +107,9 @@ After changing anything in `Content/data/`, run `python3 Tools/validate_content.
 
 ## Content status
 
-163 of about 1,760 planned entries (about 9%). B1 to C2 have 35 each, A1 has 14, A2 has 9. Content depth, not code, is
-the main risk to the app feeling complete. See `content-progress-tracker.md`.
+1,951 entries (about 111% of the 1,756 planned): A1 381, A2 417, B1 327, B2 332, C1 273, C2 221. See
+`content-progress-tracker.md` for the per-category numbers and the few cells still short of target.
+Add more with `Tools/add_entries.py`, then `Tools/validate_content.py` and `Tools/build_bundle.py`.
 
 ## Running on the iPhone (free Apple ID)
 

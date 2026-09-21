@@ -3,8 +3,255 @@
   "cefr": "B1",
   "pos": "other",
   "entries": [
-    { "id": "obwohl_other", "cefr": "B1", "pos": "other", "lemma_de": "obwohl", "translations_en": ["although"], "example_de": "Obwohl es regnet, gehen wir spazieren.", "example_en": "Although it's raining, we're going for a walk.", "cloze_word": "Obwohl", "themes": ["grammar_glue"], "priority": 1 },
-    { "id": "ausserdem_other", "cefr": "B1", "pos": "other", "lemma_de": "außerdem", "translations_en": ["besides", "moreover"], "example_de": "Außerdem habe ich keine Zeit.", "example_en": "Besides, I don't have time.", "cloze_word": "Außerdem", "themes": ["grammar_glue"], "priority": 1 },
-    { "id": "trotzdem_other", "cefr": "B1", "pos": "other", "lemma_de": "trotzdem", "translations_en": ["nevertheless", "anyway"], "example_de": "Es war teuer, aber ich habe es trotzdem gekauft.", "example_en": "It was expensive, but I bought it anyway.", "cloze_word": "trotzdem", "themes": ["grammar_glue"], "priority": 1 }
+    {
+      "id": "obwohl_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "obwohl",
+      "translations_en": [
+        "although"
+      ],
+      "example_de": "Obwohl es regnet, gehen wir spazieren.",
+      "example_en": "Although it's raining, we're going for a walk.",
+      "cloze_word": "Obwohl",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "ausserdem_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "außerdem",
+      "translations_en": [
+        "besides",
+        "moreover"
+      ],
+      "example_de": "Außerdem habe ich keine Zeit.",
+      "example_en": "Besides, I don't have time.",
+      "cloze_word": "Außerdem",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "trotzdem_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "trotzdem",
+      "translations_en": [
+        "nevertheless",
+        "anyway"
+      ],
+      "example_de": "Es war teuer, aber ich habe es trotzdem gekauft.",
+      "example_en": "It was expensive, but I bought it anyway.",
+      "cloze_word": "trotzdem",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "zwar_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "zwar",
+      "translations_en": [
+        "admittedly",
+        "it's true that"
+      ],
+      "example_de": "Es ist zwar kalt, aber sonnig.",
+      "example_en": "It is cold, admittedly, but sunny.",
+      "cloze_word": "zwar",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "jedoch_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "jedoch",
+      "translations_en": [
+        "however"
+      ],
+      "example_de": "Er wollte kommen, konnte jedoch nicht.",
+      "example_en": "He wanted to come but could not.",
+      "cloze_word": "jedoch",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "allerdings_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "allerdings",
+      "translations_en": [
+        "however",
+        "though"
+      ],
+      "example_de": "Es ist schön, allerdings sehr teuer.",
+      "example_en": "It's lovely, though very expensive.",
+      "cloze_word": "allerdings",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "insgesamt_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "insgesamt",
+      "translations_en": [
+        "in total",
+        "overall"
+      ],
+      "example_de": "Insgesamt waren es zwanzig Leute.",
+      "example_en": "In total there were twenty people.",
+      "cloze_word": "Insgesamt",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "mindestens_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "mindestens",
+      "translations_en": [
+        "at least"
+      ],
+      "example_de": "Ich brauche mindestens eine Stunde.",
+      "example_en": "I need at least an hour.",
+      "cloze_word": "mindestens",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "wenigstens_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "wenigstens",
+      "translations_en": [
+        "at least"
+      ],
+      "example_de": "Ruf wenigstens kurz an!",
+      "example_en": "At least call briefly!",
+      "cloze_word": "wenigstens",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "immerhin_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "immerhin",
+      "translations_en": [
+        "after all",
+        "at least"
+      ],
+      "example_de": "Immerhin hat er es versucht.",
+      "example_en": "At least he tried.",
+      "cloze_word": "Immerhin",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "schliesslich_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "schließlich",
+      "translations_en": [
+        "finally",
+        "after all"
+      ],
+      "example_de": "Schließlich hat er es doch geschafft.",
+      "example_en": "In the end he managed it after all.",
+      "cloze_word": "Schließlich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "offenbar_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "offenbar",
+      "translations_en": [
+        "apparently"
+      ],
+      "example_de": "Er ist offenbar krank.",
+      "example_en": "He is apparently ill.",
+      "cloze_word": "offenbar",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "tatsaechlich_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "tatsächlich",
+      "translations_en": [
+        "actually",
+        "really"
+      ],
+      "example_de": "Das ist tatsächlich passiert.",
+      "example_en": "That really happened.",
+      "cloze_word": "tatsächlich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "naemlich_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "nämlich",
+      "translations_en": [
+        "namely",
+        "you see"
+      ],
+      "example_de": "Ich kann nicht kommen, ich bin nämlich krank.",
+      "example_en": "I can't come, I'm ill, you see.",
+      "cloze_word": "nämlich",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "sowieso_other",
+      "cefr": "B1",
+      "pos": "other",
+      "lemma_de": "sowieso",
+      "translations_en": [
+        "anyway",
+        "in any case"
+      ],
+      "example_de": "Ich muss sowieso in die Stadt.",
+      "example_en": "I have to go into town anyway.",
+      "cloze_word": "sowieso",
+      "themes": [
+        "grammar_glue"
+      ],
+      "priority": 2
+    }
   ]
 }

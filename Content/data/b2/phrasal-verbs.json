@@ -3,11 +3,1284 @@
   "cefr": "B2",
   "pos": "phrasal_verb",
   "entries": [
-    { "id": "auseinandersetzen_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "sich auseinandersetzen", "translations_en": ["to deal with", "to engage with"], "example_de": "Er setzt sich intensiv mit dem Thema auseinander.", "example_en": "He engages intensively with the topic.", "cloze_word": "auseinander", "themes": ["argumentation"], "priority": 1, "verb": { "separable": true, "irregular": false, "present_3sg": "setzt sich ... auseinander", "perfekt": "hat sich auseinandergesetzt", "praeteritum_3sg": null, "base_verb": "setzen_verb", "particle": "auseinander", "particle_meaning_hint": "auseinander = apart — engaging closely and taking something apart mentally" } },
-    { "id": "zurueckfuehren_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "zurückführen", "translations_en": ["to attribute to", "to trace back to"], "example_de": "Sie führt den Erfolg auf harte Arbeit zurück.", "example_en": "She attributes the success to hard work.", "cloze_word": "zurück", "themes": ["argumentation"], "priority": 2, "verb": { "separable": true, "irregular": false, "present_3sg": "führt ... zurück", "perfekt": "hat zurückgeführt", "praeteritum_3sg": null, "base_verb": "fuehren_verb", "particle": "zurück", "particle_meaning_hint": "zurück = back — tracing something back to its cause" } },
-    { "id": "hervorheben_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "hervorheben", "translations_en": ["to emphasize", "to highlight"], "example_de": "Der Bericht hebt die Vorteile hervor.", "example_en": "The report highlights the advantages.", "cloze_word": "hervor", "themes": ["communication"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "hebt ... hervor", "perfekt": "hat hervorgehoben", "praeteritum_3sg": null, "base_verb": "heben_verb", "particle": "hervor", "particle_meaning_hint": "hervor = forth/out — bringing something to prominence" } },
-    { "id": "durchsetzen_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "durchsetzen", "translations_en": ["to enforce", "to prevail"], "example_de": "Die Regierung konnte das Gesetz durchsetzen.", "example_en": "The government managed to enforce the law.", "cloze_word": "durch", "themes": ["society"], "priority": 2, "verb": { "separable": true, "irregular": false, "present_3sg": "setzt ... durch", "perfekt": "hat durchgesetzt", "praeteritum_3sg": null, "base_verb": "setzen_verb", "particle": "durch", "particle_meaning_hint": "durch = through — pushing something through to success" } },
-    { "id": "auffallen_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "auffallen", "translations_en": ["to stand out", "to be noticeable"], "example_de": "Ihr Talent ist sofort aufgefallen.", "example_en": "Her talent stood out immediately.", "cloze_word": "auf", "themes": ["abstract_ideas"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "fällt ... auf", "perfekt": "ist aufgefallen", "praeteritum_3sg": null, "base_verb": "fallen_verb", "particle": "auf", "particle_meaning_hint": "auf = up/out — falling into notice, standing out" } },
-    { "id": "vorkommen_verb", "cefr": "B2", "pos": "phrasal_verb", "lemma_de": "vorkommen", "translations_en": ["to occur", "to happen"], "example_de": "So etwas kommt selten vor.", "example_en": "Something like that rarely happens.", "cloze_word": "vor", "themes": ["abstract_ideas"], "priority": 2, "verb": { "separable": true, "irregular": true, "present_3sg": "kommt ... vor", "perfekt": "ist vorgekommen", "praeteritum_3sg": null, "base_verb": "kommen_verb", "particle": "vor", "particle_meaning_hint": "vor = before/forth — something coming forth, occurring" } }
+    {
+      "id": "auseinandersetzen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "sich auseinandersetzen",
+      "translations_en": [
+        "to deal with",
+        "to engage with"
+      ],
+      "example_de": "Er setzt sich intensiv mit dem Thema auseinander.",
+      "example_en": "He engages intensively with the topic.",
+      "cloze_word": "auseinander",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt sich ... auseinander",
+        "perfekt": "hat sich auseinandergesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "auseinander",
+        "particle_meaning_hint": "auseinander = apart — engaging closely and taking something apart mentally"
+      }
+    },
+    {
+      "id": "zurueckfuehren_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zurückführen",
+      "translations_en": [
+        "to attribute to",
+        "to trace back to"
+      ],
+      "example_de": "Sie führt den Erfolg auf harte Arbeit zurück.",
+      "example_en": "She attributes the success to hard work.",
+      "cloze_word": "zurück",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "führt ... zurück",
+        "perfekt": "hat zurückgeführt",
+        "praeteritum_3sg": null,
+        "base_verb": "fuehren_verb",
+        "particle": "zurück",
+        "particle_meaning_hint": "zurück = back — tracing something back to its cause"
+      }
+    },
+    {
+      "id": "hervorheben_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "hervorheben",
+      "translations_en": [
+        "to emphasize",
+        "to highlight"
+      ],
+      "example_de": "Der Bericht hebt die Vorteile hervor.",
+      "example_en": "The report highlights the advantages.",
+      "cloze_word": "hervor",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hebt ... hervor",
+        "perfekt": "hat hervorgehoben",
+        "praeteritum_3sg": null,
+        "base_verb": "heben_verb",
+        "particle": "hervor",
+        "particle_meaning_hint": "hervor = forth/out — bringing something to prominence"
+      }
+    },
+    {
+      "id": "durchsetzen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "durchsetzen",
+      "translations_en": [
+        "to enforce",
+        "to prevail"
+      ],
+      "example_de": "Die Regierung konnte das Gesetz durchsetzen.",
+      "example_en": "The government managed to enforce the law.",
+      "cloze_word": "durch",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... durch",
+        "perfekt": "hat durchgesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "durch",
+        "particle_meaning_hint": "durch = through — pushing something through to success"
+      }
+    },
+    {
+      "id": "auffallen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "auffallen",
+      "translations_en": [
+        "to stand out",
+        "to be noticeable"
+      ],
+      "example_de": "Ihr Talent ist sofort aufgefallen.",
+      "example_en": "Her talent stood out immediately.",
+      "cloze_word": "auf",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fällt ... auf",
+        "perfekt": "ist aufgefallen",
+        "praeteritum_3sg": null,
+        "base_verb": "fallen_verb",
+        "particle": "auf",
+        "particle_meaning_hint": "auf = up/out — falling into notice, standing out"
+      }
+    },
+    {
+      "id": "vorkommen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "vorkommen",
+      "translations_en": [
+        "to occur",
+        "to happen"
+      ],
+      "example_de": "So etwas kommt selten vor.",
+      "example_en": "Something like that rarely happens.",
+      "cloze_word": "vor",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... vor",
+        "perfekt": "ist vorgekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "vor",
+        "particle_meaning_hint": "vor = before/forth — something coming forth, occurring"
+      }
+    },
+    {
+      "id": "aufgreifen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "aufgreifen",
+      "translations_en": [
+        "to take up"
+      ],
+      "example_de": "Wir greifen die Idee auf.",
+      "example_en": "We take up the idea.",
+      "cloze_word": "auf",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "greift ... auf",
+        "perfekt": "hat aufgegriffen",
+        "praeteritum_3sg": null,
+        "base_verb": "greifen_verb",
+        "particle": "auf",
+        "particle_meaning_hint": "auf = up — picking a topic up"
+      }
+    },
+    {
+      "id": "aufzeigen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "aufzeigen",
+      "translations_en": [
+        "to point out",
+        "to show"
+      ],
+      "example_de": "Die Studie zeigt Probleme auf.",
+      "example_en": "The study points out problems.",
+      "cloze_word": "auf",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "zeigt ... auf",
+        "perfekt": "hat aufgezeigt",
+        "praeteritum_3sg": null,
+        "base_verb": "zeigen_verb",
+        "particle": "auf",
+        "particle_meaning_hint": "auf = up — bringing something to attention"
+      }
+    },
+    {
+      "id": "ausueben_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "ausüben",
+      "translations_en": [
+        "to practise",
+        "to exercise"
+      ],
+      "example_de": "Er übt einen Beruf aus.",
+      "example_en": "He practises a profession.",
+      "cloze_word": "aus",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "übt ... aus",
+        "perfekt": "hat ausgeübt",
+        "praeteritum_3sg": null,
+        "base_verb": "ueben_verb",
+        "particle": "aus",
+        "particle_meaning_hint": "aus = out — carrying something out in practice"
+      }
+    },
+    {
+      "id": "ausbauen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "ausbauen",
+      "translations_en": [
+        "to expand",
+        "to develop"
+      ],
+      "example_de": "Wir bauen das Netz aus.",
+      "example_en": "We expand the network.",
+      "cloze_word": "aus",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "baut ... aus",
+        "perfekt": "hat ausgebaut",
+        "praeteritum_3sg": null,
+        "base_verb": "bauen_verb",
+        "particle": "aus",
+        "particle_meaning_hint": "aus = out — building something out further"
+      }
+    },
+    {
+      "id": "abbauen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "abbauen",
+      "translations_en": [
+        "to reduce",
+        "to dismantle"
+      ],
+      "example_de": "Die Firma baut Stellen ab.",
+      "example_en": "The company is cutting jobs.",
+      "cloze_word": "ab",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "baut ... ab",
+        "perfekt": "hat abgebaut",
+        "praeteritum_3sg": null,
+        "base_verb": "bauen_verb",
+        "particle": "ab",
+        "particle_meaning_hint": "ab = off/down — dismantling"
+      }
+    },
+    {
+      "id": "abstimmen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "abstimmen",
+      "translations_en": [
+        "to vote",
+        "to coordinate"
+      ],
+      "example_de": "Wir stimmen über den Vorschlag ab.",
+      "example_en": "We vote on the proposal.",
+      "cloze_word": "ab",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stimmt ... ab",
+        "perfekt": "hat abgestimmt",
+        "praeteritum_3sg": null,
+        "base_verb": "stimmen_verb",
+        "particle": "ab",
+        "particle_meaning_hint": "ab = off/down — casting a vote"
+      }
+    },
+    {
+      "id": "angehen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "angehen",
+      "translations_en": [
+        "to concern",
+        "to tackle"
+      ],
+      "example_de": "Das geht dich nichts an.",
+      "example_en": "That's none of your business.",
+      "cloze_word": "an",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... an",
+        "perfekt": "ist angegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "an",
+        "particle_meaning_hint": "an = at/to — approaching or affecting someone"
+      }
+    },
+    {
+      "id": "anfuehren_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "anführen",
+      "translations_en": [
+        "to cite",
+        "to lead"
+      ],
+      "example_de": "Er führt viele Beispiele an.",
+      "example_en": "He cites many examples.",
+      "cloze_word": "an",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "führt ... an",
+        "perfekt": "hat angeführt",
+        "praeteritum_3sg": null,
+        "base_verb": "fuehren_verb",
+        "particle": "an",
+        "particle_meaning_hint": "an = at/to — bringing something forward"
+      }
+    },
+    {
+      "id": "aufweisen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "aufweisen",
+      "translations_en": [
+        "to show",
+        "to exhibit"
+      ],
+      "example_de": "Das Gebäude weist Schäden auf.",
+      "example_en": "The building shows damage.",
+      "cloze_word": "auf",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "weist ... auf",
+        "perfekt": "hat aufgewiesen",
+        "praeteritum_3sg": null,
+        "base_verb": "weisen_verb",
+        "particle": "auf",
+        "particle_meaning_hint": "auf = up — pointing something out about it"
+      }
+    },
+    {
+      "id": "ausbilden_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "ausbilden",
+      "translations_en": [
+        "to train"
+      ],
+      "example_de": "Die Firma bildet Lehrlinge aus.",
+      "example_en": "The company trains apprentices.",
+      "cloze_word": "aus",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "bildet ... aus",
+        "perfekt": "hat ausgebildet",
+        "praeteritum_3sg": null,
+        "base_verb": "bilden_verb",
+        "particle": "aus",
+        "particle_meaning_hint": "aus = out — forming someone into a skilled person"
+      }
+    },
+    {
+      "id": "ausloesen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "auslösen",
+      "translations_en": [
+        "to trigger"
+      ],
+      "example_de": "Das löst Probleme aus.",
+      "example_en": "That triggers problems.",
+      "cloze_word": "aus",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "löst ... aus",
+        "perfekt": "hat ausgelöst",
+        "praeteritum_3sg": null,
+        "base_verb": "loesen_verb",
+        "particle": "aus",
+        "particle_meaning_hint": "aus = out — setting something off"
+      }
+    },
+    {
+      "id": "ausstellen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "ausstellen",
+      "translations_en": [
+        "to exhibit",
+        "to issue"
+      ],
+      "example_de": "Sie stellen Bilder aus.",
+      "example_en": "They exhibit pictures.",
+      "cloze_word": "aus",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... aus",
+        "perfekt": "hat ausgestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "aus",
+        "particle_meaning_hint": "aus = out — putting something on display"
+      }
+    },
+    {
+      "id": "beibehalten_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "beibehalten",
+      "translations_en": [
+        "to keep",
+        "to retain"
+      ],
+      "example_de": "Wir behalten den Plan bei.",
+      "example_en": "We keep the plan.",
+      "cloze_word": "bei",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "behält ... bei",
+        "perfekt": "hat beibehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "behalten_verb",
+        "particle": "bei",
+        "particle_meaning_hint": "bei = at/with — holding on to something"
+      }
+    },
+    {
+      "id": "einbeziehen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "einbeziehen",
+      "translations_en": [
+        "to include"
+      ],
+      "example_de": "Wir beziehen alle in die Planung ein.",
+      "example_en": "We include everyone in the planning.",
+      "cloze_word": "ein",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bezieht ... ein",
+        "perfekt": "hat einbezogen",
+        "praeteritum_3sg": null,
+        "base_verb": "beziehen_verb",
+        "particle": "ein",
+        "particle_meaning_hint": "ein = in — drawing someone in"
+      }
+    },
+    {
+      "id": "einbringen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "einbringen",
+      "translations_en": [
+        "to contribute",
+        "to bring in"
+      ],
+      "example_de": "Sie bringt ihre Ideen ein.",
+      "example_en": "She contributes her ideas.",
+      "cloze_word": "ein",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bringt ... ein",
+        "perfekt": "hat eingebracht",
+        "praeteritum_3sg": null,
+        "base_verb": "bringen_verb",
+        "particle": "ein",
+        "particle_meaning_hint": "ein = in — bringing something into a group"
+      }
+    },
+    {
+      "id": "einreichen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "einreichen",
+      "translations_en": [
+        "to submit"
+      ],
+      "example_de": "Ich reiche den Antrag ein.",
+      "example_en": "I submit the application.",
+      "cloze_word": "ein",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "reicht ... ein",
+        "perfekt": "hat eingereicht",
+        "praeteritum_3sg": null,
+        "base_verb": "reichen_verb",
+        "particle": "ein",
+        "particle_meaning_hint": "ein = in — handing something in"
+      }
+    },
+    {
+      "id": "eintreten_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "eintreten",
+      "translations_en": [
+        "to join",
+        "to enter"
+      ],
+      "example_de": "Er tritt in die Partei ein.",
+      "example_en": "He joins the party.",
+      "cloze_word": "ein",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "tritt ... ein",
+        "perfekt": "ist eingetreten",
+        "praeteritum_3sg": null,
+        "base_verb": "treten_verb",
+        "particle": "ein",
+        "particle_meaning_hint": "ein = in — stepping in"
+      }
+    },
+    {
+      "id": "eintreffen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "eintreffen",
+      "translations_en": [
+        "to arrive"
+      ],
+      "example_de": "Das Paket trifft morgen ein.",
+      "example_en": "The parcel will arrive tomorrow.",
+      "cloze_word": "ein",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "trifft ... ein",
+        "perfekt": "ist eingetroffen",
+        "praeteritum_3sg": null,
+        "base_verb": "treffen_verb",
+        "particle": "ein",
+        "particle_meaning_hint": "ein = in — arriving at a place"
+      }
+    },
+    {
+      "id": "entgegenkommen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "entgegenkommen",
+      "translations_en": [
+        "to accommodate",
+        "to come towards"
+      ],
+      "example_de": "Der Chef kommt uns entgegen.",
+      "example_en": "The boss meets us halfway.",
+      "cloze_word": "entgegen",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... entgegen",
+        "perfekt": "ist entgegengekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "entgegen",
+        "particle_meaning_hint": "entgegen = towards — coming toward someone"
+      }
+    },
+    {
+      "id": "fortsetzen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "fortsetzen",
+      "translations_en": [
+        "to continue"
+      ],
+      "example_de": "Wir setzen die Arbeit fort.",
+      "example_en": "We continue the work.",
+      "cloze_word": "fort",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... fort",
+        "perfekt": "hat fortgesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "fort",
+        "particle_meaning_hint": "fort = onward — setting something forward"
+      }
+    },
+    {
+      "id": "herausfinden_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "herausfinden",
+      "translations_en": [
+        "to find out"
+      ],
+      "example_de": "Ich finde die Wahrheit heraus.",
+      "example_en": "I find out the truth.",
+      "cloze_word": "heraus",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "findet ... heraus",
+        "perfekt": "hat herausgefunden",
+        "praeteritum_3sg": null,
+        "base_verb": "finden_verb",
+        "particle": "heraus",
+        "particle_meaning_hint": "heraus = out (toward the speaker) — finding something out"
+      }
+    },
+    {
+      "id": "herausstellen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "sich herausstellen",
+      "translations_en": [
+        "to turn out"
+      ],
+      "example_de": "Es stellt sich heraus, dass er recht hatte.",
+      "example_en": "It turns out that he was right.",
+      "cloze_word": "heraus",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt sich ... heraus",
+        "perfekt": "hat sich herausgestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "heraus",
+        "particle_meaning_hint": "heraus = out — coming out into the open"
+      }
+    },
+    {
+      "id": "hervorrufen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "hervorrufen",
+      "translations_en": [
+        "to cause",
+        "to evoke"
+      ],
+      "example_de": "Das ruft Ärger hervor.",
+      "example_en": "That causes annoyance.",
+      "cloze_word": "hervor",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "ruft ... hervor",
+        "perfekt": "hat hervorgerufen",
+        "praeteritum_3sg": null,
+        "base_verb": "rufen_verb",
+        "particle": "hervor",
+        "particle_meaning_hint": "hervor = forth — calling something forth"
+      }
+    },
+    {
+      "id": "hinnehmen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "hinnehmen",
+      "translations_en": [
+        "to accept",
+        "to put up with"
+      ],
+      "example_de": "Ich nehme das nicht hin.",
+      "example_en": "I won't put up with that.",
+      "cloze_word": "hin",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... hin",
+        "perfekt": "hat hingenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "hin",
+        "particle_meaning_hint": "hin = toward/along — taking something as it comes"
+      }
+    },
+    {
+      "id": "hinzukommen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "hinzukommen",
+      "translations_en": [
+        "to be added"
+      ],
+      "example_de": "Es kommen noch Kosten hinzu.",
+      "example_en": "Further costs are added.",
+      "cloze_word": "hinzu",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... hinzu",
+        "perfekt": "ist hinzugekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "hinzu",
+        "particle_meaning_hint": "hinzu = on top — coming as an addition"
+      }
+    },
+    {
+      "id": "mitwirken_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "mitwirken",
+      "translations_en": [
+        "to participate",
+        "to contribute"
+      ],
+      "example_de": "Er wirkt an dem Projekt mit.",
+      "example_en": "He takes part in the project.",
+      "cloze_word": "mit",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "wirkt ... mit",
+        "perfekt": "hat mitgewirkt",
+        "praeteritum_3sg": null,
+        "base_verb": "wirken_verb",
+        "particle": "mit",
+        "particle_meaning_hint": "mit = with — working along with others"
+      }
+    },
+    {
+      "id": "nachgeben_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "nachgeben",
+      "translations_en": [
+        "to give in"
+      ],
+      "example_de": "Ich gebe nicht nach.",
+      "example_en": "I won't give in.",
+      "cloze_word": "nach",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gibt ... nach",
+        "perfekt": "hat nachgegeben",
+        "praeteritum_3sg": null,
+        "base_verb": "geben_verb",
+        "particle": "nach",
+        "particle_meaning_hint": "nach = after/back — yielding"
+      }
+    },
+    {
+      "id": "nachkommen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "nachkommen",
+      "translations_en": [
+        "to comply with",
+        "to follow"
+      ],
+      "example_de": "Sie kommt ihrer Pflicht nach.",
+      "example_en": "She fulfils her duty.",
+      "cloze_word": "nach",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... nach",
+        "perfekt": "ist nachgekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "nach",
+        "particle_meaning_hint": "nach = after — following up on something"
+      }
+    },
+    {
+      "id": "nachvollziehen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "nachvollziehen",
+      "translations_en": [
+        "to understand",
+        "to follow"
+      ],
+      "example_de": "Das kann ich nicht nachvollziehen.",
+      "example_en": "I can't understand that.",
+      "cloze_word": "nach",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "vollzieht ... nach",
+        "perfekt": "hat nachvollzogen",
+        "praeteritum_3sg": null,
+        "base_verb": "vollziehen_verb",
+        "particle": "nach",
+        "particle_meaning_hint": "nach = after — following someone's reasoning step by step"
+      }
+    },
+    {
+      "id": "vorantreiben_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "vorantreiben",
+      "translations_en": [
+        "to drive forward"
+      ],
+      "example_de": "Wir treiben das Projekt voran.",
+      "example_en": "We drive the project forward.",
+      "cloze_word": "voran",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "treibt ... voran",
+        "perfekt": "hat vorangetrieben",
+        "praeteritum_3sg": null,
+        "base_verb": "treiben_verb",
+        "particle": "voran",
+        "particle_meaning_hint": "voran = forward — driving something ahead"
+      }
+    },
+    {
+      "id": "voraussetzen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "voraussetzen",
+      "translations_en": [
+        "to presuppose"
+      ],
+      "example_de": "Das setzt viel Erfahrung voraus.",
+      "example_en": "That presupposes a lot of experience.",
+      "cloze_word": "voraus",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... voraus",
+        "perfekt": "hat vorausgesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "voraus",
+        "particle_meaning_hint": "voraus = ahead — setting something as a prior condition"
+      }
+    },
+    {
+      "id": "vorgehen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "vorgehen",
+      "translations_en": [
+        "to proceed",
+        "to take precedence"
+      ],
+      "example_de": "Wir gehen vorsichtig vor.",
+      "example_en": "We proceed carefully.",
+      "cloze_word": "vor",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... vor",
+        "perfekt": "ist vorgegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "vor",
+        "particle_meaning_hint": "vor = before/ahead — going ahead"
+      }
+    },
+    {
+      "id": "vorlegen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "vorlegen",
+      "translations_en": [
+        "to present",
+        "to submit"
+      ],
+      "example_de": "Er legt einen Plan vor.",
+      "example_en": "He presents a plan.",
+      "cloze_word": "vor",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... vor",
+        "perfekt": "hat vorgelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "vor",
+        "particle_meaning_hint": "vor = before/forth — laying something in front of someone"
+      }
+    },
+    {
+      "id": "vornehmen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "vornehmen",
+      "translations_en": [
+        "to undertake",
+        "to carry out"
+      ],
+      "example_de": "Wir nehmen Änderungen vor.",
+      "example_en": "We are making changes.",
+      "cloze_word": "vor",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... vor",
+        "perfekt": "hat vorgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "vor",
+        "particle_meaning_hint": "vor = before/forth — taking something on"
+      }
+    },
+    {
+      "id": "vorschreiben_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "vorschreiben",
+      "translations_en": [
+        "to prescribe",
+        "to dictate"
+      ],
+      "example_de": "Das Gesetz schreibt das vor.",
+      "example_en": "The law prescribes that.",
+      "cloze_word": "vor",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "schreibt ... vor",
+        "perfekt": "hat vorgeschrieben",
+        "praeteritum_3sg": null,
+        "base_verb": "schreiben_verb",
+        "particle": "vor",
+        "particle_meaning_hint": "vor = before/forth — writing down what must happen"
+      }
+    },
+    {
+      "id": "vorsehen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "vorsehen",
+      "translations_en": [
+        "to provide for",
+        "to plan"
+      ],
+      "example_de": "Der Plan sieht Änderungen vor.",
+      "example_en": "The plan provides for changes.",
+      "cloze_word": "vor",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "sieht ... vor",
+        "perfekt": "hat vorgesehen",
+        "praeteritum_3sg": null,
+        "base_verb": "sehen_verb",
+        "particle": "vor",
+        "particle_meaning_hint": "vor = before/ahead — seeing something in advance"
+      }
+    },
+    {
+      "id": "vorwerfen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "vorwerfen",
+      "translations_en": [
+        "to accuse",
+        "to reproach"
+      ],
+      "example_de": "Man wirft ihm Betrug vor.",
+      "example_en": "He is accused of fraud.",
+      "cloze_word": "vor",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "wirft ... vor",
+        "perfekt": "hat vorgeworfen",
+        "praeteritum_3sg": null,
+        "base_verb": "werfen_verb",
+        "particle": "vor",
+        "particle_meaning_hint": "vor = before/forth — throwing something in someone's face"
+      }
+    },
+    {
+      "id": "zuweisen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zuweisen",
+      "translations_en": [
+        "to assign"
+      ],
+      "example_de": "Man weist uns einen Raum zu.",
+      "example_en": "We are assigned a room.",
+      "cloze_word": "zu",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "weist ... zu",
+        "perfekt": "hat zugewiesen",
+        "praeteritum_3sg": null,
+        "base_verb": "weisen_verb",
+        "particle": "zu",
+        "particle_meaning_hint": "zu = to — pointing something to someone"
+      }
+    },
+    {
+      "id": "zurueckgreifen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zurückgreifen",
+      "translations_en": [
+        "to fall back on"
+      ],
+      "example_de": "Wir greifen auf alte Daten zurück.",
+      "example_en": "We fall back on old data.",
+      "cloze_word": "zurück",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "greift ... zurück",
+        "perfekt": "hat zurückgegriffen",
+        "praeteritum_3sg": null,
+        "base_verb": "greifen_verb",
+        "particle": "zurück",
+        "particle_meaning_hint": "zurück = back — reaching back to something"
+      }
+    },
+    {
+      "id": "zurueckweisen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zurückweisen",
+      "translations_en": [
+        "to reject"
+      ],
+      "example_de": "Er weist die Kritik zurück.",
+      "example_en": "He rejects the criticism.",
+      "cloze_word": "zurück",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "weist ... zurück",
+        "perfekt": "hat zurückgewiesen",
+        "praeteritum_3sg": null,
+        "base_verb": "weisen_verb",
+        "particle": "zurück",
+        "particle_meaning_hint": "zurück = back — pointing something away"
+      }
+    },
+    {
+      "id": "zusammenbrechen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zusammenbrechen",
+      "translations_en": [
+        "to collapse"
+      ],
+      "example_de": "Das System bricht zusammen.",
+      "example_en": "The system collapses.",
+      "cloze_word": "zusammen",
+      "themes": [
+        "technology"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bricht ... zusammen",
+        "perfekt": "ist zusammengebrochen",
+        "praeteritum_3sg": null,
+        "base_verb": "brechen_verb",
+        "particle": "zusammen",
+        "particle_meaning_hint": "zusammen = together — falling in on itself"
+      }
+    },
+    {
+      "id": "zusagen_verb",
+      "cefr": "B2",
+      "pos": "phrasal_verb",
+      "lemma_de": "zusagen",
+      "translations_en": [
+        "to promise",
+        "to accept"
+      ],
+      "example_de": "Er sagt seine Teilnahme zu.",
+      "example_en": "He confirms his attendance.",
+      "cloze_word": "zu",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "sagt ... zu",
+        "perfekt": "hat zugesagt",
+        "praeteritum_3sg": null,
+        "base_verb": "sagen_verb",
+        "particle": "zu",
+        "particle_meaning_hint": "zu = to — saying yes toward an invitation"
+      }
+    }
   ]
 }

@@ -3,11 +3,1329 @@
   "cefr": "C2",
   "pos": "verb",
   "entries": [
-    { "id": "relativieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "relativieren", "translations_en": ["to put into perspective", "to qualify"], "example_de": "Er wollte seine Aussage relativieren.", "example_en": "He wanted to qualify his statement.", "cloze_word": "relativieren", "themes": ["argumentation"], "priority": 3, "verb": { "separable": false, "irregular": false, "present_3sg": "relativiert", "perfekt": "hat relativiert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "suggerieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "suggerieren", "translations_en": ["to suggest", "to imply"], "example_de": "Die Werbung suggeriert ein perfektes Leben.", "example_en": "The advertisement suggests a perfect life.", "cloze_word": "suggeriert", "themes": ["communication"], "priority": 2, "verb": { "separable": false, "irregular": false, "present_3sg": "suggeriert", "perfekt": "hat suggeriert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "instrumentalisieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "instrumentalisieren", "translations_en": ["to instrumentalize", "to exploit (for a purpose)"], "example_de": "Die Politiker instrumentalisieren das Thema für ihre Zwecke.", "example_en": "The politicians instrumentalize the topic for their own purposes.", "cloze_word": "instrumentalisieren", "themes": ["society"], "priority": 4, "verb": { "separable": false, "irregular": false, "present_3sg": "instrumentalisiert", "perfekt": "hat instrumentalisiert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "nivellieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "nivellieren", "translations_en": ["to level out", "to homogenize"], "example_de": "Der Test nivelliert die Unterschiede zwischen den Schülern.", "example_en": "The test levels out the differences between the students.", "cloze_word": "nivelliert", "themes": ["society"], "priority": 4, "verb": { "separable": false, "irregular": false, "present_3sg": "nivelliert", "perfekt": "hat nivelliert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "kaschieren_verb", "cefr": "C2", "pos": "verb", "lemma_de": "kaschieren", "translations_en": ["to conceal", "to mask", "to disguise"], "example_de": "Sie versuchte, ihre Nervosität zu kaschieren.", "example_en": "She tried to conceal her nervousness.", "cloze_word": "kaschieren", "themes": ["communication"], "priority": 3, "verb": { "separable": false, "irregular": false, "present_3sg": "kaschiert", "perfekt": "hat kaschiert", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } },
-    { "id": "verharmlosen_verb", "cefr": "C2", "pos": "verb", "lemma_de": "verharmlosen", "translations_en": ["to downplay", "to trivialize"], "example_de": "Man sollte die Gefahr nicht verharmlosen.", "example_en": "One shouldn't downplay the danger.", "cloze_word": "verharmlosen", "themes": ["communication"], "priority": 3, "verb": { "separable": false, "irregular": false, "present_3sg": "verharmlost", "perfekt": "hat verharmlost", "praeteritum_3sg": null, "base_verb": null, "particle": null, "particle_meaning_hint": null } }
+    {
+      "id": "relativieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "relativieren",
+      "translations_en": [
+        "to put into perspective",
+        "to qualify"
+      ],
+      "example_de": "Er wollte seine Aussage relativieren.",
+      "example_en": "He wanted to qualify his statement.",
+      "cloze_word": "relativieren",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "relativiert",
+        "perfekt": "hat relativiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "suggerieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "suggerieren",
+      "translations_en": [
+        "to suggest",
+        "to imply"
+      ],
+      "example_de": "Die Werbung suggeriert ein perfektes Leben.",
+      "example_en": "The advertisement suggests a perfect life.",
+      "cloze_word": "suggeriert",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "suggeriert",
+        "perfekt": "hat suggeriert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "instrumentalisieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "instrumentalisieren",
+      "translations_en": [
+        "to instrumentalize",
+        "to exploit (for a purpose)"
+      ],
+      "example_de": "Die Politiker instrumentalisieren das Thema für ihre Zwecke.",
+      "example_en": "The politicians instrumentalize the topic for their own purposes.",
+      "cloze_word": "instrumentalisieren",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "instrumentalisiert",
+        "perfekt": "hat instrumentalisiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "nivellieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "nivellieren",
+      "translations_en": [
+        "to level out",
+        "to homogenize"
+      ],
+      "example_de": "Der Test nivelliert die Unterschiede zwischen den Schülern.",
+      "example_en": "The test levels out the differences between the students.",
+      "cloze_word": "nivelliert",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "nivelliert",
+        "perfekt": "hat nivelliert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "kaschieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "kaschieren",
+      "translations_en": [
+        "to conceal",
+        "to mask",
+        "to disguise"
+      ],
+      "example_de": "Sie versuchte, ihre Nervosität zu kaschieren.",
+      "example_en": "She tried to conceal her nervousness.",
+      "cloze_word": "kaschieren",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "kaschiert",
+        "perfekt": "hat kaschiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verharmlosen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verharmlosen",
+      "translations_en": [
+        "to downplay",
+        "to trivialize"
+      ],
+      "example_de": "Man sollte die Gefahr nicht verharmlosen.",
+      "example_en": "One shouldn't downplay the danger.",
+      "cloze_word": "verharmlosen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verharmlost",
+        "perfekt": "hat verharmlost",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "klaffen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "klaffen",
+      "translations_en": [
+        "to gape",
+        "to yawn"
+      ],
+      "example_de": "Ein tiefer Riss klafft in der Wand.",
+      "example_en": "A deep crack gapes in the wall.",
+      "cloze_word": "klafft",
+      "themes": [
+        "nature"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "klafft",
+        "perfekt": "hat geklafft",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beschwichtigen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "beschwichtigen",
+      "translations_en": [
+        "to appease"
+      ],
+      "example_de": "Er versucht, die Menge zu beschwichtigen.",
+      "example_en": "He tries to appease the crowd.",
+      "cloze_word": "beschwichtigen",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beschwichtigt",
+        "perfekt": "hat beschwichtigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bagatellisieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "bagatellisieren",
+      "translations_en": [
+        "to play down"
+      ],
+      "example_de": "Man darf das Problem nicht bagatellisieren.",
+      "example_en": "One must not play down the problem.",
+      "cloze_word": "bagatellisieren",
+      "themes": [
+        "communication"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bagatellisiert",
+        "perfekt": "hat bagatellisiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verklaeren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verklären",
+      "translations_en": [
+        "to romanticise"
+      ],
+      "example_de": "Er verklärt die Vergangenheit.",
+      "example_en": "He romanticises the past.",
+      "cloze_word": "verklärt",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verklärt",
+        "perfekt": "hat verklärt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verdraengen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verdrängen",
+      "translations_en": [
+        "to suppress",
+        "to displace"
+      ],
+      "example_de": "Sie verdrängt die Erinnerung.",
+      "example_en": "She suppresses the memory.",
+      "cloze_word": "verdrängt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verdrängt",
+        "perfekt": "hat verdrängt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "vereinnahmen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "vereinnahmen",
+      "translations_en": [
+        "to co-opt",
+        "to monopolise"
+      ],
+      "example_de": "Die Partei will ihn vereinnahmen.",
+      "example_en": "The party wants to co-opt him.",
+      "cloze_word": "vereinnahmen",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "vereinnahmt",
+        "perfekt": "hat vereinnahmt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verschleiern_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verschleiern",
+      "translations_en": [
+        "to veil",
+        "to conceal"
+      ],
+      "example_de": "Sie verschleiern die Wahrheit.",
+      "example_en": "They conceal the truth.",
+      "cloze_word": "verschleiern",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verschleiert",
+        "perfekt": "hat verschleiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verschleppen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verschleppen",
+      "translations_en": [
+        "to drag out",
+        "to delay"
+      ],
+      "example_de": "Die Behörde verschleppt das Verfahren.",
+      "example_en": "The authority is dragging out the procedure.",
+      "cloze_word": "verschleppt",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verschleppt",
+        "perfekt": "hat verschleppt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verunglimpfen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verunglimpfen",
+      "translations_en": [
+        "to defame",
+        "to disparage"
+      ],
+      "example_de": "Er verunglimpft seine Gegner.",
+      "example_en": "He disparages his opponents.",
+      "cloze_word": "verunglimpft",
+      "themes": [
+        "communication"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verunglimpft",
+        "perfekt": "hat verunglimpft",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verwaessern_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verwässern",
+      "translations_en": [
+        "to water down"
+      ],
+      "example_de": "Man verwässert den Gesetzentwurf.",
+      "example_en": "The bill is being watered down.",
+      "cloze_word": "verwässert",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verwässert",
+        "perfekt": "hat verwässert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verfaelschen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verfälschen",
+      "translations_en": [
+        "to falsify",
+        "to distort"
+      ],
+      "example_de": "Er verfälscht die Ergebnisse.",
+      "example_en": "He falsifies the results.",
+      "cloze_word": "verfälscht",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verfälscht",
+        "perfekt": "hat verfälscht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "wahren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "wahren",
+      "translations_en": [
+        "to preserve",
+        "to safeguard"
+      ],
+      "example_de": "Wir wahren den Schein.",
+      "example_en": "We keep up appearances.",
+      "cloze_word": "wahren",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "wahrt",
+        "perfekt": "hat gewahrt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beanstanden_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "beanstanden",
+      "translations_en": [
+        "to object to",
+        "to complain about"
+      ],
+      "example_de": "Der Kunde beanstandet die Lieferung.",
+      "example_en": "The customer complains about the delivery.",
+      "cloze_word": "beanstandet",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beanstandet",
+        "perfekt": "hat beanstandet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "beteuern_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "beteuern",
+      "translations_en": [
+        "to assert",
+        "to protest"
+      ],
+      "example_de": "Er beteuert seine Unschuld.",
+      "example_en": "He protests his innocence.",
+      "cloze_word": "beteuert",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "beteuert",
+        "perfekt": "hat beteuert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "bezichtigen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "bezichtigen",
+      "translations_en": [
+        "to accuse"
+      ],
+      "example_de": "Man bezichtigt ihn der Lüge.",
+      "example_en": "He is accused of lying.",
+      "cloze_word": "bezichtigt",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "bezichtigt",
+        "perfekt": "hat bezichtigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "brandmarken_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "brandmarken",
+      "translations_en": [
+        "to stigmatise"
+      ],
+      "example_de": "Die Presse brandmarkt ihn als Verräter.",
+      "example_en": "The press brands him a traitor.",
+      "cloze_word": "brandmarkt",
+      "themes": [
+        "society"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "brandmarkt",
+        "perfekt": "hat gebrandmarkt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "dulden_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "dulden",
+      "translations_en": [
+        "to tolerate"
+      ],
+      "example_de": "Ich dulde keinen Widerspruch.",
+      "example_en": "I tolerate no contradiction.",
+      "cloze_word": "dulde",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "duldet",
+        "perfekt": "hat geduldet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "ermahnen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "ermahnen",
+      "translations_en": [
+        "to admonish"
+      ],
+      "example_de": "Der Lehrer ermahnt die Klasse.",
+      "example_en": "The teacher admonishes the class.",
+      "cloze_word": "ermahnt",
+      "themes": [
+        "education"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "ermahnt",
+        "perfekt": "hat ermahnt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "erwidern_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "erwidern",
+      "translations_en": [
+        "to reply",
+        "to return"
+      ],
+      "example_de": "Sie erwidert seine Kritik gelassen.",
+      "example_en": "She replies to his criticism calmly.",
+      "cloze_word": "erwidert",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "erwidert",
+        "perfekt": "hat erwidert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "kompensieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "kompensieren",
+      "translations_en": [
+        "to compensate"
+      ],
+      "example_de": "Wir müssen den Verlust kompensieren.",
+      "example_en": "We have to compensate for the loss.",
+      "cloze_word": "kompensieren",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "kompensiert",
+        "perfekt": "hat kompensiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "konterkarieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "konterkarieren",
+      "translations_en": [
+        "to counteract",
+        "to undermine"
+      ],
+      "example_de": "Das konterkariert unsere Bemühungen.",
+      "example_en": "That undermines our efforts.",
+      "cloze_word": "konterkariert",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "konterkariert",
+        "perfekt": "hat konterkariert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "monieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "monieren",
+      "translations_en": [
+        "to complain about"
+      ],
+      "example_de": "Sie moniert die schlechte Organisation.",
+      "example_en": "She complains about the poor organisation.",
+      "cloze_word": "moniert",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "moniert",
+        "perfekt": "hat moniert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "offenbaren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "offenbaren",
+      "translations_en": [
+        "to reveal"
+      ],
+      "example_de": "Er offenbart sein wahres Gesicht.",
+      "example_en": "He reveals his true face.",
+      "cloze_word": "offenbart",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "offenbart",
+        "perfekt": "hat offenbart",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "pochen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "pochen",
+      "translations_en": [
+        "to insist",
+        "to knock"
+      ],
+      "example_de": "Er pocht auf sein Recht.",
+      "example_en": "He insists on his right.",
+      "cloze_word": "pocht",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "pocht",
+        "perfekt": "hat gepocht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "polarisieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "polarisieren",
+      "translations_en": [
+        "to polarise"
+      ],
+      "example_de": "Das Thema polarisiert die Gesellschaft.",
+      "example_en": "The topic polarises society.",
+      "cloze_word": "polarisiert",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "polarisiert",
+        "perfekt": "hat polarisiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "proklamieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "proklamieren",
+      "translations_en": [
+        "to proclaim"
+      ],
+      "example_de": "Sie proklamieren die Republik.",
+      "example_en": "They proclaim the republic.",
+      "cloze_word": "proklamieren",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "proklamiert",
+        "perfekt": "hat proklamiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "provozieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "provozieren",
+      "translations_en": [
+        "to provoke"
+      ],
+      "example_de": "Er provoziert mit seinen Aussagen.",
+      "example_en": "He provokes with his statements.",
+      "cloze_word": "provoziert",
+      "themes": [
+        "communication"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "provoziert",
+        "perfekt": "hat provoziert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "rechtfertigen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "rechtfertigen",
+      "translations_en": [
+        "to justify"
+      ],
+      "example_de": "Ich kann das nicht rechtfertigen.",
+      "example_en": "I can't justify that.",
+      "cloze_word": "rechtfertigen",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "rechtfertigt",
+        "perfekt": "hat gerechtfertigt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "ruegen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "rügen",
+      "translations_en": [
+        "to reprimand"
+      ],
+      "example_de": "Der Chef rügt den Mitarbeiter.",
+      "example_en": "The boss reprimands the employee.",
+      "cloze_word": "rügt",
+      "themes": [
+        "work"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "rügt",
+        "perfekt": "hat gerügt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "sanktionieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "sanktionieren",
+      "translations_en": [
+        "to sanction"
+      ],
+      "example_de": "Die EU sanktioniert das Land.",
+      "example_en": "The EU sanctions the country.",
+      "cloze_word": "sanktioniert",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "sanktioniert",
+        "perfekt": "hat sanktioniert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schueren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "schüren",
+      "translations_en": [
+        "to stoke",
+        "to fuel"
+      ],
+      "example_de": "Er schürt Ängste.",
+      "example_en": "He stokes fears.",
+      "cloze_word": "schürt",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "schürt",
+        "perfekt": "hat geschürt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "schmaelern_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "schmälern",
+      "translations_en": [
+        "to diminish"
+      ],
+      "example_de": "Das schmälert seinen Verdienst nicht.",
+      "example_en": "That does not diminish his merit.",
+      "cloze_word": "schmälert",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "schmälert",
+        "perfekt": "hat geschmälert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "straeuben_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "sich sträuben",
+      "translations_en": [
+        "to resist",
+        "to balk"
+      ],
+      "example_de": "Er sträubt sich gegen die Reform.",
+      "example_en": "He resists the reform.",
+      "cloze_word": "sträubt",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "sträubt sich",
+        "perfekt": "hat sich gesträubt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "tolerieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "tolerieren",
+      "translations_en": [
+        "to tolerate"
+      ],
+      "example_de": "Wir tolerieren keine Gewalt.",
+      "example_en": "We tolerate no violence.",
+      "cloze_word": "tolerieren",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "toleriert",
+        "perfekt": "hat toleriert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "ueberspitzen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "überspitzen",
+      "translations_en": [
+        "to exaggerate"
+      ],
+      "example_de": "Du überspitzt die Sache.",
+      "example_en": "You are exaggerating the matter.",
+      "cloze_word": "überspitzt",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "überspitzt",
+        "perfekt": "hat überspitzt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "unterminieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "unterminieren",
+      "translations_en": [
+        "to undermine"
+      ],
+      "example_de": "Das unterminiert das Vertrauen.",
+      "example_en": "That undermines trust.",
+      "cloze_word": "unterminiert",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "unterminiert",
+        "perfekt": "hat unterminiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "untergraben_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "untergraben",
+      "translations_en": [
+        "to undermine"
+      ],
+      "example_de": "Das untergräbt die Autorität.",
+      "example_en": "That undermines authority.",
+      "cloze_word": "untergräbt",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": true,
+        "present_3sg": "untergräbt",
+        "perfekt": "hat untergraben",
+        "praeteritum_3sg": "untergrub",
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "vereiteln_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "vereiteln",
+      "translations_en": [
+        "to thwart"
+      ],
+      "example_de": "Die Polizei vereitelt den Anschlag.",
+      "example_en": "The police thwart the attack.",
+      "cloze_word": "vereitelt",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "vereitelt",
+        "perfekt": "hat vereitelt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verhehlen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verhehlen",
+      "translations_en": [
+        "to conceal"
+      ],
+      "example_de": "Er verhehlt seine Freude nicht.",
+      "example_en": "He doesn't conceal his joy.",
+      "cloze_word": "verhehlt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 5,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verhehlt",
+        "perfekt": "hat verhehlt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verspotten_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verspotten",
+      "translations_en": [
+        "to mock"
+      ],
+      "example_de": "Sie verspotten ihn.",
+      "example_en": "They mock him.",
+      "cloze_word": "verspotten",
+      "themes": [
+        "people"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verspottet",
+        "perfekt": "hat verspottet",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verurteilen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verurteilen",
+      "translations_en": [
+        "to condemn",
+        "to sentence"
+      ],
+      "example_de": "Das Gericht verurteilt den Täter.",
+      "example_en": "The court sentences the perpetrator.",
+      "cloze_word": "verurteilt",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verurteilt",
+        "perfekt": "hat verurteilt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "verwirklichen_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "verwirklichen",
+      "translations_en": [
+        "to realise",
+        "to fulfil"
+      ],
+      "example_de": "Sie verwirklicht ihren Traum.",
+      "example_en": "She realises her dream.",
+      "cloze_word": "verwirklicht",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "verwirklicht",
+        "perfekt": "hat verwirklicht",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "zementieren_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "zementieren",
+      "translations_en": [
+        "to cement"
+      ],
+      "example_de": "Das zementiert die Ungleichheit.",
+      "example_en": "That cements inequality.",
+      "cloze_word": "zementiert",
+      "themes": [
+        "society"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "zementiert",
+        "perfekt": "hat zementiert",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    },
+    {
+      "id": "zweifeln_verb",
+      "cefr": "C2",
+      "pos": "verb",
+      "lemma_de": "zweifeln",
+      "translations_en": [
+        "to doubt"
+      ],
+      "example_de": "Ich zweifle an seiner Ehrlichkeit.",
+      "example_en": "I doubt his honesty.",
+      "cloze_word": "zweifle",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": false,
+        "irregular": false,
+        "present_3sg": "zweifelt",
+        "perfekt": "hat gezweifelt",
+        "praeteritum_3sg": null,
+        "base_verb": null,
+        "particle": null,
+        "particle_meaning_hint": null
+      }
+    }
   ]
 }

@@ -10,7 +10,7 @@ struct ProgressScreen: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(alignment: .leading, spacing: 12) {
+                LazyVStack(alignment: .leading, spacing: 12) {
                     filters
                     ForEach(levels, id: \.self) { CoverageRow(level: $0, coverage: model.planner.coverage(at: $0, pos: pos, state: model.state)) }
                     legend

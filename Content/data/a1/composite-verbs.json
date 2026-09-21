@@ -55,6 +55,765 @@
         "particle_meaning_hint": "kennen = to know — verb+verb compound with lernen (to learn), i.e. learn-to-know = meet/get acquainted"
       },
       "cloze_word": "kennenlernen"
+    },
+    {
+      "id": "stehenbleiben_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "stehenbleiben",
+      "translations_en": [
+        "to stop",
+        "to stand still"
+      ],
+      "example_de": "Der Bus bleibt an der Ampel stehen.",
+      "example_en": "The bus stops at the traffic light.",
+      "cloze_word": "stehen",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... stehen",
+        "perfekt": "ist stehengeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "stehen",
+        "particle_meaning_hint": "stehen = to stand — fixed compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "sitzenbleiben_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "sitzenbleiben",
+      "translations_en": [
+        "to remain seated"
+      ],
+      "example_de": "Bitte bleiben Sie sitzen.",
+      "example_en": "Please remain seated.",
+      "cloze_word": "sitzen",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... sitzen",
+        "perfekt": "ist sitzengeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "sitzen",
+        "particle_meaning_hint": "sitzen = to sit — fixed compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "liegenbleiben_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "liegenbleiben",
+      "translations_en": [
+        "to stay lying",
+        "to be left behind"
+      ],
+      "example_de": "Das Buch bleibt auf dem Tisch liegen.",
+      "example_en": "The book stays lying on the table.",
+      "cloze_word": "liegen",
+      "themes": [
+        "home"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... liegen",
+        "perfekt": "ist liegengeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "liegen",
+        "particle_meaning_hint": "liegen = to lie — fixed compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "autofahren_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "autofahren",
+      "translations_en": [
+        "to drive (a car)"
+      ],
+      "example_de": "Meine Mutter fährt gern Auto.",
+      "example_en": "My mother likes driving.",
+      "cloze_word": "Auto",
+      "themes": [
+        "travel"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fährt ... Auto",
+        "perfekt": "ist autogefahren",
+        "praeteritum_3sg": null,
+        "base_verb": "fahren_verb",
+        "particle": "Auto",
+        "particle_meaning_hint": "Auto = car — noun+verb compound with fahren (to drive)"
+      }
+    },
+    {
+      "id": "skifahren_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "skifahren",
+      "translations_en": [
+        "to ski"
+      ],
+      "example_de": "Wir fahren im Winter Ski.",
+      "example_en": "We go skiing in winter.",
+      "cloze_word": "Ski",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fährt ... Ski",
+        "perfekt": "ist skigefahren",
+        "praeteritum_3sg": null,
+        "base_verb": "fahren_verb",
+        "particle": "Ski",
+        "particle_meaning_hint": "Ski = ski — noun+verb compound with fahren (to go)"
+      }
+    },
+    {
+      "id": "eislaufen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "eislaufen",
+      "translations_en": [
+        "to ice-skate"
+      ],
+      "example_de": "Im Winter laufen wir Eis.",
+      "example_en": "In winter we go ice-skating.",
+      "cloze_word": "Eis",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "läuft ... Eis",
+        "perfekt": "ist eisgelaufen",
+        "praeteritum_3sg": null,
+        "base_verb": "laufen_verb",
+        "particle": "Eis",
+        "particle_meaning_hint": "Eis = ice — noun+verb compound with laufen (to run/skate)"
+      }
+    },
+    {
+      "id": "schlittschuhlaufen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "schlittschuhlaufen",
+      "translations_en": [
+        "to ice-skate"
+      ],
+      "example_de": "Sie läuft gern Schlittschuh.",
+      "example_en": "She loves to ice-skate.",
+      "cloze_word": "Schlittschuh",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "läuft ... Schlittschuh",
+        "perfekt": "ist schlittschuhgelaufen",
+        "praeteritum_3sg": null,
+        "base_verb": "laufen_verb",
+        "particle": "Schlittschuh",
+        "particle_meaning_hint": "Schlittschuh = ice skate — noun+verb compound with laufen"
+      }
+    },
+    {
+      "id": "heimgehen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "heimgehen",
+      "translations_en": [
+        "to go home"
+      ],
+      "example_de": "Ich gehe jetzt heim.",
+      "example_en": "I'm going home now.",
+      "cloze_word": "heim",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... heim",
+        "perfekt": "ist heimgegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "heim",
+        "particle_meaning_hint": "heim = home — adverb+verb compound with gehen (to go)"
+      }
+    },
+    {
+      "id": "heimfahren_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "heimfahren",
+      "translations_en": [
+        "to drive home"
+      ],
+      "example_de": "Wir fahren am Freitag heim.",
+      "example_en": "We drive home on Friday.",
+      "cloze_word": "heim",
+      "themes": [
+        "travel"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fährt ... heim",
+        "perfekt": "ist heimgefahren",
+        "praeteritum_3sg": null,
+        "base_verb": "fahren_verb",
+        "particle": "heim",
+        "particle_meaning_hint": "heim = home — adverb+verb compound with fahren (to travel)"
+      }
+    },
+    {
+      "id": "gernhaben_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "gernhaben",
+      "translations_en": [
+        "to be fond of"
+      ],
+      "example_de": "Ich habe dich gern.",
+      "example_en": "I'm fond of you.",
+      "cloze_word": "gern",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hat ... gern",
+        "perfekt": "hat gerngehabt",
+        "praeteritum_3sg": null,
+        "base_verb": "haben_verb",
+        "particle": "gern",
+        "particle_meaning_hint": "gern = gladly — adverb+verb compound with haben (to have)"
+      }
+    },
+    {
+      "id": "liebhaben_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "liebhaben",
+      "translations_en": [
+        "to love",
+        "to be fond of"
+      ],
+      "example_de": "Ich habe meine Oma lieb.",
+      "example_en": "I love my grandma.",
+      "cloze_word": "lieb",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hat ... lieb",
+        "perfekt": "hat liebgehabt",
+        "praeteritum_3sg": null,
+        "base_verb": "haben_verb",
+        "particle": "lieb",
+        "particle_meaning_hint": "lieb = dear — adjective+verb compound with haben (to have)"
+      }
+    },
+    {
+      "id": "leidtun_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "leidtun",
+      "translations_en": [
+        "to be sorry"
+      ],
+      "example_de": "Es tut mir leid.",
+      "example_en": "I'm sorry.",
+      "cloze_word": "leid",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "tut ... leid",
+        "perfekt": "hat leidgetan",
+        "praeteritum_3sg": null,
+        "base_verb": "tun_verb",
+        "particle": "leid",
+        "particle_meaning_hint": "leid = sorrow — fixed compound with tun (to do)"
+      }
+    },
+    {
+      "id": "gutgehen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "gutgehen",
+      "translations_en": [
+        "to go well",
+        "to be fine"
+      ],
+      "example_de": "Mir geht es gut.",
+      "example_en": "I'm fine.",
+      "cloze_word": "gut",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... gut",
+        "perfekt": "ist gutgegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "gut",
+        "particle_meaning_hint": "gut = well — adjective+verb compound with gehen (to go)"
+      }
+    },
+    {
+      "id": "schwerfallen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "schwerfallen",
+      "translations_en": [
+        "to be hard for someone"
+      ],
+      "example_de": "Deutsch fällt mir schwer.",
+      "example_en": "German is hard for me.",
+      "cloze_word": "schwer",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fällt ... schwer",
+        "perfekt": "ist schwergefallen",
+        "praeteritum_3sg": null,
+        "base_verb": "fallen_verb",
+        "particle": "schwer",
+        "particle_meaning_hint": "schwer = hard — adjective+verb compound with fallen (to fall)"
+      }
+    },
+    {
+      "id": "leichtfallen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "leichtfallen",
+      "translations_en": [
+        "to come easily to someone"
+      ],
+      "example_de": "Mathe fällt mir leicht.",
+      "example_en": "Maths comes easily to me.",
+      "cloze_word": "leicht",
+      "themes": [
+        "education"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fällt ... leicht",
+        "perfekt": "ist leichtgefallen",
+        "praeteritum_3sg": null,
+        "base_verb": "fallen_verb",
+        "particle": "leicht",
+        "particle_meaning_hint": "leicht = easy — adjective+verb compound with fallen (to fall)"
+      }
+    },
+    {
+      "id": "kaputtgehen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "kaputtgehen",
+      "translations_en": [
+        "to break",
+        "to stop working"
+      ],
+      "example_de": "Mein Handy geht oft kaputt.",
+      "example_en": "My phone often breaks.",
+      "cloze_word": "kaputt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... kaputt",
+        "perfekt": "ist kaputtgegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "kaputt",
+        "particle_meaning_hint": "kaputt = broken — adjective+verb compound with gehen (to go)"
+      }
+    },
+    {
+      "id": "kaputtmachen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "kaputtmachen",
+      "translations_en": [
+        "to break (something)"
+      ],
+      "example_de": "Das Kind macht das Spielzeug kaputt.",
+      "example_en": "The child breaks the toy.",
+      "cloze_word": "kaputt",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... kaputt",
+        "perfekt": "hat kaputtgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "kaputt",
+        "particle_meaning_hint": "kaputt = broken — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "saubermachen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "saubermachen",
+      "translations_en": [
+        "to clean"
+      ],
+      "example_de": "Ich mache die Küche sauber.",
+      "example_en": "I clean the kitchen.",
+      "cloze_word": "sauber",
+      "themes": [
+        "home"
+      ],
+      "priority": 1,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... sauber",
+        "perfekt": "hat saubergemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "sauber",
+        "particle_meaning_hint": "sauber = clean — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "fertigmachen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "sich fertigmachen",
+      "translations_en": [
+        "to get ready"
+      ],
+      "example_de": "Ich mache mich fertig.",
+      "example_en": "I'm getting ready.",
+      "cloze_word": "fertig",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht sich ... fertig",
+        "perfekt": "hat sich fertiggemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "fertig",
+        "particle_meaning_hint": "fertig = ready/finished — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "freihaben_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "freihaben",
+      "translations_en": [
+        "to have time off"
+      ],
+      "example_de": "Am Freitag habe ich frei.",
+      "example_en": "I have Friday off.",
+      "cloze_word": "frei",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hat ... frei",
+        "perfekt": "hat freigehabt",
+        "praeteritum_3sg": null,
+        "base_verb": "haben_verb",
+        "particle": "frei",
+        "particle_meaning_hint": "frei = free — adjective+verb compound with haben (to have)"
+      }
+    },
+    {
+      "id": "platznehmen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "platznehmen",
+      "translations_en": [
+        "to take a seat"
+      ],
+      "example_de": "Nehmen Sie bitte Platz.",
+      "example_en": "Please take a seat.",
+      "cloze_word": "Platz",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... Platz",
+        "perfekt": "hat platzgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "Platz",
+        "particle_meaning_hint": "Platz = seat/place — noun+verb compound with nehmen (to take)"
+      }
+    },
+    {
+      "id": "schwarzfahren_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "schwarzfahren",
+      "translations_en": [
+        "to ride without a ticket"
+      ],
+      "example_de": "Er fährt manchmal schwarz.",
+      "example_en": "He sometimes rides without a ticket.",
+      "cloze_word": "schwarz",
+      "themes": [
+        "travel"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fährt ... schwarz",
+        "perfekt": "ist schwarzgefahren",
+        "praeteritum_3sg": null,
+        "base_verb": "fahren_verb",
+        "particle": "schwarz",
+        "particle_meaning_hint": "schwarz = black — colour+verb compound with fahren (to ride)"
+      }
+    },
+    {
+      "id": "stehenlassen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "stehenlassen",
+      "translations_en": [
+        "to leave standing"
+      ],
+      "example_de": "Lass das Auto bitte stehen.",
+      "example_en": "Please leave the car where it is.",
+      "cloze_word": "stehen",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... stehen",
+        "perfekt": "hat stehengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "stehen",
+        "particle_meaning_hint": "stehen = to stand — fixed compound with lassen (to let/leave)"
+      }
+    },
+    {
+      "id": "liegenlassen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "liegenlassen",
+      "translations_en": [
+        "to leave behind"
+      ],
+      "example_de": "Ich lasse mein Handy oft liegen.",
+      "example_en": "I often leave my phone lying around.",
+      "cloze_word": "liegen",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... liegen",
+        "perfekt": "hat liegengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "liegen",
+        "particle_meaning_hint": "liegen = to lie — fixed compound with lassen (to let/leave)"
+      }
+    },
+    {
+      "id": "offenlassen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "offenlassen",
+      "translations_en": [
+        "to leave open"
+      ],
+      "example_de": "Lass das Fenster offen.",
+      "example_en": "Leave the window open.",
+      "cloze_word": "offen",
+      "themes": [
+        "home"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "lässt ... offen",
+        "perfekt": "hat offengelassen",
+        "praeteritum_3sg": null,
+        "base_verb": "lassen_verb",
+        "particle": "offen",
+        "particle_meaning_hint": "offen = open — adjective+verb compound with lassen (to let/leave)"
+      }
+    },
+    {
+      "id": "warmmachen_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "warmmachen",
+      "translations_en": [
+        "to heat up"
+      ],
+      "example_de": "Ich mache die Suppe warm.",
+      "example_en": "I'm heating up the soup.",
+      "cloze_word": "warm",
+      "themes": [
+        "food"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... warm",
+        "perfekt": "hat warmgemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "warm",
+        "particle_meaning_hint": "warm = warm — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "sauberhalten_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "sauberhalten",
+      "translations_en": [
+        "to keep clean"
+      ],
+      "example_de": "Wir halten die Wohnung sauber.",
+      "example_en": "We keep the flat clean.",
+      "cloze_word": "sauber",
+      "themes": [
+        "home"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... sauber",
+        "perfekt": "hat saubergehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "sauber",
+        "particle_meaning_hint": "sauber = clean — adjective+verb compound with halten (to keep)"
+      }
+    },
+    {
+      "id": "wachbleiben_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "wachbleiben",
+      "translations_en": [
+        "to stay awake"
+      ],
+      "example_de": "Ich bleibe bis Mitternacht wach.",
+      "example_en": "I stay awake until midnight.",
+      "cloze_word": "wach",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bleibt ... wach",
+        "perfekt": "ist wachgeblieben",
+        "praeteritum_3sg": null,
+        "base_verb": "bleiben_verb",
+        "particle": "wach",
+        "particle_meaning_hint": "wach = awake — adjective+verb compound with bleiben (to stay)"
+      }
+    },
+    {
+      "id": "spazierenfahren_verb",
+      "cefr": "A1",
+      "pos": "composite_verb",
+      "lemma_de": "spazierenfahren",
+      "translations_en": [
+        "to go for a drive"
+      ],
+      "example_de": "Sonntags fahren wir spazieren.",
+      "example_en": "On Sundays we go for a drive.",
+      "cloze_word": "spazieren",
+      "themes": [
+        "travel"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fährt ... spazieren",
+        "perfekt": "ist spazierengefahren",
+        "praeteritum_3sg": null,
+        "base_verb": "fahren_verb",
+        "particle": "spazieren",
+        "particle_meaning_hint": "spazieren = to stroll — fixed compound with fahren (to drive)"
+      }
     }
   ]
 }

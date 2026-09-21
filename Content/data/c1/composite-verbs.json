@@ -3,9 +3,739 @@
   "cefr": "C1",
   "pos": "composite_verb",
   "entries": [
-    { "id": "wiedergeben_verb", "cefr": "C1", "pos": "composite_verb", "lemma_de": "wiedergeben", "translations_en": ["to reproduce", "to render", "to convey"], "example_de": "Er gibt die Ereignisse genau wieder.", "example_en": "He renders the events accurately.", "cloze_word": "wieder", "themes": ["communication"], "priority": 3, "verb": { "separable": true, "irregular": true, "present_3sg": "gibt ... wieder", "perfekt": "hat wiedergegeben", "praeteritum_3sg": null, "base_verb": "geben_verb", "particle": "wieder", "particle_meaning_hint": "wieder = again/back — giving something back out in another form" } },
-    { "id": "gleichsetzen_verb", "cefr": "C1", "pos": "composite_verb", "lemma_de": "gleichsetzen", "translations_en": ["to equate"], "example_de": "Man sollte Meinung nicht mit Fakten gleichsetzen.", "example_en": "One shouldn't equate opinion with facts.", "cloze_word": "gleich", "themes": ["argumentation"], "priority": 3, "verb": { "separable": true, "irregular": false, "present_3sg": "setzt ... gleich", "perfekt": "hat gleichgesetzt", "praeteritum_3sg": null, "base_verb": "setzen_verb", "particle": "gleich", "particle_meaning_hint": "gleich = equal — setting two things as equal" } },
-    { "id": "vorwegnehmen_verb", "cefr": "C1", "pos": "composite_verb", "lemma_de": "vorwegnehmen", "translations_en": ["to anticipate", "to preempt"], "example_de": "Der Trailer nimmt die besten Szenen vorweg.", "example_en": "The trailer gives away the best scenes in advance.", "cloze_word": "vorweg", "themes": ["argumentation"], "priority": 4, "verb": { "separable": true, "irregular": true, "present_3sg": "nimmt ... vorweg", "perfekt": "hat vorweggenommen", "praeteritum_3sg": null, "base_verb": "nehmen_verb", "particle": "vorweg", "particle_meaning_hint": "vorweg = beforehand — taking something before its time" } },
-    { "id": "infragestellen_verb", "cefr": "C1", "pos": "composite_verb", "lemma_de": "infragestellen", "translations_en": ["to call into question", "to question"], "example_de": "Niemand stellt seine Kompetenz infrage.", "example_en": "No one questions his competence.", "cloze_word": "infrage", "themes": ["argumentation"], "priority": 2, "verb": { "separable": true, "irregular": false, "present_3sg": "stellt ... infrage", "perfekt": "hat infrage gestellt", "praeteritum_3sg": null, "base_verb": "stellen_verb", "particle": "infrage", "particle_meaning_hint": "infrage = into question — putting something up for doubt" } }
+    {
+      "id": "wiedergeben_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "wiedergeben",
+      "translations_en": [
+        "to reproduce",
+        "to render",
+        "to convey"
+      ],
+      "example_de": "Er gibt die Ereignisse genau wieder.",
+      "example_en": "He renders the events accurately.",
+      "cloze_word": "wieder",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gibt ... wieder",
+        "perfekt": "hat wiedergegeben",
+        "praeteritum_3sg": null,
+        "base_verb": "geben_verb",
+        "particle": "wieder",
+        "particle_meaning_hint": "wieder = again/back — giving something back out in another form"
+      }
+    },
+    {
+      "id": "gleichsetzen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "gleichsetzen",
+      "translations_en": [
+        "to equate"
+      ],
+      "example_de": "Man sollte Meinung nicht mit Fakten gleichsetzen.",
+      "example_en": "One shouldn't equate opinion with facts.",
+      "cloze_word": "gleich",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... gleich",
+        "perfekt": "hat gleichgesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "gleich",
+        "particle_meaning_hint": "gleich = equal — setting two things as equal"
+      }
+    },
+    {
+      "id": "vorwegnehmen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "vorwegnehmen",
+      "translations_en": [
+        "to anticipate",
+        "to preempt"
+      ],
+      "example_de": "Der Trailer nimmt die besten Szenen vorweg.",
+      "example_en": "The trailer gives away the best scenes in advance.",
+      "cloze_word": "vorweg",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 4,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... vorweg",
+        "perfekt": "hat vorweggenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "vorweg",
+        "particle_meaning_hint": "vorweg = beforehand — taking something before its time"
+      }
+    },
+    {
+      "id": "infragestellen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "infragestellen",
+      "translations_en": [
+        "to call into question",
+        "to question"
+      ],
+      "example_de": "Niemand stellt seine Kompetenz infrage.",
+      "example_en": "No one questions his competence.",
+      "cloze_word": "infrage",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... infrage",
+        "perfekt": "hat infrage gestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "infrage",
+        "particle_meaning_hint": "infrage = into question — putting something up for doubt"
+      }
+    },
+    {
+      "id": "zugutekommen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "zugutekommen",
+      "translations_en": [
+        "to benefit"
+      ],
+      "example_de": "Das kommt allen zugute.",
+      "example_en": "That benefits everyone.",
+      "cloze_word": "zugute",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... zugute",
+        "perfekt": "ist zugutegekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "zugute",
+        "particle_meaning_hint": "zugute = to the good — adverb+verb compound with kommen (to come)"
+      }
+    },
+    {
+      "id": "zugutehalten_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "zugutehalten",
+      "translations_en": [
+        "to give credit for"
+      ],
+      "example_de": "Ich halte ihm zugute, dass er es versucht hat.",
+      "example_en": "I give him credit for trying.",
+      "cloze_word": "zugute",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... zugute",
+        "perfekt": "hat zugutegehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "zugute",
+        "particle_meaning_hint": "zugute = to the good — adverb+verb compound with halten (to hold)"
+      }
+    },
+    {
+      "id": "zuteilwerden_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "zuteilwerden",
+      "translations_en": [
+        "to be granted"
+      ],
+      "example_de": "Ihm wird große Ehre zuteil.",
+      "example_en": "Great honour is bestowed on him.",
+      "cloze_word": "zuteil",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "wird ... zuteil",
+        "perfekt": "ist zuteilgeworden",
+        "praeteritum_3sg": null,
+        "base_verb": "werden_verb",
+        "particle": "zuteil",
+        "particle_meaning_hint": "zuteil = as one's share — adverb+verb compound with werden (to become)"
+      }
+    },
+    {
+      "id": "vonstattengehen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "vonstattengehen",
+      "translations_en": [
+        "to take place",
+        "to proceed"
+      ],
+      "example_de": "Die Reparatur geht schnell vonstatten.",
+      "example_en": "The repair proceeds quickly.",
+      "cloze_word": "vonstatten",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "geht ... vonstatten",
+        "perfekt": "ist vonstattengegangen",
+        "praeteritum_3sg": null,
+        "base_verb": "gehen_verb",
+        "particle": "vonstatten",
+        "particle_meaning_hint": "vonstatten = on its way — adverb+verb compound with gehen (to go)"
+      }
+    },
+    {
+      "id": "zustandekommen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "zustandekommen",
+      "translations_en": [
+        "to come about"
+      ],
+      "example_de": "Die Einigung kommt nicht zustande.",
+      "example_en": "The agreement doesn't come about.",
+      "cloze_word": "zustande",
+      "themes": [
+        "society"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... zustande",
+        "perfekt": "ist zustandegekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "zustande",
+        "particle_meaning_hint": "zustande = into being — adverb+verb compound with kommen (to come)"
+      }
+    },
+    {
+      "id": "zustandebringen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "zustandebringen",
+      "translations_en": [
+        "to accomplish"
+      ],
+      "example_de": "Er bringt es nicht zustande.",
+      "example_en": "He can't manage it.",
+      "cloze_word": "zustande",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "bringt ... zustande",
+        "perfekt": "hat zustandegebracht",
+        "praeteritum_3sg": null,
+        "base_verb": "bringen_verb",
+        "particle": "zustande",
+        "particle_meaning_hint": "zustande = into being — adverb+verb compound with bringen (to bring)"
+      }
+    },
+    {
+      "id": "instandhalten_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "instandhalten",
+      "translations_en": [
+        "to maintain"
+      ],
+      "example_de": "Wir halten die Anlage instand.",
+      "example_en": "We maintain the facility.",
+      "cloze_word": "instand",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hält ... instand",
+        "perfekt": "hat instandgehalten",
+        "praeteritum_3sg": null,
+        "base_verb": "halten_verb",
+        "particle": "instand",
+        "particle_meaning_hint": "instand = in working order — adverb+verb compound with halten (to keep)"
+      }
+    },
+    {
+      "id": "instandsetzen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "instandsetzen",
+      "translations_en": [
+        "to repair"
+      ],
+      "example_de": "Man setzt die Brücke instand.",
+      "example_en": "The bridge is being repaired.",
+      "cloze_word": "instand",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "setzt ... instand",
+        "perfekt": "hat instandgesetzt",
+        "praeteritum_3sg": null,
+        "base_verb": "setzen_verb",
+        "particle": "instand",
+        "particle_meaning_hint": "instand = in working order — adverb+verb compound with setzen (to set)"
+      }
+    },
+    {
+      "id": "kundtun_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "kundtun",
+      "translations_en": [
+        "to make known"
+      ],
+      "example_de": "Er tut seine Meinung kund.",
+      "example_en": "He makes his opinion known.",
+      "cloze_word": "kund",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "tut ... kund",
+        "perfekt": "hat kundgetan",
+        "praeteritum_3sg": null,
+        "base_verb": "tun_verb",
+        "particle": "kund",
+        "particle_meaning_hint": "kund = known — adjective+verb compound with tun (to do)"
+      }
+    },
+    {
+      "id": "preisgeben_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "preisgeben",
+      "translations_en": [
+        "to reveal",
+        "to give up"
+      ],
+      "example_de": "Sie gibt das Geheimnis nicht preis.",
+      "example_en": "She doesn't reveal the secret.",
+      "cloze_word": "preis",
+      "themes": [
+        "communication"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "gibt ... preis",
+        "perfekt": "hat preisgegeben",
+        "praeteritum_3sg": null,
+        "base_verb": "geben_verb",
+        "particle": "preis",
+        "particle_meaning_hint": "preis = exposed — adverb+verb compound with geben (to give)"
+      }
+    },
+    {
+      "id": "fehlschlagen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "fehlschlagen",
+      "translations_en": [
+        "to fail"
+      ],
+      "example_de": "Der Versuch schlägt fehl.",
+      "example_en": "The attempt fails.",
+      "cloze_word": "fehl",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "schlägt ... fehl",
+        "perfekt": "ist fehlgeschlagen",
+        "praeteritum_3sg": null,
+        "base_verb": "schlagen_verb",
+        "particle": "fehl",
+        "particle_meaning_hint": "fehl = wrong/amiss — adverb+verb compound with schlagen (to strike)"
+      }
+    },
+    {
+      "id": "abhandenkommen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "abhandenkommen",
+      "translations_en": [
+        "to go missing"
+      ],
+      "example_de": "Ihm kommt oft etwas abhanden.",
+      "example_en": "He often loses things.",
+      "cloze_word": "abhanden",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... abhanden",
+        "perfekt": "ist abhandengekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "abhanden",
+        "particle_meaning_hint": "abhanden = away from hand — adverb+verb compound with kommen (to come)"
+      }
+    },
+    {
+      "id": "anheimfallen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "anheimfallen",
+      "translations_en": [
+        "to fall to"
+      ],
+      "example_de": "Das Erbe fällt dem Staat anheim.",
+      "example_en": "The inheritance falls to the state.",
+      "cloze_word": "anheim",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "fällt ... anheim",
+        "perfekt": "ist anheimgefallen",
+        "praeteritum_3sg": null,
+        "base_verb": "fallen_verb",
+        "particle": "anheim",
+        "particle_meaning_hint": "anheim = to home — adverb+verb compound with fallen (to fall)"
+      }
+    },
+    {
+      "id": "ueberhandnehmen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "überhandnehmen",
+      "translations_en": [
+        "to get out of hand"
+      ],
+      "example_de": "Die Kriminalität nimmt überhand.",
+      "example_en": "Crime is getting out of hand.",
+      "cloze_word": "überhand",
+      "themes": [
+        "society"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... überhand",
+        "perfekt": "hat überhandgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "überhand",
+        "particle_meaning_hint": "überhand = over the hand — adverb+verb compound with nehmen (to take)"
+      }
+    },
+    {
+      "id": "vorliebnehmen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "vorliebnehmen",
+      "translations_en": [
+        "to make do"
+      ],
+      "example_de": "Wir nehmen mit wenig vorlieb.",
+      "example_en": "We make do with little.",
+      "cloze_word": "vorlieb",
+      "themes": [
+        "daily_routine"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "nimmt ... vorlieb",
+        "perfekt": "hat vorliebgenommen",
+        "praeteritum_3sg": null,
+        "base_verb": "nehmen_verb",
+        "particle": "vorlieb",
+        "particle_meaning_hint": "vorlieb = preference — adverb+verb compound with nehmen (to take)"
+      }
+    },
+    {
+      "id": "innewohnen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "innewohnen",
+      "translations_en": [
+        "to be inherent"
+      ],
+      "example_de": "Dem Plan wohnt ein Risiko inne.",
+      "example_en": "A risk is inherent in the plan.",
+      "cloze_word": "inne",
+      "themes": [
+        "abstract_ideas"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "wohnt ... inne",
+        "perfekt": "hat innegewohnt",
+        "praeteritum_3sg": null,
+        "base_verb": "wohnen_verb",
+        "particle": "inne",
+        "particle_meaning_hint": "inne = within — adverb+verb compound with wohnen (to dwell)"
+      }
+    },
+    {
+      "id": "kaltstellen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "kaltstellen",
+      "translations_en": [
+        "to sideline"
+      ],
+      "example_de": "Man stellt den Manager kalt.",
+      "example_en": "The manager is sidelined.",
+      "cloze_word": "kalt",
+      "themes": [
+        "work"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "stellt ... kalt",
+        "perfekt": "hat kaltgestellt",
+        "praeteritum_3sg": null,
+        "base_verb": "stellen_verb",
+        "particle": "kalt",
+        "particle_meaning_hint": "kalt = cold — adjective+verb compound with stellen (to place)"
+      }
+    },
+    {
+      "id": "lockermachen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "lockermachen",
+      "translations_en": [
+        "to cough up"
+      ],
+      "example_de": "Er macht kein Geld locker.",
+      "example_en": "He won't cough up any money.",
+      "cloze_word": "locker",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "macht ... locker",
+        "perfekt": "hat lockergemacht",
+        "praeteritum_3sg": null,
+        "base_verb": "machen_verb",
+        "particle": "locker",
+        "particle_meaning_hint": "locker = loose — adjective+verb compound with machen (to make)"
+      }
+    },
+    {
+      "id": "satthaben_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "satthaben",
+      "translations_en": [
+        "to be fed up with"
+      ],
+      "example_de": "Ich habe das Warten satt.",
+      "example_en": "I'm fed up with waiting.",
+      "cloze_word": "satt",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "hat ... satt",
+        "perfekt": "hat sattgehabt",
+        "praeteritum_3sg": null,
+        "base_verb": "haben_verb",
+        "particle": "satt",
+        "particle_meaning_hint": "satt = full — adjective+verb compound with haben (to have)"
+      }
+    },
+    {
+      "id": "vorwaertskommen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "vorwärtskommen",
+      "translations_en": [
+        "to make progress"
+      ],
+      "example_de": "Wir kommen nur langsam vorwärts.",
+      "example_en": "We're only making slow progress.",
+      "cloze_word": "vorwärts",
+      "themes": [
+        "work"
+      ],
+      "priority": 2,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "kommt ... vorwärts",
+        "perfekt": "ist vorwärtsgekommen",
+        "praeteritum_3sg": null,
+        "base_verb": "kommen_verb",
+        "particle": "vorwärts",
+        "particle_meaning_hint": "vorwärts = forwards — adverb+verb compound with kommen (to come)"
+      }
+    },
+    {
+      "id": "heimzahlen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "heimzahlen",
+      "translations_en": [
+        "to pay back"
+      ],
+      "example_de": "Ich zahle dir das heim.",
+      "example_en": "I'll pay you back for that.",
+      "cloze_word": "heim",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "zahlt ... heim",
+        "perfekt": "hat heimgezahlt",
+        "praeteritum_3sg": null,
+        "base_verb": "zahlen_verb",
+        "particle": "heim",
+        "particle_meaning_hint": "heim = home — adverb+verb compound with zahlen (to pay)"
+      }
+    },
+    {
+      "id": "kopfstehen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "kopfstehen",
+      "translations_en": [
+        "to be beside oneself"
+      ],
+      "example_de": "Vor Freude steht er kopf.",
+      "example_en": "He is beside himself with joy.",
+      "cloze_word": "kopf",
+      "themes": [
+        "emotions"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "steht ... kopf",
+        "perfekt": "hat kopfgestanden",
+        "praeteritum_3sg": null,
+        "base_verb": "stehen_verb",
+        "particle": "kopf",
+        "particle_meaning_hint": "kopf = head — noun+verb compound with stehen (to stand)"
+      }
+    },
+    {
+      "id": "beiseitelegen_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "beiseitelegen",
+      "translations_en": [
+        "to put aside"
+      ],
+      "example_de": "Ich lege etwas Geld beiseite.",
+      "example_en": "I put some money aside.",
+      "cloze_word": "beiseite",
+      "themes": [
+        "shopping"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": false,
+        "present_3sg": "legt ... beiseite",
+        "perfekt": "hat beiseitegelegt",
+        "praeteritum_3sg": null,
+        "base_verb": "legen_verb",
+        "particle": "beiseite",
+        "particle_meaning_hint": "beiseite = aside — adverb+verb compound with legen (to lay)"
+      }
+    },
+    {
+      "id": "beiseiteschieben_verb",
+      "cefr": "C1",
+      "pos": "composite_verb",
+      "lemma_de": "beiseiteschieben",
+      "translations_en": [
+        "to push aside"
+      ],
+      "example_de": "Er schiebt die Bedenken beiseite.",
+      "example_en": "He pushes his concerns aside.",
+      "cloze_word": "beiseite",
+      "themes": [
+        "argumentation"
+      ],
+      "priority": 3,
+      "verb": {
+        "separable": true,
+        "irregular": true,
+        "present_3sg": "schiebt ... beiseite",
+        "perfekt": "hat beiseitegeschoben",
+        "praeteritum_3sg": null,
+        "base_verb": "schieben_verb",
+        "particle": "beiseite",
+        "particle_meaning_hint": "beiseite = aside — adverb+verb compound with schieben (to push)"
+      }
+    }
   ]
 }
