@@ -228,3 +228,110 @@ import Testing
         #expect(index.verbFamilies[0].members.map(\.id) == ["aufmachen_verb", "ausmachen_verb"])
     }
 }
+
+@Suite struct SessionRulesTests {
+    let now = date("2026-01-01T10:00:00Z")
+
+    private func stateWith(_ entry: VocabEntry, box: Int = 0, reviews: Int = 0) -> AppState {
+        var state = AppState()
+        var p = VocabProgress(id: entry.id, now: now)
+        p.boxLevel = box; p.totalReviews = reviews
+        state.progress[entry.id] = p
+        return state
+    }
+
+    @Test func introduceCreatesProgressOnce() {
+        var state = AppState()
+        let entry = makeEntry("a")
+        #expect(SessionRules.introduce(entry, state: &state, now: now))
+        #expect(!SessionRules.introduce(entry, state: &state, now: now))
+        #expect(state.progress.count == 1)
+    }
+
+    @Test func correctAnswerEarnsXPAndRecordsItForTheDay() {
+        let entry = makeEntry("a", priority: 2)
+        var state = stateWith(entry)
+        var combo = ComboTracker()
+        let out = SessionRules.recordAnswer(for: entry, wasCorrect: true, combo: &combo, state: &state, now: now, calendar: utc)
+        #expect(out.xp == 5 + 2 + 10)  // first correct answer bonus
+        #expect(state.profile.totalXP == 17)
+        #expect(state.dailyActivity["2026-01-01"]?.xpEarned == 17)  // feeds the heatmap
+    }
+
+    @Test func wrongAnswerResetsComboAndEarnsNothing() {
+        let entry = makeEntry("a")
+        var state = stateWith(entry, box: 3, reviews: 3)
+        var combo = ComboTracker()
+        _ = SessionRules.recordAnswer(for: entry, wasCorrect: true, combo: &combo, state: &state, now: now, calendar: utc)
+        let out = SessionRules.recordAnswer(for: entry, wasCorrect: false, combo: &combo, state: &state, now: now, calendar: utc)
+        #expect(out.xp == 0)
+        #expect(combo.current == 0)
+        #expect(state.progress["a"]?.boxLevel == 0)
+    }
+
+    @Test func bestComboSurvivesAMissAtTheEnd() {
+        let entry = makeEntry("a")
+        var state = stateWith(entry, box: 2, reviews: 5)
+        var combo = ComboTracker()
+        for _ in 0..<10 { _ = SessionRules.recordAnswer(for: entry, wasCorrect: true, combo: &combo, state: &state, now: now, calendar: utc) }
+        _ = SessionRules.recordAnswer(for: entry, wasCorrect: false, combo: &combo, state: &state, now: now, calendar: utc)
+        #expect(state.profile.bestCombo == 10)
+        #expect(Achievements.catalog.first { $0.id == "combo_10" }!.isUnlocked(
+            AchievementContext(profile: state.profile, masteredTotal: 0, verbMastered: 0, levelComplete: [:])))
+    }
+
+    @Test func comboMultipliesXPFromTheFifthCorrectAnswer() {
+        let entry = makeEntry("a", priority: 3)
+        var state = stateWith(entry, box: 0, reviews: 1)  // not a first review, so no +10
+        var combo = ComboTracker()
+        var xp: [Int] = []
+        for _ in 0..<5 { xp.append(SessionRules.recordAnswer(for: entry, wasCorrect: true, combo: &combo, state: &state, now: now, calendar: utc).xp) }
+        #expect(xp == [8, 8, 8, 8, 12])  // 8 × 1.5 on the fifth
+    }
+
+    @Test func unknownWordEarnsNothingButStillCountsTowardsTheCombo() {
+        var state = AppState()
+        var combo = ComboTracker()
+        let out = SessionRules.recordAnswer(for: makeEntry("x"), wasCorrect: true, combo: &combo, state: &state, now: now, calendar: utc)
+        #expect(out == AnswerOutcome(xp: 0, goalJustMet: false))
+        #expect(combo.current == 1)
+        #expect(state.progress.isEmpty)
+    }
+
+    @Test func quizAnswersUpdateLifetimeCounters() {
+        let entry = makeEntry("a")
+        var state = stateWith(entry)
+        var combo = ComboTracker()
+        _ = SessionRules.recordQuizAnswer(for: entry, wasCorrect: true, combo: &combo, state: &state, now: now, calendar: utc)
+        _ = SessionRules.recordQuizAnswer(for: entry, wasCorrect: false, combo: &combo, state: &state, now: now, calendar: utc)
+        #expect(state.profile.totalQuizQuestions == 2)
+        #expect(state.profile.totalQuizCorrect == 1)
+    }
+
+    @Test func crossingTheDailyGoalReportsItOnceAndStartsTheStreak() {
+        let entry = makeEntry("a", priority: 5)
+        var state = stateWith(entry, box: 0, reviews: 1)
+        state.profile.dailyGoalXP = 20
+        var combo = ComboTracker()
+        let outcomes = (0..<3).map { _ in
+            SessionRules.recordAnswer(for: entry, wasCorrect: true, combo: &combo, state: &state, now: now, calendar: utc)
+        }
+        #expect(outcomes.map(\.goalJustMet) == [false, true, false])  // 10, 20 (goal), 30
+        #expect(state.profile.currentStreakDays == 1)
+    }
+
+    @Test func perfectQuizOfTenSetsTheFlagButShortOnesDoNot() {
+        var state = AppState()
+        SessionRules.finishQuiz(stats: QuizStats(total: 9, correct: 9, xp: 0), countsAsReviews: true, state: &state, now: now, calendar: utc)
+        #expect(!state.profile.hadPerfectQuiz10)
+        SessionRules.finishQuiz(stats: QuizStats(total: 10, correct: 10, xp: 0), countsAsReviews: true, state: &state, now: now, calendar: utc)
+        #expect(state.profile.hadPerfectQuiz10)
+        #expect(state.dailyActivity["2026-01-01"]?.reviewsCompleted == 19)
+    }
+
+    @Test func postLearnQuizDoesNotCountAsReviews() {
+        var state = AppState()
+        SessionRules.finishQuiz(stats: QuizStats(total: 5, correct: 3, xp: 0), countsAsReviews: false, state: &state, now: now, calendar: utc)
+        #expect(state.dailyActivity.isEmpty)
+    }
+}

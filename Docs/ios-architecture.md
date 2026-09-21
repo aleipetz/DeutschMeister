@@ -36,11 +36,12 @@ adding content never needs a data migration.
 
 | Folder | Contents | Ported from |
 |---|---|---|
-| `Domain/` | Models (`VocabEntry`, `Progress`, `Profile`), `LeitnerEngine`, `QuizGenerator`, `Achievements`, streak logic. Pure Swift: no SwiftUI, no file I/O. | `engine.js`, `quiz.js` |
+| `Domain/` | Models (`VocabEntry`, `Progress`, `Profile`), `LeitnerEngine`, `QuizGenerator`, `Achievements`, `StudyPlanner`, `SessionRules`. Pure Swift: no SwiftUI, no file I/O. | `engine.js`, `quiz.js` |
 | `Data/` | `ContentStore` (loads bundle, indexes by id/level/theme), `ProgressStore` (load/save/import/export `progress.json`). | `data.js`, `localStorage` code in `app.js` |
 | `Speech/` | `SpeechService` around `AVSpeechSynthesizer`; picks a German voice. | `speech.js` |
 | `Features/` | One subfolder per screen: Home, Learn, Review, Quiz, Progress, Badges, Settings, Onboarding. View + view model each. | `app.js`, `index.html` |
 | `DesignSystem/` | Theme colours (the `THEME_COLORS` table), word card, buttons, progress ring, heatmap. | `styles.css` |
+| `Debug/` | Debug-only launch options and demo data. Compiled out of release builds. | none |
 | `Resources/` | `vocab-bundle.json`, `Assets.xcassets`. | generated |
 | `DeutschMeisterTests/` | XCTest / Swift Testing suites for `Domain/` and `Data/`. | `Tests/*.test.js` |
 
@@ -48,13 +49,30 @@ Rule: `Domain/` never imports SwiftUI. Views never contain scheduling, XP or qui
 
 ## Port order
 
-1. **Done.** `Domain/`: models, `LeitnerEngine`, streaks, `QuizGenerator`, `Achievements`, `StudyPlanner`, with the
-   prototype's JS tests ported (`Prototype/Tests/*.test.js` were the spec).
+1. **Done.** `Domain/`: models, `LeitnerEngine`, streaks, `QuizGenerator`, `Achievements`, `StudyPlanner`, `SessionRules`,
+   with the prototype's JS tests ported (`Prototype/Tests/*.test.js` were the spec).
 2. **Done.** `Data/`: `Tools/build_bundle.py`, `ContentStore`, `ProgressStore`, import of prototype exports.
-3. `Speech/`: `SpeechService`.
-4. `DesignSystem/` and `Features/`: Home → Learn → Review → Quiz → Progress → Badges → Settings → Onboarding.
-   `Features/RootView.swift` is a placeholder until then.
-5. App icon, then run on the iPhone.
+3. **Done.** `Speech/`: `SpeechService` (German `AVSpeechSynthesizer`).
+4. **Done.** `DesignSystem/` and `Features/`: Home, Learn, Review, Quiz, Progress, Badges, Settings, Onboarding.
+5. App icon, then run on the iPhone (needs your Apple ID in Xcode; see below).
+
+## Navigation
+
+Four tabs: **Home**, **Quiz**, **Progress**, **Badges**. Learn and Review are full-screen sessions started from the
+Home buttons (the prototype had them as tabs). Settings is a sheet opened from the gear on Home. First launch shows
+a level picker. `AppModel` (in `Features/`) owns the state and saves it after every change; `Sessions.swift` holds the
+Learn, Review and Quiz controllers, which delegate every rule to `Domain/SessionRules`.
+
+## Debug launch options
+
+Debug builds only (`Debug/LaunchOptions.swift`), so a screen can be opened and screenshotted without tapping:
+
+```bash
+xcrun simctl launch booted com.apetzhold.DeutschMeister -dmDemo -dmScreen progress
+```
+
+`-dmDemo` uses an in-memory demo learner (real progress is never touched), `-dmFresh` an empty one (shows onboarding),
+`-dmScreen home|learn|review|quiz|progress|badges|settings` opens that screen.
 
 ## Running the tests
 
@@ -81,7 +99,11 @@ After changing anything in `Content/data/`, run `python3 Tools/validate_content.
 - **Corrupt save file** (done): moved aside to `progress.corrupt-<time>.json` instead of being overwritten.
 - **Clock and calendar** (done): the engine takes `now` and a `Calendar`, so streak and due-date logic is tested with a
   fixed UTC calendar.
-- **Leech words** (`isLeech`) are tracked but never surfaced. Still to do: a "tricky words" filter in Progress.
+- **Activity heatmap** (done): the prototype never recorded XP into the daily activity it draws from, so the heatmap
+  was always empty. `AppState.awardXP` now records it.
+- **Best combo** (done): the prototype only saved the streak at the moment a Review ended, so a long streak followed by
+  one miss was lost. The best is now tracked answer by answer.
+- **Tricky words** (done): words flagged as leeches are listed on the Progress tab.
 
 ## Content status
 

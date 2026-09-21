@@ -1,25 +1,29 @@
 import SwiftUI
 
-/// Temporary shell: proves content and progress load. Replaced by the real tab UI next.
+/// Tabs, the Learn/Review full-screen sessions, Settings, onboarding and the celebration popup.
 struct RootView: View {
-    @State private var summary = "Loading…"
+    @Environment(AppModel.self) private var model
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
-        VStack(spacing: 12) {
-            Text("🦉").font(.system(size: 64))
-            Text("Deutsch Meister").font(.largeTitle.bold())
-            Text(summary).foregroundStyle(.secondary)
+        @Bindable var model = model
+        TabView(selection: $model.selectedTab) {
+            Tab("Home", systemImage: "house.fill", value: AppTab.home) { HomeView() }
+            Tab("Quiz", systemImage: "brain.head.profile", value: AppTab.quiz) { QuizTabView() }
+            Tab("Progress", systemImage: "chart.bar.fill", value: AppTab.progress) { ProgressScreen() }
+            Tab("Badges", systemImage: "trophy.fill", value: AppTab.badges) { BadgesView() }
         }
-        .padding()
-        .task {
-            do {
-                let index = try ContentStore.loadBundled()
-                let state = ProgressStore.standard().load()
-                let due = StudyPlanner(index: index).dueQueue(state: state, now: .now).count
-                summary = "\(index.entries.count) words loaded · \(due) due"
-            } catch {
-                summary = "Couldn't load content: \(error.localizedDescription)"
+        .fullScreenCover(item: $model.presentedSession) { kind in
+            switch kind {
+            case .learn: LearnFlowView { model.presentedSession = nil }
+            case .review: ReviewFlowView { model.presentedSession = nil }
             }
         }
+        .sheet(isPresented: $model.showSettings) { SettingsView() }
+        .fullScreenCover(isPresented: Binding(
+            get: { !model.state.settings.onboarded }, set: { _ in }
+        )) { OnboardingView() }
+        .celebrationOverlay()
+        .onChange(of: scenePhase) { _, phase in if phase == .active { model.refreshDay() } }
     }
 }

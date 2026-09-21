@@ -185,14 +185,16 @@ extension AppState {
         dailyActivity[key] = day
     }
 
-    /// Adds XP to today's and the lifetime total. When today's goal is crossed for the
-    /// first time, updates the streak. Returns true exactly once per day, when that happens.
-    /// (Does not touch `dailyActivity`; callers record XP there per session like the prototype.)
+    /// Adds XP to today's and the lifetime total and to today's activity record (which feeds the
+    /// heatmap; the prototype never recorded XP there, so its heatmap stayed empty). When today's
+    /// goal is crossed for the first time, updates the streak. Returns true exactly once per day,
+    /// when that happens.
     @discardableResult
     mutating func awardXP(_ amount: Int, now: Date, calendar: Calendar = .current) -> Bool {
         rollOverDayIfNeeded(now: now, calendar: calendar)
         profile.totalXP += amount
         profile.todayXP += amount
+        recordDailyActivity(xp: amount, now: now, calendar: calendar)
         guard !profile.goalMetToday, profile.todayXP >= profile.dailyGoalXP else { return false }
         profile.goalMetToday = true
         profile = LeitnerEngine.recordGoalMet(profile, now: now, calendar: calendar)
