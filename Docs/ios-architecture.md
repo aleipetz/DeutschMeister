@@ -54,7 +54,7 @@ Rule: `Domain/` never imports SwiftUI. Views never contain scheduling, XP or qui
 2. **Done.** `Data/`: `Tools/build_bundle.py`, `ContentStore`, `ProgressStore`, import of prototype exports.
 3. **Done.** `Speech/`: `SpeechService` (German `AVSpeechSynthesizer`).
 4. **Done.** `DesignSystem/` and `Features/`: Home, Learn, Review, Quiz, Progress, Badges, Settings, Onboarding.
-5. App icon, then run on the iPhone (needs your Apple ID in Xcode; see below).
+5. **Done (icon).** `Tools/make_icon.swift` renders it. Next: run on the iPhone (needs your Apple ID in Xcode; see below).
 
 ## Navigation
 
