@@ -1,7 +1,7 @@
 // Offline support: precaches the whole app on install and serves it cache-first.
 // VERSION is stamped by Tools/build_web.py from the content of these files, so any change ships
 // as a new cache; the page reloads itself onto it (see registerServiceWorker in js/app.js).
-const VERSION = 'c947e78f044e';
+const VERSION = '234bae0d91da';
 const CACHE = `deutschmeister-${VERSION}`;
 const ASSETS = [
   './',

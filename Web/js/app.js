@@ -3,7 +3,7 @@
 // Every rule lives in domain.js / sessions.js; this file only renders and routes taps.
 
 import {
-  ACHIEVEMENTS, addDays, CEFR_LEVELS, dayKey, decodeImport, encodeState, makeIndex, POS_LABELS, primaryTranslation,
+  ACHIEVEMENTS, addDays, CEFR_LEVELS, dayKey, decodeImport, encodeState, makeIndex, POS_LABELS, primaryTranslation, spokenText,
 } from './domain.js';
 import { AppModel, makeStore } from './model.js';
 import {
@@ -144,7 +144,7 @@ function autoSpeak() {
   const runner = activeRunner();
   if (learn?.current) {
     key = `learn:${learn.current.id}`;
-    text = learn.current.lemma_de;
+    text = spokenText(learn.current);
   } else if (runner?.current?.kind === 'listening' && !runner.answer) {
     key = `quiz:${runner.current.id}`;
     text = runner.current.audioText;
@@ -261,7 +261,7 @@ function renderWordCard(entry, showAnswer, key) {
     <span class="badge">${h(POS_LABELS[entry.pos] ?? 'Word')}</span>
     <div class="lemma-row">${gender ? `<span class="badge gender gender-${gender}">${gender}</span>` : ''}<span class="lemma" lang="de">${h(entry.lemma_de)}</span></div>
     ${entry.noun?.plural_de ? `<div class="muted small">Plural: ${h(entry.noun.plural_de)}</div>` : ''}
-    ${speakButton(entry.lemma_de)}
+    ${speakButton(spokenText(entry))}
     ${answer}
   </div>`;
 }
