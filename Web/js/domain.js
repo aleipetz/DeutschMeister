@@ -20,6 +20,15 @@ export const POS_LABELS = {
 export const isSeparableFamily = (pos) => pos === 'phrasal_verb' || pos === 'composite_verb';
 export const primaryTranslation = (entry) => entry.translations_en[0] ?? '';
 
+/// The word as it should be heard: nouns with their article ("der Abend").
+export const lemmaWithArticle = (entry) => (entry.noun?.gender ? `${entry.noun.gender} ${entry.lemma_de}` : entry.lemma_de);
+
+/// What the speaker says for a word card: the word (with its article), then the example sentence.
+export function spokenText(entry) {
+  const word = lemmaWithArticle(entry);
+  return entry.example_de ? `${word}. ${entry.example_de}` : word;
+}
+
 // MARK: - Calendar (device-local days)
 
 const DAY_MS = 86_400_000;
@@ -618,7 +627,7 @@ export function makeQuestion(entry, pool, rng, requested) {
         options: choices(entry.cloze_word, (e) => e.cloze_word), correctAnswer: entry.cloze_word };
     default:
       return { ...base, promptLabel: 'Listen and choose the word you heard',
-        options: choices(entry.lemma_de, (e) => e.lemma_de), correctAnswer: entry.lemma_de, audioText: entry.lemma_de };
+        options: choices(entry.lemma_de, (e) => e.lemma_de), correctAnswer: entry.lemma_de, audioText: lemmaWithArticle(entry) };
   }
 }
 

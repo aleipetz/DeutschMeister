@@ -1,7 +1,7 @@
 // Learn, Review and Quiz session controllers. Ported from iOS Features/Sessions.swift; every rule
 // is delegated to SessionRules in domain.js.
 
-import { makeCombo, makeQuizSession, SessionRules, systemRandom } from './domain.js';
+import { makeCombo, makeQuizSession, SessionRules, spokenText, systemRandom } from './domain.js';
 
 /// Runs a multiple-choice quiz one question at a time. Used after a Learn session and by the Quiz tab.
 export class QuizRunner {
@@ -61,7 +61,7 @@ export class ReviewSession {
 
   reveal() {
     this.isRevealed = true;
-    if (this.current) this.model.speak(this.current.lemma_de);
+    if (this.current) this.model.speak(spokenText(this.current));
     this.model.emit();
   }
 

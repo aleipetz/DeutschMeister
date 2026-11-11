@@ -6,7 +6,7 @@ import {
   ACHIEVEMENTS, awardXP, blank, BLANK, CEFR_LEVELS, decodeImport, decodeState, eligibleKinds, encodeState,
   evaluateAchievements, ImportError, Leitner, makeCombo, makeIndex, makePlanner, makeQuestion, makeQuizSession,
   newProgress, newState, pickDistractors, primaryTranslation, recordDailyActivity, rollOverDayIfNeeded, seededRandom,
-  fixedRandom, SessionRules, QUIZ_KINDS,
+  fixedRandom, SessionRules, spokenText, QUIZ_KINDS,
 } from '../js/domain.js';
 import { date, makeEntry, makeTestIndex, quizPool } from './support.mjs';
 
@@ -211,7 +211,7 @@ test('each question kind is built correctly', () => {
 
   const listen = makeQuestion(haus, pool, rng, 'listening');
   assert.equal(listen.prompt, null);
-  assert.equal(listen.audioText, 'Haus');
+  assert.equal(listen.audioText, 'das Haus');
 });
 
 test('distractors exclude the answer, prefer the same part of speech, and pad when the pool is tiny', () => {
@@ -232,6 +232,12 @@ test('session has one question per target capped by limit, deterministic for a s
   assert.equal(makeQuizSession(pool, pool, seededRandom(3), { limit: 4 }).length, 4);
   const strip = (qs) => qs.map(({ id, ...rest }) => ({ ...rest, entry: rest.entry.id }));
   assert.deepEqual(strip(makeQuizSession(pool, pool, seededRandom(9))), strip(makeQuizSession(pool, pool, seededRandom(9))));
+});
+
+test('spoken text gives nouns their article, then the example sentence', () => {
+  const [haus, , , , gross] = quizPool();
+  assert.equal(spokenText(haus), 'das Haus. Das Haus ist groß.');
+  assert.equal(spokenText(gross), 'groß. Das Haus ist groß.');
 });
 
 test('blank prefers a whole word, then a word start, and handles umlauts and punctuation', () => {
